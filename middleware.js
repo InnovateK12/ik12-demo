@@ -1,8 +1,17 @@
-export const config = {
-  matcher: ['/((?!login\\.html|login|api/login|favicon-conv\\.png|_vercel).*)'],
-};
-
 export default async function middleware(request) {
+  const { pathname } = new URL(request.url);
+
+  // Pass through public paths — no auth needed
+  if (
+    pathname === '/login' ||
+    pathname === '/login.html' ||
+    pathname.startsWith('/api/login') ||
+    pathname === '/favicon-conv.png' ||
+    pathname.startsWith('/_vercel')
+  ) {
+    return;
+  }
+
   const cookieHeader = request.headers.get('cookie') || '';
   const session = parseCookie(cookieHeader, 'ik12_session');
 
