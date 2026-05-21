@@ -22,7 +22,7 @@ module.exports = async (req, res) => {
   const password = (params.get('password') || '').trim();
 
   if (!username || !password) {
-    res.writeHead(302, { Location: '/login.html?error=1' });
+    res.writeHead(302, { Location: '/login?error=1' });
     res.end();
     return;
   }
@@ -31,7 +31,7 @@ module.exports = async (req, res) => {
   try {
     clients = JSON.parse(process.env.CLIENTS || '{}');
   } catch {
-    res.writeHead(302, { Location: '/login.html?error=1' });
+    res.writeHead(302, { Location: '/login?error=1' });
     res.end();
     return;
   }
@@ -41,7 +41,7 @@ module.exports = async (req, res) => {
   );
 
   if (!client) {
-    res.writeHead(302, { Location: '/login.html?error=1' });
+    res.writeHead(302, { Location: '/login?error=1' });
     res.end();
     return;
   }

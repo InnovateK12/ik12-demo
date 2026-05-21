@@ -1,5 +1,5 @@
 export const config = {
-  matcher: ['/((?!login\\.html|api/login|favicon-conv\\.png|_vercel).*)'],
+  matcher: ['/((?!login(\\.html)?|api/login|favicon-conv\\.png|_vercel).*)'],
 };
 
 export default async function middleware(request) {
@@ -7,12 +7,12 @@ export default async function middleware(request) {
   const session = parseCookie(cookieHeader, 'ik12_session');
 
   if (!session) {
-    return Response.redirect(new URL('/login.html', request.url));
+    return Response.redirect(new URL('/login', request.url));
   }
 
   const pipeIdx = session.indexOf('|');
   if (pipeIdx === -1) {
-    return Response.redirect(new URL('/login.html', request.url));
+    return Response.redirect(new URL('/login', request.url));
   }
 
   const username = session.substring(0, pipeIdx);
@@ -22,12 +22,12 @@ export default async function middleware(request) {
   try {
     clients = JSON.parse(process.env.CLIENTS || '{}');
   } catch {
-    return Response.redirect(new URL('/login.html', request.url));
+    return Response.redirect(new URL('/login', request.url));
   }
 
   const client = Object.values(clients).find(c => c.username === username);
   if (!client) {
-    return Response.redirect(new URL('/login.html', request.url));
+    return Response.redirect(new URL('/login', request.url));
   }
 
   const expected = await hmac(
@@ -36,7 +36,7 @@ export default async function middleware(request) {
   );
 
   if (token !== expected) {
-    return Response.redirect(new URL('/login.html', request.url));
+    return Response.redirect(new URL('/login', request.url));
   }
 }
 
