@@ -52,7 +52,7 @@ module.exports = async (req, res) => {
 
   res.writeHead(302, {
     'Set-Cookie': `ik12_session=${cookieVal}; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=28800`,
-    'Location': '/',
+    'Location': '/dashboard',
   });
   res.end();
 };
