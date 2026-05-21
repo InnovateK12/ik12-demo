@@ -1,5 +1,5 @@
 export const config = {
-  matcher: ['/((?!login(\\.html)?|api/login|favicon-conv\\.png|_vercel).*)'],
+  matcher: ['/((?!login\\.html|login|api/login|favicon-conv\\.png|_vercel).*)'],
 };
 
 export default async function middleware(request) {
