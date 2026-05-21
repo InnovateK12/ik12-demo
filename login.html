@@ -145,7 +145,7 @@ body{
         Incorrect username or password. Please try again.
       </div>
 
-      <form id="loginForm">
+      <form method="POST" action="/api/login">
         <div class="field">
           <label for="username">Username</label>
           <input type="text" id="username" name="username"
@@ -168,28 +168,9 @@ body{
 </div>
 
 <script>
-  // Demo credentials — change these to match your CLIENTS env var
-  var DEMO_USERS = {
-    'demo':  'innovatek12',
-    'admin': 'innovatek12'
-  };
-
   if (new URLSearchParams(location.search).get('error')) {
     document.getElementById('errorBanner').classList.add('show');
   }
-
-  document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    var u = document.getElementById('username').value.trim();
-    var p = document.getElementById('password').value.trim();
-    if (DEMO_USERS[u] && DEMO_USERS[u] === p) {
-      sessionStorage.setItem('ik12_auth', u);
-      var base = location.pathname.replace(/[^/]*$/, '');
-      location.replace(base + 'index.html');
-    } else {
-      document.getElementById('errorBanner').classList.add('show');
-    }
-  });
 </script>
 </body>
 </html>
