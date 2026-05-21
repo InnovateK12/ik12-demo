@@ -1,7 +1,7 @@
 {
-  "rewrites": [
-    { "source": "/login",      "destination": "/login.html" },
-    { "source": "/",           "destination": "/api/gate"   },
-    { "source": "/index.html", "destination": "/api/gate"   }
+  "routes": [
+    { "src": "/login",      "dest": "/login.html" },
+    { "src": "/index.html", "dest": "/api/gate"   },
+    { "src": "/",           "dest": "/api/gate"   }
   ]
 }
