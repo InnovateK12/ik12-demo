@@ -1,0 +1,89 @@
+﻿Year,Region,School,School_Key,Address,School Level,Student_Response_Rate,Teacher_Response_Rate,Parent_Response_Rate,Student_N,Teacher_N,Parent_N,Leaders,Teachers,Families,Environment,Instruction,5essentials_overall_score,Overall_Index_Calc,Parent_Response_Risk,Overall_Risk
+2024,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,2835 Morse Road Columbus OH 43231,8,89.5,83.3,14.7,247,48,381,32,17,22,36,56,1,32.6,High Risk,High Risk
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,2350 Morse Road Columbus OH 43229,9,91.7,90.9,9.3,434,44,451,59,48,50,13,34,2,40.8,High Risk,High Risk
+2024,Columbus,Horizon Science Academy - Columbus Primary,HORIZON SCIENCE ACADEMY COLUMBUS PRIMARY,2899 Morse Road Columbus OH 43231,8,0,75.6,12.1,0,45,380,51,29,37,,,2,39,High Risk,High Risk
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,1329 Bethel Road Columbus OH 43220,1,95,97.2,14.6,139,36,275,48,45,40,44,52,3,45.8,High Risk,High Risk
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,1055 Laidlaw Avenue Cincinnati OH 45237,1,93.5,96.3,8.4,124,27,213,35,40,14,28,42,1,31.8,High Risk,High Risk
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,121 S Monmouth St Dayton OH 45403,1,82.6,61.9,6.8,109,21,192,21,14,3,20,23,1,16.2,High Risk,High Risk
+2024,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,4751 Sue Ann Blvd Dayton OH 45415,8,99.9,72.2,13.8,43,18,189,38,22,8,18,56,1,28.4,High Risk,High Risk
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,250 Shoup Mill Rd Dayton OH 45415,2,73.7,96,6.3,274,25,270,42,46,35,33,38,1,38.8,High Risk,High Risk
+2024,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,4801 Franklin Avenue Second Floor Des Moines IA 50310,8,0,61.5,32.9,0,13,73,36,5,,,,2,20.5,Healthy,High Risk
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,7435 N. Keystone Ave Indianapolis IN 46240,1,78.1,79.3,14.4,475,58,638,33,14,16,14,29,1,21.2,High Risk,High Risk
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,4575 W 38th Street Indianapolis IN 46254,1,86.4,58.7,15.8,286,63,545,39,37,38,31,54,1,39.8,Watch,High Risk
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,27300 Dequindre Rd Warren MI 48092,1,89.7,75.5,21.8,397,49,586,45,24,27,22,27,1,29,Watch,High Risk
+2024,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,28501 Lorraine Ave Warren MI 48093,1,96.7,71.4,16.7,61,21,186,48,37,41,67,43,3,47.2,Watch,High Risk
+2024,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,7735 2nd Ave S Minneapolis MN 55423,1,49.3,80,5.7,71,15,177,13,26,27,,,1,22,High Risk,High Risk
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,169 Jenks Ave Saint Paul MN 55117,1,58.3,61.4,1.2,393,44,591,24,12,28,27,38,1,25.8,High Risk,High Risk
+2024,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,6576 Smiley Avenue St. Louis MO 63139,8,99.9,62.2,17.1,126,37,379,39,34,45,22,38,1,35.6,Watch,High Risk
+2024,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,6651 Gravois Ave St. Louis MO 63116,8,91.5,86.4,21.6,129,44,408,27,12,32,34,33,1,27.6,Watch,High Risk
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,5049 Fyler Avenue St. Louis MO 63139,2,66.9,80.5,13,414,41,821,34,45,68,45,53,3,49,High Risk,High Risk
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,5049 Fyler Avenue St. Louis MO 63139,9,91.6,80,12.2,404,45,821,45,47,39,14,32,1,35.4,High Risk,High Risk
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,6000 South Marginal Rd Cleveland OH 44103,2,72.5,66.7,6,280,24,281,59,53,41,43,51,3,49.4,High Risk,High Risk
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,6100 South Marginal Rd Cleveland OH 44103,1,56.6,81,13.1,129,21,206,49,43,27,35,45,2,39.8,High Risk,High Risk
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,1070 Morse Road Columbus OH 43229,2,92,96.2,15.4,599,53,602,49,54,39,62,65,4,53.8,Watch,High Risk
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,1700 Denison Avenue Cleveland OH 44109,1,90.6,85.7,43.4,117,21,249,49,43,33,33,39,1,39.4,Healthy,High Risk
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,760 Tower Blvd Lorain OH 44052,1,53.3,75,12.6,514,76,791,25,23,12,21,19,1,20,High Risk,High Risk
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,630 South Reynolds Road Toledo OH 43615,1,91.2,86.7,8.4,171,30,334,47,51,19,27,35,1,35.8,High Risk,High Risk
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,2600 W Sylvania Ave Toledo OH 43613,1,69.5,65.2,17,341,46,511,55,43,30,15,18,1,32.2,Watch,High Risk
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,3403 Southern Boulevard Youngstown OH 44507,1,83.9,86.5,10.4,199,37,383,34,34,24,29,44,1,33,High Risk,High Risk
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,1200 E 200th St Euclid OH 44117,1,65.1,63.2,18.1,192,38,337,29,20,32,13,25,1,23.8,Watch,High Risk
+2025,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,2835 Morse Road Columbus OH 43231,8,99.2,79.6,17.6,263,49,404,24,14,14,35,60,1,29.4,Watch,High Risk
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,2350 Morse Road Columbus OH 43229,9,98.2,74.4,9.8,455,43,468,47,30,37,23,49,1,37.2,High Risk,High Risk
+2025,Columbus,Horizon Science Academy - Columbus Primary,HORIZON SCIENCE ACADEMY COLUMBUS PRIMARY,2899 Morse Road Columbus OH 43231,8,0,91.1,4.9,0,45,392,47,28,30,,,2,35,High Risk,High Risk
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,1329 Bethel Road Columbus OH 43220,1,99.9,99.9,27.6,181,30,279,35,25,36,50,55,1,40.2,Watch,High Risk
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,1055 Laidlaw Avenue Cincinnati OH 45237,1,51.2,81,1.9,125,21,209,19,16,6,39,43,1,24.6,High Risk,High Risk
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,121 S Monmouth St Dayton OH 45403,1,89.5,85,6.6,114,20,183,34,23,12,23,30,1,24.4,High Risk,High Risk
+2025,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,4751 Sue Ann Blvd Dayton OH 45415,8,97.7,79,6.7,43,19,180,44,24,14,72,67,3,44.2,High Risk,High Risk
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,250 Shoup Mill Rd Dayton OH 45415,2,73.2,93.1,1.7,295,29,295,58,67,49,33,48,3,51,High Risk,High Risk
+2025,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,4801 Franklin Avenue Second Floor Des Moines IA 50310,8,91.7,70,24,12,20,167,40,17,55,24,1,1,27.4,Watch,High Risk
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,7435 N. Keystone Ave Indianapolis IN 46240,1,82.2,90.7,9.2,493,54,672,35,28,28,22,26,1,27.8,High Risk,High Risk
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,4575 W 38th Street Indianapolis IN 46254,1,85.7,76.2,11.8,315,42,567,44,41,44,29,45,2,40.6,High Risk,High Risk
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,27300 Dequindre Rd Warren MI 48092,1,84.1,87.5,25.3,402,40,562,46,32,29,22,29,1,31.6,Watch,High Risk
+2025,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,28501 Lorraine Ave Warren MI 48093,1,94.3,66.7,19.8,53,18,187,40,35,55,57,53,2,48,Watch,High Risk
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,7735 2nd Ave S Minneapolis MN 55423,1,92.7,99.9,34.8,96,13,187,34,25,33,61,62,2,43,Healthy,High Risk
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,169 Jenks Ave Saint Paul MN 55117,1,62.4,95.2,1.4,420,42,580,42,34,38,24,31,1,33.8,High Risk,High Risk
+2025,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,6576 Smiley Avenue St. Louis MO 63139,8,91.8,92.1,26.2,122,38,367,41,35,41,7,20,1,28.8,Watch,High Risk
+2025,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,6651 Gravois Ave St. Louis MO 63116,8,99.9,92.3,30.9,113,39,385,41,29,43,39,40,2,38.4,Healthy,High Risk
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,5049 Fyler Avenue St. Louis MO 63139,2,76.9,87.2,13.5,459,47,459,46,60,69,44,55,4,54.8,High Risk,High Risk
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,5049 Fyler Avenue St. Louis MO 63139,9,79,83.8,13.9,424,37,424,66,63,57,19,45,4,50,High Risk,High Risk
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,6000 South Marginal Rd Cleveland OH 44103,2,53.7,60.7,4.9,165,28,285,76,60,49,54,58,4,59.4,High Risk,High Risk
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,6100 South Marginal Rd Cleveland OH 44103,1,78.2,66.7,14.2,285,27,268,48,38,25,24,36,1,34.2,High Risk,High Risk
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,1070 Morse Road Columbus OH 43229,2,96.8,98.2,12.3,658,56,658,40,41,38,54,51,2,44.8,High Risk,High Risk
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,1700 Denison Avenue Cleveland OH 44109,1,77,51.6,2.3,139,31,264,54,40,29,32,41,2,39.2,High Risk,High Risk
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,760 Tower Blvd Lorain OH 44052,1,85.9,72.7,8.3,526,77,812,39,32,29,28,30,1,31.6,High Risk,High Risk
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,630 South Reynolds Road Toledo OH 43615,1,84.9,72.4,2.9,146,29,316,43,43,6,20,31,1,28.6,High Risk,High Risk
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,2600 W Sylvania Ave Toledo OH 43613,1,51.4,70.6,13.5,331,51,475,48,35,43,25,24,1,35,High Risk,High Risk
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,3403 Southern Boulevard Youngstown OH 44507,1,87.4,79.1,5,190,43,423,45,34,25,18,41,1,32.6,High Risk,High Risk
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,1200 E 200th St Euclid OH 44117,1,80.7,58.8,10,135,34,311,39,32,24,24,32,1,30.2,High Risk,High Risk
+2026,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,2835 Morse Road Columbus OH 43231,8,99.9,77.5,43.4,219,40,311,42,37,34,29,39,1,36.2,Healthy,High Risk
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,1070 Morse Road Columbus OH 43229,2,99.7,94.4,20.6,370,36,379,60,52,45,49,51,4,51.4,Watch,High Risk
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,3592 Corporate Dr. Columbus OH 43231,2,97.2,91.7,11.4,313,24,324,51,47,42,67,63,4,54,High Risk,High Risk
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,2350 Morse Road Columbus OH 43229,9,91.6,76.2,12.1,401,42,440,39,35,53,37,44,1,41.6,High Risk,High Risk
+2026,Columbus,Horizon Science Academy - Columbus Primary,HORIZON SCIENCE ACADEMY COLUMBUS PRIMARY,2899 Morse Road Columbus OH 43231,8,0,93,12.9,0,43,333,38,33,29,,,1,33.3,High Risk,High Risk
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,1329 Bethel Road Columbus OH 43220,1,99.9,88.5,11.7,127,26,257,47,45,43,50,50,3,47,High Risk,High Risk
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,1055 Laidlaw Avenue Cincinnati OH 45237,1,94,83.3,3.9,157,24,260,29,24,19,39,33,1,28.8,High Risk,High Risk
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,121 S Monmouth St Dayton OH 45403,1,94.6,92.3,18.4,105,13,179,30,23,28,12,22,1,23,Watch,High Risk
+2026,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,4751 Sue Ann Blvd Dayton OH 45415,8,93.4,99.9,13.2,57,13,190,47,27,17,17,46,1,30.8,High Risk,High Risk
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,250 Shoup Mill Rd Dayton OH 45415,2,71.6,92.9,10.6,229,28,320,57,62,55,49,60,4,56.6,High Risk,High Risk
+2026,IA,Horizon Science Academy - Davenport,HORIZON SCIENCE ACADEMY DAVENPORT,2626 Boies Ave Davenport IA 52802,1,47.4,85.7,25,9,14,60,36,29,39,,,1,34.7,Watch,High Risk
+2026,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,4801 Franklin Avenue Second Floor Des Moines IA 50310,8,97.3,82.1,12.5,36,28,208,40,30,47,26,45,2,37.6,High Risk,High Risk
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,7435 N. Keystone Ave Indianapolis IN 46240,1,76.6,94.8,11.3,360,58,662,40,38,37,30,39,1,36.8,High Risk,High Risk
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,4575 W 38th Street Indianapolis IN 46254,1,87,91.3,10.8,248,46,549,52,51,49,38,46,2,47.2,High Risk,High Risk
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,27300 Dequindre Rd Warren MI 48092,1,91.3,86.5,22.1,344,37,543,52,40,39,25,43,2,39.8,Watch,High Risk
+2026,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,28501 Lorraine Ave Warren MI 48093,8,95.2,72.2,37,59,18,219,56,46,41,33,46,2,44.4,Healthy,High Risk
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,7735 2nd Ave S Minneapolis MN 55423,1,72,81.3,2.4,77,16,208,54,49,55,44,51,3,50.6,High Risk,High Risk
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,169 Jenks Ave Saint Paul MN 55117,1,89.9,70,0.6,363,60,546,46,46,45,41,40,3,43.6,High Risk,High Risk
+2026,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,6576 Smiley Avenue St. Louis MO 63139,8,99.1,75,43.3,114,40,386,37,40,37,32,30,1,35.2,Healthy,High Risk
+2026,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,6651 Gravois Ave St. Louis MO 63116,8,93.5,60.9,19.8,101,46,395,34,28,34,35,38,1,33.8,Watch,High Risk
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,5049 Fyler Avenue St. Louis MO 63139,2,70.5,73.5,10.7,377,49,535,46,51,62,41,44,4,48.8,High Risk,High Risk
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,5028 Rhodes Ave St. Louis MO 63109,9,83.5,61.4,14.3,368,44,441,47,50,58,30,38,2,44.6,High Risk,High Risk
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,6100 South Marginal Rd Cleveland OH 44103,1,77.9,37.9,5.4,113,29,258,,,,14,28,2,21,High Risk,High Risk
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,6000 South Marginal Rd Cleveland OH 44103,2,50.7,59.3,2.1,140,27,282,59,45,46,46,44,3,48,High Risk,High Risk
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,1200 E 200th St Euclid OH 44117,1,77.8,75,10.2,119,32,255,32,37,31,36,37,1,34.6,High Risk,High Risk
+2026,,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,1700 Denison Avenue Cleveland OH 44109,1,67.9,56.7,28,110,30,268,56,45,43,34,38,2,43.2,Watch,High Risk
+2026,,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,760 Tower Blvd Lorain OH 44052,1,51.2,65.6,8.2,285,90,841,40,41,36,27,32,1,35.2,High Risk,High Risk
+2026,,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,6315 Secor Rd Lambertville MI 48144,1,87.2,75,43.6,41,8,78,,,,55,44,3,49.5,Healthy,High Risk
+2026,,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,630 South Reynolds Road Toledo OH 43615,1,62.7,69.7,3.6,99,33,331,39,39,25,32,38,1,34.6,High Risk,High Risk
+2026,,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,2600 W Sylvania Ave Toledo OH 43613,1,58.8,80.4,8.7,210,46,516,56,48,46,24,35,2,41.8,High Risk,High Risk
+2026,,Horizon Science Academy - Westerville,HORIZON SCIENCE ACADEMY WESTERVILLE,4140 Executive Pkwy Westerville OH 43081,1,93.3,88.2,24.7,28,17,85,59,53,58,71,57,4,59.6,Watch,High Risk
+2026,,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,3403 Southern Boulevard Youngstown OH 44507,1,84.1,85.4,10.3,174,41,400,50,47,35,18,40,2,38,High Risk,High Risk

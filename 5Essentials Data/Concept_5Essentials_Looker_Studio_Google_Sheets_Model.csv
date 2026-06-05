@@ -1,0 +1,8 @@
+﻿Topic,Instruction
+Purpose,Ready-to-upload Google Sheets model for Looker Studio using the 12 uploaded Concept Schools 5Essentials workbooks.
+Recommended Upload,"Upload this .xlsx to Google Drive, open with Google Sheets, then connect each tab as a Looker Studio data source."
+Primary Join Key,School_Key + Year. Use School-Year Key calculated field for blends.
+Best Default Source,"Essentials_Master for scorecards, network trends, school filters, and principal scorecards."
+Item Source,Item_Response_Summary for student/teacher item favorability dashboards; Item_Response_Long for response-option detail.
+Subgroup Source,Subgroup_Long for detailed subgroup score analysis; Subgroup_Gaps for equity risk flags.
+Caution,Item favorability is calculated as Agree + Strongly agree where those response options are present. Review edge-case item scales before publishing.

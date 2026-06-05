@@ -1,0 +1,42 @@
+﻿Measure Code,Measure Name,Respondent Type,Essential,Unnamed: 4,Other Variables,Description,Year_Source,Measure_Code_Clean
+ins3,Instuctional Leadership,Teacher,Effective Leaders,,Teacher_N,Total number of possible teacher respondents,2025,ins3
+qpd2,Quality Professional Development,Teacher,Collaborative Teachers,,,,2025,qpd2
+acno24,Peer Support for Academic Work,Student,Supportive Environment (grades 4-8),,School Level,1: PK-8 (elementary),2026,acno
+cdis24,Classroom Disruptions,Teacher,Supplemental,,,2: 9-12 or 6-12 (high),2026,cdis
+clar24,Course Clarity,Student,Supplemental (grades 6-12),,,8: PK-5 (primary),2026,clar
+colb24,Collaborative Practices,Teacher,Collaborative Teachers,,,9: 6-8 (middle),2026,colb
+colr24,Collective Responsibility,Teacher,Collaborative Teachers,,Elem_Student_Reports,0 or 1: 1 if eligible for elementary student report,2026,colr
+engg24,Academic Engagement,Student,Supplemental,,High_Student_Reports,0 or 1: 1 if eligible for high school student report,2026,engg
+engl24,English Instruction,Student,Ambitious Instruction,,Elem_Teacher_Reports,0 or 1: 1 if eligible for elementary teacher report,2026,engl
+futr24,Importance of High School for the Future,Student,Supplemental (grades 9-12),,High_Teacher_Reports,0 or 1: 1 if eligible for high school teacher report,2026,futr
+humr24,Human & Social Resources in the Community,Student,Supplemental (grades 6-12),,Student_Response_Rate,Response rate on student survey,2026,humr
+inf24,Teacher Influence,Teacher,Effective Leaders,,Teacher_Response_Rate,Response rate on teacher survey,2026,inf3
+innv24,Innovation,Teacher,Supplemental,,Parent_Response_Rate,Response rate on parent survey,2026,innv
+ins24,Instuctional Leadership,Teacher,Effective Leaders,,Student_N,Total number of possible student respondents,2026,ins
+math24,Math Instruction,Student,Ambitious Instruction,,Teacher_N,Total number of possible teacher respondents,2026,math
+peer24,Student Peer Relationships,Student,Supplemental (grades 6-12),,Parent_N,Total number of possible parent respondents,2026,peer
+perc24,Academic Personalism,Student,Supportive Environment (grades 4-8)/Supplemental (grades 9-12),,Leaders,Essential: Effective Leaders,2026,perc
+pgmc24,Program Coherence,Teacher,Effective Leaders,,Teachers,Essential: Collaborative Teachers,2026,pgmc
+pnfl24,Parental Influence on Decision Making in Schools,Teacher,Involved Families,,Families,Essential: Involved Families,2026,pnfl
+pres24,Academic Press,Student,Ambitious Instruction,,Environment,Essential: Supportive Environment,2026,pres
+prs224,Parent Supportiveness,Student,Supplemental (grades 6-12),,Instruction,Essential: Ambitious Instruction,2026,prs2
+prt24,Parent Involvement in School,Teacher,Involved Families,,5Essentials_Overall_Score,"Category 5E corresponds to how strong a school is on the 5Essentials. A school's performance determines how well organized they are for improvement. 
+
+1-5 Scale: 1 if Not Yet Organized, 2 if Partially Organized, 3 if Moderately Organized, 4 if Organized, 5 if Well-Organized",2026,prt4
+prti24,Student Responsibility,Teacher,Supplemental,,,,2026,prti
+qpd24,Quality Professional Development,Teacher,Collaborative Teachers,,,,2026,qpd
+refd24,Relective Dialogue,Teacher,Supplemental,,,,2026,refd
+rigr24,Classroom Rigor,Student,Supplemental,,,,2026,rigr
+safe24,Safety,Student,Supportive Environment,,,,2026,safe1
+scie24,Inquiry-Based Science Instruction,Student,Supplemental,,,,2026,scie
+scmt24,School Commitment,Teacher,Collaborative Teachers,,Net5E,The overall 5Essentials score is a summary indicator that describes a school’s performance on the 5Essentials as a group.  This score is calculated by adding up the school’s performance on each individual Essential. Being light green (strong) or dark green (very strong) on an Essential counts as +1; yellow (neutral) or missing counts as 0; and orange (weak) or dark red (very weak) counts as -1.,2026,scmt
+sdis24,Quality of Student Discussion,Teacher,Ambitious Instruction,,,,2026,sdis
+slap24,School-Wide Future Orientation,Student,Supportive Environment (grades 9-12),,,,2026,slap
+socz24,Socialization of New Teachers,Teacher,Supplemental,,,,2026,socz
+stdy24,Rigorous Study Habits,Student,Supplemental,,,,2026,stdy
+trpa24,Teacher-Parent Trust,Teacher,Involved Families,,,,2026,trpa
+trpr24,Teacher-Principal Trust,Teacher,Effective Leaders,,,,2026,trpr
+trte24,Teacher-Teacher Trust,Teacher,Collaborative Teachers,,,,2026,trte
+trts24,Student-Teacher Trust,Student,Supportive Environment,,,,2026,trts
+tasf24,Teacher Safety,Teacher,Supplemental,,,,2026,tasf
+uexp24,Expectations for Post Secondary Education,Teacher,Supportive Environment (grades 9-12),,,,2026,uexp

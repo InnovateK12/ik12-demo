@@ -1,0 +1,12 @@
+﻿Page,Primary_Data_Source,Recommended_Visuals,Controls
+1 Executive Overview,Essentials_Master,"Scorecards: Avg Overall, Avg Leaders, Avg Teachers, Avg Families, Avg Environment, Avg Instruction; line chart by Year; top 10 schools table.","Year, Region, School Level"
+2 Network Trends,"Essentials_Long, Essentials_Master",Time series for each Essential; response-rate area chart; school count scorecard.,"Year, Region"
+3 School Rankings,"School_Year_Growth, Essentials_Master",Sortable ranking table; conditional formatting on current score and 2024→2026 growth.,"Region, School Level"
+4 Regional Analysis,"Regional_Summary, Essentials_Master",Region x Essential heatmap; bar chart of Overall by Region.,"Year, Region"
+5 Student Voice,Item_Response_Summary,Top/bottom student items by Pct_Favorable; item trend tables.,"Year, Region, School"
+6 Teacher Voice,Item_Response_Summary,Top/bottom teacher items by Pct_Favorable; staff culture signal table.,"Year, Region, School"
+7 Equity & Subgroups,"Subgroup_Long, Subgroup_Gaps",Subgroup score bar charts; largest gap table; gap severity flags.,"Year, Region, School, Subgroup"
+8 Risk Dashboard,"Essentials_Master, School_Year_Growth",Priority flag table; low response-rate cards; declining school table.,"Year, Region"
+9 Growth Dashboard,School_Year_Growth,Most improved schools; growth by Essential; 2025→2026 recovery view.,"Region, School Level"
+10 Principal Scorecard,"Essentials_Master, Item_Response_Summary, Subgroup_Long","Single-school filter with trend line, five Essentials profile, item strengths/concerns, subgroup gaps.",School
+11 Board Report,"Network_Summary, Regional_Summary",One-page leadership summary with highest-level KPIs only.,Year

@@ -1,0 +1,570 @@
+﻿Year,Role,Item_Text,Pct_Favorable,Pct_Unfavorable,Rank_Strength,Rank_Concern
+2024,Student,Adults in this neighborhood know who the local children are.,43.12,36.72,46,43
+2024,Student,All students are encouraged to go to college.,29.4,6.56,56,33
+2024,Student,Apply math to situations in life outside of school.,0,17.16,63,1
+2024,Student,Are you challenged?,44.64,5.8,44,45
+2024,Student,Debate the meaning of a reading.,0,12.6,63,1
+2024,Student,Discuss connections between a reading and real life people or situations.,0,7.48,63,1
+2024,Student,"Discuss how culture, time, or place affects an author's writing.",0,8.08,63,1
+2024,Student,Discuss possible solutions to problems with other students.,0,10.28,63,1
+2024,Student,Do you have to work hard to do well?,44.28,3.56,45,44
+2024,Student,Does the teacher ask difficult questions in class?,37.96,5.48,51,38
+2024,Student,Does the teacher ask difficult questions on tests?,40.84,5.76,49,40
+2024,Student,Doesn't let students give up when the work gets hard.,82.96,17.2,10,79
+2024,Student,Don't get along together very well.,40.92,39.2,48,41
+2024,Student,"During the day, it is safe for children to play in the local park or playground.",63.08,16.96,31,58
+2024,Student,Encourage you to work hard at school.,68.72,2.2,25,64
+2024,Student,Encourages students to share their ideas about things we are studying in class.,79.88,20.12,18,71
+2024,Student,Encourages us to consider different solutions or points of view.,83.24,16.56,9,80
+2024,Student,Expects everyone to work hard.,90.16,10,1,88
+2024,Student,Expects me to do my best all the time.,89.72,10.36,2,87
+2024,Student,Explain how writers use tools like symbolism and metaphor to communicate meaning.,0,1.88,63,1
+2024,Student,Explain how you solved a problem to the class.,0,10.96,63,1
+2024,Student,Explains things in a different way if I don't understand something in class.,84.04,15.84,8,81
+2024,Student,Feel it is important to attend school every day?,0,0,63,1
+2024,Student,Feel it is important to pay attention in class?,0,0,63,1
+2024,Student,Find information from graphs and tables.,0,8.16,63,1
+2024,Student,Generate your own hypotheses.,0,10.96,63,1
+2024,Student,Gives me specific suggestions about how I can improve my work in this class.,82.56,17.52,11,78
+2024,Student,Help each other learn.,52.6,27.4,41,48
+2024,Student,Helps me catch up if I am behind.,82.32,17.88,13,76
+2024,Student,High school is seen as preparation for the future.,30.68,5.4,53,36
+2024,Student,High school teaches me valuable skills.,29,7.04,59,30
+2024,Student,I always study for tests.,56.6,43.48,38,51
+2024,Student,I feel comfortable with my teachers at this school.,82.16,17.76,15,74
+2024,Student,I feel safe with my teachers at this school.,88.04,11.96,6,83
+2024,Student,I have someone who is helping me with my college and career goals.,28.44,7.6,60,29
+2024,Student,I know what my teacher wants me to learn in this class.,69.76,10.04,24,65
+2024,Student,I learn a lot from feedback on my work.,62.2,17.72,33,56
+2024,Student,I set aside time to do my homework and study.,67.16,32.84,28,61
+2024,Student,I try to do well on my schoolwork even when it isn't interesting to me.,89.12,11.04,3,86
+2024,Student,I usually look forward to this class.,70.12,29.96,23,66
+2024,Student,I work hard to do my best in this class.,88.92,11.36,5,84
+2024,Student,I'm really learning a lot in this class.,84.4,15.48,7,82
+2024,Student,"If I need to study, I don't go out with my friends.",62.56,37.52,32,57
+2024,Student,Improve a piece of writing as a class or with partners.,0,7.12,63,1
+2024,Student,In the bathrooms of the school?,0,0,63,1
+2024,Student,In the hallways of the school?,0,0,63,1
+2024,Student,In your classes?,0,0,63,1
+2024,Student,Is willing to give extra help on schoolwork if I need it.,81.64,18.36,16,73
+2024,Student,It's clear to me what I need to do to get a good grade.,71.08,8.88,22,67
+2024,Student,Like to put others down.,39.84,40.2,50,39
+2024,Student,Listen to you when you need to talk.,60.16,3.76,36,53
+2024,Student,My classes give me useful preparation for what I plan to do in life.,27.52,8.44,62,27
+2024,Student,My teachers always keep their promises.,54.72,45,40,49
+2024,Student,My teachers treat me with respect.,82.24,17.68,14,75
+2024,Student,My teachers will always listen to students' ideas.,67.88,32.16,26,63
+2024,Student,Notices if I have trouble learning something.,79.68,20.32,19,70
+2024,Student,Often connects what I am learning to life outside of the classroom.,71.72,28.12,21,68
+2024,Student,Often requires me to explain my answers.,82.4,17.52,12,77
+2024,Student,Outside around the school?,0,0,63,1
+2024,Student,People in this neighborhood can be trusted.,42.96,37,47,42
+2024,Student,Rewrite a paper or essay in response to comments.,0,10.76,63,1
+2024,Student,Show they are proud of you.,63.52,3.56,30,59
+2024,Student,Solve a problem with multiple steps that takes more than 20 minutes.,0,5.88,63,1
+2024,Student,Sometimes I get so interested in my work I don't want to stop.,62,38.12,35,54
+2024,Student,Support the things you like to do outside of school.,64.2,2.96,29,60
+2024,Student,Take time to help you make decisions.,60.08,4.16,37,52
+2024,Student,Teachers make sure that all students are planning for life after graduation.,29.16,6.8,58,31
+2024,Student,"Teachers pay attention to all students, not just the top students.",29.28,6.64,57,32
+2024,Student,Teachers work hard to make sure that all students are learning.,30.72,5.4,52,37
+2024,Student,Teachers work hard to make sure that students stay in school.,29.96,6.12,54,35
+2024,Student,"The equipment and buildings in the neighborhood, park, or playground are well kept.",56.04,24,39,50
+2024,Student,The homework assignments help me to learn the course material.,62.12,17.92,34,55
+2024,Student,The topics we are studying are interesting and challenging.,77.84,22.28,20,69
+2024,Student,The work we do in class is good preparation for the test.,67.64,12.36,27,62
+2024,Student,There are adults in this neighborhood that children can look up to.,50.44,29.72,42,47
+2024,Student,Think doing homework is important?,0,0,63,1
+2024,Student,This class really makes me think.,81.12,19.08,17,72
+2024,Student,Traveling between home and school?,0,0,63,1
+2024,Student,Treat each other with respect.,45.92,34.16,43,46
+2024,Student,Try hard to get good grades?,0,0,63,1
+2024,Student,Use evidence/data to support an argument or hypothesis.,0,8.8,63,1
+2024,Student,Use laboratory equipment or specimens.,0,18.48,63,1
+2024,Student,"Wants us to become better thinkers, not just memorize things.",89.04,11,4,85
+2024,Student,What we learn in class is necessary for success in the future.,28,8.12,61,28
+2024,Student,Working hard in high school matters for success in the workforce.,29.72,6.32,55,34
+2024,Student,Write a few sentences to explain how you solved a math problem.,0,14.6,63,1
+2024,Student,Write a math problem for other students to solve.,0,28.2,63,1
+2024,Student,Write lab reports.,0,17.8,63,1
+2024,Teacher,A conscious effort is made by faculty to make new teachers feel welcome here.,84.32142857,12.07142857,13,90
+2024,Teacher,Actively participate in class activities?,0,0,57,1
+2024,Teacher,Always turn in their homework?,0,0,57,1
+2024,Teacher,Are eager to try new ideas?,78.5,14.39285714,27,77
+2024,Teacher,Are really trying to improve their teaching?,0,0,57,1
+2024,Teacher,Are willing to take risks to make the school better?,0,0,57,1
+2024,Teacher,Attend class regularly?,0,0,57,1
+2024,Teacher,Attended parent-teacher conferences when you requested them?,0,0,57,1
+2024,Teacher,Been closely connected to my school's improvement plan.,77.89285714,22.28571429,29,75
+2024,Teacher,"Been sustained and coherently focused, rather than short-term and unrelated.",70,30.03571429,37,67
+2024,Teacher,Come to class on time?,0,0,57,1
+2024,Teacher,Come to class prepared with the appropriate supplies and books?,0,0,57,1
+2024,Teacher,Communicates a clear vision for our school.,83.21428571,16.82142857,16,88
+2024,Teacher,Contacted you about their child's performance?,0,0,57,1
+2024,Teacher,"Curriculum, instruction, and learning materials are well coordinated across the different grade levels at this school.",69.5,26.89285714,39,65
+2024,Teacher,Determining the content of in-service programs.,0,0,57,1
+2024,Teacher,Determining which books and other instructional materials are used in classrooms.,0,0,57,1
+2024,Teacher,"Develop formal networks to link all families with each other (for example: sharing parent directories, providing a website for parents/guardians to connect with one another, etc.)?",0,18,57,1
+2024,Teacher,Development of new curriculum.,0,0,57,1
+2024,Teacher,Disorder in classrooms,0,7.178571429,57,1
+2024,Teacher,Disorder in hallways,0,8.928571429,57,1
+2024,Teacher,Do their best to help their children learn?,0,1.214285714,57,1
+2024,Teacher,Encourage more involved parents/guardians to reach out to less involved parents/guardians?,0,27.42857143,57,1
+2024,Teacher,Establishing the curriculum and instructional program.,0,0,57,1
+2024,Teacher,"Experienced teachers invite new teachers into their classes to observe, give feedback, etc.",69.85714286,26.82142857,38,66
+2024,Teacher,Feel responsible for helping students develop self-control?,0,0,57,1
+2024,Teacher,Feel responsible that all students learn?,0,0,57,1
+2024,Teacher,Feel responsible to help each other do their best?,0,0,57,1
+2024,Teacher,Feel responsible when students in this school fail?,0,0,57,1
+2024,Teacher,Gang activity,0,26.64285714,57,1
+2024,Teacher,Gone over student assessment data with other teachers to make instructional decisions?,0,12.03571429,57,1
+2024,Teacher,Has provided me with the support I need to improve my teaching.,77.71428571,18.71428571,30,74
+2024,Teacher,"Help maintain discipline in the entire school, not just their classroom?",0,0,57,1
+2024,Teacher,I am proud to work at this school.,88.07142857,12.07142857,3,101
+2024,Teacher,I feel loyal to this school.,84.82142857,15.28571429,10,94
+2024,Teacher,I trust the principal at his or her word.,86.25,13.89285714,9,95
+2024,Teacher,I usually look forward to each working day at this school.,84.57142857,15.57142857,11,93
+2024,Teacher,I would recommend this school to parents seeking a place for their child.,76.96428571,22.85714286,31,73
+2024,Teacher,I wouldn't want to work in any other school.,63.67857143,36.17857143,42,62
+2024,Teacher,Include parent leaders from all backgrounds in school improvement?,0,17.28571429,57,1
+2024,Teacher,"Included enough time to think carefully about, try, and evaluate new ideas.",70.10714286,29.89285714,36,68
+2024,Teacher,Included opportunities to work productively with colleagues in my school.,74.21428571,25.82142857,35,69
+2024,Teacher,Included opportunities to work productively with teachers from other schools.,54.21428571,42.25,43,61
+2024,Teacher,Involve parents/guardians in commenting on school curricula?,0,25.07142857,57,1
+2024,Teacher,Involve parents/guardians in the development of programs aimed at improving students' academic outcomes?,0,10.75,57,1
+2024,Teacher,"It's OK in this school to discuss feelings, worries, and frustrations with other teachers.",81.32142857,15.25,23,81
+2024,Teacher,"It's OK in this school to discuss feelings, worries, and frustrations with the principal.",83.10714286,17,17,87
+2024,Teacher,Knows what's going on in my classroom.,75.57142857,20.89285714,33,71
+2024,Teacher,Makes clear to the staff the leadership's expectations for meeting instructional goals.,87.21428571,12.89285714,7,97
+2024,Teacher,Makes sure teachers receive the coaching and support they need to implement new practices.,74.53571429,25.64285714,34,70
+2024,Teacher,Managing classroom behavior.,0,0,57,1
+2024,Teacher,Many special programs come and go at this school.,43.60714286,52.78571429,44,60
+2024,Teacher,Most of the students in this school are planning to go to college.,19.78571429,12.32142857,54,50
+2024,Teacher,Most students participate in the discussion at some point.,39.10714286,11.96428571,46,58
+2024,Teacher,Observed another teacher's class to get ideas for your own instruction?,0,32.35714286,57,1
+2024,Teacher,Observed another teacher's class to offer feedback?,0,43,57,1
+2024,Teacher,"Once we start a new program in this school, we follow up to make sure that it's working.",67.17857143,32.96428571,41,63
+2024,Teacher,Physical conflicts among students,0,9.642857143,57,1
+2024,Teacher,Planning how discretionary school funds should be used.,0,0,57,1
+2024,Teacher,Presses teachers to implement what they have learned in professional development.,78.10714286,22,28,76
+2024,Teacher,Provides me with useful feedback to improve my teaching.,76.75,19.60714286,32,72
+2024,Teacher,Regularly pay attention in class?,0,0,57,1
+2024,Teacher,Responded to your suggestions for helping their child?,0,0,57,1
+2024,Teacher,Robbery or theft,0,40.96428571,57,1
+2024,Teacher,Setting standards for student behavior.,0,0,57,1
+2024,Teacher,Staff at this school work hard to build trusting relationships with parents.,92.14285714,7.892857143,1,103
+2024,Teacher,Student disrespect of teachers,0,4.964285714,57,1
+2024,Teacher,Students build on each other's ideas during discussion.,27.28571429,16.21428571,50,54
+2024,Teacher,Students encourage each other to participate in discussion.,24.07142857,28.60714286,53,51
+2024,Teacher,Students provide constructive feedback to their peers and to me.,17.92857143,23.89285714,56,48
+2024,Teacher,Students show each other respect.,33.89285714,13.03571429,47,57
+2024,Teacher,Students use data and text references to support their ideas.,18.75,22.92857143,55,49
+2024,Teacher,Support your teaching efforts?,0,0,57,1
+2024,Teacher,Take on responsibilities outside of their classrooms?,0,0,57,1
+2024,Teacher,Take responsibility for improving the school?,0,0,57,1
+2024,Teacher,Teachers and parents at this school think of each other as partners in educating children.,68.64285714,31.32142857,40,64
+2024,Teacher,Teachers at this school help students plan for college outside of class time.,26.32142857,5.75,51,53
+2024,Teacher,Teachers at this school respect those colleagues who are experts at their craft.,86.60714286,9.785714286,8,96
+2024,Teacher,Teachers can trust that the principal's decisions will be reasonable and justified.,82.60714286,17.82142857,20,83
+2024,Teacher,Teachers expect most students in this school to go to college.,24.25,7.892857143,52,52
+2024,Teacher,Teachers in this school are comfortable asking colleagues to help them develop weaker areas of their practice.,80.75,15.57142857,25,79
+2024,Teacher,Teachers in this school feel that it is a part of their job to prepare students to succeed in college.,29.57142857,2.535714286,48,56
+2024,Teacher,Teachers in this school have confidence in their colleagues' expertise.,82.75,13.78571429,19,85
+2024,Teacher,Teachers in this school share and discuss student work with other teachers.,87.35714286,9.321428571,6,98
+2024,Teacher,Teachers in this school trust each other.,80.85714286,15.53571429,24,80
+2024,Teacher,Teachers in this school value each other's point of view.,82.85714286,13.64285714,18,86
+2024,Teacher,Teachers respect other teachers who take the lead in school improvement efforts.,84.39285714,12.10714286,12,92
+2024,Teacher,"Teachers talk about instruction in the teachers' lounge, faculty meetings, etc.",84.32142857,12.32142857,13,90
+2024,Teacher,The curriculum at this school is focused on helping students get ready for college.,27.89285714,4.214285714,49,55
+2024,Teacher,The goals of this school.,0,0,57,1
+2024,Teacher,The principal at this school is an effective manager who makes the school run smoothly.,81.92857143,18.25,22,82
+2024,Teacher,The principal has confidence in the expertise of the teachers.,91.53571429,8.535714286,2,102
+2024,Teacher,The principal knows his or her own strengths and weaknesses.,83.57142857,16.71428571,15,89
+2024,Teacher,The principal looks out for the personal welfare of the faculty members.,87.71428571,12.35714286,5,99
+2024,Teacher,The principal places the needs of children ahead of personal and political interests.,88.03571429,12.03571429,4,100
+2024,Teacher,The principal takes a personal interest in the professional development of teachers.,82.60714286,17.39285714,20,83
+2024,Teacher,"There is consistency in curriculum, instruction, and learning materials among teachers in the same grade level at this school.",79.67857143,20.39285714,26,78
+2024,Teacher,Threats of violence toward teachers,0,53.82142857,57,1
+2024,Teacher,"Volunteered time to support the school (e.g., volunteer in classrooms, help with school-wide events, etc.)?",0,0,57,1
+2024,Teacher,We have so many different programs in this school that I can't keep track of them all.,41.53571429,58.42857143,45,59
+2024,Teacher,What helps students learn the best.,0,0,57,1
+2024,Teacher,Worked on instructional strategies with other teachers?,0,9.392857143,57,1
+2024,Teacher,Worked with other teachers to develop materials or activities for particular classes?,0,9.428571429,57,1
+2025,Student,Adults in this neighborhood know who the local children are.,40.55555556,37.33333333,49,39
+2025,Student,All students are encouraged to go to college.,26.59259259,6.888888889,58,30
+2025,Student,Apply math to situations in life outside of school.,0,17.7037037,62,1
+2025,Student,Are you challenged?,45.7037037,6.148148148,45,43
+2025,Student,Debate the meaning of a reading.,0,12.33333333,62,1
+2025,Student,Discuss connections between a reading and real life people or situations.,0,6.481481481,62,1
+2025,Student,"Discuss how culture, time, or place affects an author's writing.",0,8.259259259,62,1
+2025,Student,Discuss possible solutions to problems with other students.,0,10.22222222,62,1
+2025,Student,Do you have to work hard to do well?,44.11111111,3.666666667,46,42
+2025,Student,Does the teacher ask difficult questions in class?,38.74074074,6.925925926,50,38
+2025,Student,Does the teacher ask difficult questions on tests?,40.88888889,7.074074074,48,40
+2025,Student,Doesn't let students give up when the work gets hard.,84.48148148,15.48148148,9,79
+2025,Student,Don't get along together very well.,49.77777778,50.18518519,42,46
+2025,Student,"During the day, it is safe for children to play in the local park or playground.",61.7037037,16.07407407,31,57
+2025,Student,Encourage you to work hard at school.,67.33333333,1.592592593,28,60
+2025,Student,Encourages students to share their ideas about things we are studying in class.,81.88888889,18.07407407,15,73
+2025,Student,Encourages us to consider different solutions or points of view.,84.07407407,15.81481481,10,78
+2025,Student,Expects everyone to work hard.,91.81481481,8.222222222,1,87
+2025,Student,Expects me to do my best all the time.,90.62962963,9.444444444,2,86
+2025,Student,Explain how writers use tools like symbolism and metaphor to communicate meaning.,0,1.814814815,62,1
+2025,Student,Explain how you solved a problem to the class.,0,10.33333333,62,1
+2025,Student,Explains things in a different way if I don't understand something in class.,82.2962963,14.37037037,14,74
+2025,Student,Feel it is important to attend school every day?,0,0,62,1
+2025,Student,Feel it is important to pay attention in class?,0,0,62,1
+2025,Student,Find information from graphs and tables.,0,8.407407407,62,1
+2025,Student,Generate your own hypotheses.,0,10.51851852,62,1
+2025,Student,Gives me specific suggestions about how I can improve my work in this class.,80.14814815,16.07407407,17,71
+2025,Student,Help each other learn.,68.66666667,31.40740741,26,62
+2025,Student,Helps me catch up if I am behind.,80.11111111,16.18518519,18,70
+2025,Student,High school is seen as preparation for the future.,28.66666667,4.666666667,52,36
+2025,Student,High school teaches me valuable skills.,27.11111111,6.259259259,57,31
+2025,Student,I always study for tests.,58.62962963,41.37037037,39,49
+2025,Student,I feel comfortable with my teachers at this school.,83.96296296,16.18518519,11,77
+2025,Student,I feel safe with my teachers at this school.,89.37037037,10.7037037,4,84
+2025,Student,I have someone who is helping me with my college and career goals.,26.2962963,7.037037037,59,29
+2025,Student,I know what my teacher wants me to learn in this class.,68.88888889,8.777777778,24,64
+2025,Student,I learn a lot from feedback on my work.,60.18518519,17.62962963,35,53
+2025,Student,I set aside time to do my homework and study.,65.96296296,30.18518519,29,59
+2025,Student,I try to do well on my schoolwork even when it isn't interesting to me.,86.25925926,10.14814815,6,82
+2025,Student,I usually look forward to this class.,69.07407407,31.07407407,23,65
+2025,Student,I work hard to do my best in this class.,89.14814815,10.96296296,5,83
+2025,Student,I'm really learning a lot in this class.,86.07407407,13.92592593,7,81
+2025,Student,"If I need to study, I don't go out with my friends.",61.37037037,34.96296296,32,56
+2025,Student,Improve a piece of writing as a class or with partners.,0,6.296296296,62,1
+2025,Student,In the bathrooms of the school?,0,0,62,1
+2025,Student,In the hallways of the school?,0,0,62,1
+2025,Student,In your classes?,0,0,62,1
+2025,Student,Is willing to give extra help on schoolwork if I need it.,79.48148148,16.77777778,19,69
+2025,Student,It's clear to me what I need to do to get a good grade.,68.77777778,9.074074074,25,63
+2025,Student,Like to put others down.,45.88888889,54.07407407,44,44
+2025,Student,Listen to you when you need to talk.,59.48148148,3.296296296,37,51
+2025,Student,My classes give me useful preparation for what I plan to do in life.,24.85185185,8.481481481,61,27
+2025,Student,My teachers always keep their promises.,56.96296296,43,40,48
+2025,Student,My teachers treat me with respect.,85.25925926,14.66666667,8,80
+2025,Student,My teachers will always listen to students' ideas.,70.11111111,29.85185185,22,66
+2025,Student,Notices if I have trouble learning something.,81.40740741,18.81481481,16,72
+2025,Student,Often connects what I am learning to life outside of the classroom.,70.77777778,29.2962963,21,67
+2025,Student,Often requires me to explain my answers.,82.66666667,17.37037037,13,75
+2025,Student,Outside around the school?,0,0,62,1
+2025,Student,People in this neighborhood can be trusted.,41.77777778,36.03703704,47,41
+2025,Student,Rewrite a paper or essay in response to comments.,0,10.92592593,62,1
+2025,Student,Show they are proud of you.,62.7037037,3.037037037,30,58
+2025,Student,Solve a problem with multiple steps that takes more than 20 minutes.,0,5.333333333,62,1
+2025,Student,Sometimes I get so interested in my work I don't want to stop.,61.22222222,38.92592593,33,55
+2025,Student,Take time to help you make decisions.,59.18518519,4.185185185,38,50
+2025,Student,Teachers make sure that all students are planning for life after graduation.,27.55555556,5.666666667,55,33
+2025,Student,"Teachers pay attention to all students, not just the top students.",27.18518519,6.074074074,56,32
+2025,Student,Teachers work hard to make sure that all students are learning.,29,4.407407407,51,37
+2025,Student,Teachers work hard to make sure that students stay in school.,28.18518519,5.185185185,54,34
+2025,Student,"The equipment and buildings in the neighborhood, park, or playground are well kept.",55.37037037,22.40740741,41,47
+2025,Student,The homework assignments help me to learn the course material.,60.44444444,17.2962963,34,54
+2025,Student,The topics we are studying are interesting and challenging.,79.14814815,20.88888889,20,68
+2025,Student,The work we do in class is good preparation for the test.,68.37037037,9.444444444,27,61
+2025,Student,There are adults in this neighborhood that children can look up to.,48.48148148,29.48148148,43,45
+2025,Student,Think doing homework is important?,0,0,62,1
+2025,Student,This class really makes me think.,82.7037037,17.37037037,12,76
+2025,Student,Traveling between home and school?,0,0,62,1
+2025,Student,Treat each other with respect.,60.03703704,40.03703704,36,52
+2025,Student,Try hard to get good grades?,0,0,62,1
+2025,Student,Use evidence/data to support an argument or hypothesis.,0,8.333333333,62,1
+2025,Student,Use laboratory equipment or specimens.,0,20.25925926,62,1
+2025,Student,"Wants us to become better thinkers, not just memorize things.",89.74074074,10.14814815,3,85
+2025,Student,What we learn in class is necessary for success in the future.,26.14814815,7.333333333,60,28
+2025,Student,Working hard in high school matters for success in the workforce.,28.44444444,4.888888889,53,35
+2025,Student,Write a few sentences to explain how you solved a math problem.,0,14.92592593,62,1
+2025,Student,Write a math problem for other students to solve.,0,28.85185185,62,1
+2025,Student,Write lab reports.,0,19.92592593,62,1
+2025,Teacher,A conscious effort is made by faculty to make new teachers feel welcome here.,87.03571429,13.07142857,11,92
+2025,Teacher,Actively participate in class activities?,0,0,57,1
+2025,Teacher,Always turn in their homework?,0,0,57,1
+2025,Teacher,Are eager to try new ideas?,87.71428571,12.46428571,9,94
+2025,Teacher,Are really trying to improve their teaching?,0,0,57,1
+2025,Teacher,Are willing to take risks to make the school better?,0,0,57,1
+2025,Teacher,Attend class regularly?,0,0,57,1
+2025,Teacher,Attended parent-teacher conferences when you requested them?,0,0,57,1
+2025,Teacher,Been closely connected to my school's improvement plan.,79.64285714,20.57142857,26,77
+2025,Teacher,"Been sustained and coherently focused, rather than short-term and unrelated.",75.10714286,25.03571429,31,72
+2025,Teacher,Come to class on time?,0,0,57,1
+2025,Teacher,Come to class prepared with the appropriate supplies and books?,0,0,57,1
+2025,Teacher,Communicates a clear vision for our school.,87.32142857,12.64285714,10,93
+2025,Teacher,Contacted you about their child's performance?,0,0,57,1
+2025,Teacher,Create serious behavior problems in your class?,7.535714286,0,54,49
+2025,Teacher,"Curriculum, instruction, and learning materials are well coordinated across different grade levels at this school.",75.32142857,24.82142857,30,73
+2025,Teacher,Determining the content of in-service programs.,0,0,57,1
+2025,Teacher,Determining which books and other instructional materials are used in classrooms.,0,0,57,1
+2025,Teacher,"Develop formal networks to link all families with each other (for example: sharing parent directories, providing a website for parents/guardians to connect with one another, etc.)?",0,19.67857143,57,1
+2025,Teacher,Development of new curriculum.,0,0,57,1
+2025,Teacher,Disorder in classrooms,0,7.607142857,57,1
+2025,Teacher,Disorder in hallways,0,8.857142857,57,1
+2025,Teacher,"Do off-task things (e.g., play games, text, talk on cell phone) during instructional time?",17.42857143,0,52,51
+2025,Teacher,Do their best to help their children learn?,0,0.785714286,57,1
+2025,Teacher,Encourage more involved parents/guardians to reach out to less involved parents/guardians?,0,28.07142857,57,1
+2025,Teacher,Establishing the curriculum and instructional program.,0,0,57,1
+2025,Teacher,"Experienced teachers invite new teachers into their classes to observe, give feedback, etc.",67.28571429,32.75,36,67
+2025,Teacher,Feel responsible for helping students develop self-control?,0,0,57,1
+2025,Teacher,Feel responsible that all students learn?,0,0,57,1
+2025,Teacher,Feel responsible to help each other do their best?,0,0,57,1
+2025,Teacher,Feel responsible when students in this school fail?,0,0,57,1
+2025,Teacher,Gang activity,0,28.75,57,1
+2025,Teacher,Gone over student assessment data with other teachers to make instructional decisions?,0,11.89285714,57,1
+2025,Teacher,Has provided me with the support I need to improve my teaching.,82.32142857,17.64285714,23,80
+2025,Teacher,"Help maintain discipline in the entire school, not just their classroom?",0,0,57,1
+2025,Teacher,I feel loyal to this school.,88.57142857,11.53571429,7,96
+2025,Teacher,I trust the principal at his or her word.,87.89285714,12.21428571,8,95
+2025,Teacher,I usually look forward to each working day at this school.,85.67857143,14.42857143,13,89
+2025,Teacher,I would recommend this school to parents seeking a place for their child.,79.03571429,21.14285714,28,75
+2025,Teacher,I wouldn't want to work in any other school.,70.89285714,29.03571429,35,68
+2025,Teacher,Include parent leaders from all backgrounds in school improvement?,0,17.5,57,1
+2025,Teacher,"Included enough time to think carefully about, try, and evaluate new ideas.",74.57142857,25.5,32,71
+2025,Teacher,Included opportunities to work productively with colleagues in my school.,78.85714286,21.21428571,29,74
+2025,Teacher,Included opportunities to work productively with teachers from other schools.,60.71428571,39.53571429,37,66
+2025,Teacher,Involve parents/guardians in commenting on school curricula?,0,27.75,57,1
+2025,Teacher,Involve parents/guardians in the development of programs aimed at improving students' academic outcomes?,0,9.892857143,57,1
+2025,Teacher,"It's OK in this school to discuss feelings, worries, and frustrations with other teachers.",83.78571429,16.10714286,22,81
+2025,Teacher,"It's OK in this school to discuss feelings, worries, and frustrations with the principal.",85.67857143,14.46428571,13,89
+2025,Teacher,Knows what's going on in my classroom.,80.03571429,20.07142857,25,78
+2025,Teacher,Makes clear to the staff the leadership's expectations for meeting instructional goals.,91.25,8.75,2,101
+2025,Teacher,Makes sure teachers receive the coaching and support they need to implement new practices.,80.14285714,19.85714286,24,79
+2025,Teacher,Managing classroom behavior.,0,0,57,1
+2025,Teacher,Many special programs come and go at this school.,42.39285714,57.67857143,38,65
+2025,Teacher,Most of the students in this school are planning to go to college.,18.32142857,13.82142857,51,52
+2025,Teacher,Most students participate in the discussion at some point.,41.75,10.14285714,39,64
+2025,Teacher,Observed another teacher's class to get ideas for your own instruction?,0,38.39285714,57,1
+2025,Teacher,Observed another teacher's class to offer feedback?,0,48.85714286,57,1
+2025,Teacher,"Once we start a new program in this school, we follow up to make sure that it's working.",72.78571429,27.14285714,34,69
+2025,Teacher,Physical conflicts among students,0,11.92857143,57,1
+2025,Teacher,Planning how discretionary school funds should be used.,0,0,57,1
+2025,Teacher,Presses teachers to implement what they have learned in professional development.,85.53571429,14.46428571,15,87
+2025,Teacher,Provides me with useful feedback to improve my teaching.,84.75,15.14285714,20,83
+2025,Teacher,Refuse to respond when addressed?,3.75,0,55,48
+2025,Teacher,Regularly pay attention in class?,0,0,57,1
+2025,Teacher,Responded to your suggestions for helping their child?,0,0,57,1
+2025,Teacher,Robbery or theft,0,42.5,57,1
+2025,Teacher,Setting standards for student behavior.,0,0,57,1
+2025,Teacher,Staff at this school work hard to build trusting relationships with parents.,91.78571429,8.214285714,1,102
+2025,Teacher,Student disrespect of teachers,0,5.285714286,57,1
+2025,Teacher,Students build on each other's ideas during discussion.,29.14285714,14.67857143,44,59
+2025,Teacher,Students encourage each other to participate in discussion.,23.46428571,27.67857143,47,56
+2025,Teacher,Students provide constructive feedback to their peers and to me.,20.39285714,23.92857143,49,54
+2025,Teacher,Students show each other respect.,33.64285714,12.67857143,42,61
+2025,Teacher,Students use data and text references to support their ideas.,19.25,24.5,50,53
+2025,Teacher,Support your teaching efforts?,0,0,57,1
+2025,Teacher,Take responsibility for improving the school?,0,0,57,1
+2025,Teacher,Teachers and parents at this school think of each other as partners in educating children.,72.89285714,27.14285714,33,70
+2025,Teacher,Teachers at this school help students plan for college outside of class time.,26.71428571,5.392857143,46,57
+2025,Teacher,Teachers at this school respect those colleagues who are experts at their craft.,89.96428571,10.17857143,5,98
+2025,Teacher,Teachers expect most students in this school to go to college.,22.32142857,9.821428571,48,55
+2025,Teacher,Teachers in this school feel that it is a part of their job to prepare students to succeed in college.,29.46428571,2.714285714,43,60
+2025,Teacher,Teachers in this school share and discuss student work with other teachers.,85.21428571,14.75,18,85
+2025,Teacher,Teachers in this school trust each other.,85.53571429,14.53571429,15,87
+2025,Teacher,Teachers respect other teachers who take the lead in school improvement efforts.,88.64285714,11.39285714,6,97
+2025,Teacher,"Teachers talk about instruction in the teachers' lounge, faculty meetings, etc.",85.25,14.89285714,17,86
+2025,Teacher,The curriculum at this school is focused on helping students get ready for college.,27.67857143,4.392857143,45,58
+2025,Teacher,The goals of this school.,0,0,57,1
+2025,Teacher,The principal at this school is an effective manager who makes the school run smoothly.,84.82142857,16.17857143,19,84
+2025,Teacher,The principal has confidence in the expertise of the teachers.,90.75,9.357142857,3,100
+2025,Teacher,The principal looks out for the personal welfare of the faculty members.,86.39285714,13.75,12,91
+2025,Teacher,The principal places the needs of children ahead of personal and political interests.,90,10.03571429,4,99
+2025,Teacher,The principal takes a personal interest in the professional development of teachers.,84.71428571,15.42857143,21,82
+2025,Teacher,"There is consistency in curriculum, instruction, and learning materials among teachers in the same grade level at this school.",79.14285714,21.10714286,27,76
+2025,Teacher,This school would be my first choice for my own child.,41.57142857,58.57142857,40,63
+2025,Teacher,Threaten you verbally?,1.857142857,0,56,47
+2025,Teacher,Threats of violence toward teachers,0,57.60714286,57,1
+2025,Teacher,Use inappropriate language during class?,12.32142857,0,53,50
+2025,Teacher,"Volunteered time to support the school (e.g., volunteer in classrooms, help with school-wide events, etc.)?",0,0,57,1
+2025,Teacher,We have so many different programs in this school that I can’t keep track of them all.,39.17857143,61.07142857,41,62
+2025,Teacher,What helps students learn the best.,0,0,57,1
+2025,Teacher,Worked on instructional strategies with other teachers?,0,7,57,1
+2025,Teacher,Worked with other teachers to develop materials or activities for particular classes?,0,11.39285714,57,1
+2026,Student,Adults in this neighborhood know who the local children are.,39.33333333,37.3,49,39
+2026,Student,All students are encouraged to go to college.,27.06666667,6.233333333,60,28
+2026,Student,Apply math to situations in life outside of school.,0,15.76666667,62,1
+2026,Student,Are you challenged?,44.53333333,6.966666667,44,44
+2026,Student,Debate the meaning of a reading.,0,14.56666667,62,1
+2026,Student,Discuss connections between a reading and real life people or situations.,0,7.933333333,62,1
+2026,Student,"Discuss how culture, time, or place affects an author's writing.",0,8,62,1
+2026,Student,Discuss possible solutions to problems with other students.,0,10.86666667,62,1
+2026,Student,Do you have to work hard to do well?,43.2,4.7,46,42
+2026,Student,Does the teacher ask difficult questions in class?,38.26666667,9.033333333,50,38
+2026,Student,Does the teacher ask difficult questions on tests?,40.33333333,7.666666667,48,40
+2026,Student,Doesn't let students give up when the work gets hard.,84.86666667,15.03333333,9,79
+2026,Student,Don't get along together very well.,49.63333333,50.5,42,45
+2026,Student,"During the day, it is safe for children to play in the local park or playground.",59.5,17.13333333,37,51
+2026,Student,Encourage you to work hard at school.,66.2,1.966666667,28,60
+2026,Student,Encourages students to share their ideas about things we are studying in class.,83.1,16.96666667,14,74
+2026,Student,Encourages us to consider different solutions or points of view.,84.13333333,15.93333333,12,76
+2026,Student,Expects everyone to work hard.,91.63333333,8.466666667,1,87
+2026,Student,Expects me to do my best all the time.,89.5,10.53333333,5,83
+2026,Student,Explain how writers use tools like symbolism and metaphor to communicate meaning.,0,1.7,62,1
+2026,Student,Explain how you solved a problem to the class.,0,10.73333333,62,1
+2026,Student,Explains things in a different way if I don't understand something in class.,84.7,15.16666667,11,77
+2026,Student,Feel it is important to attend school every day?,0,0,62,1
+2026,Student,Feel it is important to pay attention in class?,0,0,62,1
+2026,Student,Find information from graphs and tables.,0,8.266666667,62,1
+2026,Student,Generate your own hypotheses.,0,11.5,62,1
+2026,Student,Gives me specific suggestions about how I can improve my work in this class.,82.3,17.86666667,16,72
+2026,Student,Help each other learn.,72.23333333,27.73333333,22,66
+2026,Student,Helps me catch up if I am behind.,82.63333333,17.23333333,15,73
+2026,Student,High school is seen as preparation for the future.,29.13333333,4.133333333,53,35
+2026,Student,High school teaches me valuable skills.,28.16666667,5.166666667,56,32
+2026,Student,I always study for tests.,59.03333333,41.06666667,38,50
+2026,Student,I feel comfortable with my teachers at this school.,85.1,15,7,80
+2026,Student,I feel safe with my teachers at this school.,89.13333333,10.76666667,6,82
+2026,Student,I have someone who is helping me with my college and career goals.,27.53333333,5.833333333,57,31
+2026,Student,I know what my teacher wants me to learn in this class.,66.9,9.833333333,27,61
+2026,Student,I learn a lot from feedback on my work.,61.56666667,15.1,33,55
+2026,Student,I set aside time to do my homework and study.,71.83333333,28.2,24,64
+2026,Student,I try to do well on my schoolwork even when it isn't interesting to me.,89.7,10.3,3,85
+2026,Student,I usually look forward to this class.,72,28.1,23,65
+2026,Student,I work hard to do my best in this class.,89.56666667,10.3,4,84
+2026,Student,I'm really learning a lot in this class.,85.1,15.06666667,7,80
+2026,Student,"If I need to study, I don't go out with my friends.",65.86666667,34,29,59
+2026,Student,Improve a piece of writing as a class or with partners.,0,7.066666667,62,1
+2026,Student,In the bathrooms of the school?,0,0,62,1
+2026,Student,In the hallways of the school?,0,0,62,1
+2026,Student,In your classes?,0,0,62,1
+2026,Student,Is willing to give extra help on schoolwork if I need it.,81.2,18.73333333,18,70
+2026,Student,It's clear to me what I need to do to get a good grade.,67.83333333,8.866666667,26,62
+2026,Student,Like to put others down.,44.3,55.76666667,45,43
+2026,Student,Listen to you when you need to talk.,58.26666667,4.266666667,40,48
+2026,Student,My classes give me useful preparation for what I plan to do in life.,27,6.3,61,27
+2026,Student,My teachers always keep their promises.,59.53333333,40.13333333,36,52
+2026,Student,My teachers treat me with respect.,84.8,15.16666667,10,78
+2026,Student,My teachers will always listen to students' ideas.,70.86666667,29.1,25,63
+2026,Student,Notices if I have trouble learning something.,80.93333333,19,19,69
+2026,Student,Often connects what I am learning to life outside of the classroom.,72.46666667,27.56666667,21,67
+2026,Student,Often requires me to explain my answers.,83.8,16.16666667,13,75
+2026,Student,Outside around the school?,0,0,62,1
+2026,Student,People in this neighborhood can be trusted.,43.03333333,33.8,47,41
+2026,Student,Rewrite a paper or essay in response to comments.,0,10.43333333,62,1
+2026,Student,Show they are proud of you.,60.93333333,2.866666667,35,53
+2026,Student,Solve a problem with multiple steps that takes more than 20 minutes.,0,4.4,62,1
+2026,Student,Sometimes I get so interested in my work I don't want to stop.,63.13333333,36.86666667,31,57
+2026,Student,Take time to help you make decisions.,58.83333333,4.633333333,39,49
+2026,Student,Teachers make sure that all students are planning for life after graduation.,28.36666667,5.066666667,55,33
+2026,Student,"Teachers pay attention to all students, not just the top students.",27.4,5.9,59,29
+2026,Student,Teachers work hard to make sure that all students are learning.,29.3,4,51,37
+2026,Student,Teachers work hard to make sure that students stay in school.,28.86666667,4.4,54,34
+2026,Student,"The equipment and buildings in the neighborhood, park, or playground are well kept.",55.3,21.43333333,41,47
+2026,Student,The homework assignments help me to learn the course material.,61.23333333,15.46666667,34,54
+2026,Student,The topics we are studying are interesting and challenging.,79.46666667,20.33333333,20,68
+2026,Student,The work we do in class is good preparation for the test.,65.46666667,11.06666667,30,58
+2026,Student,There are adults in this neighborhood that children can look up to.,49.63333333,27.03333333,42,45
+2026,Student,Think doing homework is important?,0,0,62,1
+2026,Student,This class really makes me think.,82.23333333,17.66666667,17,71
+2026,Student,Traveling between home and school?,0,0,62,1
+2026,Student,Treat each other with respect.,62.23333333,37.7,32,56
+2026,Student,Try hard to get good grades?,0,0,62,1
+2026,Student,Use evidence/data to support an argument or hypothesis.,0,8.6,62,1
+2026,Student,Use laboratory equipment or specimens.,0,20.13333333,62,1
+2026,Student,"Wants us to become better thinkers, not just memorize things.",91.46666667,8.566666667,2,86
+2026,Student,What we learn in class is necessary for success in the future.,27.43333333,5.9,58,30
+2026,Student,Working hard in high school matters for success in the workforce.,29.16666667,4.166666667,52,36
+2026,Student,Write a few sentences to explain how you solved a math problem.,0,12.43333333,62,1
+2026,Student,Write a math problem for other students to solve.,0,28.83333333,62,1
+2026,Student,Write lab reports.,0,18,62,1
+2026,Teacher,A conscious effort is made by faculty to make new teachers feel welcome here.,90.56666667,9.433333333,6,97
+2026,Teacher,Actively participate in class activities?,0,0,57,1
+2026,Teacher,Always turn in their homework?,0,0,57,1
+2026,Teacher,Are eager to try new ideas?,88.3,11.66666667,10,93
+2026,Teacher,Are really trying to improve their teaching?,0,0,57,1
+2026,Teacher,Are willing to take risks to make the school better?,0,0,57,1
+2026,Teacher,Attend class regularly?,0,0,57,1
+2026,Teacher,Attended parent-teacher conferences when you requested them?,0,0,57,1
+2026,Teacher,Been closely connected to my school's improvement plan.,81.13333333,19.03333333,27,76
+2026,Teacher,"Been sustained and coherently focused, rather than short-term and unrelated.",76.9,23.1,33,70
+2026,Teacher,Come to class on time?,0,0,57,1
+2026,Teacher,Come to class prepared with the appropriate supplies and books?,0,0,57,1
+2026,Teacher,Communicates a clear vision for our school.,89.2,10.9,7,96
+2026,Teacher,Contacted you about their child's performance?,0,0,57,1
+2026,Teacher,Create serious behavior problems in your class?,4.766666667,0,55,48
+2026,Teacher,"Curriculum, instruction, and learning materials are well coordinated across different grade levels at this school.",79.46666667,20.7,29,74
+2026,Teacher,Determining the content of in-service programs.,0,0,57,1
+2026,Teacher,Determining which books and other instructional materials are used in classrooms.,0,0,57,1
+2026,Teacher,"Develop formal networks to link all families with each other (for example: sharing parent directories, providing a website for parents/guardians to connect with one another, etc.)?",0,15.13333333,57,1
+2026,Teacher,Development of new curriculum.,0,0,57,1
+2026,Teacher,Disorder in classrooms,0,9.766666667,57,1
+2026,Teacher,Disorder in hallways,0,9.7,57,1
+2026,Teacher,"Do off-task things (e.g., play games, text, talk on cell phone) during instructional time?",15.16666667,0,52,51
+2026,Teacher,Do their best to help their children learn?,0,0.833333333,57,1
+2026,Teacher,Encourage more involved parents/guardians to reach out to less involved parents/guardians?,0,25.33333333,57,1
+2026,Teacher,Establishing the curriculum and instructional program.,0,0,57,1
+2026,Teacher,"Experienced teachers invite new teachers into their classes to observe, give feedback, etc.",70.56666667,29.43333333,35,68
+2026,Teacher,Feel responsible for helping students develop self-control?,0,0,57,1
+2026,Teacher,Feel responsible that all students learn?,0,0,57,1
+2026,Teacher,Feel responsible to help each other do their best?,0,0,57,1
+2026,Teacher,Feel responsible when students in this school fail?,0,0,57,1
+2026,Teacher,Gang activity,0,29.76666667,57,1
+2026,Teacher,Gone over student assessment data with other teachers to make instructional decisions?,0,14.36666667,57,1
+2026,Teacher,Has provided me with the support I need to improve my teaching.,83.03333333,17.13333333,24,79
+2026,Teacher,"Help maintain discipline in the entire school, not just their classroom?",0,0,57,1
+2026,Teacher,I feel loyal to this school.,85.6,14.36666667,16,87
+2026,Teacher,I trust the principal at his or her word.,88.43333333,11.63333333,9,94
+2026,Teacher,I usually look forward to each working day at this school.,84.06666667,15.86666667,21,82
+2026,Teacher,I would recommend this school to parents seeking a place for their child.,77.7,22.3,30,73
+2026,Teacher,I wouldn't want to work in any other school.,69.7,30.33333333,36,67
+2026,Teacher,Include parent leaders from all backgrounds in school improvement?,0,15.6,57,1
+2026,Teacher,"Included enough time to think carefully about, try, and evaluate new ideas.",77.3,22.86666667,31,72
+2026,Teacher,Included opportunities to work productively with colleagues in my school.,79.86666667,20.26666667,28,75
+2026,Teacher,Included opportunities to work productively with teachers from other schools.,56.73333333,43.26666667,37,66
+2026,Teacher,Involve parents/guardians in commenting on school curricula?,0,27.03333333,57,1
+2026,Teacher,Involve parents/guardians in the development of programs aimed at improving students' academic outcomes?,0,8.566666667,57,1
+2026,Teacher,"It's OK in this school to discuss feelings, worries, and frustrations with other teachers.",85.7,14.36666667,14,88
+2026,Teacher,"It's OK in this school to discuss feelings, worries, and frustrations with the principal.",84.53333333,15.36666667,20,83
+2026,Teacher,Knows what's going on in my classroom.,82.63333333,17.63333333,25,78
+2026,Teacher,Makes clear to the staff the leadership's expectations for meeting instructional goals.,90.73333333,9.4,5,98
+2026,Teacher,Makes sure teachers receive the coaching and support they need to implement new practices.,83.06666667,17.06666667,23,80
+2026,Teacher,Managing classroom behavior.,0,0,57,1
+2026,Teacher,Many special programs come and go at this school.,41,59.1,41,62
+2026,Teacher,Most of the students in this school are planning to go to college.,23.4,9.9,49,54
+2026,Teacher,Most students participate in the discussion at some point.,43.56666667,10.93333333,38,65
+2026,Teacher,Observed another teacher's class to get ideas for your own instruction?,0,43.43333333,57,1
+2026,Teacher,Observed another teacher's class to offer feedback?,0,52.36666667,57,1
+2026,Teacher,"Once we start a new program in this school, we follow up to make sure that it's working.",77.2,22.93333333,32,71
+2026,Teacher,Physical conflicts among students,0,12.66666667,57,1
+2026,Teacher,Planning how discretionary school funds should be used.,0,0,57,1
+2026,Teacher,Presses teachers to implement what they have learned in professional development.,85.46666667,14.5,17,86
+2026,Teacher,Provides me with useful feedback to improve my teaching.,83.3,16.73333333,22,81
+2026,Teacher,Refuse to respond when addressed?,5.266666667,0,54,49
+2026,Teacher,Regularly pay attention in class?,0,0,57,1
+2026,Teacher,Responded to your suggestions for helping their child?,0,0,57,1
+2026,Teacher,Robbery or theft,0,51,57,1
+2026,Teacher,Setting standards for student behavior.,0,0,57,1
+2026,Teacher,Staff at this school work hard to build trusting relationships with parents/guardians.,94,6.133333333,1,102
+2026,Teacher,Student disrespect of teachers,0,7.5,57,1
+2026,Teacher,Students build on each other's ideas during discussion.,30.33333333,13.5,44,59
+2026,Teacher,Students encourage each other to participate in discussion.,27.53333333,28.16666667,47,55
+2026,Teacher,Students provide constructive feedback to their peers and to me.,21.96666667,21.8,51,52
+2026,Teacher,Students show each other respect.,41.06666667,9.3,40,63
+2026,Teacher,Students use data and text references to support their ideas.,22.43333333,24.63333333,50,53
+2026,Teacher,Support your teaching efforts?,0,0,57,1
+2026,Teacher,Take responsibility for improving the school?,0,0,57,1
+2026,Teacher,Teachers and parents/guardians at this school think of each other as partners in educating children.,75.2,24.9,34,69
+2026,Teacher,Teachers at this school help students plan for college outside of class time.,27.53333333,5.733333333,47,55
+2026,Teacher,Teachers at this school respect those colleagues who are experts at their craft.,91.96666667,8.133333333,3,100
+2026,Teacher,Teachers expect most students in this school to go to college.,28.43333333,4.9,46,57
+2026,Teacher,Teachers in this school feel that it is a part of their job to prepare students to succeed in college.,30.9,2.466666667,43,60
+2026,Teacher,Teachers in this school share and discuss student work with other teachers.,85.7,14.5,14,88
+2026,Teacher,Teachers in this school trust each other.,88.13333333,11.96666667,12,91
+2026,Teacher,Teachers respect other teachers who take the lead in school improvement efforts.,88.5,11.46666667,8,95
+2026,Teacher,"Teachers talk about instruction in the teachers' lounge, faculty meetings, etc.",84.9,15.2,18,85
+2026,Teacher,The curriculum at this school is focused on helping students get ready for college.,30.16666667,3.166666667,45,58
+2026,Teacher,The goals of this school.,0,0,57,1
+2026,Teacher,The principal at this school is an effective manager who makes the school run smoothly.,84.6,16.06666667,19,84
+2026,Teacher,The principal has confidence in the expertise of the teachers.,91.46666667,8.6,4,99
+2026,Teacher,The principal looks out for the personal welfare of the faculty members.,88.2,11.83333333,11,92
+2026,Teacher,The principal places the needs of children ahead of personal and political interests.,92.23333333,7.866666667,2,101
+2026,Teacher,The principal takes a personal interest in the professional development of teachers.,87.23333333,12.73333333,13,90
+2026,Teacher,"There is consistency in curriculum, instruction, and learning materials among teachers in the same grade level at this school.",82.06666667,17.86666667,26,77
+2026,Teacher,This school would be my first choice for my own child.,42.5,57.33333333,39,64
+2026,Teacher,Threaten you verbally?,1.6,0,56,47
+2026,Teacher,Threats of violence toward teachers,0,60.46666667,57,1
+2026,Teacher,Use inappropriate language during class?,8.7,0,53,50
+2026,Teacher,"Volunteered time to support the school (e.g., volunteer in classrooms, help with school-wide events, etc.)?",0,0,57,1
+2026,Teacher,We have so many different programs in this school that I can’t keep track of them all.,38,62,42,61
+2026,Teacher,What helps students learn the best.,0,0,57,1
+2026,Teacher,Worked on instructional strategies with other teachers?,0,9.866666667,57,1
+2026,Teacher,Worked with other teachers to develop materials or activities for particular classes?,0,14.33333333,57,1

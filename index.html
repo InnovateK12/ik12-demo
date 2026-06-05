@@ -769,6 +769,126 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
 .tj-score{font-family:'Lora',serif;font-size:18px;font-weight:700;color:var(--charcoal);width:60px;}
 .tj-placement{font-size:11px;color:var(--text-mid);font-family:'Open Sans',sans-serif;flex:1;}
 
+/* ─── Shared new-section utilities ────────────────────────────── */
+.kpi-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:20px;}
+.section-card{background:var(--card);border:1px solid var(--border);border-radius:7px;padding:20px;margin-bottom:18px;}
+.section-card-title{font-family:'Lora',serif;font-size:15px;font-weight:700;color:var(--charcoal);margin-bottom:14px;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px;}
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px;}
+.risk-badge{display:inline-flex;align-items:center;padding:3px 9px;border-radius:3px;font-size:10.5px;font-weight:700;letter-spacing:.04em;}
+.risk-high{background:#fde8e8;color:#9b2226;}
+.risk-watch{background:#fef3cd;color:#856404;}
+.risk-healthy{background:#d5f0e0;color:#1e6b3a;}
+
+/* ─── 5Essentials ────────────────────────────────────────────── */
+.kpi-tile{background:var(--card);border:1px solid var(--border);border-radius:7px;padding:16px 20px;flex:1;min-width:150px;}
+.kpi-tile-label{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-faint);margin-bottom:6px;}
+.kpi-tile-value{font-family:'Lora',serif;font-size:26px;font-weight:700;color:var(--charcoal);}
+.kpi-tile-sub{font-size:11px;color:var(--text-mid);margin-top:4px;}
+.kpi-tile.green{border-top:3px solid #27ae60;}
+.kpi-tile.yellow{border-top:3px solid #f39c12;}
+.kpi-tile.red{border-top:3px solid #c0392b;}
+.ess-heatmap{width:100%;border-collapse:collapse;font-size:12px;}
+.ess-heatmap th{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);padding:8px 10px;text-align:left;border-bottom:2px solid var(--border);}
+.ess-heatmap td{padding:8px 10px;border-bottom:1px solid var(--border);font-size:12px;}
+.ess-heatmap tr:last-child td{border-bottom:none;}
+.ess-cell{border-radius:4px;padding:3px 8px;font-weight:700;font-size:12px;display:inline-block;min-width:32px;text-align:center;}
+.ess-green{background:#d5f0e0;color:#1e6b3a;}
+.ess-yellow{background:#fef3cd;color:#856404;}
+.ess-red{background:#fde8e8;color:#9b2226;}
+.ess-grey{background:#f0f2f4;color:#6c757d;}
+
+/* ─── Survey Insights ─────────────────────────────────────────── */
+.si-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px;}
+.si-stat{background:var(--card);border:1px solid var(--border);border-radius:7px;padding:18px;text-align:center;}
+.si-stat-value{font-family:'Lora',serif;font-size:26px;font-weight:700;color:var(--deep-teal);}
+.si-stat-label{font-size:11px;color:var(--text-mid);margin-top:5px;}
+.si-sentiment{display:flex;gap:12px;margin-bottom:12px;}
+.si-badge{flex:1;border-radius:7px;padding:14px 12px;text-align:center;}
+.si-badge-pos{background:#d5f0e0;}
+.si-badge-neu{background:#f0f2f4;}
+.si-badge-neg{background:#fde8e8;}
+.si-badge-val{font-family:'Lora',serif;font-size:22px;font-weight:700;display:block;}
+.si-badge-pos .si-badge-val{color:#1e6b3a;}
+.si-badge-neu .si-badge-val{color:#5a6f76;}
+.si-badge-neg .si-badge-val{color:#9b2226;}
+.si-badge-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-top:4px;display:block;color:var(--text-mid);}
+.audience-bar{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:12px;}
+.aud-item{text-align:center;}
+.aud-pct{font-family:'Lora',serif;font-size:18px;font-weight:700;color:var(--deep-teal);}
+.aud-label{font-size:11px;color:var(--text-mid);}
+.si-theme{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);}
+.si-theme:last-child{border-bottom:none;}
+.si-theme-rank{font-family:'Lora',serif;font-size:20px;font-weight:700;color:var(--deep-teal);width:32px;flex-shrink:0;}
+.si-theme-title{font-weight:700;font-size:13px;margin-bottom:3px;}
+.si-theme-count{font-size:11px;color:var(--text-mid);margin-bottom:4px;}
+.si-theme-detail{font-size:12px;color:var(--text-mid);line-height:1.5;}
+.si-keyword-cloud{display:flex;flex-wrap:wrap;gap:8px;padding:4px 0;}
+.si-keyword{background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:12px;color:var(--text-body);}
+.si-keyword-count{font-size:10px;color:var(--text-faint);margin-left:5px;}
+.si-quote{background:var(--bg);border-left:3px solid var(--deep-teal);border-radius:0 5px 5px 0;padding:12px 16px;margin-bottom:10px;}
+.si-quote.critical{border-left-color:var(--orange);}
+.si-quote:last-child{margin-bottom:0;}
+.si-quote-text{font-style:italic;font-size:12.5px;line-height:1.6;color:var(--text-body);margin-bottom:5px;}
+.si-quote-source{font-size:11px;font-weight:700;color:var(--text-mid);}
+.si-rec{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--border);}
+.si-rec:last-child{border-bottom:none;}
+.si-rec-priority{font-family:'Lora',serif;font-size:15px;font-weight:700;color:var(--deep-teal);width:28px;flex-shrink:0;padding-top:1px;}
+.si-rec-title{font-weight:700;font-size:13px;margin-bottom:4px;}
+.si-rec-detail{font-size:12px;color:var(--text-mid);line-height:1.5;}
+.si-rec-badge{margin-left:auto;flex-shrink:0;padding:3px 8px;border-radius:3px;font-size:10px;font-weight:700;align-self:flex-start;}
+.si-rec-badge.high{background:#fde8e8;color:#9b2226;}
+.si-rec-badge.medium{background:#fef3cd;color:#856404;}
+.si-rec-badge.low{background:#d5f0e0;color:#1e6b3a;}
+.si-kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.si-kpi{background:var(--card);border:1px solid var(--border);border-top:3px solid var(--deep-teal);border-radius:7px;padding:16px;}
+.si-kpi-value{font-family:'Lora',serif;font-size:20px;font-weight:700;color:var(--charcoal);}
+.si-kpi-label{font-size:11.5px;font-weight:700;color:var(--text-body);margin:4px 0 2px;}
+.si-kpi-note{font-size:10.5px;color:var(--text-faint);}
+
+/* ─── Vision 2030 ─────────────────────────────────────────────── */
+.v30-priority{background:var(--card);border:1px solid var(--border);border-radius:7px;margin-bottom:14px;overflow:hidden;}
+.v30-priority-header{display:flex;align-items:center;gap:14px;padding:16px 20px;cursor:pointer;user-select:none;}
+.v30-priority-header:hover{background:var(--bg);}
+.v30-priority-num{font-family:'Lora',serif;font-size:22px;font-weight:700;color:var(--deep-teal);width:30px;flex-shrink:0;}
+.v30-priority-title{font-family:'Lora',serif;font-size:14px;font-weight:700;color:var(--charcoal);flex:1;}
+.v30-priority-toggle{font-size:13px;color:var(--text-faint);}
+.v30-priority-body{padding:0 20px 16px;display:none;}
+.v30-priority-body.open{display:block;}
+.v30-objective{padding:8px 0 8px 14px;border-left:2px solid var(--border);margin-bottom:8px;}
+.v30-objective-title{font-weight:700;font-size:12.5px;margin-bottom:3px;}
+.v30-objective-desc{font-size:12px;color:var(--text-mid);line-height:1.5;}
+.v30-kpi-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px;}
+.v30-kpi-table th{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);padding:6px 10px;text-align:left;border-bottom:1px solid var(--border);}
+.v30-kpi-table td{padding:7px 10px;border-bottom:1px solid var(--border);font-size:12px;}
+.v30-kpi-table tr:last-child td{border-bottom:none;}
+.v30-phase{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--border);}
+.v30-phase:last-child{border-bottom:none;}
+.v30-phase-num{background:var(--deep-teal);color:white;font-weight:700;font-size:11px;padding:4px 8px;border-radius:4px;height:fit-content;flex-shrink:0;white-space:nowrap;}
+.v30-phase-title{font-weight:700;font-size:13px;margin-bottom:2px;}
+.v30-phase-year{font-size:11px;color:var(--text-mid);font-weight:600;margin-bottom:4px;}
+.v30-phase-focus{font-size:12px;color:var(--text-mid);line-height:1.5;}
+
+/* ─── Anti-Bullying ───────────────────────────────────────────── */
+.ab-stat{background:var(--card);border:1px solid var(--border);border-radius:7px;padding:16px 18px;flex:1;min-width:120px;}
+.ab-stat-label{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-faint);margin-bottom:5px;}
+.ab-stat-value{font-family:'Lora',serif;font-size:24px;font-weight:700;color:var(--charcoal);}
+.ab-stat-change{font-size:11px;margin-top:3px;}
+.ab-stat-change.neg{color:#c0392b;}
+.ab-stat-change.imp{color:#27ae60;}
+.ab-table{width:100%;border-collapse:collapse;font-size:12px;}
+.ab-table th{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);padding:8px 10px;text-align:left;border-bottom:2px solid var(--border);}
+.ab-table td{padding:8px 10px;border-bottom:1px solid var(--border);font-size:12.5px;}
+.ab-table tr:last-child td{border-bottom:none;}
+.ab-comp-row{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid var(--border);}
+.ab-comp-row:last-child{border-bottom:none;}
+.ab-comp-label{font-size:12px;font-weight:600;width:280px;flex-shrink:0;}
+.ab-comp-bar-wrap{flex:1;background:var(--bg);border-radius:3px;height:8px;overflow:hidden;}
+.ab-comp-bar{height:100%;border-radius:3px;background:var(--deep-teal);}
+.ab-comp-bar.miss{background:var(--orange);}
+.ab-comp-pct{font-size:11.5px;font-weight:700;width:40px;text-align:right;}
+.ab-comp-target{font-size:10.5px;color:var(--text-faint);width:68px;text-align:right;}
+
 </style>
 </head>
 <body>
@@ -817,6 +937,24 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
     <div class="nav-item" onclick="navigate('ai')">
       <span class="nav-icon">✦</span>
       <span class="nav-label">AI Insights</span>
+    </div>
+    <div class="sb-group">Culture &amp; Climate</div>
+    <div class="nav-item" onclick="navigate('essentials')">
+      <span class="nav-icon">◈</span>
+      <span class="nav-label">5Essentials Survey</span>
+    </div>
+    <div class="nav-item" onclick="navigate('surveys')">
+      <span class="nav-icon">◉</span>
+      <span class="nav-label">Survey Insights</span>
+    </div>
+    <div class="sb-group">Strategic Planning</div>
+    <div class="nav-item" onclick="navigate('vision2030')">
+      <span class="nav-icon">◬</span>
+      <span class="nav-label">Vision 2030</span>
+    </div>
+    <div class="nav-item" onclick="navigate('antibullying')">
+      <span class="nav-icon">⚑</span>
+      <span class="nav-label">Anti-Bullying</span>
     </div>
   </div>
   <div class="sb-footer">
@@ -1286,21 +1424,101 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
   </section>
 
 
-  <!-- ── SURVEYS (placeholder) ───────────────────────────────────────── -->
+  <!-- ── SURVEY INSIGHTS ────────────────────────────────────────────── -->
   <section id="sec-surveys" class="section">
     <div class="page-header">
-      <div><div class="page-title">Survey Data Integration</div><div class="page-sub">Student, staff & community survey data — planned for next phase</div></div>
+      <div>
+        <div class="page-title">Survey Insights</div>
+        <div class="page-sub">Greenfield Unified School District · Spring 2026 · Communications Family Survey</div>
+      </div>
     </div>
-    <div class="survey-placeholder">
-      <div class="survey-icon">◉</div>
-      <div class="survey-title">Survey Integration — Coming Next Phase</div>
-      <div class="survey-desc">Connect student, staff, and community survey results to the District Hub for a complete picture of school climate and continuous improvement.</div>
-      <div class="survey-badge">Planned for Phase 2</div>
+
+    <div class="si-stat-grid">
+      <div class="si-stat"><div class="si-stat-value">174</div><div class="si-stat-label">Total respondents</div></div>
+      <div class="si-stat"><div class="si-stat-value">Spring 2026</div><div class="si-stat-label">Survey period</div></div>
+      <div class="si-stat"><div class="si-stat-value">7</div><div class="si-stat-label">Satisfaction dimensions</div></div>
+      <div class="si-stat"><div class="si-stat-value">275</div><div class="si-stat-label">Open-ended responses</div></div>
     </div>
-    <div class="survey-features">
-      <div class="sf-card"><div class="sf-title">Student Climate Surveys</div><div class="sf-desc">Track engagement, belonging, and learning environment sentiment by school, grade, and subgroup over time.</div></div>
-      <div class="sf-card ac-border"><div class="sf-title">Staff Feedback</div><div class="sf-desc">Collect and analyze teacher and staff input on instructional support, professional development, and building conditions.</div></div>
-      <div class="sf-card am-border"><div class="sf-title">Community & Family</div><div class="sf-desc">Integrate parent and community feedback on facilities, programs, and communications to inform district planning decisions.</div></div>
+
+    <div class="two-col">
+      <div class="section-card">
+        <div class="section-card-title">Respondent Breakdown</div>
+        <div class="audience-bar">
+          <div class="aud-item"><div class="aud-pct">54.6%</div><div class="aud-label">Students</div></div>
+          <div class="aud-item"><div class="aud-pct">21.8%</div><div class="aud-label">Staff</div></div>
+          <div class="aud-item"><div class="aud-pct">15.5%</div><div class="aud-label">Parents &amp; guardians</div></div>
+          <div class="aud-item"><div class="aud-pct">6.9%</div><div class="aud-label">Community members</div></div>
+        </div>
+        <div style="font-size:11.5px;color:var(--text-mid);line-height:1.6;margin-top:10px;">Across 772 classifiable responses spanning seven key satisfaction areas, <strong>73.7%</strong> were positive, <strong>21.8%</strong> neutral, and only <strong>4.5%</strong> negative. The district excels at personal engagement but has room to improve its digital infrastructure.</div>
+      </div>
+      <div class="section-card">
+        <div class="section-card-title">Overall Sentiment</div>
+        <div class="si-sentiment">
+          <div class="si-badge si-badge-pos"><span class="si-badge-val">73.7%</span><span class="si-badge-lbl">Positive</span></div>
+          <div class="si-badge si-badge-neu"><span class="si-badge-val">21.8%</span><span class="si-badge-lbl">Neutral</span></div>
+          <div class="si-badge si-badge-neg"><span class="si-badge-val">4.5%</span><span class="si-badge-lbl">Negative</span></div>
+        </div>
+        <div style="font-size:11px;color:var(--text-faint);margin-top:8px;">Across 772 classifiable responses</div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-title">Satisfaction by Area</div>
+      <div style="position:relative;height:260px;"><canvas id="si-chart-satisfaction"></canvas></div>
+    </div>
+
+    <div class="two-col">
+      <div class="section-card">
+        <div class="section-card-title">Top Themes from Open-Ended Responses</div>
+        <div class="si-theme">
+          <div class="si-theme-rank">01</div>
+          <div><div class="si-theme-title">Communication preferences</div><div class="si-theme-count">62 responses · 22.5%</div><div class="si-theme-detail">Stakeholders strongly prefer individual targeted emails (25 mentions) over consolidated formats. ParentSquare mentioned 15 times.</div></div>
+        </div>
+        <div class="si-theme">
+          <div class="si-theme-rank">02</div>
+          <div><div class="si-theme-title">Staff-related topics</div><div class="si-theme-count">41 responses · 14.9%</div><div class="si-theme-detail">Respondents sought staff contact information and expressed appreciation for staff recognition programs.</div></div>
+        </div>
+        <div class="si-theme">
+          <div class="si-theme-rank">03</div>
+          <div><div class="si-theme-title">Technology &amp; website</div><div class="si-theme-count">34 responses · 12.4%</div><div class="si-theme-detail">Digital access, broken search functionality, outdated athletic content, and navigation issues were core concerns.</div></div>
+        </div>
+      </div>
+      <div class="section-card">
+        <div class="section-card-title">Pain Points by Frequency of Mention</div>
+        <div style="position:relative;height:220px;"><canvas id="si-chart-pain"></canvas></div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-title">Keywords &amp; Phrases</div>
+      <div class="si-keyword-cloud" id="si-keywords"></div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-title">Representative Insights</div>
+      <div class="si-quote"><div class="si-quote-text">"The district PR Department is AWESOME!"</div><div class="si-quote-source">— Community respondent</div></div>
+      <div class="si-quote"><div class="si-quote-text">"My son enjoys the adults he works with — as teacher, coach, or counselor. There are a lot of opportunities for students to get involved."</div><div class="si-quote-source">— Parent</div></div>
+      <div class="si-quote critical"><div class="si-quote-text">"Nothing is easy to find. I want scores of athletic events, can't find it. I want athletic schedules, can't find it. Search feature doesn't work well either."</div><div class="si-quote-source">— Staff member</div></div>
+      <div class="si-quote critical"><div class="si-quote-text">"Please stop calling staff members on Sundays — it feels like borderline harassment to be called both at 12:00 and 3:30."</div><div class="si-quote-source">— Staff member</div></div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-title">Recommendations</div>
+      <div class="si-rec"><div class="si-rec-priority">P1</div><div><div class="si-rec-title">Redesign website navigation &amp; search</div><div class="si-rec-detail">Fix the search feature, update athletic schedules and rosters regularly, remove expired links, and conduct user testing with parents — the group that struggles most.</div></div><span class="si-rec-badge high">High priority</span></div>
+      <div class="si-rec"><div class="si-rec-priority">P2</div><div><div class="si-rec-title">Restructure or discontinue Sunday phone calls</div><div class="si-rec-detail">Shift Sunday content to a Friday email digest or Monday morning notification, preserving information delivery while respecting personal time.</div></div><span class="si-rec-badge high">High priority</span></div>
+      <div class="si-rec"><div class="si-rec-priority">P3</div><div><div class="si-rec-title">Consolidate communication platforms</div><div class="si-rec-detail">Audit which platforms serve which purpose, then provide clear guidance to families to reduce friction and confusion.</div></div><span class="si-rec-badge medium">Medium</span></div>
+      <div class="si-rec"><div class="si-rec-priority">P4</div><div><div class="si-rec-title">Enhance post-secondary counseling depth</div><div class="si-rec-detail">Supplement assemblies with individualized counseling sessions, practical application workshops, and parent-specific information sessions.</div></div><span class="si-rec-badge medium">Medium</span></div>
+      <div class="si-rec"><div class="si-rec-priority">P5</div><div><div class="si-rec-title">Maintain and celebrate existing strengths</div><div class="si-rec-detail">Communication clarity, staff quality, inclusive opportunities, and special education accommodations are genuine differentiators — protect and highlight them.</div></div><span class="si-rec-badge low">Maintain</span></div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-title">Dashboard KPIs to Monitor</div>
+      <div class="si-kpi-grid">
+        <div class="si-kpi"><div class="si-kpi-value">60.3%</div><div class="si-kpi-label">Website satisfaction</div><div class="si-kpi-note">positive — lowest area</div></div>
+        <div class="si-kpi"><div class="si-kpi-value">92.3%</div><div class="si-kpi-label">Communication clarity</div><div class="si-kpi-note">positive — top area</div></div>
+        <div class="si-kpi"><div class="si-kpi-value">8.3 / 10</div><div class="si-kpi-label">Post-secondary confidence</div><div class="si-kpi-note">parent mean score</div></div>
+        <div class="si-kpi"><div class="si-kpi-value">6.3 / 10</div><div class="si-kpi-label">Student connectedness</div><div class="si-kpi-note">mean score</div></div>
+      </div>
     </div>
   </section>
 
@@ -1433,6 +1651,162 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
     </div>
     <div style="margin-top:10px;font-size:10.5px;color:var(--text-faint);font-family:'Open Sans',sans-serif;">
       ⬡ <strong>QuickSight equivalent:</strong> This profile page maps to a QS drill-down sheet — student-level filtered view of assessment history table + score line chart. Tags come from the Report Group(s) field in iREADY export data.
+    </div>
+  </section>
+
+
+  <!-- ── 5 ESSENTIALS SURVEY ──────────────────────────────────────────── -->
+  <section id="sec-essentials" class="section">
+    <div class="page-header">
+      <div>
+        <div class="page-title">5Essentials Survey</div>
+        <div class="page-sub">Network-wide school organizational health · 2024 Survey Results · Greenfield Unified School District</div>
+      </div>
+    </div>
+
+    <div class="kpi-row" id="ess-kpi-row"></div>
+
+    <div class="three-col">
+      <div class="section-card">
+        <div class="section-card-title">Risk Summary</div>
+        <div id="ess-risk-summary"></div>
+      </div>
+      <div class="section-card" style="grid-column:span 2;">
+        <div class="section-card-title">Response Rates by School</div>
+        <div style="position:relative;height:200px;"><canvas id="ess-chart-response"></canvas></div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-title">Network Heatmap — 5 Essentials by School</div>
+      <div style="overflow-x:auto;"><table class="ess-heatmap" id="ess-heatmap-table"></table></div>
+      <div style="margin-top:12px;display:flex;gap:12px;align-items:center;font-size:11px;flex-wrap:wrap;">
+        <span style="color:var(--text-faint);">Score ranges:</span>
+        <span class="ess-cell ess-green" style="padding:2px 8px;">70–100 Strong</span>
+        <span class="ess-cell ess-yellow" style="padding:2px 8px;">40–69 Watch</span>
+        <span class="ess-cell ess-red" style="padding:2px 8px;">0–39 At Risk</span>
+        <span class="ess-cell ess-grey" style="padding:2px 8px;">— No data</span>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-title">Overall 5Essentials Score by School</div>
+      <div style="position:relative;height:280px;"><canvas id="ess-chart-overall"></canvas></div>
+    </div>
+  </section>
+
+  <!-- ── VISION 2030 ──────────────────────────────────────────────────── -->
+  <section id="sec-vision2030" class="section">
+    <div class="page-header">
+      <div>
+        <div class="page-title">Vision 2030 Strategic Plan</div>
+        <div class="page-sub">Greenfield Unified School District · Excellence for All · 2026–2030</div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="two-col">
+        <div>
+          <div style="font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-faint);margin-bottom:8px;">Vision</div>
+          <div style="font-family:'Lora',serif;font-size:14px;color:var(--charcoal);line-height:1.7;">GUSD will cultivate a future-ready educational community where every learner is empowered to think critically, communicate effectively, solve complex problems, and contribute meaningfully to an ever-changing world.</div>
+        </div>
+        <div>
+          <div style="font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-faint);margin-bottom:8px;">Mission</div>
+          <div style="font-size:13px;color:var(--text-body);line-height:1.7;">To provide equitable, engaging, and high-quality learning experiences that prepare all students for success in college, career, military service, and civic life.</div>
+          <div style="margin-top:12px;" id="v30-beliefs"></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="font-size:13px;font-weight:700;color:var(--charcoal);margin-bottom:12px;">Strategic Priority Areas</div>
+    <div id="v30-priorities"></div>
+
+    <div class="section-card">
+      <div class="section-card-title">Implementation Phases</div>
+      <div id="v30-phases"></div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-title">Strategic Initiatives at a Glance</div>
+      <div class="two-col" id="v30-initiatives"></div>
+    </div>
+  </section>
+
+  <!-- ── ANTI-BULLYING DASHBOARD ──────────────────────────────────────── -->
+  <section id="sec-antibullying" class="section">
+    <div class="page-header">
+      <div>
+        <div class="page-title">Anti-Bullying Dashboard</div>
+        <div class="page-sub">Demo District · Current Academic Year · Incident reporting, investigation &amp; intervention tracking</div>
+      </div>
+    </div>
+
+    <div class="kpi-row">
+      <div class="ab-stat"><div class="ab-stat-label">Total Reports</div><div class="ab-stat-value">347</div><div class="ab-stat-change neg">▲ +11.2% vs prior period</div></div>
+      <div class="ab-stat"><div class="ab-stat-label">Confirmed Cases</div><div class="ab-stat-value">192</div><div class="ab-stat-change neg">▲ +6.1% vs prior period</div></div>
+      <div class="ab-stat"><div class="ab-stat-label">Anonymous Reports</div><div class="ab-stat-value">238</div><div class="ab-stat-change neg">▲ +11.2% vs prior period</div></div>
+      <div class="ab-stat"><div class="ab-stat-label">Open Investigations</div><div class="ab-stat-value">41</div><div class="ab-stat-change imp">▼ -22.6% vs prior period</div></div>
+      <div class="ab-stat"><div class="ab-stat-label">Cases Resolved</div><div class="ab-stat-value">151</div><div class="ab-stat-change imp">▲ +18.0% vs prior period</div></div>
+      <div class="ab-stat"><div class="ab-stat-label">Avg Resolution (days)</div><div class="ab-stat-value">6.2</div><div class="ab-stat-change imp">▼ -12.7% vs prior period</div></div>
+    </div>
+
+    <div class="two-col">
+      <div class="section-card">
+        <div class="section-card-title">Monthly Reports Trend</div>
+        <div style="position:relative;height:220px;"><canvas id="ab-chart-monthly"></canvas></div>
+      </div>
+      <div class="section-card">
+        <div class="section-card-title">Bullying Type Breakdown</div>
+        <div style="position:relative;height:220px;"><canvas id="ab-chart-type"></canvas></div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="section-card">
+        <div class="section-card-title">School Comparison</div>
+        <table class="ab-table">
+          <thead><tr><th>School</th><th>Reports</th><th>Confirmed</th><th>Open</th><th>Avg Days</th></tr></thead>
+          <tbody>
+            <tr><td>Maplewood Middle School</td><td>52</td><td>31</td><td>4</td><td>5.1</td></tr>
+            <tr><td>Riverside Middle School</td><td>67</td><td>42</td><td>9</td><td>6.3</td></tr>
+            <tr><td>Crestview High School</td><td>91</td><td>54</td><td>15</td><td>8.2</td></tr>
+            <tr><td>Pinecrest High School</td><td>44</td><td>28</td><td>3</td><td>4.8</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="section-card">
+        <div class="section-card-title">Incident Locations</div>
+        <table class="ab-table">
+          <thead><tr><th>Location</th><th>Incidents</th><th>Share</th></tr></thead>
+          <tbody>
+            <tr><td>Hallways</td><td>81</td><td>23.4%</td></tr>
+            <tr><td>Cafeteria</td><td>62</td><td>17.9%</td></tr>
+            <tr><td>Social Media</td><td>58</td><td>16.7%</td></tr>
+            <tr><td>Classroom</td><td>49</td><td>14.1%</td></tr>
+            <tr><td>Bus</td><td>34</td><td>9.8%</td></tr>
+            <tr><td>Playground</td><td>28</td><td>8.1%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-title">Compliance Scorecard</div>
+      <div id="ab-compliance"></div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-title">District Executive Scorecard</div>
+      <table class="ab-table">
+        <thead><tr><th>Strategic Goal</th><th>Target</th><th>Current</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Reduce Bullying Incidents</td><td>-10% YoY</td><td>-7%</td><td><span class="risk-badge risk-watch">Behind</span></td></tr>
+          <tr><td>Improve Resolution Time</td><td>&lt;5 Days</td><td>6.2 Days</td><td><span class="risk-badge risk-watch">Behind</span></td></tr>
+          <tr><td>Increase Reporting Confidence</td><td>70%</td><td>69%</td><td><span class="risk-badge risk-watch">Near Target</span></td></tr>
+          <tr><td>Reduce Repeat Offenders</td><td>-20%</td><td>-15%</td><td><span class="risk-badge risk-watch">Behind</span></td></tr>
+          <tr><td>Improve Climate Score</td><td>85</td><td>82</td><td><span class="risk-badge risk-watch">Behind</span></td></tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
@@ -3068,7 +3442,8 @@ const PAGE_LABELS = {
   home:'Dashboard Home',academic:'Academic Progress',students:'Student Explorer',
   profile:'Student Profile',
   facilities:'10-Year Capital Plan',markers:'Progress Markers',
-  surveys:'Survey Data',ai:'AI Insights'
+  surveys:'Survey Insights',ai:'AI Insights',
+  essentials:'5Essentials Survey',vision2030:'Vision 2030',antibullying:'Anti-Bullying Dashboard'
 };
 
 // ═══════════════════════════════════════════════════════════
@@ -3085,6 +3460,10 @@ function navigate(id){
   if(id==='students'){seSetView('group');}
   if(id==='academic')renderAcademic();
   if(id==='facilities')renderFacilities();
+  if(id==='essentials')renderEssentials();
+  if(id==='surveys')renderSurveyInsights();
+  if(id==='vision2030')renderVision2030();
+  if(id==='antibullying')renderAntiBullying();
 }
 
 function initHome(){
@@ -4405,6 +4784,262 @@ function openStudentProfile(studentId) {
 }
 
 document.addEventListener('DOMContentLoaded',init);
+
+// ═══════════════════════════════════════════════════════════
+// 5 ESSENTIALS — DATA & RENDER
+// ═══════════════════════════════════════════════════════════
+const ESS_SCHOOLS = [
+  {name:'Maplewood Middle School',    leaders:59,teachers:48,families:50,environment:13,instruction:34,overall:40.8,stu_rate:91.7,tch_rate:90.9,par_rate:9.3, risk:'High Risk'},
+  {name:'Riverside Middle School',    leaders:33,teachers:14,families:16,environment:14,instruction:29,overall:21.2,stu_rate:78.1,tch_rate:79.3,par_rate:14.4,risk:'High Risk'},
+  {name:'Crestview High School',      leaders:48,teachers:37,families:41,environment:67,instruction:43,overall:47.2,stu_rate:96.7,tch_rate:71.4,par_rate:16.7,risk:'Watch'},
+  {name:'Pinecrest High School',      leaders:39,teachers:37,families:38,environment:31,instruction:54,overall:39.8,stu_rate:86.4,tch_rate:58.7,par_rate:15.8,risk:'Watch'},
+  {name:'Lakewood Elementary',        leaders:45,teachers:24,families:27,environment:22,instruction:27,overall:29.0,stu_rate:89.7,tch_rate:75.5,par_rate:21.8,risk:'High Risk'},
+  {name:'Westbridge Academy',         leaders:32,teachers:17,families:22,environment:36,instruction:56,overall:32.6,stu_rate:89.5,tch_rate:83.3,par_rate:14.7,risk:'High Risk'},
+  {name:'Summit STEM School',         leaders:48,teachers:45,families:40,environment:44,instruction:52,overall:45.8,stu_rate:95.0,tch_rate:97.2,par_rate:14.6,risk:'High Risk'},
+];
+const ESS_LABELS=['Effective Leaders','Collaborative Teachers','Involved Families','Supportive Environment','Ambitious Instruction'];
+const ESS_KEYS  =['leaders','teachers','families','environment','instruction'];
+let essResponseChart=null,essOverallChart=null;
+
+function essScoreClass(v){
+  if(v==null)return'ess-grey';
+  return v>=70?'ess-green':v>=40?'ess-yellow':'ess-red';
+}
+
+function renderEssentials(){
+  const kpiRow=document.getElementById('ess-kpi-row');
+  if(!kpiRow||kpiRow.dataset.rendered)return;
+  kpiRow.dataset.rendered='1';
+
+  const avgs=ESS_KEYS.map(k=>{
+    const vals=ESS_SCHOOLS.map(s=>s[k]).filter(v=>v!=null);
+    return Math.round(vals.reduce((a,b)=>a+b,0)/vals.length);
+  });
+  kpiRow.innerHTML=ESS_LABELS.map((lbl,i)=>{
+    const cls=avgs[i]>=70?'green':avgs[i]>=40?'yellow':'red';
+    return`<div class="kpi-tile ${cls}"><div class="kpi-tile-label">${lbl}</div><div class="kpi-tile-value">${avgs[i]}</div><div class="kpi-tile-sub">Network average</div></div>`;
+  }).join('');
+
+  const riskEl=document.getElementById('ess-risk-summary');
+  const c={High:0,Watch:0,Healthy:0};
+  ESS_SCHOOLS.forEach(s=>{if(s.risk==='High Risk')c.High++;else if(s.risk==='Watch')c.Watch++;else c.Healthy++;});
+  riskEl.innerHTML=`<div style="display:flex;flex-direction:column;gap:10px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:12.5px;">High Risk</span><span class="risk-badge risk-high">${c.High} schools</span></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:12.5px;">Watch</span><span class="risk-badge risk-watch">${c.Watch} schools</span></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:12.5px;">Healthy</span><span class="risk-badge risk-healthy">${c.Healthy} schools</span></div>
+  </div><div style="margin-top:12px;font-size:11px;color:var(--text-faint);line-height:1.5;">High Risk: parent response &lt;15% or overall &lt;50. Watch: declining in 2+ essentials.</div>`;
+
+  const tbl=document.getElementById('ess-heatmap-table');
+  const sh=['Eff. Leaders','Collab. Teachers','Inv. Families','Supp. Envt.','Amb. Instruction'];
+  tbl.innerHTML=`<thead><tr><th>School</th>${sh.map(l=>`<th>${l}</th>`).join('')}<th>Overall</th><th>Risk</th></tr></thead>
+  <tbody>${ESS_SCHOOLS.map(s=>`<tr>
+    <td style="font-weight:600;white-space:nowrap;">${s.name}</td>
+    ${ESS_KEYS.map(k=>`<td><span class="ess-cell ${essScoreClass(s[k])}">${s[k]??'—'}</span></td>`).join('')}
+    <td style="font-weight:700;font-family:'Lora',serif;">${s.overall}</td>
+    <td><span class="risk-badge ${s.risk==='High Risk'?'risk-high':s.risk==='Watch'?'risk-watch':'risk-healthy'}">${s.risk}</span></td>
+  </tr>`).join('')}</tbody>`;
+
+  if(essResponseChart){essResponseChart.destroy();essResponseChart=null;}
+  const shortNames=ESS_SCHOOLS.map(s=>s.name.replace(' School','').replace(' Academy','').replace(' Middle','MS').replace(' High','HS').replace(' Elementary','Elem'));
+  essResponseChart=new Chart(document.getElementById('ess-chart-response').getContext('2d'),{
+    type:'bar',
+    data:{labels:shortNames,datasets:[
+      {label:'Student %',data:ESS_SCHOOLS.map(s=>s.stu_rate),backgroundColor:'#176E82'},
+      {label:'Teacher %',data:ESS_SCHOOLS.map(s=>s.tch_rate),backgroundColor:'#219EBB'},
+      {label:'Parent %', data:ESS_SCHOOLS.map(s=>s.par_rate), backgroundColor:'#ea730b'},
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top'}},
+      scales:{y:{min:0,max:100,ticks:{callback:v=>v+'%'}}}}
+  });
+
+  if(essOverallChart){essOverallChart.destroy();essOverallChart=null;}
+  const sorted=[...ESS_SCHOOLS].sort((a,b)=>b.overall-a.overall);
+  essOverallChart=new Chart(document.getElementById('ess-chart-overall').getContext('2d'),{
+    type:'bar',
+    data:{labels:sorted.map(s=>s.name),datasets:[{label:'Overall Score',
+      data:sorted.map(s=>s.overall),
+      backgroundColor:sorted.map(s=>s.overall>=70?'#27ae60':s.overall>=40?'#f39c12':'#c0392b')}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false}},scales:{x:{min:0,max:100}}}
+  });
+}
+
+// ═══════════════════════════════════════════════════════════
+// SURVEY INSIGHTS — RENDER
+// ═══════════════════════════════════════════════════════════
+let siSatChart=null,siPainChart=null;
+
+function renderSurveyInsights(){
+  const canvas=document.getElementById('si-chart-satisfaction');
+  if(!canvas||canvas.dataset.rendered)return;
+  canvas.dataset.rendered='1';
+
+  siSatChart=new Chart(canvas.getContext('2d'),{
+    type:'bar',
+    data:{
+      labels:['Communication Clarity','Facilities Condition','Post-Secondary Confidence','Communication Satisfaction','District Accessibility','Facilities Navigation','Website Usability'],
+      datasets:[
+        {label:'Positive', data:[92.3,81.3,81.0,76.9,73.0,69.0,60.3],backgroundColor:'#27ae60'},
+        {label:'Neutral',  data:[7.7,15.8,12.7,18.5,20.6,28.7,31.0], backgroundColor:'#8fa3ab'},
+        {label:'Negative', data:[0.0,2.9,6.3,4.6,6.3,2.3,8.6],       backgroundColor:'#c0392b'},
+      ]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{position:'top'}},
+      scales:{x:{stacked:true,max:100,ticks:{callback:v=>v+'%'}},y:{stacked:true}}}
+  });
+
+  siPainChart=new Chart(document.getElementById('si-chart-pain').getContext('2d'),{
+    type:'bar',
+    data:{
+      labels:['Website nav/usability','Sunday phone messages','College guidance depth','Teacher/parent comm.','Too many platforms'],
+      datasets:[{label:'Mentions',data:[14,8,7,4,3],
+        backgroundColor:['#c0392b','#c0392b','#e67e22','#e67e22','#f1c40f']}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false}},scales:{x:{ticks:{stepSize:2},max:16}}}
+  });
+
+  const kw=[{w:'staff',n:38},{w:'contact',n:27},{w:'info',n:27},{w:'continue',n:26},{w:'individual',n:25},{w:'targeted',n:25},{w:'emails',n:25},{w:'ParentSquare',n:15},{w:'website',n:14},{w:'daily digest',n:5}];
+  document.getElementById('si-keywords').innerHTML=kw.map(k=>`<span class="si-keyword">${k.w}<span class="si-keyword-count">${k.n}</span></span>`).join('');
+}
+
+// ═══════════════════════════════════════════════════════════
+// VISION 2030 — DATA & RENDER
+// ═══════════════════════════════════════════════════════════
+const V30_PRIORITIES=[
+  {num:'1',title:'Academic Achievement & Postsecondary Readiness',
+   objectives:[
+     {t:'Establish Instructional Coherence',d:'Establish a coherent K–12 instructional system aligned to high-quality instructional materials, clear expectations, and consistent professional learning.'},
+     {t:'Strengthen Literacy Achievement',d:'Increase literacy proficiency through evidence-based instruction, aligned intervention systems, and clear K–12 readiness progressions.'},
+     {t:'Strengthen Mathematics Achievement',d:'Improve math achievement through vertically aligned progressions, protected instructional time, and thinking-centered instruction.'},
+     {t:'Expand Postsecondary Readiness',d:'Expand CTE pathways, dual enrollment, and credentialing connected to enrollment, employment, or enlistment.'},
+   ],
+   kpis:[{m:'Grade 3 Reading Proficiency',b:'66%',t:'85%'},{m:'HQIM Implementation',b:'TBD',t:'100%'},{m:'Literacy Block Fidelity',b:'TBD',t:'100%'}]},
+  {num:'2',title:'Safe, Supportive & Inclusive Learning Environments',
+   objectives:[
+     {t:'Strengthen Safety Systems',d:'Create a proactive safety model through trained School Safety Ambassadors and consistent preparedness systems.'},
+     {t:'Expand Student Support Systems',d:'Increase access to timely, targeted academic, behavioral, language, and social-emotional supports.'},
+     {t:'Increase Family Engagement',d:'Build trust through accessible family engagement opportunities and Virtual Village programming.'},
+     {t:'Reduce Barriers to Participation',d:'Expand afterschool transportation and access to enrichment, clubs, and athletics.'},
+   ],
+   kpis:[{m:'Safety Ambassador Training',b:'0%',t:'100%'},{m:'Behavior Incidents',b:'Baseline',t:'-10%'},{m:'Family Engagement Sessions',b:'TBD',t:'+20%'}]},
+  {num:'3',title:'Supported Workforce',
+   objectives:[
+     {t:'Recruit and Retain Exceptional Staff',d:'Improve staff onboarding, mentoring, retention, and professional growth systems.'},
+     {t:'Develop Leadership Capacity',d:'Create transformational leadership pathways and personalized coaching aligned to division priorities.'},
+     {t:'Strengthen Professional Learning',d:'Ensure all employees have access to coherent, job-embedded professional learning.'},
+     {t:'Improve Communication & Coherence',d:'Create clear, consistent communication systems across central office, schools, staff, and families.'},
+   ],
+   kpis:[{m:'Staff Retention Rate',b:'Baseline',t:'+5%'},{m:'Onboarding Completion',b:'TBD',t:'100%'},{m:'Leadership Pathway Participation',b:'0%',t:'80%'}]},
+  {num:'4',title:'Future-Ready Learning & Innovation',
+   objectives:[
+     {t:'Build Future-Ready Competencies',d:'Ensure all students demonstrate communication, collaboration, critical thinking, digital fluency, and cultural fluency.'},
+     {t:'Integrate Emerging Technologies',d:'Use AI and emerging technologies safely, ethically, and effectively to enhance instruction.'},
+     {t:'Expand Global Learning Opportunities',d:'Develop multilingual, multicultural, and globally responsive learning pathways.'},
+   ],
+   kpis:[{m:'Staff AI Literacy Training',b:'0%',t:'100%'},{m:'Student AI Literacy Training',b:'0%',t:'100%'},{m:'DLI Enrollment',b:'0',t:'Annual Growth'}]},
+];
+
+const V30_PHASES=[
+  {n:'Phase 1',title:'Planning & Foundation',year:'2026–2027',focus:'Strategic alignment, resource identification, readiness assessments, governance structures, and baseline data collection.'},
+  {n:'Phase 2',title:'Pilot & Initial Rollout',year:'2027–2028',focus:'Initial implementation, training deployment, data collection, continuous feedback, and pilot refinement.'},
+  {n:'Phase 3',title:'Expansion & System Integration',year:'2028–2029',focus:'Scale successful practices, cross-system alignment, staffing expansion, and data-driven adjustment.'},
+  {n:'Phase 4',title:'Full Implementation & Sustainability',year:'2029–2030',focus:'Systemwide coherence, continuous improvement, long-term sustainability, outcome monitoring, and annual strategic review.'},
+];
+
+const V30_INITIATIVES=[
+  {t:'K–12 Literacy',d:'Every student reading proficiently by Grade 3 through aligned instruction, HQIM implementation, and the Science of Reading.'},
+  {t:'K–12 Mathematics',d:'Strong foundations using thinking-centered instruction, Building Thinking Classrooms, and a protected 90-minute math block.'},
+  {t:'AI Integration',d:'Staff and student AI literacy at 100%, ethical use certification, and an approved AI toolkit aligned to data privacy standards.'},
+  {t:'Dual Language Immersion',d:'Bilingual, biliterate, and bicultural students through K–5 DLI expansion with dual-certified staffing.'},
+  {t:'School Safety Ambassadors',d:'4–6 ambassadors per school with 10+ hours of annual professional learning and benchmark safety measurements.'},
+  {t:'Virtual Village',d:'Monthly virtual drop-in hours, quarterly family welcome events, and translation access to strengthen family engagement.'},
+];
+
+const V30_BELIEFS=['Every student can learn at high levels','Literacy & math are foundational','Diversity strengthens learning','Data informs decisions','Strong relationships drive achievement','Continuous improvement is shared'];
+
+function renderVision2030(){
+  if(document.getElementById('v30-priorities').dataset.rendered)return;
+  document.getElementById('v30-priorities').dataset.rendered='1';
+
+  document.getElementById('v30-beliefs').innerHTML=V30_BELIEFS.map(b=>`<span style="display:inline-block;background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:11px;color:var(--text-mid);margin:3px 4px 3px 0;">${b}</span>`).join('');
+
+  document.getElementById('v30-priorities').innerHTML=V30_PRIORITIES.map((p,i)=>`
+    <div class="v30-priority">
+      <div class="v30-priority-header" onclick="v30Toggle(${i})">
+        <div class="v30-priority-num">${p.num}</div>
+        <div class="v30-priority-title">${p.title}</div>
+        <div class="v30-priority-toggle" id="v30-tog-${i}">▼</div>
+      </div>
+      <div class="v30-priority-body" id="v30-body-${i}">
+        ${p.objectives.map(o=>`<div class="v30-objective"><div class="v30-objective-title">${o.t}</div><div class="v30-objective-desc">${o.d}</div></div>`).join('')}
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-faint);margin:12px 0 6px;">Key Performance Indicators</div>
+        <table class="v30-kpi-table"><thead><tr><th>Metric</th><th>Baseline</th><th>Target</th></tr></thead>
+        <tbody>${p.kpis.map(k=>`<tr><td>${k.m}</td><td>${k.b}</td><td style="font-weight:700;color:var(--deep-teal);">${k.t}</td></tr>`).join('')}</tbody></table>
+      </div>
+    </div>`).join('');
+
+  document.getElementById('v30-phases').innerHTML=V30_PHASES.map(p=>`
+    <div class="v30-phase">
+      <span class="v30-phase-num">${p.n}</span>
+      <div><div class="v30-phase-title">${p.title}</div><div class="v30-phase-year">${p.year}</div><div class="v30-phase-focus">${p.focus}</div></div>
+    </div>`).join('');
+
+  document.getElementById('v30-initiatives').innerHTML=V30_INITIATIVES.map(i=>`
+    <div style="background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:14px 16px;">
+      <div style="font-weight:700;font-size:13px;margin-bottom:5px;color:var(--deep-teal);">${i.t}</div>
+      <div style="font-size:12px;color:var(--text-mid);line-height:1.5;">${i.d}</div>
+    </div>`).join('');
+}
+
+function v30Toggle(i){
+  const body=document.getElementById('v30-body-'+i);
+  const tog=document.getElementById('v30-tog-'+i);
+  body.classList.toggle('open');
+  tog.textContent=body.classList.contains('open')?'▲':'▼';
+}
+
+// ═══════════════════════════════════════════════════════════
+// ANTI-BULLYING — RENDER
+// ═══════════════════════════════════════════════════════════
+let abMonthlyChart=null,abTypeChart=null;
+
+function renderAntiBullying(){
+  const canvas=document.getElementById('ab-chart-monthly');
+  if(!canvas||canvas.dataset.rendered)return;
+  canvas.dataset.rendered='1';
+
+  abMonthlyChart=new Chart(canvas.getContext('2d'),{
+    type:'line',
+    data:{labels:['Aug','Sep','Oct','Nov','Dec','Jan'],
+      datasets:[{label:'Reports',data:[38,52,61,58,44,67],
+        borderColor:'#176E82',backgroundColor:'rgba(23,110,130,.1)',fill:true,tension:.3,pointRadius:4}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false}},scales:{y:{min:0,ticks:{stepSize:10}}}}
+  });
+
+  abTypeChart=new Chart(document.getElementById('ab-chart-type').getContext('2d'),{
+    type:'doughnut',
+    data:{labels:['Verbal (26%)','Cyberbullying (22%)','Social Exclusion (18%)','Physical (16%)','Harassment (12%)','Threats (6%)'],
+      datasets:[{data:[89,76,63,54,42,23],
+        backgroundColor:['#176E82','#219EBB','#8fa3ab','#ea730b','#e74c3c','#c0392b']}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{font:{size:11}}}}}
+  });
+
+  const comp=[
+    {label:'Investigations Started Within 24 Hours',target:95,actual:93},
+    {label:'Investigations Completed Within Policy Window',target:90,actual:87},
+    {label:'Parent Notification Compliance',target:100,actual:98},
+    {label:'Documentation Completion',target:100,actual:98},
+    {label:'Follow-Up Completion',target:95,actual:92},
+  ];
+  document.getElementById('ab-compliance').innerHTML=comp.map(c=>`
+    <div class="ab-comp-row">
+      <div class="ab-comp-label">${c.label}</div>
+      <div class="ab-comp-bar-wrap"><div class="ab-comp-bar${c.actual>=c.target?'':' miss'}" style="width:${c.actual}%;"></div></div>
+      <div class="ab-comp-pct" style="color:${c.actual>=c.target?'#27ae60':'#c0392b'};">${c.actual}%</div>
+      <div class="ab-comp-target">Target: ${c.target}%</div>
+    </div>`).join('');
+}
 </script>
 
 <!-- ═══════════════════════════════════════════════════════════

@@ -1,0 +1,1132 @@
+﻿Year,Region,School,School_Key,Measure_Code,Measure_Name,min,max,mean,count,Subgroup_Gap
+2026,Unassigned,,NAN,clar,Course Clarity,0,99,38.01628664,307,99
+2026,Unassigned,,NAN,acno,Peer Support for Academic Work,0,99,37.5861244,418,99
+2024,Unassigned,,NAN,pres,Academic Press,0,99,38.87861272,346,99
+2024,Unassigned,,NAN,perc,Academic Personalism,0,99,36.57681159,345,99
+2024,Unassigned,,NAN,math,Math Instruction,0,99,42.86705202,346,99
+2026,Unassigned,,NAN,perc,Academic Personalism,0,99,36.60817308,416,99
+2024,Unassigned,,NAN,clar,Course Clarity,0,99,19.74615385,260,99
+2024,Unassigned,,NAN,acno,Peer Support for Academic Work,0,99,35.69827586,348,99
+2025,Unassigned,,NAN,math,Math Instruction,0,99,43.77005348,374,99
+2026,Unassigned,,NAN,prs2,Parent Supportiveness,0,99,40.04530744,309,99
+2025,Unassigned,,NAN,rigr,Classroom Rigor,0,99,26.65091864,381,99
+2025,Unassigned,,NAN,stdy,Rigorous Study Habits,0,99,32.63707572,383,99
+2024,Unassigned,,NAN,trts,Student-Teacher Trust,0,99,26.61604585,349,99
+2024,Unassigned,,NAN,stdy,Rigorous Study Habits,0,99,29.23988439,346,99
+2025,Unassigned,,NAN,acno,Peer Support for Academic Work,0,99,39.11023622,381,99
+2025,Unassigned,,NAN,clar,Course Clarity,0,99,19.44178082,292,99
+2025,Unassigned,,NAN,trts,Student-Teacher Trust,0,98,29.95822454,383,98
+2026,Unassigned,,NAN,math,Math Instruction,1,99,41.15571776,411,98
+2024,Unassigned,,NAN,peer,Student Peer Relationships,1,99,29.15648855,262,98
+2024,Unassigned,,NAN,engl,English Instruction,1,99,52.70605187,347,98
+2024,Unassigned,,NAN,engg,Academic Engagement,1,99,52.61918605,344,98
+2025,Unassigned,,NAN,engg,Academic Engagement,1,99,54.54353562,379,98
+2025,Unassigned,,NAN,engl,English Instruction,1,99,54.41223404,376,98
+2026,Unassigned,,NAN,engg,Academic Engagement,1,99,45.97349398,415,98
+2025,Unassigned,,NAN,pres,Academic Press,1,99,38.91863517,381,98
+2025,Unassigned,,NAN,perc,Academic Personalism,1,99,40.60789474,380,98
+2025,Unassigned,,NAN,peer,Student Peer Relationships,1,99,33.11227154,383,98
+2026,Unassigned,,NAN,stdy,Rigorous Study Habits,1,99,40.87648456,421,98
+2026,Unassigned,,NAN,pres,Academic Press,0,97,37.47129187,418,97
+2024,Unassigned,,NAN,rigr,Classroom Rigor,0,94,23.64553314,347,94
+2026,Unassigned,,NAN,rigr,Classroom Rigor,0,90,37.07655502,418,90
+2026,Unassigned,,NAN,peer,Student Peer Relationships,1,91,38.06443914,419,90
+2026,Unassigned,,NAN,engl,English Instruction,7,96,45.78019324,414,89
+2024,Unassigned,,NAN,futr,Importance of High School for the Future,0,88,26.92592593,54,88
+2025,Unassigned,,NAN,humr,Human & Social Resources in the Community,1,88,42.76791809,293,87
+2026,Unassigned,,NAN,safe1,Safety,1,88,36.39856802,419,87
+2026,Unassigned,,NAN,trts,Student-Teacher Trust,0,84,30.78384798,421,84
+2024,Unassigned,,NAN,scie,Inquiry-Based Science Instruction,1,79,46.05058366,257,78
+2025,Unassigned,,NAN,scie,Inquiry-Based Science Instruction,7,81,43.75174825,286,74
+2025,Unassigned,,NAN,futr,Importance of High School for the Future,1,73,23.71929825,57,72
+2026,Unassigned,,NAN,humr,Human & Social Resources in the Community,5,76,35.74757282,309,71
+2025,Unassigned,,NAN,slap,School-Wide Future Orientation,33,99,55.05263158,57,66
+2026,Unassigned,,NAN,futr,Importance of High School for the Future,31,97,62.6,65,66
+2026,Unassigned,,NAN,slap,School-Wide Future Orientation,24,85,55.8,65,61
+2024,Unassigned,,NAN,slap,School-Wide Future Orientation,34,93,56.64814815,54,59
+2024,Unassigned,,NAN,humr,Human & Social Resources in the Community,15,73,43.47709924,262,58
+2026,Unassigned,,NAN,scie,Inquiry-Based Science Instruction,14,71,44.46557377,305,57
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,scie,Inquiry-Based Science Instruction,41,41,41,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,safe1,Safety,38,38,38,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,stdy,Rigorous Study Habits,48,48,48,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,acno,Peer Support for Academic Work,19,19,19,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,rigr,Classroom Rigor,36,36,36,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,prs2,Parent Supportiveness,52,52,52,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,pres,Academic Press,34,34,34,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,peer,Student Peer Relationships,36,36,36,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,trts,Student-Teacher Trust,35,35,35,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,clar,Course Clarity,2,2,2,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,engg,Academic Engagement,26,26,26,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,engl,English Instruction,37,37,37,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,humr,Human & Social Resources in the Community,18,18,18,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,math,Math Instruction,25,25,25,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,peer,Student Peer Relationships,25,25,25,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,perc,Academic Personalism,8,8,8,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,pres,Academic Press,15,15,15,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,perc,Academic Personalism,35,35,35,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,humr,Human & Social Resources in the Community,40,40,40,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,math,Math Instruction,48,48,48,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,peer,Student Peer Relationships,50,50,50,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,perc,Academic Personalism,41,41,41,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,pres,Academic Press,34,34,34,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,prs2,Parent Supportiveness,39,39,39,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,rigr,Classroom Rigor,36,36,36,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,safe1,Safety,33,33,33,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,scie,Inquiry-Based Science Instruction,27,27,27,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,stdy,Rigorous Study Habits,44,44,44,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,trts,Student-Teacher Trust,30,30,30,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,acno,Peer Support for Academic Work,43,43,43,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,clar,Course Clarity,58,58,58,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,engg,Academic Engagement,52,52,52,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,engl,English Instruction,47,47,47,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,math,Math Instruction,49,49,49,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,math,Math Instruction,36,36,36,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,humr,Human & Social Resources in the Community,37,37,37,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,engl,English Instruction,46,46,46,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,engg,Academic Engagement,41,41,41,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,clar,Course Clarity,39,39,39,1,0
+2026,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,acno,Peer Support for Academic Work,48,48,48,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,trts,Student-Teacher Trust,48,48,48,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,humr,Human & Social Resources in the Community,49,49,49,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,scie,Inquiry-Based Science Instruction,56,56,56,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,safe1,Safety,60,60,60,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,rigr,Classroom Rigor,54,54,54,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,prs2,Parent Supportiveness,52,52,52,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,pres,Academic Press,49,49,49,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,perc,Academic Personalism,48,48,48,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,peer,Student Peer Relationships,56,56,56,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,prs2,Parent Supportiveness,13,13,13,1,0
+2026,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,stdy,Rigorous Study Habits,52,52,52,1,0
+2026,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,engg,Academic Engagement,33,33,33,1,0
+2026,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,engl,English Instruction,56,56,56,1,0
+2026,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,math,Math Instruction,45,45,45,1,0
+2026,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,peer,Student Peer Relationships,12,12,12,1,0
+2026,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,perc,Academic Personalism,32,32,32,1,0
+2026,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,pres,Academic Press,41,41,41,1,0
+2026,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,rigr,Classroom Rigor,42,42,42,1,0
+2026,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,safe1,Safety,32,32,32,1,0
+2026,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,stdy,Rigorous Study Habits,24,24,24,1,0
+2026,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,trts,Student-Teacher Trust,37,37,37,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,acno,Peer Support for Academic Work,31,31,31,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,clar,Course Clarity,30,30,30,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,engg,Academic Engagement,38,38,38,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,engl,English Instruction,46,46,46,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,humr,Human & Social Resources in the Community,37,37,37,1,0
+2026,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,trts,Student-Teacher Trust,3,3,3,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,peer,Student Peer Relationships,41,41,41,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,math,Math Instruction,52,52,52,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,humr,Human & Social Resources in the Community,28,28,28,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,engl,English Instruction,37,37,37,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,engg,Academic Engagement,53,53,53,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,clar,Course Clarity,38,38,38,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,acno,Peer Support for Academic Work,46,46,46,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,math,Math Instruction,36,36,36,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,stdy,Rigorous Study Habits,33,33,33,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,scie,Inquiry-Based Science Instruction,48,48,48,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,safe1,Safety,34,34,34,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,rigr,Classroom Rigor,30,30,30,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,prs2,Parent Supportiveness,37,37,37,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,pres,Academic Press,36,36,36,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,perc,Academic Personalism,28,28,28,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,peer,Student Peer Relationships,29,29,29,1,0
+2026,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,trts,Student-Teacher Trust,25,25,25,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,engl,English Instruction,53,53,53,1,0
+2026,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,stdy,Rigorous Study Habits,37,37,37,1,0
+2026,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,safe1,Safety,7,7,7,1,0
+2026,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,rigr,Classroom Rigor,29,29,29,1,0
+2026,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,pres,Academic Press,57,57,57,1,0
+2026,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,perc,Academic Personalism,17,17,17,1,0
+2026,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,peer,Student Peer Relationships,18,18,18,1,0
+2026,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,acno,Peer Support for Academic Work,1,1,1,1,0
+2026,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,engl,English Instruction,50,50,50,1,0
+2026,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,engg,Academic Engagement,39,39,39,1,0
+2026,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,acno,Peer Support for Academic Work,39,39,39,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,trts,Student-Teacher Trust,4,4,4,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,stdy,Rigorous Study Habits,20,20,20,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,scie,Inquiry-Based Science Instruction,33,33,33,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,safe1,Safety,16,16,16,1,0
+2026,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,rigr,Classroom Rigor,8,8,8,1,0
+2026,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,math,Math Instruction,55,55,55,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,trts,Student-Teacher Trust,42,42,42,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,stdy,Rigorous Study Habits,55,55,55,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,slap,School-Wide Future Orientation,57,57,57,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,scie,Inquiry-Based Science Instruction,58,58,58,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,safe1,Safety,40,40,40,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,rigr,Classroom Rigor,63,63,63,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,prs2,Parent Supportiveness,40,40,40,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,acno,Peer Support for Academic Work,46,46,46,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,perc,Academic Personalism,58,58,58,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,peer,Student Peer Relationships,37,37,37,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,math,Math Instruction,73,73,73,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,humr,Human & Social Resources in the Community,35,35,35,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,futr,Importance of High School for the Future,67,67,67,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,engl,English Instruction,58,58,58,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,engg,Academic Engagement,70,70,70,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,clar,Course Clarity,62,62,62,1,0
+2026,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,pres,Academic Press,60,60,60,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,clar,Course Clarity,1,1,1,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,engg,Academic Engagement,48,48,48,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,engl,English Instruction,39,39,39,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,humr,Human & Social Resources in the Community,43,43,43,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,math,Math Instruction,42,42,42,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,peer,Student Peer Relationships,24,24,24,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,perc,Academic Personalism,33,33,33,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,pres,Academic Press,41,41,41,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,rigr,Classroom Rigor,25,25,25,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,scie,Inquiry-Based Science Instruction,54,54,54,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,stdy,Rigorous Study Habits,16,16,16,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,trts,Student-Teacher Trust,17,17,17,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,acno,Peer Support for Academic Work,24,24,24,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,clar,Course Clarity,4,4,4,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,engg,Academic Engagement,39,39,39,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,futr,Importance of High School for the Future,87,87,87,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,peer,Student Peer Relationships,18,18,18,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,math,Math Instruction,38,38,38,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,humr,Human & Social Resources in the Community,16,16,16,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,engl,English Instruction,47,47,47,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,engg,Academic Engagement,42,42,42,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,clar,Course Clarity,1,1,1,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,acno,Peer Support for Academic Work,28,28,28,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,engl,English Instruction,27,27,27,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,stdy,Rigorous Study Habits,1,1,1,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,scie,Inquiry-Based Science Instruction,20,20,20,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,rigr,Classroom Rigor,15,15,15,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,pres,Academic Press,24,24,24,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,perc,Academic Personalism,27,27,27,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,peer,Student Peer Relationships,43,43,43,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,math,Math Instruction,14,14,14,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,humr,Human & Social Resources in the Community,39,39,39,1,0
+2025,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,trts,Student-Teacher Trust,24,24,24,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,pres,Academic Press,35,35,35,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,perc,Academic Personalism,39,39,39,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,peer,Student Peer Relationships,25,25,25,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,math,Math Instruction,43,43,43,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,humr,Human & Social Resources in the Community,42,42,42,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,engl,English Instruction,51,51,51,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,engg,Academic Engagement,45,45,45,1,0
+2025,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,acno,Peer Support for Academic Work,5,5,5,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,acno,Peer Support for Academic Work,40,40,40,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,trts,Student-Teacher Trust,70,70,70,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,stdy,Rigorous Study Habits,99,99,99,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,slap,School-Wide Future Orientation,64,64,64,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,scie,Inquiry-Based Science Instruction,59,59,59,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,rigr,Classroom Rigor,46,46,46,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,pres,Academic Press,47,47,47,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,perc,Academic Personalism,70,70,70,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,clar,Course Clarity,15,15,15,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,trts,Student-Teacher Trust,31,31,31,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,stdy,Rigorous Study Habits,14,14,14,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,scie,Inquiry-Based Science Instruction,28,28,28,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,rigr,Classroom Rigor,6,6,6,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,pres,Academic Press,26,26,26,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,perc,Academic Personalism,24,24,24,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,peer,Student Peer Relationships,32,32,32,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,rigr,Classroom Rigor,11,11,11,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,humr,Human & Social Resources in the Community,41,41,41,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,engl,English Instruction,36,36,36,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,engg,Academic Engagement,39,39,39,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,clar,Course Clarity,1,1,1,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,acno,Peer Support for Academic Work,29,29,29,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,trts,Student-Teacher Trust,22,22,22,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,stdy,Rigorous Study Habits,24,24,24,1,0
+2025,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,scie,Inquiry-Based Science Instruction,51,51,51,1,0
+2025,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,math,Math Instruction,21,21,21,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,humr,Human & Social Resources in the Community,43,43,43,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,math,Math Instruction,62,62,62,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,peer,Student Peer Relationships,51,51,51,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,perc,Academic Personalism,48,48,48,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,pres,Academic Press,45,45,45,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,prs2,Parent Supportiveness,44,44,44,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,rigr,Classroom Rigor,52,52,52,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,safe1,Safety,39,39,39,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,scie,Inquiry-Based Science Instruction,55,55,55,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,slap,School-Wide Future Orientation,59,59,59,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,stdy,Rigorous Study Habits,63,63,63,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,trts,Student-Teacher Trust,42,42,42,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,acno,Peer Support for Academic Work,81,81,81,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,clar,Course Clarity,72,72,72,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,engg,Academic Engagement,89,89,89,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,perc,Academic Personalism,22,22,22,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,engg,Academic Engagement,60,60,60,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,clar,Course Clarity,43,43,43,1,0
+2026,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,acno,Peer Support for Academic Work,42,42,42,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,trts,Student-Teacher Trust,68,68,68,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,stdy,Rigorous Study Habits,95,95,95,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,slap,School-Wide Future Orientation,75,75,75,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,scie,Inquiry-Based Science Instruction,62,62,62,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,engl,English Instruction,60,60,60,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,rigr,Classroom Rigor,72,72,72,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,prs2,Parent Supportiveness,58,58,58,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,pres,Academic Press,63,63,63,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,perc,Academic Personalism,69,69,69,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,peer,Student Peer Relationships,72,72,72,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,math,Math Instruction,69,69,69,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,humr,Human & Social Resources in the Community,55,55,55,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,perc,Academic Personalism,42,42,42,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Westerville,HORIZON SCIENCE ACADEMY COLUMBUS HIGH WESTERVILLE,safe1,Safety,62,62,62,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,scie,Inquiry-Based Science Instruction,36,36,36,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,rigr,Classroom Rigor,18,18,18,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,pres,Academic Press,36,36,36,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,perc,Academic Personalism,22,22,22,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,peer,Student Peer Relationships,22,22,22,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,math,Math Instruction,27,27,27,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,humr,Human & Social Resources in the Community,36,36,36,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,futr,Importance of High School for the Future,67,67,67,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,engg,Academic Engagement,41,41,41,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,clar,Course Clarity,6,6,6,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,acno,Peer Support for Academic Work,36,36,36,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,trts,Student-Teacher Trust,13,13,13,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,stdy,Rigorous Study Habits,1,1,1,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,scie,Inquiry-Based Science Instruction,37,37,37,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,rigr,Classroom Rigor,8,8,8,1,0
+2025,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,pres,Academic Press,36,36,36,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,engl,English Instruction,50,50,50,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,engl,English Instruction,48,48,48,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,engg,Academic Engagement,61,61,61,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,clar,Course Clarity,47,47,47,1,0
+2026,Columbus,Horizon Science Academy - Columbus High Morse,HORIZON SCIENCE ACADEMY COLUMBUS HIGH MORSE,acno,Peer Support for Academic Work,53,53,53,1,0
+2026,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,trts,Student-Teacher Trust,22,22,22,1,0
+2026,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,stdy,Rigorous Study Habits,27,27,27,1,0
+2026,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,safe1,Safety,26,26,26,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,stdy,Rigorous Study Habits,28,28,28,1,0
+2026,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,pres,Academic Press,43,43,43,1,0
+2026,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,perc,Academic Personalism,42,42,42,1,0
+2026,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,peer,Student Peer Relationships,24,24,24,1,0
+2026,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,math,Math Instruction,38,38,38,1,0
+2026,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,engl,English Instruction,53,53,53,1,0
+2026,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,engg,Academic Engagement,47,47,47,1,0
+2026,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,acno,Peer Support for Academic Work,26,26,26,1,0
+2025,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,trts,Student-Teacher Trust,10,10,10,1,0
+2026,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,rigr,Classroom Rigor,35,35,35,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,scie,Inquiry-Based Science Instruction,39,39,39,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,safe1,Safety,41,41,41,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,rigr,Classroom Rigor,26,26,26,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,prs2,Parent Supportiveness,36,36,36,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,pres,Academic Press,26,26,26,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,perc,Academic Personalism,20,20,20,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,peer,Student Peer Relationships,33,33,33,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,acno,Peer Support for Academic Work,27,27,27,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,humr,Human & Social Resources in the Community,33,33,33,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,engl,English Instruction,32,32,32,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,engg,Academic Engagement,30,30,30,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,clar,Course Clarity,28,28,28,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,acno,Peer Support for Academic Work,24,24,24,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,trts,Student-Teacher Trust,32,32,32,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,stdy,Rigorous Study Habits,35,35,35,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,scie,Inquiry-Based Science Instruction,49,49,49,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,math,Math Instruction,28,28,28,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,acno,Peer Support for Academic Work,33,33,33,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,trts,Student-Teacher Trust,57,57,57,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,stdy,Rigorous Study Habits,62,62,62,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,scie,Inquiry-Based Science Instruction,61,61,61,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,safe1,Safety,66,66,66,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,rigr,Classroom Rigor,56,56,56,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,prs2,Parent Supportiveness,77,77,77,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,pres,Academic Press,38,38,38,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,stdy,Rigorous Study Habits,25,25,25,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,peer,Student Peer Relationships,62,62,62,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,math,Math Instruction,44,44,44,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,humr,Human & Social Resources in the Community,62,62,62,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,engl,English Instruction,49,49,49,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,engg,Academic Engagement,42,42,42,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,clar,Course Clarity,60,60,60,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,acno,Peer Support for Academic Work,38,38,38,1,0
+2026,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,trts,Student-Teacher Trust,23,23,23,1,0
+2026,Unassigned,Horizon Science Academy - New Bedford,HORIZON SCIENCE ACADEMY NEW BEDFORD,perc,Academic Personalism,60,60,60,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,perc,Academic Personalism,37,37,37,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,peer,Student Peer Relationships,39,39,39,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,math,Math Instruction,35,35,35,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,humr,Human & Social Resources in the Community,35,35,35,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,engl,English Instruction,46,46,46,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,engg,Academic Engagement,41,41,41,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,clar,Course Clarity,28,28,28,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,safe1,Safety,34,34,34,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,trts,Student-Teacher Trust,40,40,40,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,stdy,Rigorous Study Habits,42,42,42,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,slap,School-Wide Future Orientation,51,51,51,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,scie,Inquiry-Based Science Instruction,29,29,29,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,safe1,Safety,39,39,39,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,rigr,Classroom Rigor,45,45,45,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,prs2,Parent Supportiveness,47,47,47,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,pres,Academic Press,47,47,47,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,acno,Peer Support for Academic Work,44,44,44,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,rigr,Classroom Rigor,26,26,26,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,prs2,Parent Supportiveness,51,51,51,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,pres,Academic Press,36,36,36,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,perc,Academic Personalism,40,40,40,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,peer,Student Peer Relationships,28,28,28,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,math,Math Instruction,31,31,31,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,humr,Human & Social Resources in the Community,32,32,32,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,engl,English Instruction,43,43,43,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,pres,Academic Press,35,35,35,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,clar,Course Clarity,31,31,31,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,acno,Peer Support for Academic Work,28,28,28,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,trts,Student-Teacher Trust,27,27,27,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,stdy,Rigorous Study Habits,52,52,52,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,scie,Inquiry-Based Science Instruction,45,45,45,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,safe1,Safety,36,36,36,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,rigr,Classroom Rigor,29,29,29,1,0
+2026,NO,Noble Academy Euclid,NOBLE ACADEMY EUCLID,prs2,Parent Supportiveness,46,46,46,1,0
+2026,Unassigned,Horizon Science Academy - Denison,HORIZON SCIENCE ACADEMY DENISON,engg,Academic Engagement,38,38,38,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,peer,Student Peer Relationships,34,34,34,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,math,Math Instruction,29,29,29,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,humr,Human & Social Resources in the Community,32,32,32,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,engl,English Instruction,36,36,36,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,engg,Academic Engagement,34,34,34,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,clar,Course Clarity,1,1,1,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,acno,Peer Support for Academic Work,17,17,17,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,clar,Course Clarity,39,39,39,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,stdy,Rigorous Study Habits,32,32,32,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,scie,Inquiry-Based Science Instruction,49,49,49,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,safe1,Safety,31,31,31,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,rigr,Classroom Rigor,44,44,44,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,prs2,Parent Supportiveness,54,54,54,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,clar,Course Clarity,28,28,28,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,peer,Student Peer Relationships,20,20,20,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,math,Math Instruction,64,64,64,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,trts,Student-Teacher Trust,26,26,26,1,0
+2026,Unassigned,Horizon Science Academy - Westerville,HORIZON SCIENCE ACADEMY WESTERVILLE,stdy,Rigorous Study Habits,71,71,71,1,0
+2026,Unassigned,Horizon Science Academy - Westerville,HORIZON SCIENCE ACADEMY WESTERVILLE,safe1,Safety,62,62,62,1,0
+2026,Unassigned,Horizon Science Academy - Westerville,HORIZON SCIENCE ACADEMY WESTERVILLE,rigr,Classroom Rigor,68,68,68,1,0
+2026,Unassigned,Horizon Science Academy - Westerville,HORIZON SCIENCE ACADEMY WESTERVILLE,pres,Academic Press,57,57,57,1,0
+2026,Unassigned,Horizon Science Academy - Westerville,HORIZON SCIENCE ACADEMY WESTERVILLE,perc,Academic Personalism,82,82,82,1,0
+2026,Unassigned,Horizon Science Academy - Westerville,HORIZON SCIENCE ACADEMY WESTERVILLE,peer,Student Peer Relationships,70,70,70,1,0
+2026,Unassigned,Horizon Science Academy - Westerville,HORIZON SCIENCE ACADEMY WESTERVILLE,math,Math Instruction,53,53,53,1,0
+2026,Unassigned,Horizon Science Academy - Westerville,HORIZON SCIENCE ACADEMY WESTERVILLE,engl,English Instruction,53,53,53,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,perc,Academic Personalism,27,27,27,1,0
+2026,Unassigned,Horizon Science Academy - Westerville,HORIZON SCIENCE ACADEMY WESTERVILLE,acno,Peer Support for Academic Work,76,76,76,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,trts,Student-Teacher Trust,22,22,22,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,stdy,Rigorous Study Habits,23,23,23,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,scie,Inquiry-Based Science Instruction,31,31,31,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,safe1,Safety,31,31,31,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,rigr,Classroom Rigor,25,25,25,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,prs2,Parent Supportiveness,29,29,29,1,0
+2026,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,pres,Academic Press,27,27,27,1,0
+2026,Unassigned,Horizon Science Academy - Westerville,HORIZON SCIENCE ACADEMY WESTERVILLE,engg,Academic Engagement,68,68,68,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,stdy,Rigorous Study Habits,18,18,18,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,scie,Inquiry-Based Science Instruction,21,21,21,1,0
+2024,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,trts,Student-Teacher Trust,31,31,31,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,pres,Academic Press,24,24,24,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,perc,Academic Personalism,32,32,32,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,peer,Student Peer Relationships,4,4,4,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,math,Math Instruction,52,52,52,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,humr,Human & Social Resources in the Community,44,44,44,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,humr,Human & Social Resources in the Community,35,35,35,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,engg,Academic Engagement,61,61,61,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,pres,Academic Press,37,37,37,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,perc,Academic Personalism,39,39,39,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,peer,Student Peer Relationships,45,45,45,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,math,Math Instruction,38,38,38,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,humr,Human & Social Resources in the Community,31,31,31,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,engl,English Instruction,32,32,32,1,0
+2026,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,engg,Academic Engagement,44,44,44,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,engl,English Instruction,58,58,58,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,engl,English Instruction,49,49,49,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,engg,Academic Engagement,41,41,41,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,clar,Course Clarity,18,18,18,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,acno,Peer Support for Academic Work,30,30,30,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,trts,Student-Teacher Trust,34,34,34,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,stdy,Rigorous Study Habits,22,22,22,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,scie,Inquiry-Based Science Instruction,74,74,74,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,rigr,Classroom Rigor,40,40,40,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,trts,Student-Teacher Trust,8,8,8,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,perc,Academic Personalism,51,51,51,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,peer,Student Peer Relationships,47,47,47,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,math,Math Instruction,68,68,68,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,humr,Human & Social Resources in the Community,65,65,65,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,engl,English Instruction,47,47,47,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,engg,Academic Engagement,69,69,69,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,clar,Course Clarity,51,51,51,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,acno,Peer Support for Academic Work,52,52,52,1,0
+2024,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,pres,Academic Press,47,47,47,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,engg,Academic Engagement,52,52,52,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,clar,Course Clarity,41,41,41,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,acno,Peer Support for Academic Work,46,46,46,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,trts,Student-Teacher Trust,37,37,37,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,stdy,Rigorous Study Habits,59,59,59,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,scie,Inquiry-Based Science Instruction,49,49,49,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,safe1,Safety,48,48,48,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,perc,Academic Personalism,54,54,54,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,prs2,Parent Supportiveness,82,82,82,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,pres,Academic Press,45,45,45,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,perc,Academic Personalism,41,41,41,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,peer,Student Peer Relationships,47,47,47,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,math,Math Instruction,50,50,50,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,humr,Human & Social Resources in the Community,49,49,49,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,engl,English Instruction,54,54,54,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,engg,Academic Engagement,61,61,61,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,rigr,Classroom Rigor,50,50,50,1,0
+2026,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,perc,Academic Personalism,27,27,27,1,0
+2026,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,peer,Student Peer Relationships,43,43,43,1,0
+2026,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,math,Math Instruction,26,26,26,1,0
+2026,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,engl,English Instruction,39,39,39,1,0
+2026,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,engg,Academic Engagement,36,36,36,1,0
+2026,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,acno,Peer Support for Academic Work,31,31,31,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,trts,Student-Teacher Trust,33,33,33,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,stdy,Rigorous Study Habits,52,52,52,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,engl,English Instruction,42,42,42,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,safe1,Safety,43,43,43,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,rigr,Classroom Rigor,40,40,40,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,prs2,Parent Supportiveness,59,59,59,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,pres,Academic Press,32,32,32,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,perc,Academic Personalism,40,40,40,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,peer,Student Peer Relationships,46,46,46,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,math,Math Instruction,48,48,48,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,humr,Human & Social Resources in the Community,51,51,51,1,0
+2026,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,scie,Inquiry-Based Science Instruction,44,44,44,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,pres,Academic Press,34,34,34,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,perc,Academic Personalism,28,28,28,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,peer,Student Peer Relationships,22,22,22,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,math,Math Instruction,36,36,36,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,humr,Human & Social Resources in the Community,31,31,31,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,engl,English Instruction,57,57,57,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,engg,Academic Engagement,32,32,32,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,clar,Course Clarity,36,36,36,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,peer,Student Peer Relationships,67,67,67,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,trts,Student-Teacher Trust,29,29,29,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,stdy,Rigorous Study Habits,49,49,49,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,scie,Inquiry-Based Science Instruction,57,57,57,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,safe1,Safety,33,33,33,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,rigr,Classroom Rigor,43,43,43,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,prs2,Parent Supportiveness,24,24,24,1,0
+2026,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,pres,Academic Press,38,38,38,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,clar,Course Clarity,41,41,41,1,0
+2026,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,acno,Peer Support for Academic Work,49,49,49,1,0
+2026,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,trts,Student-Teacher Trust,24,24,24,1,0
+2026,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,stdy,Rigorous Study Habits,44,44,44,1,0
+2026,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,safe1,Safety,30,30,30,1,0
+2026,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,rigr,Classroom Rigor,50,50,50,1,0
+2026,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,pres,Academic Press,62,62,62,1,0
+2026,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,perc,Academic Personalism,35,35,35,1,0
+2026,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,peer,Student Peer Relationships,30,30,30,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,prs2,Parent Supportiveness,38,38,38,1,0
+2026,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,engl,English Instruction,50,50,50,1,0
+2026,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,engg,Academic Engagement,55,55,55,1,0
+2026,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,acno,Peer Support for Academic Work,43,43,43,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,trts,Student-Teacher Trust,18,18,18,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,stdy,Rigorous Study Habits,35,35,35,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,scie,Inquiry-Based Science Instruction,40,40,40,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,safe1,Safety,28,28,28,1,0
+2026,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,rigr,Classroom Rigor,35,35,35,1,0
+2026,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,math,Math Instruction,40,40,40,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,humr,Human & Social Resources in the Community,19,19,19,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,engl,English Instruction,40,40,40,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,engg,Academic Engagement,30,30,30,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,clar,Course Clarity,26,26,26,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,acno,Peer Support for Academic Work,24,24,24,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,trts,Student-Teacher Trust,26,26,26,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,stdy,Rigorous Study Habits,38,38,38,1,0
+2026,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,pres,Academic Press,28,28,28,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,safe1,Safety,28,28,28,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,rigr,Classroom Rigor,31,31,31,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,prs2,Parent Supportiveness,27,27,27,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,pres,Academic Press,28,28,28,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,perc,Academic Personalism,30,30,30,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,peer,Student Peer Relationships,35,35,35,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,math,Math Instruction,34,34,34,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,humr,Human & Social Resources in the Community,30,30,30,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,scie,Inquiry-Based Science Instruction,37,37,37,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,peer,Student Peer Relationships,40,40,40,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,math,Math Instruction,52,52,52,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,humr,Human & Social Resources in the Community,25,25,25,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,futr,Importance of High School for the Future,55,55,55,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,engl,English Instruction,42,42,42,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,engg,Academic Engagement,62,62,62,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,clar,Course Clarity,59,59,59,1,0
+2026,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,acno,Peer Support for Academic Work,32,32,32,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,math,Math Instruction,16,16,16,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,stdy,Rigorous Study Habits,16,16,16,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,scie,Inquiry-Based Science Instruction,45,45,45,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,safe1,Safety,14,14,14,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,rigr,Classroom Rigor,19,19,19,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,prs2,Parent Supportiveness,17,17,17,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,pres,Academic Press,28,28,28,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,perc,Academic Personalism,18,18,18,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,peer,Student Peer Relationships,19,19,19,1,0
+2026,NO,Horizon Science Academy - Cleveland Elementary,HORIZON SCIENCE ACADEMY CLEVELAND ELEMENTARY,trts,Student-Teacher Trust,0,0,0,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,clar,Course Clarity,31,31,31,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,acno,Peer Support for Academic Work,42,42,42,1,0
+2026,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,trts,Student-Teacher Trust,33,33,33,1,0
+2026,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,stdy,Rigorous Study Habits,34,34,34,1,0
+2026,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,safe1,Safety,39,39,39,1,0
+2026,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,rigr,Classroom Rigor,34,34,34,1,0
+2026,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,pres,Academic Press,25,25,25,1,0
+2026,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,perc,Academic Personalism,35,35,35,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,engl,English Instruction,46,46,46,1,0
+2026,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,math,Math Instruction,35,35,35,1,0
+2026,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,engl,English Instruction,50,50,50,1,0
+2026,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,engg,Academic Engagement,30,30,30,1,0
+2026,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,acno,Peer Support for Academic Work,32,32,32,1,0
+2026,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,trts,Student-Teacher Trust,26,26,26,1,0
+2026,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,stdy,Rigorous Study Habits,35,35,35,1,0
+2026,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,safe1,Safety,42,42,42,1,0
+2026,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,rigr,Classroom Rigor,27,27,27,1,0
+2026,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,peer,Student Peer Relationships,19,19,19,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,engg,Academic Engagement,47,47,47,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,clar,Course Clarity,27,27,27,1,0
+2026,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,acno,Peer Support for Academic Work,36,36,36,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,trts,Student-Teacher Trust,23,23,23,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,stdy,Rigorous Study Habits,47,47,47,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,slap,School-Wide Future Orientation,41,41,41,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,scie,Inquiry-Based Science Instruction,41,41,41,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,safe1,Safety,33,33,33,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,engg,Academic Engagement,49,49,49,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,prs2,Parent Supportiveness,26,26,26,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,pres,Academic Press,35,35,35,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,perc,Academic Personalism,32,32,32,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,peer,Student Peer Relationships,35,35,35,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,math,Math Instruction,42,42,42,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,humr,Human & Social Resources in the Community,31,31,31,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,futr,Importance of High School for the Future,46,46,46,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,engl,English Instruction,49,49,49,1,0
+2026,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,rigr,Classroom Rigor,31,31,31,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,slap,School-Wide Future Orientation,49,49,49,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,scie,Inquiry-Based Science Instruction,54,54,54,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,rigr,Classroom Rigor,28,28,28,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,pres,Academic Press,40,40,40,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,perc,Academic Personalism,60,60,60,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,peer,Student Peer Relationships,41,41,41,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,math,Math Instruction,62,62,62,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,humr,Human & Social Resources in the Community,38,38,38,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,futr,Importance of High School for the Future,25,25,25,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,engl,English Instruction,81,81,81,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,engg,Academic Engagement,70,70,70,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,clar,Course Clarity,53,53,53,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,acno,Peer Support for Academic Work,44,44,44,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,trts,Student-Teacher Trust,7,7,7,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,stdy,Rigorous Study Habits,11,11,11,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,scie,Inquiry-Based Science Instruction,47,47,47,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,humr,Human & Social Resources in the Community,42,42,42,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,clar,Course Clarity,72,72,72,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,acno,Peer Support for Academic Work,78,78,78,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,trts,Student-Teacher Trust,19,19,19,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,stdy,Rigorous Study Habits,26,26,26,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,scie,Inquiry-Based Science Instruction,60,60,60,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,rigr,Classroom Rigor,14,14,14,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,pres,Academic Press,42,42,42,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,stdy,Rigorous Study Habits,59,59,59,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,peer,Student Peer Relationships,30,30,30,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,math,Math Instruction,47,47,47,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,humr,Human & Social Resources in the Community,56,56,56,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,engl,English Instruction,60,60,60,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,engg,Academic Engagement,38,38,38,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,clar,Course Clarity,20,20,20,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,acno,Peer Support for Academic Work,47,47,47,1,0
+2024,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,trts,Student-Teacher Trust,45,45,45,1,0
+2024,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,perc,Academic Personalism,44,44,44,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,math,Math Instruction,49,49,49,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,humr,Human & Social Resources in the Community,52,52,52,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,futr,Importance of High School for the Future,1,1,1,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,engl,English Instruction,60,60,60,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,engg,Academic Engagement,73,73,73,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,clar,Course Clarity,42,42,42,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,acno,Peer Support for Academic Work,53,53,53,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,rigr,Classroom Rigor,5,5,5,1,0
+2024,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,stdy,Rigorous Study Habits,1,1,1,1,0
+2024,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,rigr,Classroom Rigor,32,32,32,1,0
+2024,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,pres,Academic Press,56,56,56,1,0
+2024,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,perc,Academic Personalism,55,55,55,1,0
+2024,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,math,Math Instruction,41,41,41,1,0
+2024,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,engl,English Instruction,30,30,30,1,0
+2024,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,engg,Academic Engagement,65,65,65,1,0
+2024,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,acno,Peer Support for Academic Work,26,26,26,1,0
+2024,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,trts,Student-Teacher Trust,31,31,31,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,pres,Academic Press,5,5,5,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,perc,Academic Personalism,20,20,20,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,peer,Student Peer Relationships,6,6,6,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,math,Math Instruction,44,44,44,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,humr,Human & Social Resources in the Community,39,39,39,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,engl,English Instruction,60,60,60,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,engg,Academic Engagement,39,39,39,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,peer,Student Peer Relationships,44,44,44,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,acno,Peer Support for Academic Work,27,27,27,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,trts,Student-Teacher Trust,46,46,46,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,stdy,Rigorous Study Habits,53,53,53,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,slap,School-Wide Future Orientation,49,49,49,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,scie,Inquiry-Based Science Instruction,55,55,55,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,rigr,Classroom Rigor,26,26,26,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,pres,Academic Press,45,45,45,1,0
+2024,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,perc,Academic Personalism,47,47,47,1,0
+2024,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,clar,Course Clarity,1,1,1,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,trts,Student-Teacher Trust,19,19,19,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,stdy,Rigorous Study Habits,22,22,22,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,scie,Inquiry-Based Science Instruction,63,63,63,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,rigr,Classroom Rigor,22,22,22,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,pres,Academic Press,37,37,37,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,perc,Academic Personalism,25,25,25,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,peer,Student Peer Relationships,18,18,18,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,engg,Academic Engagement,99,99,99,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,humr,Human & Social Resources in the Community,47,47,47,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,engl,English Instruction,42,42,42,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,engg,Academic Engagement,34,34,34,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,clar,Course Clarity,1,1,1,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,acno,Peer Support for Academic Work,39,39,39,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,trts,Student-Teacher Trust,29,29,29,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,stdy,Rigorous Study Habits,19,19,19,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,scie,Inquiry-Based Science Instruction,26,26,26,1,0
+2024,Unassigned,Horizon Science Academy - Springfield,HORIZON SCIENCE ACADEMY SPRINGFIELD,math,Math Instruction,43,43,43,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,engl,English Instruction,58,58,58,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,engg,Academic Engagement,58,58,58,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,clar,Course Clarity,14,14,14,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,acno,Peer Support for Academic Work,40,40,40,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,trts,Student-Teacher Trust,13,13,13,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,stdy,Rigorous Study Habits,0,0,0,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,scie,Inquiry-Based Science Instruction,13,13,13,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,acno,Peer Support for Academic Work,12,12,12,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,pres,Academic Press,10,10,10,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,perc,Academic Personalism,10,10,10,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,peer,Student Peer Relationships,29,29,29,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,math,Math Instruction,9,9,9,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,humr,Human & Social Resources in the Community,44,44,44,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,engl,English Instruction,35,35,35,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,engg,Academic Engagement,14,14,14,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,clar,Course Clarity,1,1,1,1,0
+2024,Unassigned,Horizon Science Academy - Toledo,HORIZON SCIENCE ACADEMY TOLEDO,rigr,Classroom Rigor,1,1,1,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,engl,English Instruction,65,65,65,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,engg,Academic Engagement,60,60,60,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,clar,Course Clarity,1,1,1,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,acno,Peer Support for Academic Work,35,35,35,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,trts,Student-Teacher Trust,83,83,83,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,stdy,Rigorous Study Habits,99,99,99,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,slap,School-Wide Future Orientation,72,72,72,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,rigr,Classroom Rigor,3,3,3,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,rigr,Classroom Rigor,54,54,54,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,pres,Academic Press,61,61,61,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,perc,Academic Personalism,77,77,77,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,peer,Student Peer Relationships,78,78,78,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,math,Math Instruction,74,74,74,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,humr,Human & Social Resources in the Community,67,67,67,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,futr,Importance of High School for the Future,58,58,58,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,engl,English Instruction,76,76,76,1,0
+2024,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,scie,Inquiry-Based Science Instruction,62,62,62,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,pres,Academic Press,25,25,25,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,perc,Academic Personalism,18,18,18,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,peer,Student Peer Relationships,18,18,18,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,math,Math Instruction,8,8,8,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,humr,Human & Social Resources in the Community,35,35,35,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,engl,English Instruction,38,38,38,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,engg,Academic Engagement,35,35,35,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,clar,Course Clarity,1,1,1,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,humr,Human & Social Resources in the Community,35,35,35,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,trts,Student-Teacher Trust,24,24,24,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,stdy,Rigorous Study Habits,36,36,36,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,scie,Inquiry-Based Science Instruction,35,35,35,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,rigr,Classroom Rigor,17,17,17,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,pres,Academic Press,30,30,30,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,perc,Academic Personalism,45,45,45,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,peer,Student Peer Relationships,17,17,17,1,0
+2024,Unassigned,Horizon Science Academy - Denison Middle,HORIZON SCIENCE ACADEMY DENISON MIDDLE,math,Math Instruction,41,41,41,1,0
+2024,Unassigned,Horizon Science Academy - Lorain,HORIZON SCIENCE ACADEMY LORAIN,acno,Peer Support for Academic Work,13,13,13,1,0
+2024,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,rigr,Classroom Rigor,40,40,40,1,0
+2024,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,pres,Academic Press,99,99,99,1,0
+2024,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,perc,Academic Personalism,56,56,56,1,0
+2024,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,math,Math Instruction,53,53,53,1,0
+2024,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,engl,English Instruction,70,70,70,1,0
+2024,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,engg,Academic Engagement,68,68,68,1,0
+2024,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,acno,Peer Support for Academic Work,4,4,4,1,0
+2024,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,trts,Student-Teacher Trust,31,31,31,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,stdy,Rigorous Study Habits,16,16,16,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,scie,Inquiry-Based Science Instruction,46,46,46,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,rigr,Classroom Rigor,1,1,1,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,pres,Academic Press,25,25,25,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,perc,Academic Personalism,28,28,28,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,peer,Student Peer Relationships,28,28,28,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,math,Math Instruction,25,25,25,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,humr,Human & Social Resources in the Community,32,32,32,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,trts,Student-Teacher Trust,16,16,16,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,trts,Student-Teacher Trust,31,31,31,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,stdy,Rigorous Study Habits,62,62,62,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,slap,School-Wide Future Orientation,48,48,48,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,scie,Inquiry-Based Science Instruction,57,57,57,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,rigr,Classroom Rigor,32,32,32,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,pres,Academic Press,41,41,41,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,perc,Academic Personalism,39,39,39,1,0
+2024,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,stdy,Rigorous Study Habits,1,1,1,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,math,Math Instruction,66,66,66,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,humr,Human & Social Resources in the Community,39,39,39,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,futr,Importance of High School for the Future,1,1,1,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,engl,English Instruction,44,44,44,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,engg,Academic Engagement,71,71,71,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,clar,Course Clarity,22,22,22,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,acno,Peer Support for Academic Work,49,49,49,1,0
+2024,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,trts,Student-Teacher Trust,7,7,7,1,0
+2024,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,peer,Student Peer Relationships,22,22,22,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,math,Math Instruction,31,31,31,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,humr,Human & Social Resources in the Community,23,23,23,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,engl,English Instruction,36,36,36,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,engg,Academic Engagement,39,39,39,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,clar,Course Clarity,26,26,26,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,acno,Peer Support for Academic Work,29,29,29,1,0
+2024,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,stdy,Rigorous Study Habits,11,11,11,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,engl,English Instruction,33,33,33,1,0
+2024,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,pres,Academic Press,69,69,69,1,0
+2024,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,perc,Academic Personalism,53,53,53,1,0
+2024,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,math,Math Instruction,84,84,84,1,0
+2024,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,engl,English Instruction,55,55,55,1,0
+2024,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,engg,Academic Engagement,99,99,99,1,0
+2024,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,acno,Peer Support for Academic Work,47,47,47,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,rigr,Classroom Rigor,2,2,2,1,0
+2026,Unassigned,Horizon Science Academy - Westerville,HORIZON SCIENCE ACADEMY WESTERVILLE,trts,Student-Teacher Trust,65,65,65,1,0
+2024,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,rigr,Classroom Rigor,45,45,45,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,engg,Academic Engagement,36,36,36,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,clar,Course Clarity,1,1,1,1,0
+2024,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,acno,Peer Support for Academic Work,18,18,18,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,trts,Student-Teacher Trust,18,18,18,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,stdy,Rigorous Study Habits,28,28,28,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,scie,Inquiry-Based Science Instruction,63,63,63,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,rigr,Classroom Rigor,27,27,27,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,pres,Academic Press,47,47,47,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,peer,Student Peer Relationships,31,31,31,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,trts,Student-Teacher Trust,10,10,10,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,stdy,Rigorous Study Habits,15,15,15,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,scie,Inquiry-Based Science Instruction,34,34,34,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,safe1,Safety,16,16,16,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,rigr,Classroom Rigor,20,20,20,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,prs2,Parent Supportiveness,22,22,22,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,pres,Academic Press,38,38,38,1,0
+2024,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,perc,Academic Personalism,40,40,40,1,0
+2024,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,acno,Peer Support for Academic Work,9,9,9,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,engl,English Instruction,59,59,59,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,engg,Academic Engagement,51,51,51,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,clar,Course Clarity,14,14,14,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,acno,Peer Support for Academic Work,38,38,38,1,0
+2024,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,trts,Student-Teacher Trust,59,59,59,1,0
+2024,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,stdy,Rigorous Study Habits,61,61,61,1,0
+2024,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,rigr,Classroom Rigor,70,70,70,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,acno,Peer Support for Academic Work,16,16,16,1,0
+2024,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,perc,Academic Personalism,59,59,59,1,0
+2024,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,math,Math Instruction,31,31,31,1,0
+2024,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,engl,English Instruction,51,51,51,1,0
+2024,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,engg,Academic Engagement,80,80,80,1,0
+2024,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,acno,Peer Support for Academic Work,96,96,96,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,trts,Student-Teacher Trust,20,20,20,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,stdy,Rigorous Study Habits,22,22,22,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,scie,Inquiry-Based Science Instruction,27,27,27,1,0
+2024,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,pres,Academic Press,63,63,63,1,0
+2024,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,stdy,Rigorous Study Habits,1,1,1,1,0
+2024,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,rigr,Classroom Rigor,30,30,30,1,0
+2024,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,pres,Academic Press,60,60,60,1,0
+2024,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,perc,Academic Personalism,17,17,17,1,0
+2024,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,math,Math Instruction,31,31,31,1,0
+2024,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,engl,English Instruction,51,51,51,1,0
+2024,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,engg,Academic Engagement,31,31,31,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,humr,Human & Social Resources in the Community,54,54,54,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,trts,Student-Teacher Trust,16,16,16,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,stdy,Rigorous Study Habits,48,48,48,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,scie,Inquiry-Based Science Instruction,50,50,50,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,rigr,Classroom Rigor,24,24,24,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,pres,Academic Press,35,35,35,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,perc,Academic Personalism,34,34,34,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,peer,Student Peer Relationships,25,25,25,1,0
+2024,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,math,Math Instruction,52,52,52,1,0
+2024,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,acno,Peer Support for Academic Work,1,1,1,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,engl,English Instruction,55,55,55,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,engg,Academic Engagement,62,62,62,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,clar,Course Clarity,27,27,27,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,acno,Peer Support for Academic Work,52,52,52,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,trts,Student-Teacher Trust,14,14,14,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,stdy,Rigorous Study Habits,5,5,5,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,scie,Inquiry-Based Science Instruction,38,38,38,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,rigr,Classroom Rigor,11,11,11,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,pres,Academic Press,21,21,21,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,perc,Academic Personalism,10,10,10,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,peer,Student Peer Relationships,24,24,24,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,math,Math Instruction,24,24,24,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,humr,Human & Social Resources in the Community,39,39,39,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,engl,English Instruction,49,49,49,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,engg,Academic Engagement,26,26,26,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,clar,Course Clarity,1,1,1,1,0
+2024,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,rigr,Classroom Rigor,1,1,1,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,pres,Academic Press,22,22,22,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,perc,Academic Personalism,23,23,23,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,peer,Student Peer Relationships,20,20,20,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,math,Math Instruction,21,21,21,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,humr,Human & Social Resources in the Community,39,39,39,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,engl,English Instruction,53,53,53,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,engg,Academic Engagement,32,32,32,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,clar,Course Clarity,0,0,0,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,humr,Human & Social Resources in the Community,42,42,42,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,trts,Student-Teacher Trust,18,18,18,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,stdy,Rigorous Study Habits,39,39,39,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,scie,Inquiry-Based Science Instruction,73,73,73,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,rigr,Classroom Rigor,34,34,34,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,pres,Academic Press,52,52,52,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,perc,Academic Personalism,40,40,40,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,peer,Student Peer Relationships,20,20,20,1,0
+2024,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,math,Math Instruction,55,55,55,1,0
+2024,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,acno,Peer Support for Academic Work,33,33,33,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,rigr,Classroom Rigor,18,18,18,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,pres,Academic Press,16,16,16,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,perc,Academic Personalism,19,19,19,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,peer,Student Peer Relationships,33,33,33,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,math,Math Instruction,32,32,32,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,humr,Human & Social Resources in the Community,51,51,51,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,engl,English Instruction,54,54,54,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,humr,Human & Social Resources in the Community,23,23,23,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,clar,Course Clarity,21,21,21,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,acno,Peer Support for Academic Work,38,38,38,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,trts,Student-Teacher Trust,39,39,39,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,stdy,Rigorous Study Habits,59,59,59,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,scie,Inquiry-Based Science Instruction,63,63,63,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,rigr,Classroom Rigor,68,68,68,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,pres,Academic Press,87,87,87,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,perc,Academic Personalism,76,76,76,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,engg,Academic Engagement,36,36,36,1,0
+2025,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,math,Math Instruction,51,51,51,1,0
+2025,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,engl,English Instruction,67,67,67,1,0
+2025,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,engg,Academic Engagement,63,63,63,1,0
+2025,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,acno,Peer Support for Academic Work,38,38,38,1,0
+2025,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,trts,Student-Teacher Trust,18,18,18,1,0
+2025,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,stdy,Rigorous Study Habits,1,1,1,1,0
+2025,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,rigr,Classroom Rigor,8,8,8,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,scie,Inquiry-Based Science Instruction,36,36,36,1,0
+2025,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,perc,Academic Personalism,1,1,1,1,0
+2025,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,peer,Student Peer Relationships,25,25,25,1,0
+2025,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,math,Math Instruction,17,17,17,1,0
+2025,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,engl,English Instruction,25,25,25,1,0
+2025,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,engg,Academic Engagement,38,38,38,1,0
+2025,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,acno,Peer Support for Academic Work,1,1,1,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,trts,Student-Teacher Trust,17,17,17,1,0
+2025,MN,Minnesota Math and Science Academy,MINNESOTA MATH AND SCIENCE ACADEMY,stdy,Rigorous Study Habits,39,39,39,1,0
+2025,MO,Gateway Science Academy - Smiley,GATEWAY SCIENCE ACADEMY SMILEY,pres,Academic Press,25,25,25,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,stdy,Rigorous Study Habits,31,31,31,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,scie,Inquiry-Based Science Instruction,40,40,40,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,rigr,Classroom Rigor,18,18,18,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,pres,Academic Press,22,22,22,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,perc,Academic Personalism,24,24,24,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,peer,Student Peer Relationships,19,19,19,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,math,Math Instruction,24,24,24,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,peer,Student Peer Relationships,71,71,71,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,engl,English Instruction,57,57,57,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,engg,Academic Engagement,28,28,28,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,clar,Course Clarity,4,4,4,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,acno,Peer Support for Academic Work,28,28,28,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,trts,Student-Teacher Trust,17,17,17,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,stdy,Rigorous Study Habits,37,37,37,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,scie,Inquiry-Based Science Instruction,65,65,65,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,rigr,Classroom Rigor,30,30,30,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,humr,Human & Social Resources in the Community,40,40,40,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,math,Math Instruction,63,63,63,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,humr,Human & Social Resources in the Community,67,67,67,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,engl,English Instruction,65,65,65,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,engg,Academic Engagement,76,76,76,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,clar,Course Clarity,17,17,17,1,0
+2025,MN,Horizon Science Academy - Twin Cities,HORIZON SCIENCE ACADEMY TWIN CITIES,acno,Peer Support for Academic Work,83,83,83,1,0
+2025,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,trts,Student-Teacher Trust,51,51,51,1,0
+2025,MI,Michigan Math and Science Academy - Dequindre,MICHIGAN MATH AND SCIENCE ACADEMY DEQUINDRE,trts,Student-Teacher Trust,19,19,19,1,0
+2025,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,rigr,Classroom Rigor,61,61,61,1,0
+2025,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,pres,Academic Press,51,51,51,1,0
+2025,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,perc,Academic Personalism,52,52,52,1,0
+2025,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,peer,Student Peer Relationships,88,88,88,1,0
+2025,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,math,Math Instruction,53,53,53,1,0
+2025,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,engl,English Instruction,55,55,55,1,0
+2025,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,engg,Academic Engagement,68,68,68,1,0
+2025,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,acno,Peer Support for Academic Work,85,85,85,1,0
+2025,MI,Michigan Math and Science Academy - Lorraine,MICHIGAN MATH AND SCIENCE ACADEMY LORRAINE,stdy,Rigorous Study Habits,74,74,74,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,engg,Academic Engagement,36,36,36,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,clar,Course Clarity,18,18,18,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,acno,Peer Support for Academic Work,41,41,41,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,trts,Student-Teacher Trust,78,78,78,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,stdy,Rigorous Study Habits,76,76,76,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,slap,School-Wide Future Orientation,68,68,68,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,scie,Inquiry-Based Science Instruction,48,48,48,1,0
+2025,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,peer,Student Peer Relationships,3,3,3,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,pres,Academic Press,49,49,49,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,perc,Academic Personalism,63,63,63,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,peer,Student Peer Relationships,40,40,40,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,math,Math Instruction,79,79,79,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,humr,Human & Social Resources in the Community,53,53,53,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,futr,Importance of High School for the Future,42,42,42,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,engl,English Instruction,65,65,65,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,engg,Academic Engagement,80,80,80,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,rigr,Classroom Rigor,44,44,44,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,math,Math Instruction,61,61,61,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,humr,Human & Social Resources in the Community,62,62,62,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,futr,Importance of High School for the Future,42,42,42,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,engl,English Instruction,65,65,65,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,engg,Academic Engagement,97,97,97,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,clar,Course Clarity,62,62,62,1,0
+2025,Unassigned,Horizon Science Academy - Columbus High,HORIZON SCIENCE ACADEMY COLUMBUS HIGH,acno,Peer Support for Academic Work,81,81,81,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,engl,English Instruction,57,57,57,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,stdy,Rigorous Study Habits,20,20,20,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,scie,Inquiry-Based Science Instruction,34,34,34,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,rigr,Classroom Rigor,2,2,2,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,pres,Academic Press,32,32,32,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,perc,Academic Personalism,32,32,32,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,peer,Student Peer Relationships,10,10,10,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,math,Math Instruction,25,25,25,1,0
+2026,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,perc,Academic Personalism,16,16,16,1,0
+2025,Unassigned,Horizon Science Academy - Cleveland Middle,HORIZON SCIENCE ACADEMY CLEVELAND MIDDLE,trts,Student-Teacher Trust,14,14,14,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,rigr,Classroom Rigor,24,24,24,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,pres,Academic Press,36,36,36,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,perc,Academic Personalism,28,28,28,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,peer,Student Peer Relationships,53,53,53,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,math,Math Instruction,36,36,36,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,humr,Human & Social Resources in the Community,46,46,46,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,futr,Importance of High School for the Future,1,1,1,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,clar,Course Clarity,70,70,70,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,engg,Academic Engagement,54,54,54,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,clar,Course Clarity,18,18,18,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,acno,Peer Support for Academic Work,46,46,46,1,0
+2025,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,trts,Student-Teacher Trust,41,41,41,1,0
+2025,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,stdy,Rigorous Study Habits,28,28,28,1,0
+2025,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,rigr,Classroom Rigor,42,42,42,1,0
+2025,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,pres,Academic Press,39,39,39,1,0
+2025,MO,Gateway Science Academy - South,GATEWAY SCIENCE ACADEMY SOUTH,perc,Academic Personalism,61,61,61,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,engl,English Instruction,61,61,61,1,0
+2025,NO,Horizon Science Academy - Cleveland High,HORIZON SCIENCE ACADEMY CLEVELAND HIGH,acno,Peer Support for Academic Work,32,32,32,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,trts,Student-Teacher Trust,13,13,13,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,stdy,Rigorous Study Habits,18,18,18,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,scie,Inquiry-Based Science Instruction,43,43,43,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,rigr,Classroom Rigor,17,17,17,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,pres,Academic Press,33,33,33,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,perc,Academic Personalism,28,28,28,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,peer,Student Peer Relationships,10,10,10,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,scie,Inquiry-Based Science Instruction,55,55,55,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,humr,Human & Social Resources in the Community,34,34,34,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,engl,English Instruction,54,54,54,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,engg,Academic Engagement,52,52,52,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,clar,Course Clarity,1,1,1,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,acno,Peer Support for Academic Work,28,28,28,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,trts,Student-Teacher Trust,47,47,47,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,stdy,Rigorous Study Habits,60,60,60,1,0
+2025,MO,Gateway Science Academy High - Fyler,GATEWAY SCIENCE ACADEMY HIGH FYLER,slap,School-Wide Future Orientation,43,43,43,1,0
+2025,MO,Gateway Science Academy Middle - Fyler,GATEWAY SCIENCE ACADEMY MIDDLE FYLER,math,Math Instruction,42,42,42,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,peer,Student Peer Relationships,57,57,57,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,math,Math Instruction,66,66,66,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,humr,Human & Social Resources in the Community,62,62,62,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,engl,English Instruction,62,62,62,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,engg,Academic Engagement,67,67,67,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,clar,Course Clarity,29,29,29,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,acno,Peer Support for Academic Work,48,48,48,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,pres,Academic Press,36,36,36,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,stdy,Rigorous Study Habits,35,35,35,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,scie,Inquiry-Based Science Instruction,27,27,27,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,rigr,Classroom Rigor,18,18,18,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,pres,Academic Press,44,44,44,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,perc,Academic Personalism,42,42,42,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,peer,Student Peer Relationships,16,16,16,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,math,Math Instruction,64,64,64,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,humr,Human & Social Resources in the Community,43,43,43,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,trts,Student-Teacher Trust,11,11,11,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,scie,Inquiry-Based Science Instruction,61,61,61,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,rigr,Classroom Rigor,24,24,24,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,pres,Academic Press,44,44,44,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,perc,Academic Personalism,54,54,54,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,peer,Student Peer Relationships,20,20,20,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,math,Math Instruction,62,62,62,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,humr,Human & Social Resources in the Community,32,32,32,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,perc,Academic Personalism,57,57,57,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,engg,Academic Engagement,57,57,57,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,clar,Course Clarity,29,29,29,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,acno,Peer Support for Academic Work,52,52,52,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,trts,Student-Teacher Trust,43,43,43,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,stdy,Rigorous Study Habits,18,18,18,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,scie,Inquiry-Based Science Instruction,39,39,39,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,rigr,Classroom Rigor,42,42,42,1,0
+2025,Columbus,Noble Academy Columbus,NOBLE ACADEMY COLUMBUS,pres,Academic Press,55,55,55,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,engl,English Instruction,64,64,64,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,perc,Academic Personalism,13,13,13,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,peer,Student Peer Relationships,19,19,19,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,math,Math Instruction,17,17,17,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,humr,Human & Social Resources in the Community,33,33,33,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,engl,English Instruction,45,45,45,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,engg,Academic Engagement,22,22,22,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,clar,Course Clarity,1,1,1,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,engl,English Instruction,72,72,72,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,trts,Student-Teacher Trust,19,19,19,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,stdy,Rigorous Study Habits,21,21,21,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,scie,Inquiry-Based Science Instruction,39,39,39,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,rigr,Classroom Rigor,35,35,35,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,pres,Academic Press,44,44,44,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,perc,Academic Personalism,33,33,33,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,peer,Student Peer Relationships,22,22,22,1,0
+2024,Unassigned,Horizon Science Academy - Youngstown,HORIZON SCIENCE ACADEMY YOUNGSTOWN,math,Math Instruction,41,41,41,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,acno,Peer Support for Academic Work,14,14,14,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,engg,Academic Engagement,72,72,72,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,clar,Course Clarity,14,14,14,1,0
+2025,Columbus,Horizon Science Academy - Columbus Middle,HORIZON SCIENCE ACADEMY COLUMBUS MIDDLE,acno,Peer Support for Academic Work,36,36,36,1,0
+2025,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,trts,Student-Teacher Trust,33,33,33,1,0
+2025,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,stdy,Rigorous Study Habits,28,28,28,1,0
+2025,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,rigr,Classroom Rigor,48,48,48,1,0
+2025,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,pres,Academic Press,67,67,67,1,0
+2025,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,perc,Academic Personalism,75,75,75,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,pres,Academic Press,27,27,27,1,0
+2025,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,math,Math Instruction,99,99,99,1,0
+2025,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,engl,English Instruction,72,72,72,1,0
+2025,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,engg,Academic Engagement,82,82,82,1,0
+2025,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,acno,Peer Support for Academic Work,23,23,23,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,trts,Student-Teacher Trust,1,1,1,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,stdy,Rigorous Study Habits,3,3,3,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,scie,Inquiry-Based Science Instruction,44,44,44,1,0
+2024,Unassigned,Noble Academy Cleveland,NOBLE ACADEMY CLEVELAND,rigr,Classroom Rigor,1,1,1,1,0
+2025,Columbus,Horizon Science Academy - Columbus Elementary,HORIZON SCIENCE ACADEMY COLUMBUS ELEMENTARY,peer,Student Peer Relationships,5,5,5,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,engl,English Instruction,45,45,45,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,engg,Academic Engagement,30,30,30,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,clar,Course Clarity,1,1,1,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,acno,Peer Support for Academic Work,23,23,23,1,0
+2025,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,trts,Student-Teacher Trust,32,32,32,1,0
+2025,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,stdy,Rigorous Study Habits,5,5,5,1,0
+2025,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,rigr,Classroom Rigor,1,1,1,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,stdy,Rigorous Study Habits,20,20,20,1,0
+2025,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,perc,Academic Personalism,60,60,60,1,0
+2025,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,peer,Student Peer Relationships,1,1,1,1,0
+2025,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,engg,Academic Engagement,1,1,1,1,0
+2025,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,acno,Peer Support for Academic Work,1,1,1,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,trts,Student-Teacher Trust,34,34,34,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,stdy,Rigorous Study Habits,66,66,66,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,slap,School-Wide Future Orientation,46,46,46,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,scie,Inquiry-Based Science Instruction,69,69,69,1,0
+2025,IA,Horizon Science Academy - Des Moines,HORIZON SCIENCE ACADEMY DES MOINES,pres,Academic Press,1,1,1,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,perc,Academic Personalism,34,34,34,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,peer,Student Peer Relationships,22,22,22,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,math,Math Instruction,47,47,47,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,humr,Human & Social Resources in the Community,40,40,40,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,engl,English Instruction,51,51,51,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,engg,Academic Engagement,49,49,49,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,clar,Course Clarity,8,8,8,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,humr,Human & Social Resources in the Community,41,41,41,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,trts,Student-Teacher Trust,24,24,24,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,stdy,Rigorous Study Habits,9,9,9,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,scie,Inquiry-Based Science Instruction,28,28,28,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,rigr,Classroom Rigor,8,8,8,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,pres,Academic Press,21,21,21,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,perc,Academic Personalism,22,22,22,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,peer,Student Peer Relationships,15,15,15,1,0
+2025,IN,Indiana Math and Science Academy - North,INDIANA MATH AND SCIENCE ACADEMY NORTH,math,Math Instruction,24,24,24,1,0
+2025,IN,Indiana Math and Science Academy - West,INDIANA MATH AND SCIENCE ACADEMY WEST,acno,Peer Support for Academic Work,48,48,48,1,0
+2025,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,engg,Academic Engagement,99,99,99,1,0
+2025,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,acno,Peer Support for Academic Work,99,99,99,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,trts,Student-Teacher Trust,19,19,19,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,stdy,Rigorous Study Habits,14,14,14,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,scie,Inquiry-Based Science Instruction,37,37,37,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,rigr,Classroom Rigor,14,14,14,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,pres,Academic Press,24,24,24,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,rigr,Classroom Rigor,40,40,40,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,peer,Student Peer Relationships,36,36,36,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,math,Math Instruction,28,28,28,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,humr,Human & Social Resources in the Community,26,26,26,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,engl,English Instruction,63,63,63,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,engg,Academic Engagement,35,35,35,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,clar,Course Clarity,1,1,1,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,acno,Peer Support for Academic Work,23,23,23,1,0
+2025,DC,Horizon Science Academy - Cincinnati,HORIZON SCIENCE ACADEMY CINCINNATI,trts,Student-Teacher Trust,17,17,17,1,0
+2025,DC,Horizon Science Academy - Dayton Downtown,HORIZON SCIENCE ACADEMY DAYTON DOWNTOWN,perc,Academic Personalism,32,32,32,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,pres,Academic Press,52,52,52,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,perc,Academic Personalism,53,53,53,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,peer,Student Peer Relationships,20,20,20,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,math,Math Instruction,64,64,64,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,humr,Human & Social Resources in the Community,40,40,40,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,futr,Importance of High School for the Future,3,3,3,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,engl,English Instruction,61,61,61,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,engg,Academic Engagement,91,91,91,1,0
+2025,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,engl,English Instruction,84,84,84,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,acno,Peer Support for Academic Work,28,28,28,1,0
+2025,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,trts,Student-Teacher Trust,45,45,45,1,0
+2025,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,stdy,Rigorous Study Habits,23,23,23,1,0
+2025,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,rigr,Classroom Rigor,87,87,87,1,0
+2025,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,pres,Academic Press,99,99,99,1,0
+2025,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,perc,Academic Personalism,99,99,99,1,0
+2025,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,peer,Student Peer Relationships,62,62,62,1,0
+2025,DC,Horizon Science Academy - Dayton Elementary,HORIZON SCIENCE ACADEMY DAYTON ELEMENTARY,math,Math Instruction,84,84,84,1,0
+2025,DC,Horizon Science Academy - Dayton High,HORIZON SCIENCE ACADEMY DAYTON HIGH,clar,Course Clarity,49,49,49,1,0

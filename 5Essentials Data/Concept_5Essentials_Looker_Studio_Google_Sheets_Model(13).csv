@@ -1,0 +1,59 @@
+﻿Data_Source,Field_Name,Looker_Studio_Formula,Type,Notes
+Essentials_Master,Overall Index,(Leaders + Teachers + Families + Environment + Instruction) / 5,Number,Use as a backup if the file-provided overall score is unavailable.
+Essentials_Master,Overall Score Display,"IFNULL(5essentials_overall_score, Overall Index)",Number,Use as the default KPI score.
+Essentials_Master,Parent Response Status,"CASE
+  WHEN Parent_Response_Rate < 15 THEN ""🔴 High Risk""
+  WHEN Parent_Response_Rate < 30 THEN ""🟡 Watch""
+  ELSE ""🟢 Healthy""
+END",Text,Participation risk flag.
+Essentials_Master,Teacher Response Status,"CASE
+  WHEN Teacher_Response_Rate < 60 THEN ""🔴 High Risk""
+  WHEN Teacher_Response_Rate < 80 THEN ""🟡 Watch""
+  ELSE ""🟢 Healthy""
+END",Text,Participation risk flag.
+Essentials_Master,Student Response Status,"CASE
+  WHEN Student_Response_Rate < 60 THEN ""🔴 High Risk""
+  WHEN Student_Response_Rate < 80 THEN ""🟡 Watch""
+  ELSE ""🟢 Healthy""
+END",Text,Participation risk flag.
+Essentials_Master,Overall Performance Band,"CASE
+  WHEN 5essentials_overall_score >= 60 THEN ""🟢 Strong""
+  WHEN 5essentials_overall_score >= 50 THEN ""🟡 Developing""
+  WHEN 5essentials_overall_score >= 40 THEN ""🟠 Watch""
+  ELSE ""🔴 Intensive Support""
+END",Text,Performance band for school cards.
+Essentials_Master,Leadership Priority Flag,"CASE
+  WHEN Parent_Response_Rate < 15 OR 5essentials_overall_score < 40 THEN ""🔴 Priority""
+  WHEN Parent_Response_Rate < 30 OR 5essentials_overall_score < 50 THEN ""🟡 Monitor""
+  ELSE ""🟢 Stable""
+END",Text,Combined risk flag.
+School_Year_Growth,Overall Growth 2024 to 2026,5essentials_overall_score_2026 - 5essentials_overall_score_2024,Number,Only in School_Year_Growth table.
+School_Year_Growth,Overall Growth Band,"CASE
+  WHEN 5essentials_overall_score_Growth_2024_to_2026 >= 10 THEN ""🚀 Major Growth""
+  WHEN 5essentials_overall_score_Growth_2024_to_2026 >= 5 THEN ""📈 Growth""
+  WHEN 5essentials_overall_score_Growth_2024_to_2026 > -5 THEN ""➡ Stable""
+  ELSE ""📉 Decline""
+END",Text,Use in growth dashboard.
+Item_Response_Summary,Item Favorability Band,"CASE
+  WHEN Pct_Favorable >= 80 THEN ""🟢 Strength""
+  WHEN Pct_Favorable >= 65 THEN ""🟡 Adequate""
+  WHEN Pct_Favorable >= 50 THEN ""🟠 Concern""
+  ELSE ""🔴 Critical Concern""
+END",Text,Student/teacher item interpretation.
+Item_Response_Summary,Student Item Flag,"CASE
+  WHEN Role = ""Student"" AND Pct_Favorable < 50 THEN ""🔴 Student Concern""
+  WHEN Role = ""Student"" AND Pct_Favorable >= 80 THEN ""🟢 Student Strength""
+  ELSE """"
+END",Text,Optional student-only flag.
+Item_Response_Summary,Teacher Item Flag,"CASE
+  WHEN Role = ""Teacher"" AND Pct_Favorable < 50 THEN ""🔴 Teacher Concern""
+  WHEN Role = ""Teacher"" AND Pct_Favorable >= 80 THEN ""🟢 Teacher Strength""
+  ELSE """"
+END",Text,Optional teacher-only flag.
+Subgroup_Gaps,Subgroup Gap Band,"CASE
+  WHEN Subgroup_Gap >= 25 THEN ""🔴 Large Gap""
+  WHEN Subgroup_Gap >= 15 THEN ""🟡 Moderate Gap""
+  ELSE ""🟢 Limited Gap""
+END",Text,Equity dashboard flag.
+Any table,School-Year Key,"CONCAT(School_Key, ""-"", CAST(Year AS TEXT))",Text,Use for joins/blends.
+Any table,School Display,"CONCAT(School, "" ("", CAST(Year AS TEXT), "")"")",Text,Useful for tables.
