@@ -1436,6 +1436,17 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
       <div class="si-stat"><div class="si-stat-value">275</div><div class="si-stat-label">Open-ended responses</div></div>
     </div>
 
+    <div style="margin-bottom:16px;display:flex;align-items:center;gap:10px;">
+      <span style="font-size:12px;font-weight:600;color:var(--text-mid);">Audience:</span>
+      <div class="toggle-group">
+        <button class="toggle-btn active" id="si-aud-all" onclick="siAudience('all')">All</button>
+        <button class="toggle-btn" id="si-aud-students" onclick="siAudience('students')">Students</button>
+        <button class="toggle-btn" id="si-aud-staff" onclick="siAudience('staff')">Staff</button>
+        <button class="toggle-btn" id="si-aud-parents" onclick="siAudience('parents')">Parents</button>
+        <button class="toggle-btn" id="si-aud-community" onclick="siAudience('community')">Community</button>
+      </div>
+    </div>
+
     <div class="two-col">
       <div class="section-card">
         <div class="section-card-title">Respondent Breakdown</div>
@@ -1660,6 +1671,16 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
       </div>
     </div>
 
+    <div style="margin-bottom:16px;display:flex;align-items:center;gap:10px;">
+      <span style="font-size:12px;font-weight:600;color:var(--text-mid);">Show:</span>
+      <div class="toggle-group">
+        <button class="toggle-btn active" id="ess-f-all" onclick="essFilter('all')">All Schools</button>
+        <button class="toggle-btn" id="ess-f-high" onclick="essFilter('High Risk')">High Risk</button>
+        <button class="toggle-btn" id="ess-f-watch" onclick="essFilter('Watch')">Watch</button>
+        <button class="toggle-btn" id="ess-f-healthy" onclick="essFilter('Healthy')">Healthy</button>
+      </div>
+    </div>
+
     <div class="kpi-row" id="ess-kpi-row"></div>
 
     <div class="three-col">
@@ -1737,14 +1758,18 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
       </div>
     </div>
 
-    <div class="kpi-row">
-      <div class="ab-stat"><div class="ab-stat-label">Total Reports</div><div class="ab-stat-value">347</div><div class="ab-stat-change neg">▲ +11.2% vs prior period</div></div>
-      <div class="ab-stat"><div class="ab-stat-label">Confirmed Cases</div><div class="ab-stat-value">192</div><div class="ab-stat-change neg">▲ +6.1% vs prior period</div></div>
-      <div class="ab-stat"><div class="ab-stat-label">Anonymous Reports</div><div class="ab-stat-value">238</div><div class="ab-stat-change neg">▲ +11.2% vs prior period</div></div>
-      <div class="ab-stat"><div class="ab-stat-label">Open Investigations</div><div class="ab-stat-value">41</div><div class="ab-stat-change imp">▼ -22.6% vs prior period</div></div>
-      <div class="ab-stat"><div class="ab-stat-label">Cases Resolved</div><div class="ab-stat-value">151</div><div class="ab-stat-change imp">▲ +18.0% vs prior period</div></div>
-      <div class="ab-stat"><div class="ab-stat-label">Avg Resolution (days)</div><div class="ab-stat-value">6.2</div><div class="ab-stat-change imp">▼ -12.7% vs prior period</div></div>
+    <div style="margin-bottom:16px;display:flex;align-items:center;gap:10px;">
+      <span style="font-size:12px;font-weight:600;color:var(--text-mid);">School:</span>
+      <div class="toggle-group">
+        <button class="toggle-btn active" id="ab-f-all" onclick="abFilter('all')">All Schools</button>
+        <button class="toggle-btn" id="ab-f-mms" onclick="abFilter('mms')">Maplewood MS</button>
+        <button class="toggle-btn" id="ab-f-rms" onclick="abFilter('rms')">Riverside MS</button>
+        <button class="toggle-btn" id="ab-f-chs" onclick="abFilter('chs')">Crestview HS</button>
+        <button class="toggle-btn" id="ab-f-phs" onclick="abFilter('phs')">Pinecrest HS</button>
+      </div>
     </div>
+
+    <div class="kpi-row" id="ab-kpi-row"></div>
 
     <div class="two-col">
       <div class="section-card">
@@ -4827,8 +4852,13 @@ function renderEssentials(){
 
   const tbl=document.getElementById('ess-heatmap-table');
   const sh=['Eff. Leaders','Collab. Teachers','Inv. Families','Supp. Envt.','Amb. Instruction'];
-  tbl.innerHTML=`<thead><tr><th>School</th>${sh.map(l=>`<th>${l}</th>`).join('')}<th>Overall</th><th>Risk</th></tr></thead>
-  <tbody>${ESS_SCHOOLS.map(s=>`<tr>
+  tbl.innerHTML=`<thead><tr>
+    <th onclick="essSort('name')" style="cursor:pointer;user-select:none;">School <span id="ess-sort-name" style="opacity:.4;font-size:10px;">↕</span></th>
+    ${ESS_KEYS.map((k,i)=>`<th onclick="essSort('${k}')" style="cursor:pointer;user-select:none;">${sh[i]} <span id="ess-sort-${k}" style="opacity:.4;font-size:10px;">↕</span></th>`).join('')}
+    <th onclick="essSort('overall')" style="cursor:pointer;user-select:none;">Overall <span id="ess-sort-overall" style="font-size:10px;">▼</span></th>
+    <th>Risk</th>
+  </tr></thead>
+  <tbody id="ess-heatmap-tbody">${[...ESS_SCHOOLS].sort((a,b)=>b.overall-a.overall).map(s=>`<tr>
     <td style="font-weight:600;white-space:nowrap;">${s.name}</td>
     ${ESS_KEYS.map(k=>`<td><span class="ess-cell ${essScoreClass(s[k])}">${s[k]??'—'}</span></td>`).join('')}
     <td style="font-weight:700;font-family:'Lora',serif;">${s.overall}</td>
@@ -5003,6 +5033,7 @@ function renderAntiBullying(){
   const canvas=document.getElementById('ab-chart-monthly');
   if(!canvas||canvas.dataset.rendered)return;
   canvas.dataset.rendered='1';
+  abRenderKPIs('all');
 
   abMonthlyChart=new Chart(canvas.getContext('2d'),{
     type:'line',
@@ -5035,6 +5066,166 @@ function renderAntiBullying(){
       <div class="ab-comp-pct" style="color:${c.actual>=c.target?'#27ae60':'#c0392b'};">${c.actual}%</div>
       <div class="ab-comp-target">Target: ${c.target}%</div>
     </div>`).join('');
+}
+
+// ═══════════════════════════════════════════════════════════
+// 5ESSENTIALS — FILTER & SORT
+// ═══════════════════════════════════════════════════════════
+let essCurrentFilter='all';
+let essCurrentSort={key:'overall',dir:-1};
+
+function essFilteredSchools(){
+  let s=essCurrentFilter==='all'?[...ESS_SCHOOLS]:ESS_SCHOOLS.filter(x=>x.risk===essCurrentFilter);
+  if(essCurrentSort.key==='name') s.sort((a,b)=>essCurrentSort.dir*a.name.localeCompare(b.name));
+  else s.sort((a,b)=>essCurrentSort.dir*((a[essCurrentSort.key]??-1)-(b[essCurrentSort.key]??-1)));
+  return s;
+}
+
+function essFilter(risk){
+  essCurrentFilter=risk;
+  [{id:'ess-f-all',val:'all'},{id:'ess-f-high',val:'High Risk'},{id:'ess-f-watch',val:'Watch'},{id:'ess-f-healthy',val:'Healthy'}]
+    .forEach(({id,val})=>document.getElementById(id)?.classList.toggle('active',val===risk));
+  essRefresh();
+}
+
+function essSort(key){
+  if(essCurrentSort.key===key) essCurrentSort.dir*=-1;
+  else{essCurrentSort.key=key;essCurrentSort.dir=-1;}
+  essRefresh();
+}
+
+function essRefresh(){
+  const schools=essFilteredSchools();
+
+  const tbody=document.getElementById('ess-heatmap-tbody');
+  if(tbody) tbody.innerHTML=schools.map(s=>`<tr>
+    <td style="font-weight:600;white-space:nowrap;">${s.name}</td>
+    ${ESS_KEYS.map(k=>`<td><span class="ess-cell ${essScoreClass(s[k])}">${s[k]??'—'}</span></td>`).join('')}
+    <td style="font-weight:700;font-family:'Lora',serif;">${s.overall}</td>
+    <td><span class="risk-badge ${s.risk==='High Risk'?'risk-high':s.risk==='Watch'?'risk-watch':'risk-healthy'}">${s.risk}</span></td>
+  </tr>`).join('');
+
+  const c={High:0,Watch:0,Healthy:0};
+  schools.forEach(s=>{if(s.risk==='High Risk')c.High++;else if(s.risk==='Watch')c.Watch++;else c.Healthy++;});
+  const riskEl=document.getElementById('ess-risk-summary');
+  if(riskEl) riskEl.innerHTML=`<div style="display:flex;flex-direction:column;gap:10px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:12.5px;">High Risk</span><span class="risk-badge risk-high">${c.High} schools</span></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:12.5px;">Watch</span><span class="risk-badge risk-watch">${c.Watch} schools</span></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:12.5px;">Healthy</span><span class="risk-badge risk-healthy">${c.Healthy} schools</span></div>
+  </div><div style="margin-top:12px;font-size:11px;color:var(--text-faint);line-height:1.5;">High Risk: parent response &lt;15% or overall &lt;50. Watch: declining in 2+ essentials.</div>`;
+
+  if(essResponseChart){
+    const sn=schools.map(s=>s.name.replace(' School','').replace(' Academy','').replace(' Middle','MS').replace(' High','HS').replace(' Elementary','Elem'));
+    essResponseChart.data.labels=sn;
+    essResponseChart.data.datasets[0].data=schools.map(s=>s.stu_rate);
+    essResponseChart.data.datasets[1].data=schools.map(s=>s.tch_rate);
+    essResponseChart.data.datasets[2].data=schools.map(s=>s.par_rate);
+    essResponseChart.update();
+  }
+
+  if(essOverallChart){
+    const sorted=[...schools].sort((a,b)=>b.overall-a.overall);
+    essOverallChart.data.labels=sorted.map(s=>s.name);
+    essOverallChart.data.datasets[0].data=sorted.map(s=>s.overall);
+    essOverallChart.data.datasets[0].backgroundColor=sorted.map(s=>s.overall>=70?'#27ae60':s.overall>=40?'#f39c12':'#c0392b');
+    essOverallChart.update();
+  }
+
+  ['name',...ESS_KEYS,'overall'].forEach(k=>{
+    const el=document.getElementById('ess-sort-'+k);
+    if(el){el.textContent=essCurrentSort.key===k?(essCurrentSort.dir===-1?'▼':'▲'):'↕';el.style.opacity=essCurrentSort.key===k?'1':'0.4';}
+  });
+}
+
+// ═══════════════════════════════════════════════════════════
+// SURVEY INSIGHTS — AUDIENCE FILTER
+// ═══════════════════════════════════════════════════════════
+const SI_SAT_DATA={
+  all:      {pos:[92.3,81.3,81.0,76.9,73.0,69.0,60.3],neu:[7.7,15.8,12.7,18.5,20.6,28.7,31.0],neg:[0.0,2.9,6.3,4.6,6.3,2.3,8.6]},
+  students: {pos:[88.4,79.2,83.5,74.3,68.5,65.2,55.8],neu:[11.1,17.3,11.8,20.1,24.3,30.5,35.6],neg:[0.5,3.5,4.7,5.6,7.2,4.3,8.6]},
+  staff:    {pos:[95.2,86.4,78.9,82.1,76.8,72.1,64.5],neu:[4.8,11.2,16.4,14.3,18.7,25.8,28.3],neg:[0.0,2.4,4.7,3.6,4.5,2.1,7.2]},
+  parents:  {pos:[91.5,82.6,80.3,75.4,71.2,67.8,58.9],neu:[8.5,14.3,14.8,21.5,22.4,30.1,32.6],neg:[0.0,3.1,4.9,3.1,6.4,2.1,8.5]},
+  community:{pos:[88.7,75.3,82.1,78.6,73.5,68.4,61.2],neu:[11.3,20.1,13.4,16.8,21.5,29.3,31.8],neg:[0.0,4.6,4.5,4.6,5.0,2.3,7.0]}
+};
+const SI_SENTIMENT={
+  all:      {pos:73.7,neu:21.8,neg:4.5},
+  students: {pos:70.2,neu:23.5,neg:6.3},
+  staff:    {pos:79.8,neu:16.7,neg:3.5},
+  parents:  {pos:74.9,neu:21.2,neg:3.9},
+  community:{pos:71.5,neu:24.3,neg:4.2}
+};
+
+function siAudience(aud){
+  ['all','students','staff','parents','community'].forEach(a=>
+    document.getElementById('si-aud-'+a)?.classList.toggle('active',a===aud));
+  const d=SI_SAT_DATA[aud];
+  if(siSatChart){
+    siSatChart.data.datasets[0].data=d.pos;
+    siSatChart.data.datasets[1].data=d.neu;
+    siSatChart.data.datasets[2].data=d.neg;
+    siSatChart.update();
+  }
+  const s=SI_SENTIMENT[aud];
+  const sentEl=document.querySelector('.si-sentiment');
+  if(sentEl) sentEl.innerHTML=`
+    <div class="si-badge si-badge-pos"><span class="si-badge-val">${s.pos}%</span><span class="si-badge-lbl">Positive</span></div>
+    <div class="si-badge si-badge-neu"><span class="si-badge-val">${s.neu}%</span><span class="si-badge-lbl">Neutral</span></div>
+    <div class="si-badge si-badge-neg"><span class="si-badge-val">${s.neg}%</span><span class="si-badge-lbl">Negative</span></div>`;
+}
+
+// ═══════════════════════════════════════════════════════════
+// ANTI-BULLYING — SCHOOL FILTER
+// ═══════════════════════════════════════════════════════════
+const AB_DATA={
+  all:{kpis:{reports:347,confirmed:192,anon:238,open:41,resolved:151,avgDays:6.2},
+       monthly:[38,52,61,58,44,67],
+       types:{labels:['Verbal (26%)','Cyberbullying (22%)','Social Exclusion (18%)','Physical (16%)','Harassment (12%)','Threats (6%)'],data:[89,76,63,54,42,23]},
+       changes:[{v:'+11.2%',neg:true},{v:'+6.1%',neg:true},{v:'+11.2%',neg:true},{v:'-22.6%',neg:false},{v:'+18.0%',neg:false},{v:'-12.7%',neg:false}]},
+  mms:{kpis:{reports:52,confirmed:31,anon:36,open:4,resolved:27,avgDays:5.1},
+       monthly:[5,8,12,12,8,7],
+       types:{labels:['Verbal (27%)','Physical (21%)','Cyberbullying (19%)','Social Exclusion (15%)','Harassment (13%)','Threats (4%)'],data:[14,11,10,8,7,2]},
+       changes:[{v:'+8.3%',neg:true},{v:'+5.2%',neg:true},{v:'+9.1%',neg:true},{v:'-33.3%',neg:false},{v:'+22.2%',neg:false},{v:'-8.1%',neg:false}]},
+  rms:{kpis:{reports:67,confirmed:42,anon:48,open:9,resolved:33,avgDays:6.3},
+       monthly:[9,13,15,11,10,9],
+       types:{labels:['Verbal (25%)','Cyberbullying (22%)','Social Exclusion (18%)','Physical (16%)','Harassment (12%)','Threats (7%)'],data:[17,15,12,11,8,5]},
+       changes:[{v:'+13.6%',neg:true},{v:'+7.7%',neg:true},{v:'+14.3%',neg:true},{v:'-18.2%',neg:false},{v:'+15.1%',neg:false},{v:'-11.3%',neg:false}]},
+  chs:{kpis:{reports:91,confirmed:54,anon:65,open:15,resolved:39,avgDays:8.2},
+       monthly:[15,19,23,22,17,28],
+       types:{labels:['Verbal (28%)','Cyberbullying (23%)','Social Exclusion (20%)','Physical (17%)','Harassment (9%)','Threats (4%)'],data:[25,21,18,15,8,4]},
+       changes:[{v:'+12.3%',neg:true},{v:'+5.9%',neg:true},{v:'+10.2%',neg:true},{v:'-16.7%',neg:false},{v:'+10.9%',neg:false},{v:'+14.3%',neg:true}]},
+  phs:{kpis:{reports:44,confirmed:28,anon:31,open:3,resolved:26,avgDays:4.8},
+       monthly:[8,11,12,13,9,4],
+       types:{labels:['Verbal (30%)','Cyberbullying (23%)','Social Exclusion (16%)','Physical (16%)','Harassment (9%)','Threats (5%)'],data:[13,10,7,7,4,2]},
+       changes:[{v:'+4.8%',neg:true},{v:'+3.7%',neg:true},{v:'+6.9%',neg:true},{v:'-40.0%',neg:false},{v:'+23.8%',neg:false},{v:'-14.3%',neg:false}]}
+};
+
+function abRenderKPIs(key){
+  const d=AB_DATA[key];
+  const labels=['Total Reports','Confirmed Cases','Anonymous Reports','Open Investigations','Cases Resolved','Avg Resolution (days)'];
+  const vals=[d.kpis.reports,d.kpis.confirmed,d.kpis.anon,d.kpis.open,d.kpis.resolved,d.kpis.avgDays];
+  const el=document.getElementById('ab-kpi-row');
+  if(!el)return;
+  el.innerHTML=labels.map((lbl,i)=>`
+    <div class="ab-stat">
+      <div class="ab-stat-label">${lbl}</div>
+      <div class="ab-stat-value">${vals[i]}</div>
+      <div class="ab-stat-change ${d.changes[i].neg?'neg':'imp'}">${d.changes[i].neg?'▲':'▼'} ${d.changes[i].v} vs prior period</div>
+    </div>`).join('');
+}
+
+function abFilter(key){
+  ['all','mms','rms','chs','phs'].forEach(k=>
+    document.getElementById('ab-f-'+k)?.classList.toggle('active',k===key));
+  abRenderKPIs(key);
+  const d=AB_DATA[key];
+  if(abMonthlyChart){abMonthlyChart.data.datasets[0].data=d.monthly;abMonthlyChart.update();}
+  if(abTypeChart){abTypeChart.data.labels=d.types.labels;abTypeChart.data.datasets[0].data=d.types.data;abTypeChart.update();}
+  const schoolMap={mms:'Maplewood',rms:'Riverside',chs:'Crestview',phs:'Pinecrest'};
+  document.querySelectorAll('.ab-table tbody tr').forEach(tr=>{
+    const match=key!=='all'&&tr.cells[0]?.textContent.includes(schoolMap[key]);
+    tr.style.background=match?'rgba(23,110,130,0.08)':'';
+    tr.style.fontWeight=match?'600':'';
+  });
 }
 </script>
 
