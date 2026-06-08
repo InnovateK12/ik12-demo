@@ -869,6 +869,70 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
 .v30-phase-year{font-size:11px;color:var(--text-mid);font-weight:600;margin-bottom:4px;}
 .v30-phase-focus{font-size:12px;color:var(--text-mid);line-height:1.5;}
 
+/* ─── Lakewood REA Strategic Dashboard ──────────────────────── */
+.kane-subnav{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:22px;overflow-x:auto;}
+.kane-tab{padding:9px 16px;font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--text-mid);cursor:pointer;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;background:none;white-space:nowrap;font-family:'Open Sans',sans-serif;}
+.kane-tab:hover{color:var(--charcoal);}
+.kane-tab.active{color:var(--deep-teal);border-bottom-color:var(--orange);}
+.kane-view{display:none;}.kane-view.active{display:block;}
+.kane-badge{display:inline-flex;align-items:center;gap:6px;background:var(--deep-teal);color:#fff;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:4px;}
+.kc-chip{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;white-space:nowrap;}
+.kc-gray{background:#f0f2f4;color:#64748b;}
+.kc-green{background:#d5f0e0;color:#1e6b3a;}
+.kc-yellow{background:#fef3cd;color:#856404;}
+.kc-red{background:#fde8e8;color:#9b2226;}
+.kc-kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px;}
+.kc-kpi-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px 18px;display:flex;flex-direction:column;}
+.kc-kpi-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:6px;}
+.kc-kpi-name{font-size:12.5px;font-weight:700;color:var(--charcoal);line-height:1.35;flex:1;}
+.kc-kpi-priority{font-size:10px;color:var(--text-faint);margin-bottom:10px;}
+.kc-year-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;margin-bottom:12px;}
+.kc-year-cell{background:var(--bg);border-radius:5px;padding:7px 6px;text-align:center;}
+.kc-year-lbl{display:block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--text-faint);margin-bottom:2px;}
+.kc-year-val{font-size:12px;font-weight:700;color:var(--charcoal);}
+.kc-year-cell.target .kc-year-val{color:#1e6b3a;}
+.kc-why{font-size:11px;color:var(--text-mid);line-height:1.55;border-top:1px solid var(--border);padding-top:9px;margin-top:auto;}
+.kc-exec-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:22px;}
+.kc-exec-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px 14px;}
+.kc-exec-accent{height:3px;border-radius:2px;margin-bottom:10px;}
+.kc-exec-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-faint);margin-bottom:8px;}
+.kc-exec-val{font-family:'Lora',serif;font-size:24px;font-weight:700;color:var(--charcoal);line-height:1.1;}
+.kc-exec-sub{font-size:11px;color:var(--text-mid);margin-top:5px;line-height:1.4;}
+.kc-source-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:22px;}
+.kc-source-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px 18px;}
+.kc-source-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-faint);margin-bottom:10px;}
+.kc-source-item{display:flex;align-items:baseline;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--border);}
+.kc-source-item:last-child{border-bottom:none;}
+.kc-source-label{font-size:12px;color:var(--text-body);}
+.kc-source-val{font-size:13px;font-weight:700;color:var(--deep-teal);}
+.kc-metric-list{display:flex;flex-direction:column;gap:10px;}
+.kc-metric-row{display:flex;align-items:center;gap:12px;}
+.kc-metric-label{font-size:12px;color:var(--text-body);width:210px;flex-shrink:0;line-height:1.35;}
+.kc-metric-bar-bg{flex:1;background:var(--bg);border-radius:3px;height:8px;overflow:hidden;}
+.kc-metric-bar{height:100%;border-radius:3px;background:var(--deep-teal);}
+.kc-metric-bar.good{background:#1e7d4a;}
+.kc-metric-bar.warn{background:#ea730b;}
+.kc-metric-bar.low{background:#c0392b;}
+.kc-metric-pct{font-size:12px;font-weight:700;color:var(--charcoal);width:44px;text-align:right;}
+.kc-metric-target{font-size:10px;color:var(--text-faint);width:80px;text-align:right;}
+.kc-pri-card{background:var(--card);border:1px solid var(--border);border-radius:8px;margin-bottom:12px;overflow:hidden;}
+.kc-pri-header{display:flex;align-items:center;gap:14px;padding:16px 20px;cursor:pointer;user-select:none;}
+.kc-pri-header:hover{background:var(--bg);}
+.kc-pri-num{font-family:'Lora',serif;font-size:22px;font-weight:700;color:var(--orange);width:32px;flex-shrink:0;}
+.kc-pri-info{flex:1;}
+.kc-pri-title{font-size:13.5px;font-weight:700;color:var(--charcoal);margin-bottom:3px;}
+.kc-pri-goal{font-size:11.5px;color:var(--text-mid);line-height:1.45;}
+.kc-pri-toggle{font-size:12px;color:var(--text-faint);}
+.kc-pri-body{padding:0 20px 16px;border-top:1px solid var(--border);display:none;}
+.kc-pri-body.open{display:block;}
+.kc-focus-tag{display:inline-block;background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:3px 10px;font-size:10.5px;color:var(--text-mid);margin:4px 3px 0 0;}
+.kc-phase{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--border);}
+.kc-phase:last-child{border-bottom:none;}
+.kc-phase-badge{background:var(--deep-teal);color:#fff;font-size:10px;font-weight:700;padding:4px 9px;border-radius:4px;white-space:nowrap;height:fit-content;flex-shrink:0;}
+.kc-phase-title{font-weight:700;font-size:13px;color:var(--charcoal);margin-bottom:2px;}
+.kc-phase-year{font-size:11px;color:var(--orange);font-weight:600;margin-bottom:4px;}
+.kc-phase-focus{font-size:12px;color:var(--text-mid);line-height:1.55;}
+
 /* ─── Anti-Bullying ───────────────────────────────────────────── */
 .ab-stat{background:var(--card);border:1px solid var(--border);border-radius:7px;padding:16px 18px;flex:1;min-width:120px;}
 .ab-stat-label{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-faint);margin-bottom:5px;}
@@ -951,6 +1015,10 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
     <div class="nav-item" onclick="navigate('antibullying')">
       <span class="nav-icon">⚑</span>
       <span class="nav-label">Anti-Bullying</span>
+    </div>
+    <div class="nav-item" onclick="navigate('kane')">
+      <span class="nav-icon">◈</span>
+      <span class="nav-label">Lakewood REA Plan</span>
     </div>
   </div>
   <div class="sb-footer">
@@ -1828,6 +1896,113 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
           <tr><td>Improve Climate Score</td><td>85</td><td>82</td><td><span class="risk-badge risk-watch">Behind</span></td></tr>
         </tbody>
       </table>
+    </div>
+  </section>
+
+  <!-- ── LAKEWOOD REA STRATEGIC DASHBOARD ────────────────────────── -->
+  <section id="sec-kane" class="section">
+    <div class="page-header">
+      <div>
+        <div class="page-title">Lakewood REA Strategic Dashboard</div>
+        <div class="page-sub">Lakewood Regional Education Agency · 2026–2029 Strategic Plan · Staff Survey n=28 · Partner Survey n=115</div>
+      </div>
+      <span class="kane-badge">2026 Baseline Year</span>
+    </div>
+
+    <div class="kane-subnav">
+      <button class="kane-tab active" onclick="kaneTab('exec')">Executive Summary</button>
+      <button class="kane-tab" onclick="kaneTab('priorities')">Strategic Priorities</button>
+      <button class="kane-tab" onclick="kaneTab('kpis')">KPI Dashboard</button>
+      <button class="kane-tab" onclick="kaneTab('workforce')">Workforce</button>
+      <button class="kane-tab" onclick="kaneTab('partners')">Partner Dashboard</button>
+      <button class="kane-tab" onclick="kaneTab('timeline')">Implementation Timeline</button>
+    </div>
+
+    <!-- Executive Summary -->
+    <div id="kane-exec" class="kane-view active">
+      <div class="kc-exec-grid" id="kc-exec-cards"></div>
+      <div class="kc-source-grid" id="kc-source-cards"></div>
+      <div class="section-card">
+        <div class="section-card-title">Strategic Interpretation</div>
+        <div style="font-size:13px;color:var(--text-mid);line-height:1.75;">
+          Lakewood REA is already viewed positively by both employees and partners. <strong style="color:var(--charcoal);">96.3% of staff would recommend the REA as an employer</strong> and <strong style="color:var(--charcoal);">86.1% of partners rate communication as effective.</strong> The 2026–2029 plan focuses on converting this goodwill into measurable, sustained improvement — particularly in cross-department collaboration (42.9% baseline → 70% target), internal communication satisfaction (60.7% → 80%), and leadership trust (65.8% → +20 pts by 2029). Partner data confirms that <strong style="color:var(--charcoal);">Networking Meetings and Professional Learning</strong> are the two most valued services, anchoring the agency's external value proposition. The largest internal gap — cross-department collaboration at 42.9% — requires deliberate structural intervention and is flagged as a priority action area for 2026–2027.
+        </div>
+      </div>
+    </div>
+
+    <!-- Strategic Priorities -->
+    <div id="kane-priorities" class="kane-view">
+      <div id="kc-priorities-list"></div>
+    </div>
+
+    <!-- KPI Dashboard -->
+    <div id="kane-kpis" class="kane-view">
+      <div class="section-card" style="margin-bottom:16px;">
+        <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--text-mid);">
+          <span><span class="kc-chip kc-green">● Green</span>&nbsp; On track / meeting target</span>
+          <span><span class="kc-chip kc-yellow">● Yellow</span>&nbsp; Progressing, below target</span>
+          <span><span class="kc-chip kc-red">● Red</span>&nbsp; Requires intervention</span>
+          <span><span class="kc-chip kc-gray">● Gray</span>&nbsp; Baseline pending</span>
+        </div>
+      </div>
+      <div class="kc-kpi-grid" id="kc-kpi-grid"></div>
+    </div>
+
+    <!-- Workforce -->
+    <div id="kane-workforce" class="kane-view">
+      <div class="kpi-row" id="kc-wf-stats"></div>
+      <div class="two-col">
+        <div class="section-card">
+          <div class="section-card-title">Staff Survey Results — 2026 Baseline vs. 2029 Target</div>
+          <div class="kc-metric-list" id="kc-wf-bars"></div>
+        </div>
+        <div class="section-card">
+          <div class="section-card-title">Workforce Themes</div>
+          <div style="font-size:12px;color:var(--text-mid);margin-bottom:12px;line-height:1.6;">Key themes identified in the 2026 staff survey narrative responses:</div>
+          <div id="kc-wf-themes"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partner Dashboard -->
+    <div id="kane-partners" class="kane-view">
+      <div class="kpi-row" id="kc-pt-stats"></div>
+      <div class="two-col" style="margin-bottom:20px;">
+        <div class="section-card">
+          <div class="section-card-title">Most Valuable ROE Services (Partner-Selected, n=115)</div>
+          <div style="position:relative;height:320px;"><canvas id="kc-services-chart"></canvas></div>
+        </div>
+        <div class="section-card">
+          <div class="section-card-title">Most Useful Communication Channels</div>
+          <div style="position:relative;height:320px;"><canvas id="kc-channels-chart"></canvas></div>
+        </div>
+      </div>
+      <div class="section-card">
+        <div class="section-card-title">Partner Communication — 2026 Baseline vs. Targets</div>
+        <div class="kc-metric-list" id="kc-pt-bars"></div>
+      </div>
+    </div>
+
+    <!-- Implementation Timeline -->
+    <div id="kane-timeline" class="kane-view">
+      <div class="section-card" style="margin-bottom:20px;">
+        <div class="section-card-title">Implementation Phases</div>
+        <div id="kc-phases"></div>
+      </div>
+      <div class="section-card">
+        <div class="section-card-title">Board Reporting View — Spotlight Metrics</div>
+        <table style="width:100%;border-collapse:collapse;">
+          <thead>
+            <tr style="background:var(--bg);">
+              <th style="padding:9px 12px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-faint);text-align:left;border-bottom:2px solid var(--border);">Spotlight Metric</th>
+              <th style="padding:9px 12px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-faint);text-align:left;border-bottom:2px solid var(--border);">2026 Baseline</th>
+              <th style="padding:9px 12px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-faint);text-align:left;border-bottom:2px solid var(--border);">2029 Target</th>
+              <th style="padding:9px 12px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-faint);text-align:left;border-bottom:2px solid var(--border);">Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody id="kc-board-tbody"></tbody>
+        </table>
+      </div>
     </div>
   </section>
 
@@ -3464,7 +3639,8 @@ const PAGE_LABELS = {
   profile:'Student Profile',
   facilities:'10-Year Capital Plan',markers:'Progress Markers',
   surveys:'Survey Insights',ai:'AI Insights',
-  essentials:'5Essentials Survey',vision2030:'Vision 2030',antibullying:'Anti-Bullying Dashboard'
+  essentials:'5Essentials Survey',vision2030:'Vision 2030',antibullying:'Anti-Bullying Dashboard',
+  kane:'Lakewood REA Strategic Dashboard'
 };
 
 // ═══════════════════════════════════════════════════════════
@@ -3485,6 +3661,7 @@ function navigate(id){
   if(id==='surveys')renderSurveyInsights();
   if(id==='vision2030')renderVision2030();
   if(id==='antibullying')renderAntiBullying();
+  if(id==='kane')renderKane();
 }
 
 function initHome(){
@@ -5022,6 +5199,309 @@ function v30Toggle(i){
   const tog=document.getElementById('v30-tog-'+i);
   body.classList.toggle('open');
   tog.textContent=body.classList.contains('open')?'▲':'▼';
+}
+
+// ═══════════════════════════════════════════════════════════
+// LAKEWOOD REA STRATEGIC DASHBOARD — DATA & RENDER
+// ═══════════════════════════════════════════════════════════
+const KANE={
+  priorities:[
+    {num:'1',title:'Financial Sustainability & Workforce Investment',
+     goal:'Ensure long-term organizational sustainability by aligning resources, staffing, compensation, and operations to mission-critical services.',
+     focus:['Retention','Staffing stability','Compensation competitiveness','Resource alignment','Operational efficiency'],
+     kpis:['Employee Retention Rate','Compensation & Resource Support Index']},
+    {num:'2',title:'Professional Learning & Organizational Growth',
+     goal:'Build a culture of continuous growth for REA staff and strengthen high-value professional learning and service supports for districts.',
+     focus:['Staff growth plans','PL participation','Partner-valued services','Instructional support','Networking','Capacity-building'],
+     kpis:['Professional Learning Participation Rate','Employees with Individual Growth Plans','Partner-Valued Service Impact Index']},
+    {num:'3',title:'Leadership, Trust & Organizational Alignment',
+     goal:'Strengthen trust, transparency, and alignment across the organization so staff understand priorities and feel empowered to contribute.',
+     focus:['Leadership trust','Transparency','Role clarity','Autonomy','Understanding of priorities'],
+     kpis:['Trust in Leadership Index','Strategic Role Clarity Index']},
+    {num:'4',title:'Communication & Stakeholder Engagement',
+     goal:'Improve internal and external communication so staff and partners receive timely, clear, and useful information.',
+     focus:['Internal communication','Partner communication','District-REA conduits','Cross-department awareness','Partner responsiveness'],
+     kpis:['Internal Communication Satisfaction','Partner Communication Effectiveness','District-REA Communication Conduit Effectiveness']},
+    {num:'5',title:'Thriving Workforce, Culture & Collaboration',
+     goal:'Sustain a positive, collaborative, mission-centered workplace where staff feel valued, connected, and supported.',
+     focus:['Employee engagement','Recognition','Work-life balance','Cross-dept collaboration','Workplace culture','Recommendation rates'],
+     kpis:['Employee Engagement / Employer Recommendation Index','Cross-Department Collaboration Index']},
+  ],
+  kpis:[
+    {id:'KPI-01',name:'Employee Retention Rate',priority:'Financial Sustainability & Workforce Investment',baseline:'TBD',bench:'Baseline +3 pts',target:'Baseline +8 pts',source:'HR records',status:'gray',why:'Workforce sustainability is the financial foundation of the REA. Retention reduces recruiting costs and preserves organizational knowledge.'},
+    {id:'KPI-02',name:'Compensation & Resource Support Index',priority:'Financial Sustainability & Workforce Investment',baseline:'TBD',bench:'60% favorable',target:'75% favorable',source:'Staff survey + finance review',status:'gray',why:'Staff who feel fairly compensated and resource-supported are more likely to stay and perform at high levels.'},
+    {id:'KPI-03',name:'Professional Learning Participation Rate',priority:'Professional Learning & Organizational Growth',baseline:'TBD',bench:'90%',target:'100%',source:'PL records',status:'gray',why:'Continuous learning is essential for REA staff to deliver high-quality, relevant services to partner districts.'},
+    {id:'KPI-04',name:'Employees with Individual Growth Plans',priority:'Professional Learning & Organizational Growth',baseline:'TBD',bench:'75%',target:'100%',source:'HR / Supervisor records',status:'gray',why:'Individual growth plans signal investment in staff and create clear pathways for professional development.'},
+    {id:'KPI-05',name:'Partner-Valued Service Impact Index',priority:'Professional Learning & Organizational Growth',baseline:'2026 survey baseline',bench:'Maintain or improve',target:'90% favorable',source:'Partner survey',status:'gray',why:'External partner satisfaction with REA services is the ultimate measure of service delivery effectiveness.'},
+    {id:'KPI-06',name:'Trust in Leadership Index',priority:'Leadership, Trust & Organizational Alignment',baseline:'65.8%',bench:'75.8% (+10 pts)',target:'85.8% (+20 pts)',source:'Staff survey',status:'yellow',why:'Staff feedback identified leadership communication as an area for growth. Trust in leadership is correlated with engagement, retention, and willingness to implement change.'},
+    {id:'KPI-07',name:'Strategic Role Clarity Index',priority:'Leadership, Trust & Organizational Alignment',baseline:'82.1%',bench:'88%',target:'92%',source:'Staff survey',status:'yellow',why:'When staff understand how their work connects to organizational priorities, alignment and motivation improve across all departments.'},
+    {id:'KPI-08',name:'Internal Communication Satisfaction',priority:'Communication & Stakeholder Engagement',baseline:'60.7%',bench:'70%',target:'80%',source:'Staff survey',status:'yellow',why:'Internal communication satisfaction is the largest gap in the 2026 staff survey, with significant room for improvement through consistent and transparent messaging.'},
+    {id:'KPI-09',name:'Partner Communication Effectiveness',priority:'Communication & Stakeholder Engagement',baseline:'86.1%',bench:'90%',target:'95%',source:'Partner survey',status:'yellow',why:'External partners rely on timely, clear communication to access REA services, coordinate district supports, and stay informed about countywide opportunities.'},
+    {id:'KPI-10',name:'District-REA Communication Conduit Effectiveness',priority:'Communication & Stakeholder Engagement',baseline:'80.0%',bench:'85%',target:'92%',source:'Partner survey',status:'yellow',why:'Partners must be able to easily reach the right person or service at the REA. Conduit effectiveness ensures practical access to supports.'},
+    {id:'KPI-11',name:'Employee Engagement / Employer Recommendation Index',priority:'Thriving Workforce, Culture & Collaboration',baseline:'96.3%',bench:'≥95%',target:'≥95%',source:'Staff survey',status:'green',why:'Already exceeding target — sustaining this level indicates a healthy, mission-driven workplace culture that attracts and retains talent.'},
+    {id:'KPI-12',name:'Cross-Department Collaboration Index',priority:'Thriving Workforce, Culture & Collaboration',baseline:'42.9%',bench:'55%',target:'70%',source:'Staff survey',status:'red',why:'The largest internal gap identified. Organizational silos and limited cross-department awareness reduce efficiency and staff morale. Requires deliberate structural intervention.'},
+  ],
+  wfStats:[
+    {label:'Staff Respondents',val:'28',sub:'Internal survey, 2026 baseline'},
+    {label:'Enjoy Working at REA',val:'96.4%',sub:'Maintain ≥95% target met'},
+    {label:'Would Recommend REA',val:'96.3%',sub:'Employer of choice'},
+    {label:'Trust in Leadership',val:'65.8%',sub:'Target: +20 pts by 2029'},
+  ],
+  wfBars:[
+    {label:'Enjoy Working at REA',pct:96.4,t29:95},
+    {label:'Recommend as Employer',pct:96.3,t29:95},
+    {label:'Accomplishments Celebrated',pct:85.2,t29:90},
+    {label:'Role Clarity (8–10 / 10)',pct:82.1,t29:92},
+    {label:'Trust in Leadership',pct:65.8,t29:85.8},
+    {label:'Recognition & Feeling Valued',pct:59.3,t29:79.3},
+    {label:'Leadership Communication (8–10)',pct:60.7,t29:80},
+    {label:'Friday Fun Culture Contribution',pct:75.0,t29:75},
+    {label:'Monday Morning Memo Usefulness',pct:46.4,t29:75},
+    {label:'Cross-Dept Collaboration (8–10)',pct:42.9,t29:70},
+  ],
+  wfThemes:['Mission-centered service','Supportive and collaborative workplace','Recognition and appreciation','Compensation and sustainability','Communication transparency','Work-life balance and flexibility','Cross-department collaboration','Professional growth pathways','Role clarity and onboarding','Trust, autonomy, and psychological safety'],
+  ptStats:[
+    {label:'Partner Respondents',val:'115',sub:'External survey, 2026 baseline'},
+    {label:'Avg. Years with REA',val:'8.68',sub:'Long-term partnership depth'},
+    {label:'Communication Effectiveness',val:'86.1%',sub:'Target: 95% by 2029'},
+    {label:'Conduit Effectiveness',val:'80.0%',sub:'Target: 92% by 2029'},
+  ],
+  ptBars:[
+    {label:'Partner Communication Effectiveness',pct:86.1,t29:95},
+    {label:'District-REA Conduit Effectiveness',pct:80.0,t29:92},
+  ],
+  services:[
+    {s:'Networking Meetings',pct:50.4},{s:'Professional Learning',pct:48.7},
+    {s:'Truancy & Attendance Prevention',pct:27.0},{s:'Licensure',pct:24.3},
+    {s:'Compliance',pct:20.9},{s:'Fingerprinting',pct:20.9},
+    {s:'Homeless Education',pct:16.5},{s:'Health Life Safety Support',pct:13.0},
+    {s:'Alternative Programs',pct:12.2},{s:'Educator of the Year',pct:12.2},
+  ],
+  channels:[
+    {m:'Other / Direct Channels',pct:49.6},{m:'Newsletter: School of Thought',pct:43.5},
+    {m:'Newsletter: PD Refresh',pct:33.9},{m:'YouTube: Branching Out',pct:13.9},
+    {m:'Facebook',pct:12.2},{m:'LinkedIn',pct:10.4},
+    {m:'YouTube: Tuesday Tech Tip',pct:10.4},{m:'Instagram',pct:4.3},{m:'X (Twitter)',pct:3.5},
+  ],
+  phases:[
+    {badge:'Summer 2026',title:'Portal Setup & KPI Finalization',year:'Summer 2026',focus:'Finalize KPI list and owners. Load 2026 staff and partner survey baseline values. Confirm HR and professional learning data sources. Finalize portal pages and status color rules.'},
+    {badge:'Fall 2026',title:'Baseline Validation',year:'Fall 2026',focus:'Validate internal and partner survey calculations. Confirm public-facing vs. internal-only values. Add notes and action steps for each KPI. Publish internal dashboard for leadership review.'},
+    {badge:'2027',title:'First Progress Cycle',year:'2027',focus:'Re-administer staff and partner pulse surveys. Update 2027 benchmark results. Produce first annual Board dashboard report. Identify yellow/red indicators and assign improvement actions.'},
+    {badge:'2028',title:'Midpoint Adjustment',year:'2028',focus:'Review progress toward 2029 targets. Adjust action plans where indicators are flat or declining. Add narrative impact stories linked to partner and staff outcomes.'},
+    {badge:'2029',title:'Final Evaluation',year:'2029',focus:'Complete end-of-plan KPI reporting. Summarize progress, lessons learned, and remaining gaps. Use results to inform the next strategic planning cycle.'},
+  ],
+  boardSpotlight:[
+    {m:'Employee Retention Rate',baseline:'TBD',target:'Baseline +8 pts',why:'Workforce sustainability'},
+    {m:'Employee Recommendation Index',baseline:'96.3%',target:'≥95%',why:'Employer of choice'},
+    {m:'Cross-Department Collaboration',baseline:'42.9%',target:'70%',why:'Organizational effectiveness'},
+    {m:'Strategic Role Clarity',baseline:'82.1%',target:'92%',why:'Alignment with mission & goals'},
+    {m:'Partner Communication Effectiveness',baseline:'86.1%',target:'95%',why:'External stakeholder trust'},
+    {m:'District-REA Conduit Effectiveness',baseline:'80.0%',target:'92%',why:'Practical access to REA supports'},
+  ],
+};
+
+let kcServicesChart=null,kcChannelsChart=null;
+
+function kaneTab(id){
+  document.querySelectorAll('.kane-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.kane-view').forEach(v=>v.classList.remove('active'));
+  document.querySelector(`.kane-tab[onclick="kaneTab('${id}')"]`).classList.add('active');
+  document.getElementById('kane-'+id).classList.add('active');
+  if(id==='partners')renderKanePartners();
+}
+
+function renderKane(){
+  if(document.getElementById('kc-exec-cards').dataset.rendered)return;
+  document.getElementById('kc-exec-cards').dataset.rendered='1';
+  renderKaneExec();
+  renderKanePriorities();
+  renderKaneKPIs();
+  renderKaneWorkforce();
+  renderKaneTimeline();
+}
+
+function renderKaneExec(){
+  const cards=[
+    {title:'Staff Experience',val:'96.3%',sub:'Would recommend REA as employer',color:'#219EBB'},
+    {title:'Partner Experience',val:'86.1%',sub:'Rate communication as effective',color:'#1e7d4a'},
+    {title:'Leadership & Alignment',val:'65.8%',sub:'Trust in leadership composite',color:'#ea730b'},
+    {title:'Communication Satisfaction',val:'60.7%',sub:'Internal comm — target 80% by 2029',color:'#856404'},
+    {title:'Cross-Dept Collaboration',val:'42.9%',sub:'Largest internal gap — target 70%',color:'#c0392b'},
+  ];
+  document.getElementById('kc-exec-cards').innerHTML=cards.map(c=>`
+    <div class="kc-exec-card">
+      <div class="kc-exec-accent" style="background:${c.color};"></div>
+      <div class="kc-exec-title">${c.title}</div>
+      <div class="kc-exec-val">${c.val}</div>
+      <div class="kc-exec-sub">${c.sub}</div>
+    </div>`).join('');
+
+  document.getElementById('kc-source-cards').innerHTML=`
+    <div class="kc-source-card">
+      <div class="kc-source-title">Internal Staff Survey — 2026 Snapshot (n=28)</div>
+      <div class="kc-source-item"><span class="kc-source-label">Enjoy working at REA</span><span class="kc-source-val">96.4%</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">Would recommend as employer</span><span class="kc-source-val">96.3%</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">Accomplishments celebrated</span><span class="kc-source-val">85.2%</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">Role clarity (8–10 / 10)</span><span class="kc-source-val">82.1% · avg 8.82</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">Trust in leadership (composite)</span><span class="kc-source-val">65.8%</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">Leadership communication (8–10)</span><span class="kc-source-val">60.7% · avg 7.68</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">Recognition / feeling valued (8–10)</span><span class="kc-source-val">59.3% · avg 7.70</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">Cross-dept collaboration (8–10)</span><span class="kc-source-val">42.9% · avg 6.75</span></div>
+    </div>
+    <div class="kc-source-card">
+      <div class="kc-source-title">Partner Survey — 2026 Snapshot (n=115)</div>
+      <div class="kc-source-item"><span class="kc-source-label">Average years working with REA</span><span class="kc-source-val">8.68 yrs</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">Communication effective / very effective</span><span class="kc-source-val">86.1% · avg 4.37/5</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">District-REA conduit effective / very effective</span><span class="kc-source-val">80.0% · avg 4.30/5</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">#1 most valued service</span><span class="kc-source-val">Networking Meetings 50.4%</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">#2 most valued service</span><span class="kc-source-val">Professional Learning 48.7%</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">#3 most valued service</span><span class="kc-source-val">Truancy Prevention 27.0%</span></div>
+      <div class="kc-source-item"><span class="kc-source-label">Top communication channel</span><span class="kc-source-val">Direct Channels 49.6%</span></div>
+    </div>`;
+}
+
+function renderKanePriorities(){
+  document.getElementById('kc-priorities-list').innerHTML=KANE.priorities.map((p,i)=>`
+    <div class="kc-pri-card">
+      <div class="kc-pri-header" onclick="kcPriToggle(${i})">
+        <div class="kc-pri-num">${p.num}</div>
+        <div class="kc-pri-info">
+          <div class="kc-pri-title">${p.title}</div>
+          <div class="kc-pri-goal">${p.goal}</div>
+        </div>
+        <div class="kc-pri-toggle" id="kc-pri-tog-${i}">▼</div>
+      </div>
+      <div class="kc-pri-body" id="kc-pri-body-${i}">
+        <div style="margin-top:14px;margin-bottom:12px;">
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-faint);margin-bottom:8px;">Portal Focus Areas</div>
+          ${p.focus.map(f=>`<span class="kc-focus-tag">${f}</span>`).join('')}
+        </div>
+        <div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-faint);margin-bottom:8px;">KPIs in This Priority</div>
+          ${p.kpis.map(k=>`<div style="font-size:12px;color:var(--text-body);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;"><span style="color:var(--orange);">◈</span>${k}</div>`).join('')}
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+function kcPriToggle(i){
+  const body=document.getElementById('kc-pri-body-'+i);
+  const tog=document.getElementById('kc-pri-tog-'+i);
+  body.classList.toggle('open');
+  tog.textContent=body.classList.contains('open')?'▲':'▼';
+}
+
+function renderKaneKPIs(){
+  const chipCls={gray:'kc-gray',green:'kc-green',yellow:'kc-yellow',red:'kc-red'};
+  document.getElementById('kc-kpi-grid').innerHTML=KANE.kpis.map(k=>`
+    <div class="kc-kpi-card">
+      <div class="kc-kpi-top">
+        <div class="kc-kpi-name">${k.name}</div>
+        <span class="kc-chip ${chipCls[k.status]}">● ${k.status.charAt(0).toUpperCase()+k.status.slice(1)}</span>
+      </div>
+      <div class="kc-kpi-priority">${k.priority}</div>
+      <div class="kc-year-row">
+        <div class="kc-year-cell"><span class="kc-year-lbl">2026 Baseline</span><span class="kc-year-val">${k.baseline}</span></div>
+        <div class="kc-year-cell"><span class="kc-year-lbl">2027 Benchmark</span><span class="kc-year-val">${k.bench}</span></div>
+        <div class="kc-year-cell target"><span class="kc-year-lbl">2029 Target</span><span class="kc-year-val">${k.target}</span></div>
+      </div>
+      <div class="kc-why">${k.why}</div>
+    </div>`).join('');
+}
+
+function renderKaneWorkforce(){
+  document.getElementById('kc-wf-stats').innerHTML=KANE.wfStats.map(s=>`
+    <div class="kpi-card">
+      <div class="kpi-label">${s.label}</div>
+      <div class="kpi-value teal">${s.val}</div>
+      <div class="kpi-meta">${s.sub}</div>
+    </div>`).join('');
+
+  document.getElementById('kc-wf-bars').innerHTML=KANE.wfBars.map(b=>{
+    const gap=b.t29-b.pct;
+    const cls=b.pct>=b.t29?'good':gap<=10?'warn':'low';
+    return `<div class="kc-metric-row">
+      <div class="kc-metric-label">${b.label}</div>
+      <div class="kc-metric-bar-bg"><div class="kc-metric-bar ${cls}" style="width:${Math.min(b.pct,100)}%;"></div></div>
+      <div class="kc-metric-pct">${b.pct}%</div>
+      <div class="kc-metric-target">Target ${b.t29}%</div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('kc-wf-themes').innerHTML=KANE.wfThemes.map(t=>`<span class="kc-focus-tag">${t}</span>`).join('');
+}
+
+function renderKanePartners(){
+  const ptStat=document.getElementById('kc-pt-stats');
+  if(ptStat.dataset.rendered)return;
+  ptStat.dataset.rendered='1';
+
+  ptStat.innerHTML=KANE.ptStats.map(s=>`
+    <div class="kpi-card">
+      <div class="kpi-label">${s.label}</div>
+      <div class="kpi-value teal">${s.val}</div>
+      <div class="kpi-meta">${s.sub}</div>
+    </div>`).join('');
+
+  document.getElementById('kc-pt-bars').innerHTML=KANE.ptBars.map(b=>`
+    <div class="kc-metric-row">
+      <div class="kc-metric-label">${b.label}</div>
+      <div class="kc-metric-bar-bg"><div class="kc-metric-bar warn" style="width:${b.pct}%;"></div></div>
+      <div class="kc-metric-pct">${b.pct}%</div>
+      <div class="kc-metric-target">Target ${b.t29}%</div>
+    </div>`).join('');
+
+  const sc=document.getElementById('kc-services-chart');
+  if(sc&&!sc.dataset.rendered){
+    sc.dataset.rendered='1';
+    kcServicesChart=new Chart(sc.getContext('2d'),{
+      type:'bar',
+      data:{
+        labels:KANE.services.map(x=>x.s),
+        datasets:[{label:'% of Partners',data:KANE.services.map(x=>x.pct),backgroundColor:'#176E82',borderRadius:3}]
+      },
+      options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw}%`}}},
+        scales:{x:{max:60,ticks:{callback:v=>v+'%'},grid:{color:'rgba(0,0,0,.05)'}},
+                y:{ticks:{font:{size:11}}}}}
+    });
+  }
+
+  const cc=document.getElementById('kc-channels-chart');
+  if(cc&&!cc.dataset.rendered){
+    cc.dataset.rendered='1';
+    kcChannelsChart=new Chart(cc.getContext('2d'),{
+      type:'bar',
+      data:{
+        labels:KANE.channels.map(x=>x.m),
+        datasets:[{label:'% of Partners',data:KANE.channels.map(x=>x.pct),backgroundColor:'#219EBB',borderRadius:3}]
+      },
+      options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw}%`}}},
+        scales:{x:{max:60,ticks:{callback:v=>v+'%'},grid:{color:'rgba(0,0,0,.05)'}},
+                y:{ticks:{font:{size:11}}}}}
+    });
+  }
+}
+
+function renderKaneTimeline(){
+  document.getElementById('kc-phases').innerHTML=KANE.phases.map(p=>`
+    <div class="kc-phase">
+      <div class="kc-phase-badge">${p.badge}</div>
+      <div>
+        <div class="kc-phase-title">${p.title}</div>
+        <div class="kc-phase-year">${p.year}</div>
+        <div class="kc-phase-focus">${p.focus}</div>
+      </div>
+    </div>`).join('');
+
+  document.getElementById('kc-board-tbody').innerHTML=KANE.boardSpotlight.map(b=>`
+    <tr style="border-bottom:1px solid var(--border);">
+      <td style="padding:10px 12px;font-weight:600;font-size:12.5px;color:var(--charcoal);">${b.m}</td>
+      <td style="padding:10px 12px;font-size:12.5px;color:var(--deep-teal);font-weight:700;">${b.baseline}</td>
+      <td style="padding:10px 12px;font-size:12.5px;color:#1e6b3a;font-weight:700;">${b.target}</td>
+      <td style="padding:10px 12px;font-size:12px;color:var(--text-mid);">${b.why}</td>
+    </tr>`).join('');
 }
 
 // ═══════════════════════════════════════════════════════════
