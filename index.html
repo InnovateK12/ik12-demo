@@ -6219,6 +6219,14 @@ const SI_SENTIMENT={
   community:{pos:71.5,neu:24.3,neg:4.2}
 };
 
+const SI_PAIN_DATA={
+  all:      {labels:['Website nav/usability','Sunday phone messages','College guidance depth','Teacher/parent comm.','Too many platforms'],      data:[14,8,7,4,3], max:16},
+  students: {labels:['Website nav/usability','College guidance depth','Athletic info hard to find','Communication inconsistency','Too many platforms'],  data:[9,6,4,3,2],  max:12},
+  staff:    {labels:['Sunday phone messages','Too many platforms','Website nav/usability','Inconsistent internal comms','Meeting overload'],              data:[7,5,4,3,2],  max:9},
+  parents:  {labels:['Website nav/usability','College guidance depth','Sunday phone messages','Teacher response time','Too many platforms'],              data:[8,6,4,3,2],  max:10},
+  community:{labels:['Website nav/usability','Hard to find event info','No alumni engagement portal','Too many platforms'],                              data:[5,3,2,2],    max:8}
+};
+
 const SI_META={
   all:      {n:174,openEnded:275,breakdownTitle:'Respondent Breakdown',
              breakdown:[{pct:'54.6%',lbl:'Students'},{pct:'21.8%',lbl:'Staff'},{pct:'15.5%',lbl:'Parents & guardians'},{pct:'6.9%',lbl:'Community members'}],
@@ -6267,6 +6275,14 @@ function siAudience(aud){
   if(bt) bt.textContent=m.breakdownTitle;
   if(bd) bd.innerHTML=m.breakdown.map(b=>`<div class="aud-item"><div class="aud-pct">${b.pct}</div><div class="aud-label">${b.lbl}</div></div>`).join('');
   if(bx) bx.innerHTML=m.text;
+
+  const p=SI_PAIN_DATA[aud];
+  if(siPainChart){
+    siPainChart.data.labels=p.labels;
+    siPainChart.data.datasets[0].data=p.data;
+    siPainChart.options.scales.x.max=p.max;
+    siPainChart.update();
+  }
 }
 
 // ═══════════════════════════════════════════════════════════
