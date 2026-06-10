@@ -1565,10 +1565,10 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
     </div>
 
     <div class="si-stat-grid">
-      <div class="si-stat"><div class="si-stat-value">174</div><div class="si-stat-label">Total respondents</div></div>
+      <div class="si-stat"><div class="si-stat-value" id="si-val-respondents">174</div><div class="si-stat-label">Total respondents</div></div>
       <div class="si-stat"><div class="si-stat-value">Spring 2026</div><div class="si-stat-label">Survey period</div></div>
       <div class="si-stat"><div class="si-stat-value">7</div><div class="si-stat-label">Satisfaction dimensions</div></div>
-      <div class="si-stat"><div class="si-stat-value">275</div><div class="si-stat-label">Open-ended responses</div></div>
+      <div class="si-stat"><div class="si-stat-value" id="si-val-openended">275</div><div class="si-stat-label">Open-ended responses</div></div>
     </div>
 
     <div style="margin-bottom:16px;display:flex;align-items:center;gap:10px;">
@@ -1584,14 +1584,14 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
 
     <div class="two-col">
       <div class="section-card">
-        <div class="section-card-title">Respondent Breakdown</div>
-        <div class="audience-bar">
+        <div class="section-card-title" id="si-breakdown-title">Respondent Breakdown</div>
+        <div class="audience-bar" id="si-breakdown">
           <div class="aud-item"><div class="aud-pct">54.6%</div><div class="aud-label">Students</div></div>
           <div class="aud-item"><div class="aud-pct">21.8%</div><div class="aud-label">Staff</div></div>
           <div class="aud-item"><div class="aud-pct">15.5%</div><div class="aud-label">Parents &amp; guardians</div></div>
           <div class="aud-item"><div class="aud-pct">6.9%</div><div class="aud-label">Community members</div></div>
         </div>
-        <div style="font-size:11.5px;color:var(--text-mid);line-height:1.6;margin-top:10px;">Across 772 classifiable responses spanning seven key satisfaction areas, <strong>73.7%</strong> were positive, <strong>21.8%</strong> neutral, and only <strong>4.5%</strong> negative. The district excels at personal engagement but has room to improve its digital infrastructure.</div>
+        <div id="si-breakdown-text" style="font-size:11.5px;color:var(--text-mid);line-height:1.6;margin-top:10px;">Across 772 classifiable responses spanning seven key satisfaction areas, <strong>73.7%</strong> were positive, <strong>21.8%</strong> neutral, and only <strong>4.5%</strong> negative. The district excels at personal engagement but has room to improve its digital infrastructure.</div>
       </div>
       <div class="section-card">
         <div class="section-card-title">Overall Sentiment</div>
@@ -6219,9 +6219,28 @@ const SI_SENTIMENT={
   community:{pos:71.5,neu:24.3,neg:4.2}
 };
 
+const SI_META={
+  all:      {n:174,openEnded:275,breakdownTitle:'Respondent Breakdown',
+             breakdown:[{pct:'54.6%',lbl:'Students'},{pct:'21.8%',lbl:'Staff'},{pct:'15.5%',lbl:'Parents & guardians'},{pct:'6.9%',lbl:'Community members'}],
+             text:'Across 772 classifiable responses spanning seven key satisfaction areas, <strong>73.7%</strong> were positive, <strong>21.8%</strong> neutral, and only <strong>4.5%</strong> negative. The district excels at personal engagement but has room to improve its digital infrastructure.'},
+  students: {n:95,openEnded:110,breakdownTitle:'Students by Grade Band',
+             breakdown:[{pct:'28.4%',lbl:'Grades K–5'},{pct:'38.9%',lbl:'Grades 6–8'},{pct:'32.6%',lbl:'Grades 9–12'}],
+             text:'Across 312 student classifiable responses, <strong>70.2%</strong> were positive, <strong>23.5%</strong> neutral, and <strong>6.3%</strong> negative. Students rate staff relationships and inclusive opportunities highly, but flag website usability and college counseling depth as areas for improvement.'},
+  staff:    {n:38,openEnded:72,breakdownTitle:'Staff by Role',
+             breakdown:[{pct:'63.2%',lbl:'Teachers'},{pct:'18.4%',lbl:'Support staff'},{pct:'13.2%',lbl:'Administrators'},{pct:'5.3%',lbl:'Specialists'}],
+             text:'Across 189 staff classifiable responses, <strong>79.8%</strong> were positive, <strong>16.7%</strong> neutral, and <strong>3.5%</strong> negative. Staff satisfaction is highest district-wide — communication clarity and leadership support are standout positives. Sunday communication cadence remains a cited concern.'},
+  parents:  {n:27,openEnded:64,breakdownTitle:'Parents by School Level',
+             breakdown:[{pct:'37.0%',lbl:'Elementary'},{pct:'29.6%',lbl:'Middle school'},{pct:'33.3%',lbl:'High school'}],
+             text:'Across 181 parent classifiable responses, <strong>74.9%</strong> were positive, <strong>21.2%</strong> neutral, and <strong>3.9%</strong> negative. Parents value staff quality and student safety but want improved college counseling depth and a more navigable district website.'},
+  community:{n:12,openEnded:29,breakdownTitle:'Community by Connection',
+             breakdown:[{pct:'33.3%',lbl:'Alumni'},{pct:'25.0%',lbl:'Business partners'},{pct:'25.0%',lbl:'Neighbors'},{pct:'16.7%',lbl:'Other'}],
+             text:'Across 90 community classifiable responses, <strong>71.5%</strong> were positive, <strong>24.3%</strong> neutral, and <strong>4.2%</strong> negative. Community members are broadly positive about district culture but note communication platform fragmentation as a barrier to engagement.'}
+};
+
 function siAudience(aud){
   ['all','students','staff','parents','community'].forEach(a=>
     document.getElementById('si-aud-'+a)?.classList.toggle('active',a===aud));
+
   const d=SI_SAT_DATA[aud];
   if(siSatChart){
     siSatChart.data.datasets[0].data=d.pos;
@@ -6229,12 +6248,25 @@ function siAudience(aud){
     siSatChart.data.datasets[2].data=d.neg;
     siSatChart.update();
   }
+
   const s=SI_SENTIMENT[aud];
   const sentEl=document.querySelector('.si-sentiment');
   if(sentEl) sentEl.innerHTML=`
     <div class="si-badge si-badge-pos"><span class="si-badge-val">${s.pos}%</span><span class="si-badge-lbl">Positive</span></div>
     <div class="si-badge si-badge-neu"><span class="si-badge-val">${s.neu}%</span><span class="si-badge-lbl">Neutral</span></div>
     <div class="si-badge si-badge-neg"><span class="si-badge-val">${s.neg}%</span><span class="si-badge-lbl">Negative</span></div>`;
+
+  const m=SI_META[aud];
+  const rv=document.getElementById('si-val-respondents');
+  const ov=document.getElementById('si-val-openended');
+  const bt=document.getElementById('si-breakdown-title');
+  const bd=document.getElementById('si-breakdown');
+  const bx=document.getElementById('si-breakdown-text');
+  if(rv) rv.textContent=m.n;
+  if(ov) ov.textContent=m.openEnded;
+  if(bt) bt.textContent=m.breakdownTitle;
+  if(bd) bd.innerHTML=m.breakdown.map(b=>`<div class="aud-item"><div class="aud-pct">${b.pct}</div><div class="aud-label">${b.lbl}</div></div>`).join('');
+  if(bx) bx.innerHTML=m.text;
 }
 
 // ═══════════════════════════════════════════════════════════
