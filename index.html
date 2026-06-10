@@ -952,6 +952,73 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
 .ab-comp-bar.miss{background:var(--orange);}
 .ab-comp-pct{font-size:11.5px;font-weight:700;width:40px;text-align:right;}
 .ab-comp-target{font-size:10.5px;color:var(--text-faint);width:68px;text-align:right;}
+.ab-subnav{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:22px;overflow-x:auto;}
+.ab-tab{padding:9px 16px;font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--text-mid);cursor:pointer;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;background:none;white-space:nowrap;font-family:'Open Sans',sans-serif;}
+.ab-tab:hover{color:var(--charcoal);}
+.ab-tab.active{color:var(--deep-teal);border-bottom-color:var(--orange);}
+.ab-view{display:none;}.ab-view.active{display:block;}
+.ab-spill{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:12px;font-size:10.5px;font-weight:700;}
+.ab-spill-red{background:#fdeaea;color:#8b1c1c;}
+.ab-spill-amber{background:#fef6e7;color:#9a5b0a;}
+.ab-spill-green{background:#eaf4ee;color:#1a6644;}
+.ab-school-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:0;}
+.ab-school-chip{padding:9px 14px;border:1px solid var(--border);border-radius:8px;background:var(--card);cursor:pointer;font-size:12px;font-weight:600;color:var(--text-mid);font-family:'Open Sans',sans-serif;transition:all .15s;text-align:left;}
+.ab-school-chip:hover{border-color:var(--deep-teal);color:var(--deep-teal);}
+.ab-school-chip.active{background:var(--deep-teal);border-color:var(--deep-teal);color:#fff;}
+.ab-school-chip-meta{font-size:10.5px;font-weight:400;opacity:.8;display:block;margin-top:2px;}
+.ab-pipeline{display:flex;align-items:stretch;gap:0;margin:4px 0 8px;}
+.ab-pstep{flex:1;text-align:center;padding:14px 8px;background:var(--bg);border:1px solid var(--border);}
+.ab-pstep:first-child{border-radius:8px 0 0 8px;}
+.ab-pstep:last-child{border-radius:0 8px 8px 0;}
+.ab-pstep+.ab-pstep{border-left:none;}
+.ab-pstep-num{font-family:'Lora',serif;font-size:24px;font-weight:700;color:var(--charcoal);line-height:1;margin-bottom:3px;}
+.ab-pstep-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--text-faint);}
+.ab-pstep.ps-active{background:var(--deep-teal);}
+.ab-pstep.ps-active .ab-pstep-num,.ab-pstep.ps-active .ab-pstep-lbl{color:#fff;}
+.ab-pstep.ps-resolved{background:#eaf4ee;}
+.ab-pstep.ps-resolved .ab-pstep-num{color:#1a6644;}
+.ab-pstep.ps-resolved .ab-pstep-lbl{color:#1a6644;}
+.ab-hspot-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;}
+.ab-hspot{display:flex;align-items:center;gap:9px;padding:9px 11px;background:var(--bg);border:1px solid var(--border);border-radius:7px;}
+.ab-hspot-icon{width:30px;height:30px;background:var(--card);border:1px solid var(--border);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;}
+.ab-hspot-name{font-size:11px;font-weight:600;color:var(--charcoal);}
+.ab-hspot-bar{height:3px;background:var(--border);border-radius:2px;margin-top:3px;overflow:hidden;}
+.ab-hspot-fill{height:100%;border-radius:2px;background:var(--deep-teal);}
+.ab-hspot-count{font-family:'Lora',serif;font-size:17px;font-weight:700;color:var(--charcoal);flex-shrink:0;}
+.ab-aging-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px;}
+.ab-aging-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:14px 16px;text-align:center;}
+.ab-aging-card.warn{background:#fef6e7;border-color:#f0c070;}
+.ab-aging-card.crit{background:#fdeaea;border-color:#f0aaaa;}
+.ab-aging-num{font-family:'Lora',serif;font-size:28px;font-weight:700;color:var(--charcoal);line-height:1;margin-bottom:4px;}
+.ab-aging-card.warn .ab-aging-num{color:#9a5b0a;}
+.ab-aging-card.crit .ab-aging-num{color:#8b1c1c;}
+.ab-aging-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--text-faint);}
+.ab-case-row{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--border);}
+.ab-case-row:last-child{border-bottom:none;}
+.ab-case-id{font-family:monospace;font-size:11px;color:var(--text-faint);background:var(--bg);padding:2px 6px;border-radius:4px;white-space:nowrap;}
+.ab-case-info{flex:1;min-width:0;}
+.ab-case-title{font-size:12.5px;font-weight:600;color:var(--charcoal);}
+.ab-case-meta{font-size:10.5px;color:var(--text-faint);margin-top:1px;}
+.ab-case-days{font-size:11.5px;font-weight:600;color:var(--text-mid);min-width:55px;text-align:right;white-space:nowrap;}
+.ab-eff-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:14px 16px;}
+.ab-eff-name{font-size:12px;font-weight:700;color:var(--charcoal);margin-bottom:8px;}
+.ab-eff-nums{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+.ab-eff-count{font-family:'Lora',serif;font-size:22px;font-weight:700;color:var(--charcoal);}
+.ab-eff-pct{font-size:13px;font-weight:700;color:#27ae60;}
+.ab-eff-bar{height:5px;background:var(--border);border-radius:3px;overflow:hidden;}
+.ab-eff-fill{height:100%;background:#27ae60;border-radius:3px;}
+.ab-eff-note{font-size:10.5px;color:var(--text-faint);margin-top:5px;}
+.ab-insight{padding:10px 13px;border-left:3px solid;border-radius:0 6px 6px 0;margin-bottom:9px;}
+.ab-insight:last-child{margin-bottom:0;}
+.ab-insight.high{background:#fdeaea;border-color:#8b1c1c;}.ab-insight.high .ab-insight-ttl{color:#8b1c1c;}
+.ab-insight.amber{background:#fef6e7;border-color:#9a5b0a;}.ab-insight.amber .ab-insight-ttl{color:#9a5b0a;}
+.ab-insight.good{background:#eaf4ee;border-color:#1a6644;}.ab-insight.good .ab-insight-ttl{color:#1a6644;}
+.ab-insight.info{background:rgba(23,110,130,.07);border-color:var(--deep-teal);}.ab-insight.info .ab-insight-ttl{color:var(--deep-teal);}
+.ab-insight-ttl{font-size:11.5px;font-weight:700;margin-bottom:2px;}
+.ab-insight-body{font-size:11.5px;color:var(--text-mid);line-height:1.5;}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px;}
+@media(max-width:960px){.three-col{grid-template-columns:1fr 1fr;}}
+@media(max-width:640px){.three-col{grid-template-columns:1fr;}}
 
 </style>
 </head>
@@ -1821,82 +1888,258 @@ table.dt tbody tr.deferred:hover{background:rgba(192,57,43,.055);}
   <section id="sec-antibullying" class="section">
     <div class="page-header">
       <div>
-        <div class="page-title">Anti-Bullying Dashboard</div>
+        <div class="page-title">Anti-Bullying &amp; Behavior Dashboard</div>
         <div class="page-sub">Demo District · Current Academic Year · Incident reporting, investigation &amp; intervention tracking</div>
       </div>
     </div>
 
-    <div style="margin-bottom:16px;display:flex;align-items:center;gap:10px;">
-      <span style="font-size:12px;font-weight:600;color:var(--text-mid);">School:</span>
-      <div class="toggle-group">
-        <button class="toggle-btn active" id="ab-f-all" onclick="abFilter('all')">All Schools</button>
-        <button class="toggle-btn" id="ab-f-mms" onclick="abFilter('mms')">Maplewood MS</button>
-        <button class="toggle-btn" id="ab-f-rms" onclick="abFilter('rms')">Riverside MS</button>
-        <button class="toggle-btn" id="ab-f-chs" onclick="abFilter('chs')">Crestview HS</button>
-        <button class="toggle-btn" id="ab-f-phs" onclick="abFilter('phs')">Pinecrest HS</button>
-      </div>
+    <div class="ab-subnav">
+      <button class="ab-tab active" onclick="abTab('overview')">District Overview</button>
+      <button class="ab-tab" onclick="abTab('schools')">School Detail</button>
+      <button class="ab-tab" onclick="abTab('investigations')">Investigations</button>
+      <button class="ab-tab" onclick="abTab('compliance')">Compliance</button>
+      <button class="ab-tab" onclick="abTab('interventions')">Interventions</button>
+      <button class="ab-tab" onclick="abTab('trends')">Trend Analysis</button>
     </div>
 
-    <div class="kpi-row" id="ab-kpi-row"></div>
-
-    <div class="two-col">
-      <div class="section-card">
-        <div class="section-card-title">Monthly Reports Trend</div>
-        <div style="position:relative;height:220px;"><canvas id="ab-chart-monthly"></canvas></div>
+    <!-- TAB 1: DISTRICT OVERVIEW -->
+    <div id="ab-overview" class="ab-view active">
+      <div class="section-card" style="margin-bottom:16px;">
+        <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-faint);margin-bottom:12px;">District Safety Snapshot · Aug 2024 – Jan 2025 · vs. prior period</div>
+        <div class="kpi-row" id="ab-kpi-overview"></div>
       </div>
-      <div class="section-card">
-        <div class="section-card-title">Bullying Type Breakdown</div>
-        <div style="position:relative;height:220px;"><canvas id="ab-chart-type"></canvas></div>
-      </div>
-    </div>
 
-    <div class="two-col">
-      <div class="section-card">
-        <div class="section-card-title">School Comparison</div>
+      <div class="two-col">
+        <div class="section-card">
+          <div class="section-card-title">Monthly Reporting Volume</div>
+          <div style="position:relative;height:200px;"><canvas id="ab-monthly-chart"></canvas></div>
+        </div>
+        <div class="section-card">
+          <div class="section-card-title">Bullying Type Breakdown</div>
+          <div style="position:relative;height:200px;"><canvas id="ab-type-chart"></canvas></div>
+        </div>
+      </div>
+
+      <div class="section-card" style="margin-bottom:16px;">
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:14px;">
+          <div class="section-card-title" style="margin-bottom:0;">School-by-School Safety Summary</div>
+          <span style="font-size:11px;color:var(--text-faint);">7 schools · current period</span>
+        </div>
         <table class="ab-table">
-          <thead><tr><th>School</th><th>Reports</th><th>Confirmed</th><th>Open</th><th>Avg Days</th></tr></thead>
+          <thead><tr><th>School</th><th>Total Reports</th><th>Confirmed</th><th>Open Cases</th><th>Avg Resolution</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>Maplewood Middle School</td><td>52</td><td>31</td><td>4</td><td>5.1</td></tr>
-            <tr><td>Riverside Middle School</td><td>67</td><td>42</td><td>9</td><td>6.3</td></tr>
-            <tr><td>Crestview High School</td><td>91</td><td>54</td><td>15</td><td>8.2</td></tr>
-            <tr><td>Pinecrest High School</td><td>44</td><td>28</td><td>3</td><td>4.8</td></tr>
+            <tr style="cursor:pointer;" onclick="abTab('schools');abSelectSchool('chs')"><td><strong>Crestview High School</strong><br><span style="font-size:10.5px;color:var(--text-faint);">Grades 9–12 · Highest volume</span></td><td>91</td><td>54</td><td style="color:#8b1c1c;font-weight:700;">15</td><td style="color:#8b1c1c;font-weight:700;">8.2 days</td><td><span class="ab-spill ab-spill-red">Needs Attention</span></td></tr>
+            <tr style="cursor:pointer;" onclick="abTab('schools');abSelectSchool('rms')"><td><strong>Riverside Middle School</strong><br><span style="font-size:10.5px;color:var(--text-faint);">Grades 7–8</span></td><td>67</td><td>42</td><td style="color:#9a5b0a;font-weight:600;">9</td><td style="color:#9a5b0a;font-weight:600;">6.3 days</td><td><span class="ab-spill ab-spill-amber">Monitor</span></td></tr>
+            <tr style="cursor:pointer;" onclick="abTab('schools');abSelectSchool('mms')"><td><strong>Maplewood Middle School</strong><br><span style="font-size:10.5px;color:var(--text-faint);">Grades 7–8</span></td><td>52</td><td>31</td><td>4</td><td>5.1 days</td><td><span class="ab-spill ab-spill-green">On Track</span></td></tr>
+            <tr style="cursor:pointer;" onclick="abTab('schools');abSelectSchool('phs')"><td><strong>Pinecrest High School</strong><br><span style="font-size:10.5px;color:var(--text-faint);">Grades 9–12</span></td><td>44</td><td>28</td><td>3</td><td>4.8 days</td><td><span class="ab-spill ab-spill-green">On Track</span></td></tr>
+            <tr style="cursor:pointer;" onclick="abTab('schools');abSelectSchool('bse')"><td><strong>Brookside Elementary</strong><br><span style="font-size:10.5px;color:var(--text-faint);">Grades K–6</span></td><td>38</td><td>17</td><td style="color:#9a5b0a;font-weight:600;">5</td><td style="color:#9a5b0a;font-weight:600;">5.6 days</td><td><span class="ab-spill ab-spill-amber">Monitor</span></td></tr>
+            <tr style="cursor:pointer;" onclick="abTab('schools');abSelectSchool('sla')"><td><strong>Summit Learning Academy</strong><br><span style="font-size:10.5px;color:var(--text-faint);">Alt. program · Grades 7–12</span></td><td>28</td><td>17</td><td>3</td><td>5.8 days</td><td><span class="ab-spill ab-spill-amber">Monitor</span></td></tr>
+            <tr style="cursor:pointer;" onclick="abTab('schools');abSelectSchool('ewe')"><td><strong>Elmwood Elementary</strong><br><span style="font-size:10.5px;color:var(--text-faint);">Grades K–6 · Smallest campus</span></td><td>27</td><td>6</td><td>2</td><td>4.2 days</td><td><span class="ab-spill ab-spill-green">On Track</span></td></tr>
           </tbody>
         </table>
       </div>
+
+      <div class="three-col">
+        <div class="section-card">
+          <div class="section-card-title">Report Source</div>
+          <div style="position:relative;height:155px;"><canvas id="ab-source-chart"></canvas></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:10px;font-size:11.5px;color:var(--text-mid);">
+            <div style="display:flex;align-items:center;gap:6px;"><span style="width:9px;height:9px;border-radius:2px;background:#176E82;flex-shrink:0;"></span>Students <strong style="margin-left:auto;color:var(--charcoal);">59%</strong></div>
+            <div style="display:flex;align-items:center;gap:6px;"><span style="width:9px;height:9px;border-radius:2px;background:#219EBB;flex-shrink:0;"></span>Parents <strong style="margin-left:auto;color:var(--charcoal);">18%</strong></div>
+            <div style="display:flex;align-items:center;gap:6px;"><span style="width:9px;height:9px;border-radius:2px;background:#ea730b;flex-shrink:0;"></span>Teachers <strong style="margin-left:auto;color:var(--charcoal);">14%</strong></div>
+            <div style="display:flex;align-items:center;gap:6px;"><span style="width:9px;height:9px;border-radius:2px;background:#8fa3ab;flex-shrink:0;"></span>Staff <strong style="margin-left:auto;color:var(--charcoal);">10%</strong></div>
+          </div>
+        </div>
+        <div class="section-card">
+          <div class="section-card-title">Geographic Hotspots</div>
+          <div class="ab-hspot-grid">
+            <div class="ab-hspot"><div class="ab-hspot-icon">🚶</div><div style="flex:1;min-width:0;"><div class="ab-hspot-name">Hallways</div><div class="ab-hspot-bar"><div class="ab-hspot-fill" style="width:100%;"></div></div></div><div class="ab-hspot-count">81</div></div>
+            <div class="ab-hspot"><div class="ab-hspot-icon">🍽️</div><div style="flex:1;min-width:0;"><div class="ab-hspot-name">Cafeteria</div><div class="ab-hspot-bar"><div class="ab-hspot-fill" style="width:77%;"></div></div></div><div class="ab-hspot-count">62</div></div>
+            <div class="ab-hspot"><div class="ab-hspot-icon">📱</div><div style="flex:1;min-width:0;"><div class="ab-hspot-name">Social Media</div><div class="ab-hspot-bar"><div class="ab-hspot-fill" style="width:72%;"></div></div></div><div class="ab-hspot-count">58</div></div>
+            <div class="ab-hspot"><div class="ab-hspot-icon">📚</div><div style="flex:1;min-width:0;"><div class="ab-hspot-name">Classroom</div><div class="ab-hspot-bar"><div class="ab-hspot-fill" style="width:60%;"></div></div></div><div class="ab-hspot-count">49</div></div>
+            <div class="ab-hspot"><div class="ab-hspot-icon">🚌</div><div style="flex:1;min-width:0;"><div class="ab-hspot-name">Bus</div><div class="ab-hspot-bar"><div class="ab-hspot-fill" style="width:42%;"></div></div></div><div class="ab-hspot-count">34</div></div>
+            <div class="ab-hspot"><div class="ab-hspot-icon">⚽</div><div style="flex:1;min-width:0;"><div class="ab-hspot-name">Playground</div><div class="ab-hspot-bar"><div class="ab-hspot-fill" style="width:35%;"></div></div></div><div class="ab-hspot-count">28</div></div>
+          </div>
+        </div>
+        <div class="section-card">
+          <div class="section-card-title">Interventions Delivered <span style="font-size:11px;font-weight:400;color:var(--text-faint);">357 total</span></div>
+          <div id="ab-iv-list"></div>
+        </div>
+      </div>
+
+      <div class="section-card" style="margin-bottom:16px;">
+        <div class="section-card-title">Case Pipeline</div>
+        <div style="font-size:11.5px;color:var(--text-faint);margin-bottom:12px;">347 total cases tracked from submission through resolution</div>
+        <div class="ab-pipeline">
+          <div class="ab-pstep"><div class="ab-pstep-num">347</div><div class="ab-pstep-lbl">Submitted</div></div>
+          <div class="ab-pstep ps-active"><div class="ab-pstep-num">41</div><div class="ab-pstep-lbl">Under Investigation</div></div>
+          <div class="ab-pstep"><div class="ab-pstep-num">18</div><div class="ab-pstep-lbl">Pending Review</div></div>
+          <div class="ab-pstep ps-resolved"><div class="ab-pstep-num">151</div><div class="ab-pstep-lbl">Resolved</div></div>
+          <div class="ab-pstep"><div class="ab-pstep-num">137</div><div class="ab-pstep-lbl">Closed</div></div>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="section-card">
+          <div class="section-card-title">Policy Compliance Dashboard</div>
+          <div id="ab-compliance-overview"></div>
+        </div>
+        <div class="section-card">
+          <div class="section-card-title">District Executive Scorecard</div>
+          <table class="ab-table">
+            <thead><tr><th>Strategic Goal</th><th>Target</th><th>Current</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Reduce Bullying Incidents</td><td>−10% YoY</td><td>−7%</td><td><span class="ab-spill ab-spill-amber">Behind</span></td></tr>
+              <tr><td>Improve Resolution Time</td><td>&lt;5 Days</td><td>6.2 Days</td><td><span class="ab-spill ab-spill-red">Behind</span></td></tr>
+              <tr><td>Increase Reporting Confidence</td><td>70%</td><td>69%</td><td><span class="ab-spill ab-spill-amber">Near Target</span></td></tr>
+              <tr><td>Reduce Repeat Offenders</td><td>−20%</td><td>−15%</td><td><span class="ab-spill ab-spill-amber">Behind</span></td></tr>
+              <tr><td>Improve Climate Score</td><td>85</td><td>82</td><td><span class="ab-spill ab-spill-amber">Behind</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div><!-- /ab-overview -->
+
+    <!-- TAB 2: SCHOOL DETAIL -->
+    <div id="ab-schools" class="ab-view">
+      <div class="section-card" style="margin-bottom:0;border-radius:8px 8px 0 0;">
+        <div class="section-card-title" style="margin-bottom:14px;">Select a School</div>
+        <div class="ab-school-chips" id="ab-school-chips"></div>
+      </div>
+      <div id="ab-school-detail"></div>
+    </div>
+
+    <!-- TAB 3: INVESTIGATIONS -->
+    <div id="ab-investigations" class="ab-view">
+      <div class="section-card" style="margin-bottom:16px;">
+        <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-faint);margin-bottom:12px;">Case Management · 347 total · 41 active · 18 pending review</div>
+        <div class="kpi-row" id="ab-kpi-inv"></div>
+      </div>
+      <div class="section-card" style="margin-bottom:16px;">
+        <div class="section-card-title">Open Case Aging Distribution</div>
+        <div style="font-size:11.5px;color:var(--text-faint);margin-bottom:14px;">41 active investigations grouped by days since opened</div>
+        <div class="ab-aging-grid">
+          <div class="ab-aging-card"><div class="ab-aging-num">18</div><div class="ab-aging-lbl">1–3 Days</div></div>
+          <div class="ab-aging-card"><div class="ab-aging-num">14</div><div class="ab-aging-lbl">4–7 Days</div></div>
+          <div class="ab-aging-card warn"><div class="ab-aging-num">6</div><div class="ab-aging-lbl">8–14 Days</div></div>
+          <div class="ab-aging-card crit"><div class="ab-aging-num">3</div><div class="ab-aging-lbl">15+ Days</div></div>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="section-card">
+          <div class="section-card-title">Resolution Time by Incident Type</div>
+          <div style="font-size:11.5px;color:var(--text-faint);margin-bottom:10px;">Average days from submission to resolution</div>
+          <div id="ab-resolution-bars"></div>
+        </div>
+        <div class="section-card">
+          <div class="section-card-title">Investigator Workload</div>
+          <div style="font-size:11.5px;color:var(--text-faint);margin-bottom:10px;">Active cases assigned per investigator</div>
+          <div id="ab-workload-bars"></div>
+        </div>
+      </div>
       <div class="section-card">
-        <div class="section-card-title">Incident Locations</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+          <div class="section-card-title" style="margin-bottom:0;">Open Investigations — Priority Queue</div>
+          <span style="font-size:11px;color:var(--text-faint);">Top 8 · sorted by days open</span>
+        </div>
+        <div id="ab-case-queue"></div>
+      </div>
+    </div><!-- /ab-investigations -->
+
+    <!-- TAB 4: COMPLIANCE -->
+    <div id="ab-compliance" class="ab-view">
+      <div class="section-card" style="margin-bottom:16px;">
+        <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-faint);margin-bottom:12px;">Policy Compliance · 5 mandated metrics · monthly tracking</div>
+        <div class="kpi-row" id="ab-kpi-comp"></div>
+      </div>
+      <div class="section-card" style="margin-bottom:16px;">
+        <div class="section-card-title">Compliance Metric Trends</div>
+        <div style="font-size:11.5px;color:var(--text-faint);margin-bottom:10px;">6-month performance vs. policy targets</div>
+        <div style="position:relative;height:240px;"><canvas id="ab-compliance-trend-chart"></canvas></div>
+      </div>
+      <div class="section-card" style="margin-bottom:16px;">
+        <div class="section-card-title" style="margin-bottom:14px;">Per-School Compliance Breakdown</div>
         <table class="ab-table">
-          <thead><tr><th>Location</th><th>Incidents</th><th>Share</th></tr></thead>
+          <thead><tr><th>School</th><th>24-Hr Start</th><th>Window Complete</th><th>Parent Notice</th><th>Documentation</th><th>Follow-Up</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>Hallways</td><td>81</td><td>23.4%</td></tr>
-            <tr><td>Cafeteria</td><td>62</td><td>17.9%</td></tr>
-            <tr><td>Social Media</td><td>58</td><td>16.7%</td></tr>
-            <tr><td>Classroom</td><td>49</td><td>14.1%</td></tr>
-            <tr><td>Bus</td><td>34</td><td>9.8%</td></tr>
-            <tr><td>Playground</td><td>28</td><td>8.1%</td></tr>
+            <tr><td><strong>Crestview HS</strong></td><td style="color:#8b1c1c;font-weight:700;">87%</td><td style="color:#8b1c1c;font-weight:700;">79%</td><td>96%</td><td style="color:#9a5b0a;font-weight:600;">95%</td><td style="color:#8b1c1c;font-weight:700;">85%</td><td><span class="ab-spill ab-spill-red">Below Target</span></td></tr>
+            <tr><td><strong>Riverside MS</strong></td><td style="color:#9a5b0a;font-weight:600;">92%</td><td style="color:#9a5b0a;font-weight:600;">86%</td><td>98%</td><td>99%</td><td style="color:#9a5b0a;font-weight:600;">91%</td><td><span class="ab-spill ab-spill-amber">Monitor</span></td></tr>
+            <tr><td><strong>Maplewood MS</strong></td><td>97%</td><td>92%</td><td>100%</td><td>100%</td><td>96%</td><td><span class="ab-spill ab-spill-green">On Target</span></td></tr>
+            <tr><td><strong>Pinecrest HS</strong></td><td>98%</td><td>94%</td><td>100%</td><td>100%</td><td>98%</td><td><span class="ab-spill ab-spill-green">On Target</span></td></tr>
+            <tr><td><strong>Brookside Elem</strong></td><td style="color:#9a5b0a;font-weight:600;">94%</td><td style="color:#9a5b0a;font-weight:600;">88%</td><td>99%</td><td>98%</td><td style="color:#9a5b0a;font-weight:600;">93%</td><td><span class="ab-spill ab-spill-amber">Monitor</span></td></tr>
+            <tr><td><strong>Summit Academy</strong></td><td>95%</td><td style="color:#9a5b0a;font-weight:600;">89%</td><td>100%</td><td>97%</td><td style="color:#9a5b0a;font-weight:600;">92%</td><td><span class="ab-spill ab-spill-amber">Monitor</span></td></tr>
+            <tr><td><strong>Elmwood Elem</strong></td><td>96%</td><td>91%</td><td>100%</td><td>100%</td><td>95%</td><td><span class="ab-spill ab-spill-green">On Target</span></td></tr>
           </tbody>
         </table>
       </div>
-    </div>
+      <div class="two-col">
+        <div class="section-card">
+          <div class="section-card-title">Compliance Gaps — Root Cause Analysis</div>
+          <div id="ab-gap-bars"></div>
+        </div>
+        <div class="section-card">
+          <div class="section-card-title">Recommended Actions</div>
+          <div id="ab-actions-list"></div>
+        </div>
+      </div>
+    </div><!-- /ab-compliance -->
 
-    <div class="section-card">
-      <div class="section-card-title">Compliance Scorecard</div>
-      <div id="ab-compliance"></div>
-    </div>
+    <!-- TAB 5: INTERVENTIONS -->
+    <div id="ab-interventions" class="ab-view">
+      <div class="section-card" style="margin-bottom:16px;">
+        <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-faint);margin-bottom:12px;">357 total interventions delivered this period</div>
+        <div class="kpi-row" id="ab-kpi-iv"></div>
+      </div>
+      <div class="section-card" style="margin-bottom:16px;">
+        <div class="section-card-title" style="margin-bottom:14px;">Effectiveness by Intervention Type</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;" id="ab-eff-grid"></div>
+      </div>
+      <div class="two-col">
+        <div class="section-card">
+          <div class="section-card-title">Interventions by School</div>
+          <div style="position:relative;height:220px;"><canvas id="ab-iv-school-chart"></canvas></div>
+        </div>
+        <div class="section-card">
+          <div class="section-card-title">Common Intervention Pairings</div>
+          <div id="ab-pairings"></div>
+        </div>
+      </div>
+    </div><!-- /ab-interventions -->
 
-    <div class="section-card">
-      <div class="section-card-title">District Executive Scorecard</div>
-      <table class="ab-table">
-        <thead><tr><th>Strategic Goal</th><th>Target</th><th>Current</th><th>Status</th></tr></thead>
-        <tbody>
-          <tr><td>Reduce Bullying Incidents</td><td>-10% YoY</td><td>-7%</td><td><span class="risk-badge risk-watch">Behind</span></td></tr>
-          <tr><td>Improve Resolution Time</td><td>&lt;5 Days</td><td>6.2 Days</td><td><span class="risk-badge risk-watch">Behind</span></td></tr>
-          <tr><td>Increase Reporting Confidence</td><td>70%</td><td>69%</td><td><span class="risk-badge risk-watch">Near Target</span></td></tr>
-          <tr><td>Reduce Repeat Offenders</td><td>-20%</td><td>-15%</td><td><span class="risk-badge risk-watch">Behind</span></td></tr>
-          <tr><td>Improve Climate Score</td><td>85</td><td>82</td><td><span class="risk-badge risk-watch">Behind</span></td></tr>
-        </tbody>
-      </table>
-    </div>
+    <!-- TAB 6: TREND ANALYSIS -->
+    <div id="ab-trends" class="ab-view">
+      <div class="section-card" style="margin-bottom:16px;">
+        <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-faint);margin-bottom:12px;">Multi-year view · predictive analysis</div>
+        <div class="kpi-row" id="ab-kpi-trends"></div>
+      </div>
+      <div class="section-card" style="margin-bottom:16px;">
+        <div class="section-card-title">Year-over-Year Reporting Volume</div>
+        <div style="font-size:11.5px;color:var(--text-faint);margin-bottom:8px;">Total reports per month — SY 2022–23, 2023–24, and 2024–25</div>
+        <div style="position:relative;height:240px;"><canvas id="ab-yoy-chart"></canvas></div>
+      </div>
+      <div class="two-col" style="margin-bottom:16px;">
+        <div class="section-card">
+          <div class="section-card-title">Incident Type Shifts (3-Year)</div>
+          <div style="position:relative;height:210px;"><canvas id="ab-type-shift-chart"></canvas></div>
+        </div>
+        <div class="section-card">
+          <div class="section-card-title">Seasonal Pattern Analysis</div>
+          <div id="ab-seasonal"></div>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="section-card">
+          <div class="section-card-title">Key Trend Insights</div>
+          <div id="ab-trend-insights"></div>
+        </div>
+        <div class="section-card">
+          <div class="section-card-title">3-Month Forecast (Feb–Apr)</div>
+          <div style="position:relative;height:185px;"><canvas id="ab-forecast-chart"></canvas></div>
+          <div style="margin-top:10px;padding:10px;background:var(--bg);border-radius:6px;font-size:11px;color:var(--text-mid);line-height:1.5;"><strong style="color:var(--charcoal);">Methodology:</strong> 6-month trailing average combined with prior-year seasonal patterns. Confidence: ±8%.</div>
+        </div>
+      </div>
+    </div><!-- /ab-trends -->
+
   </section>
 
   <!-- ── LAKEWOOD REA STRATEGIC DASHBOARD ────────────────────────── -->
@@ -5505,47 +5748,388 @@ function renderKaneTimeline(){
 }
 
 // ═══════════════════════════════════════════════════════════
-// ANTI-BULLYING — RENDER
+// ANTI-BULLYING — STATE & HELPERS
 // ═══════════════════════════════════════════════════════════
-let abMonthlyChart=null,abTypeChart=null;
+const AB_SCHOOLS=[
+  {key:'chs',name:'Crestview High School',type:'Grades 9–12 · Highest volume',status:'red',statusLabel:'Needs Attention',
+   hotspots:[['🚶','Hallways',24],['📱','Social Media',22],['🍽️','Cafeteria',16],['📚','Classroom',13],['⚽','Athletics',9],['🚌','Bus',7]],
+   interventions:[['Counseling Referrals',38],['Parent Conferences',24],['Restorative Conf.',14],['Behavior Contracts',11],['Safety Plans',8],['Support Plans',7]],
+   insights:[
+     {type:'high',title:'High Open Caseload',body:'15 active investigations exceed district policy threshold. Investigator workload is double the district average.'},
+     {type:'amber',title:'Cyberbullying Concentration',body:'Cyberbullying accounts for 31% of cases here vs. 22% district-wide — focused digital literacy intervention recommended.'},
+     {type:'good',title:'Strong Reporting Culture',body:'71% of reports submitted by students directly — highest of any school.'}
+   ]},
+  {key:'rms',name:'Riverside Middle School',type:'Grades 7–8',status:'amber',statusLabel:'Monitor',
+   hotspots:[['🍽️','Cafeteria',19],['🚶','Hallways',16],['🚌','Bus',11],['📱','Social Media',9],['📚','Classroom',8],['⚽','Playground',4]],
+   interventions:[['Counseling Referrals',26],['Parent Conferences',20],['Restorative Conf.',14],['Behavior Contracts',9],['Support Plans',7],['Safety Plans',4]],
+   insights:[
+     {type:'amber',title:'Cafeteria Hotspot',body:'Cafeteria accounts for 28% of incidents — supervision review during lunch periods recommended.'},
+     {type:'good',title:'Improving Resolution Time',body:'Average resolution dropped from 7.4 to 6.3 days this period.'},
+     {type:'amber',title:'Bus Incidents Elevated',body:'11 bus-related incidents — coordinate with transportation on supervision protocols.'}
+   ]},
+  {key:'mms',name:'Maplewood Middle School',type:'Grades 7–8',status:'green',statusLabel:'On Track',
+   hotspots:[['⚽','Playground',11],['🍽️','Cafeteria',9],['🚶','Hallways',8],['📚','Classroom',7],['🚌','Bus',5],['📱','Social Media',3]],
+   interventions:[['Counseling Referrals',20],['Parent Conferences',16],['Restorative Conf.',13],['Behavior Contracts',8],['Support Plans',6],['Safety Plans',3]],
+   insights:[
+     {type:'good',title:'Model MS Performance',body:'On track across all compliance metrics with strong resolution times.'},
+     {type:'good',title:'High Restorative Use',body:'Restorative conferences used in 25% of confirmed cases — strong implementation.'},
+     {type:'amber',title:'Playground Hotspot',body:'Playground accounts for 27% of incidents — recess supervision review recommended.'}
+   ]},
+  {key:'phs',name:'Pinecrest High School',type:'Grades 9–12',status:'green',statusLabel:'On Track',
+   hotspots:[['🚶','Hallways',12],['📱','Social Media',10],['🍽️','Cafeteria',8],['📚','Classroom',6],['⚽','Athletics',5],['🚌','Bus',3]],
+   interventions:[['Counseling Referrals',17],['Parent Conferences',12],['Restorative Conf.',9],['Behavior Contracts',6],['Support Plans',5],['Safety Plans',3]],
+   insights:[
+     {type:'good',title:'Fastest Resolution District-Wide',body:'4.8 days average — best practices model for high schools.'},
+     {type:'good',title:'Strong Family Engagement',body:'Parent conferences used in 43% of cases — high family involvement.'},
+     {type:'info',title:'Low Confirmation Rate',body:'Only 31% of reports confirmed as bullying — most incidents resolved as conflicts.'}
+   ]},
+  {key:'bse',name:'Brookside Elementary',type:'Grades K–6',status:'amber',statusLabel:'Monitor',
+   hotspots:[['⚽','Playground',13],['🚌','Bus',9],['🍽️','Cafeteria',7],['🚶','Hallways',6],['📚','Classroom',3],['🎨','Specials',2]],
+   interventions:[['Counseling Referrals',12],['Parent Conferences',9],['Restorative Conf.',3],['Behavior Contracts',3],['Support Plans',2],['Safety Plans',2]],
+   insights:[
+     {type:'amber',title:'Bus Incidents Above Average',body:'Bus incidents are second-highest among elementaries — transportation supervision review needed.'},
+     {type:'amber',title:'Lower Restorative Use',body:'Only 8% of cases use restorative conferences vs. 21% district elementary average.'},
+     {type:'good',title:'Improving Trend',body:'Reports trending down from peak in October — interventions showing positive effect.'}
+   ]},
+  {key:'sla',name:'Summit Learning Academy',type:'Alt. program · Grades 7–12',status:'amber',statusLabel:'Monitor',
+   hotspots:[['📚','Classroom',9],['🚶','Hallways',7],['📱','Social Media',5],['🍽️','Common Area',4],['🚌','Bus',2],['🎭','Off-site',1]],
+   interventions:[['Counseling Referrals',7],['Parent Conferences',5],['Support Plans',4],['Safety Plans',4],['Behavior Contracts',3],['Restorative Conf.',2]],
+   insights:[
+     {type:'amber',title:'High Anonymous Reporting',body:'57% of reports submitted anonymously — above district average, indicating student hesitancy.'},
+     {type:'high',title:'Threats Disproportionate',body:'Threats represent 7% of cases vs. 3% district average — heightened safety planning protocols in place.'},
+     {type:'good',title:'Strong Individual Support',body:'Support plans used in 24% of cases — reflecting the alternative program\'s individualized approach.'}
+   ]},
+  {key:'ewe',name:'Elmwood Elementary',type:'Grades K–6 · Smallest campus',status:'green',statusLabel:'On Track',
+   hotspots:[['⚽','Playground',9],['🚶','Hallways',6],['🍽️','Cafeteria',5],['📚','Classroom',4],['🚌','Bus',2],['🎨','Specials',1]],
+   interventions:[['Parent Conferences',4],['Counseling Referrals',4],['Restorative Conf.',0],['Behavior Contracts',0],['Support Plans',0],['Safety Plans',0]],
+   insights:[
+     {type:'good',title:'Low Confirmation Rate',body:'Only 22% of reports confirmed as bullying — most incidents resolved as conflicts.'},
+     {type:'good',title:'Strong Community',body:'Small school size enables direct family engagement — parent conferences used in 67% of confirmed cases.'},
+     {type:'amber',title:'January Spike Notable',body:'January reports doubled from monthly average — monitor for post-break behavioral patterns.'}
+   ]}
+];
 
+let abInitialized={};
+let abActiveSchool='chs';
+let abSchoolChart=null;
+
+const AB_CHART_COLORS=['#176E82','#219EBB','#ea730b','#8fa3ab','#e74c3c','#c0392b'];
+const AB_TT={backgroundColor:'#092c34',titleColor:'#fff',bodyColor:'rgba(255,255,255,.8)',cornerRadius:6,padding:9};
+
+function abTab(id){
+  document.querySelectorAll('.ab-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.ab-view').forEach(v=>v.classList.remove('active'));
+  document.querySelector(`.ab-tab[onclick="abTab('${id}')"]`).classList.add('active');
+  document.getElementById('ab-'+id).classList.add('active');
+  if(!abInitialized[id]){abInitialized[id]=true;abInitTab(id);}
+}
+
+function abBarRows(rows,maxVal){
+  return rows.map(([lbl,v,c])=>`<div class="ab-comp-row">
+    <div class="ab-comp-label">${lbl}</div>
+    <div class="ab-comp-bar-wrap"><div class="ab-comp-bar" style="width:${(v/maxVal*100).toFixed(0)}%;background:${c};"></div></div>
+    <div class="ab-comp-pct" style="color:${c};">${v}</div></div>`).join('');
+}
+
+function abInitTab(id){
+  if(id==='compliance'){
+    document.getElementById('ab-kpi-comp').innerHTML=[
+      {lbl:'24-Hr Response',val:'93%',sub:'2% below target (95%)'},
+      {lbl:'Policy Window',val:'87%',sub:'3% below target (90%)'},
+      {lbl:'Parent Notification',val:'98%',sub:'2% below target (100%)'},
+      {lbl:'Follow-Up Completion',val:'92%',sub:'3% below target (95%)'}
+    ].map(k=>`<div class="ab-stat"><div class="ab-stat-label">${k.lbl}</div><div class="ab-stat-value">${k.val}</div><div class="ab-stat-change neg">${k.sub}</div></div>`).join('');
+
+    const cte=document.getElementById('ab-compliance-trend-chart');
+    if(cte) new Chart(cte,{type:'line',data:{labels:['Aug','Sep','Oct','Nov','Dec','Jan'],datasets:[
+      {label:'24-Hr Start',data:[89,91,92,93,94,93],borderColor:'#176E82',borderWidth:2.5,tension:.4,pointRadius:3,backgroundColor:'transparent'},
+      {label:'Policy Window',data:[82,84,85,86,88,87],borderColor:'#ea730b',borderWidth:2.5,tension:.4,pointRadius:3,backgroundColor:'transparent'},
+      {label:'Parent Notify',data:[96,97,97,98,98,98],borderColor:'#27ae60',borderWidth:2.5,tension:.4,pointRadius:3,backgroundColor:'transparent'},
+      {label:'Documentation',data:[95,96,97,98,98,98],borderColor:'#8fa3ab',borderWidth:2.5,tension:.4,pointRadius:3,backgroundColor:'transparent'},
+      {label:'Follow-Up',data:[85,87,89,90,91,92],borderColor:'#219EBB',borderWidth:2.5,tension:.4,pointRadius:3,backgroundColor:'transparent'}
+    ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{font:{size:11},usePointStyle:true,padding:12}},tooltip:AB_TT},scales:{x:{grid:{display:false},ticks:{font:{size:11},color:'var(--text-faint)'}},y:{grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{size:11},color:'var(--text-faint)',callback:v=>v+'%'},min:75,max:100}}}});
+
+    document.getElementById('ab-gap-bars').innerHTML=abBarRows([
+      ['Staffing constraints',14,'#176E82'],['Witness availability',10,'#219EBB'],
+      ['Multi-school cases',8,'#ea730b'],['Documentation delays',6,'#8fa3ab'],['External coordination',4,'#c0392b']
+    ],14)+`<div style="font-size:10.5px;color:var(--text-faint);margin-top:8px;">cases</div>`;
+
+    document.getElementById('ab-actions-list').innerHTML=[
+      {n:1,c:'#c0392b',bg:'#fdeaea',t:'Reallocate Crestview HS investigator caseload',b:'Crestview is handling 12+ active cases — district average is 6. Consider temporary support.'},
+      {n:2,c:'#9a5b0a',bg:'#fef6e7',t:'Audit parent notification gaps',b:'2% of cases missed notification window — review notification protocols.'},
+      {n:3,c:'#9a5b0a',bg:'#fef6e7',t:'Standardize follow-up tracking',b:'8% of cases lack 30-day follow-up documentation — implement automated reminders.'},
+      {n:4,c:'#27ae60',bg:'#eaf4ee',t:'Quarterly compliance review with school leaders',b:'Establish recurring meetings to address compliance patterns proactively.'}
+    ].map(a=>`<div style="display:flex;gap:11px;padding:11px 0;border-bottom:1px solid var(--border);">
+      <div style="width:22px;height:22px;border-radius:50%;background:${a.bg};color:${a.c};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;">${a.n}</div>
+      <div><div style="font-size:12px;font-weight:600;color:var(--charcoal);margin-bottom:2px;">${a.t}</div><div style="font-size:11px;color:var(--text-faint);line-height:1.5;">${a.b}</div></div>
+    </div>`).join('');
+  }
+
+  if(id==='interventions'){
+    document.getElementById('ab-kpi-iv').innerHTML=[
+      {lbl:'Total Interventions',val:'357',sub:'▼ +22% vs prior period',neg:false},
+      {lbl:'Avg Effectiveness',val:'78%',sub:'▼ +4 pts — no recurrence 90 days',neg:false},
+      {lbl:'Repeat Cases',val:'22%',sub:'▲ −15% YoY (target: −20%)',neg:true},
+      {lbl:'Avg Days to Intervention',val:'2.8',sub:'▼ Within target',neg:false}
+    ].map(k=>`<div class="ab-stat"><div class="ab-stat-label">${k.lbl}</div><div class="ab-stat-value">${k.val}</div><div class="ab-stat-change ${k.neg?'neg':'imp'}">${k.sub}</div></div>`).join('');
+
+    document.getElementById('ab-eff-grid').innerHTML=[
+      {name:'Counseling Referrals',n:124,pct:82,note:'102 of 124 showed no recurrence within 90 days'},
+      {name:'Parent Conferences',n:88,pct:75,note:'66 of 88 conferences led to behavior improvement'},
+      {name:'Restorative Conferences',n:57,pct:88,note:'50 of 57 restored peer relationships successfully'},
+      {name:'Behavior Contracts',n:39,pct:69,note:'27 of 39 students met contract terms fully'},
+      {name:'Student Support Plans',n:28,pct:85,note:'24 of 28 plans showed sustained positive outcomes'},
+      {name:'Safety Plans',n:21,pct:91,note:'19 of 21 safety plans prevented further incidents'}
+    ].map(e=>`<div class="ab-eff-card">
+      <div class="ab-eff-name">${e.name}</div>
+      <div class="ab-eff-nums"><div class="ab-eff-count">${e.n}</div><div class="ab-eff-pct">${e.pct}%</div></div>
+      <div class="ab-eff-bar"><div class="ab-eff-fill" style="width:${e.pct}%;"></div></div>
+      <div class="ab-eff-note">${e.note}</div>
+    </div>`).join('');
+
+    const ise=document.getElementById('ab-iv-school-chart');
+    if(ise) new Chart(ise,{type:'bar',data:{
+      labels:['Crestview HS','Riverside MS','Maplewood MS','Pinecrest HS','Brookside Elem','Summit Acad','Elmwood Elem'],
+      datasets:[
+        {label:'Counseling',data:[38,26,20,17,12,7,4],backgroundColor:'#176E82'},
+        {label:'Parent Conf.',data:[24,20,16,12,9,5,2],backgroundColor:'#219EBB'},
+        {label:'Restorative',data:[14,14,13,9,3,2,0],backgroundColor:'#ea730b'},
+        {label:'Contracts',data:[11,9,8,6,3,3,0],backgroundColor:'#8fa3ab'},
+        {label:'Support Plans',data:[7,7,6,5,2,4,0],backgroundColor:'#27ae60'},
+        {label:'Safety Plans',data:[8,4,3,3,2,4,0],backgroundColor:'#c0392b'}
+      ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{font:{size:10},usePointStyle:true,padding:10}},tooltip:AB_TT},scales:{x:{stacked:true,grid:{display:false},ticks:{font:{size:10},color:'var(--text-faint)'}},y:{stacked:true,grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{size:10},color:'var(--text-faint)'}}}}});
+
+    document.getElementById('ab-pairings').innerHTML=[
+      {t:'Counseling + Parent Conference',s:'Standard response for verbal/social incidents',n:68},
+      {t:'Counseling + Restorative Conference',s:'Used for peer-to-peer incidents requiring repair',n:42},
+      {t:'Support Plan + Counseling',s:'Comprehensive ongoing support framework',n:26},
+      {t:'Parent Conf. + Behavior Contract',s:'Family-engaged behavior modification',n:21},
+      {t:'Safety Plan + Behavior Contract',s:'High-risk cases requiring structured response',n:18}
+    ].map(p=>`<div style="display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--border);">
+      <div><div style="font-size:12px;font-weight:600;color:var(--charcoal);">${p.t}</div><div style="font-size:10.5px;color:var(--text-faint);margin-top:2px;">${p.s}</div></div>
+      <div style="font-family:'Lora',serif;font-size:20px;font-weight:700;color:var(--charcoal);margin-left:12px;">${p.n}</div>
+    </div>`).join('');
+  }
+
+  if(id==='trends'){
+    document.getElementById('ab-kpi-trends').innerHTML=[
+      {lbl:'YoY Reports Change',val:'+11.2%',sub:'▲ Reflects improved reporting confidence',neg:true},
+      {lbl:'Forecasted Q4 Volume',val:'~78',sub:'▲ +5% projected based on 6-month pattern',neg:true},
+      {lbl:'Cyberbullying Growth',val:'+34%',sub:'▲ Fastest-growing incident type',neg:true},
+      {lbl:'Resolution Time Trend',val:'−12.7%',sub:'▼ Improving — 6.2 days vs. 7.1 prior period',neg:false}
+    ].map(k=>`<div class="ab-stat"><div class="ab-stat-label">${k.lbl}</div><div class="ab-stat-value">${k.val}</div><div class="ab-stat-change ${k.neg?'neg':'imp'}">${k.sub}</div></div>`).join('');
+
+    const yye=document.getElementById('ab-yoy-chart');
+    if(yye) new Chart(yye,{type:'line',data:{labels:['Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun'],datasets:[
+      {label:'SY 2022–23',data:[28,38,45,42,32,48,51,47,44,38,22],borderColor:'#c0c0c0',borderWidth:2,tension:.4,pointRadius:3,borderDash:[4,4],backgroundColor:'transparent'},
+      {label:'SY 2023–24',data:[32,44,53,51,38,56,59,55,50,44,26],borderColor:'#ea730b',borderWidth:2,tension:.4,pointRadius:3,backgroundColor:'transparent'},
+      {label:'SY 2024–25',data:[38,52,61,58,44,67,null,null,null,null,null],borderColor:'#176E82',borderWidth:3,tension:.4,pointRadius:4,backgroundColor:'rgba(23,110,130,.06)',fill:true}
+    ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{font:{size:11},usePointStyle:true,padding:12}},tooltip:AB_TT},scales:{x:{grid:{display:false},ticks:{font:{size:11},color:'var(--text-faint)'}},y:{grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{size:11},color:'var(--text-faint)'},beginAtZero:true}}}});
+
+    const tse=document.getElementById('ab-type-shift-chart');
+    if(tse) new Chart(tse,{type:'bar',data:{labels:['Verbal','Cyberbullying','Social Excl.','Physical','Harassment','Threats'],datasets:[
+      {label:'2022–23',data:[98,42,58,64,35,16],backgroundColor:'#c0c0c0',borderRadius:3},
+      {label:'2023–24',data:[94,58,60,58,38,19],backgroundColor:'#ea730b',borderRadius:3},
+      {label:'2024–25',data:[89,76,63,54,42,23],backgroundColor:'#176E82',borderRadius:3}
+    ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{font:{size:10},usePointStyle:true,padding:10}},tooltip:AB_TT},scales:{x:{grid:{display:false},ticks:{font:{size:10},color:'var(--text-faint)'}},y:{grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{size:10},color:'var(--text-faint)'},beginAtZero:true}}}});
+
+    document.getElementById('ab-seasonal').innerHTML=[
+      {icon:'❄️',bg:'#fdeaea',t:'Post-Winter Break Surge',b:'January consistently shows the highest report volume (+22% vs. Dec)',v:'+22%',vc:'#8b1c1c'},
+      {icon:'🍂',bg:'#fef6e7',t:'Fall Acclimation Period',b:'September–October show steady increase as new social dynamics form',v:'+17%',vc:'#9a5b0a'},
+      {icon:'🎄',bg:'#eaf4ee',t:'Holiday Period Dip',b:'December typically lowest due to break and reduced school days',v:'−24%',vc:'#1a6644'},
+      {icon:'⚠️',bg:'rgba(23,110,130,.08)',t:'Q4 Forecast',b:'Feb–Apr expected to show elevated reporting based on trend',v:'~230',vc:'#176E82'}
+    ].map(s=>`<div style="display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--border);">
+      <div style="width:40px;height:40px;background:${s.bg};border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;">${s.icon}</div>
+      <div style="flex:1;"><div style="font-size:12.5px;font-weight:700;color:var(--charcoal);">${s.t}</div><div style="font-size:11px;color:var(--text-faint);margin-top:2px;line-height:1.4;">${s.b}</div></div>
+      <div style="font-family:'Lora',serif;font-size:20px;font-weight:700;color:${s.vc};flex-shrink:0;">${s.v}</div>
+    </div>`).join('');
+
+    document.getElementById('ab-trend-insights').innerHTML=[
+      {type:'high',title:'📱 Digital Incidents Rising',body:'Cyberbullying and social media incidents now represent <strong>40% of all confirmed cases</strong> — up from 28% two years ago. Recommend strengthening digital citizenship curriculum.'},
+      {type:'amber',title:'🏫 High School Pattern',body:'Crestview HS accounts for <strong>26% of all district reports</strong> while serving 35% of secondary enrollment — patterns warrant targeted intervention strategy.'},
+      {type:'good',title:'✓ Anonymous Reporting Up',body:'Anonymous reports grew <strong>11.2% YoY</strong> — strong indicator of improving student trust in the reporting system.'},
+      {type:'info',title:'🔄 Repeat Offender Reduction',body:'Restorative practices show <strong>88% effectiveness</strong> at preventing recurrence — highest of any intervention. Expansion recommended.'}
+    ].map(i=>`<div class="ab-insight ${i.type}"><div class="ab-insight-ttl">${i.title}</div><div class="ab-insight-body">${i.body}</div></div>`).join('');
+
+    const fce=document.getElementById('ab-forecast-chart');
+    if(fce) new Chart(fce,{type:'line',data:{labels:['Nov','Dec','Jan','Feb','Mar','Apr'],datasets:[
+      {label:'Actual',data:[58,44,67,null,null,null],borderColor:'#176E82',borderWidth:2.5,tension:.4,pointRadius:4,pointBackgroundColor:'#176E82',backgroundColor:'transparent'},
+      {label:'Forecast',data:[null,null,67,72,78,65],borderColor:'#ea730b',borderWidth:2.5,borderDash:[6,4],tension:.4,pointRadius:4,pointBackgroundColor:'#ea730b',backgroundColor:'rgba(234,115,11,.08)',fill:true}
+    ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{font:{size:11},usePointStyle:true,padding:10}},tooltip:AB_TT},scales:{x:{grid:{display:false},ticks:{font:{size:11},color:'var(--text-faint)'}},y:{grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{size:11},color:'var(--text-faint)'},beginAtZero:true}}}});
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// ANTI-BULLYING — RENDER (called on first navigate)
+// ═══════════════════════════════════════════════════════════
 function renderAntiBullying(){
-  const canvas=document.getElementById('ab-chart-monthly');
-  if(!canvas||canvas.dataset.rendered)return;
-  canvas.dataset.rendered='1';
-  abRenderKPIs('all');
+  if(abInitialized['overview'])return;
+  abInitialized['overview']=true;
 
-  abMonthlyChart=new Chart(canvas.getContext('2d'),{
-    type:'line',
-    data:{labels:['Aug','Sep','Oct','Nov','Dec','Jan'],
-      datasets:[{label:'Reports',data:[38,52,61,58,44,67],
-        borderColor:'#176E82',backgroundColor:'rgba(23,110,130,.1)',fill:true,tension:.3,pointRadius:4}]},
-    options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false}},scales:{y:{min:0,ticks:{stepSize:10}}}}
-  });
+  const d=AB_DATA.all;
+  const kpiLabels=['Total Reports','Confirmed Cases','Anonymous Reports','Open Investigations','Cases Resolved','Avg Resolution (days)'];
+  const kpiVals=[d.kpis.reports,d.kpis.confirmed,d.kpis.anon,d.kpis.open,d.kpis.resolved,d.kpis.avgDays];
+  document.getElementById('ab-kpi-overview').innerHTML=kpiLabels.map((lbl,i)=>`
+    <div class="ab-stat">
+      <div class="ab-stat-label">${lbl}</div>
+      <div class="ab-stat-value">${kpiVals[i]}</div>
+      <div class="ab-stat-change ${d.changes[i].neg?'neg':'imp'}">${d.changes[i].neg?'▲':'▼'} ${d.changes[i].v} vs prior period</div>
+    </div>`).join('');
 
-  abTypeChart=new Chart(document.getElementById('ab-chart-type').getContext('2d'),{
-    type:'doughnut',
-    data:{labels:['Verbal (26%)','Cyberbullying (22%)','Social Exclusion (18%)','Physical (16%)','Harassment (12%)','Threats (6%)'],
-      datasets:[{data:[89,76,63,54,42,23],
-        backgroundColor:['#176E82','#219EBB','#8fa3ab','#ea730b','#e74c3c','#c0392b']}]},
-    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{font:{size:11}}}}}
-  });
+  new Chart(document.getElementById('ab-monthly-chart'),{type:'line',data:{labels:['Aug','Sep','Oct','Nov','Dec','Jan'],datasets:[{label:'Reports',data:d.monthly,borderColor:'#176E82',backgroundColor:'rgba(23,110,130,.1)',fill:true,tension:.3,pointRadius:4,pointBackgroundColor:'#176E82'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:AB_TT},scales:{x:{grid:{display:false},ticks:{font:{size:11},color:'var(--text-faint)'}},y:{min:0,grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{size:11},color:'var(--text-faint)'}}}}});
+
+  new Chart(document.getElementById('ab-type-chart'),{type:'doughnut',data:{labels:d.types.labels,datasets:[{data:d.types.data,backgroundColor:AB_CHART_COLORS,borderWidth:3,borderColor:'#fff'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{font:{size:11},padding:10}},tooltip:AB_TT},cutout:'65%'}});
+
+  new Chart(document.getElementById('ab-source-chart'),{type:'doughnut',data:{labels:['Students','Parents','Teachers','Staff'],datasets:[{data:[203,61,47,36],backgroundColor:['#176E82','#219EBB','#ea730b','#8fa3ab'],borderWidth:3,borderColor:'#fff'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:AB_TT},cutout:'65%'}});
+
+  document.getElementById('ab-iv-list').innerHTML=abBarRows([
+    ['Counseling Referrals',124,'#176E82'],['Parent Conferences',88,'#219EBB'],
+    ['Restorative Conf.',57,'#ea730b'],['Behavior Contracts',39,'#8fa3ab'],
+    ['Support Plans',28,'#27ae60'],['Safety Plans',21,'#c0392b']
+  ],124);
 
   const comp=[
     {label:'Investigations Started Within 24 Hours',target:95,actual:93},
     {label:'Investigations Completed Within Policy Window',target:90,actual:87},
     {label:'Parent Notification Compliance',target:100,actual:98},
     {label:'Documentation Completion',target:100,actual:98},
-    {label:'Follow-Up Completion',target:95,actual:92},
+    {label:'Follow-Up Completion',target:95,actual:92}
   ];
-  document.getElementById('ab-compliance').innerHTML=comp.map(c=>`
+  document.getElementById('ab-compliance-overview').innerHTML=comp.map(c=>`
     <div class="ab-comp-row">
       <div class="ab-comp-label">${c.label}</div>
       <div class="ab-comp-bar-wrap"><div class="ab-comp-bar${c.actual>=c.target?'':' miss'}" style="width:${c.actual}%;"></div></div>
       <div class="ab-comp-pct" style="color:${c.actual>=c.target?'#27ae60':'#c0392b'};">${c.actual}%</div>
       <div class="ab-comp-target">Target: ${c.target}%</div>
     </div>`).join('');
+
+  // Pre-render investigations tab content
+  abInitialized['investigations']=true;
+  document.getElementById('ab-kpi-inv').innerHTML=[
+    {lbl:'Active Investigations',val:'41',sub:'▼ −22.6% vs prior period',neg:false},
+    {lbl:'Pending Review',val:'18',sub:'▲ Avg 2.4 days waiting',neg:true},
+    {lbl:'Overdue Cases',val:'9',sub:'▲ Past policy window (>10 days)',neg:true},
+    {lbl:'Resolution Rate',val:'87%',sub:'▲ Target: 90% within window',neg:true}
+  ].map(k=>`<div class="ab-stat"><div class="ab-stat-label">${k.lbl}</div><div class="ab-stat-value">${k.val}</div><div class="ab-stat-change ${k.neg?'neg':'imp'}">${k.sub}</div></div>`).join('');
+
+  document.getElementById('ab-resolution-bars').innerHTML=abBarRows([
+    ['Threats',9.4,'#c0392b'],['Cyberbullying',8.0,'#e74c3c'],['Physical',6.5,'#ea730b'],
+    ['Harassment',6.1,'#8fa3ab'],['Social Exclusion',5.0,'#219EBB'],['Verbal',4.2,'#176E82']
+  ],9.4)+'<div style="font-size:10.5px;color:var(--text-faint);margin-top:6px;">days avg</div>';
+
+  document.getElementById('ab-workload-bars').innerHTML=abBarRows([
+    ['J. Rivera — Crestview HS',12,'#c0392b'],['M. Torres — Riverside MS',8,'#ea730b'],
+    ['District Safety Office',6,'#176E82'],['Counseling Team (Float)',6,'#219EBB'],
+    ['A. Williams — Maplewood MS',5,'#8fa3ab'],['S. Patel — Pinecrest HS',4,'#27ae60']
+  ],12);
+
+  document.getElementById('ab-case-queue').innerHTML=[
+    {id:'#B-2025-0142',t:'Cyberbullying — Crestview High School',m:'Reported by parent · Verbal threats via social media · Assigned: J. Rivera',s:'red',sl:'Overdue',d:'18 days'},
+    {id:'#B-2025-0138',t:'Physical — Crestview High School',m:'Reported by teacher · Hallway altercation · Assigned: J. Rivera',s:'red',sl:'Overdue',d:'16 days'},
+    {id:'#B-2025-0151',t:'Harassment — Riverside Middle School',m:'Reported anonymously · Repeated targeting in cafeteria · Assigned: M. Torres',s:'red',sl:'Overdue',d:'15 days'},
+    {id:'#B-2025-0159',t:'Social Exclusion — Crestview High School',m:'Reported by student · Organized exclusion from group · Assigned: J. Rivera',s:'amber',sl:'Active',d:'11 days'},
+    {id:'#B-2025-0167',t:'Cyberbullying — Riverside Middle School',m:'Reported by parent · Group chat harassment · Assigned: M. Torres',s:'amber',sl:'Active',d:'9 days'},
+    {id:'#B-2025-0172',t:'Verbal — Crestview High School',m:'Reported by teacher · Recurring verbal incidents · Assigned: J. Rivera',s:'amber',sl:'Active',d:'8 days'},
+    {id:'#B-2025-0178',t:'Threats — Summit Learning Academy',m:'Reported by counselor · Online threatening message · Assigned: D. Reyes',s:'amber',sl:'Active',d:'7 days'},
+    {id:'#B-2025-0184',t:'Physical — Brookside Elementary',m:'Reported by staff · Playground incident · Assigned: L. Park',s:'amber',sl:'Active',d:'6 days'}
+  ].map(c=>`<div class="ab-case-row">
+    <div class="ab-case-id">${c.id}</div>
+    <div class="ab-case-info"><div class="ab-case-title">${c.t}</div><div class="ab-case-meta">${c.m}</div></div>
+    <span class="ab-spill ab-spill-${c.s}">${c.sl}</span>
+    <div class="ab-case-days">${c.d}</div>
+  </div>`).join('');
+
+  // Pre-render school detail
+  abInitSchoolTab();
+}
+
+function abInitSchoolTab(){
+  abInitialized['schools']=true;
+  document.getElementById('ab-school-chips').innerHTML=AB_SCHOOLS.map(s=>`
+    <button class="ab-school-chip${s.key===abActiveSchool?' active':''}" data-school="${s.key}" onclick="abSelectSchool('${s.key}')">
+      <span style="font-size:12.5px;font-weight:700;font-family:'Lora',serif;">${s.name}</span>
+      <span class="ab-school-chip-meta">${AB_DATA[s.key].kpis.reports} reports · ${AB_DATA[s.key].kpis.open} open · ${s.statusLabel}</span>
+    </button>`).join('');
+  abRenderSchoolDetail(abActiveSchool);
+}
+
+function abSelectSchool(key){
+  abActiveSchool=key;
+  document.querySelectorAll('.ab-school-chip').forEach(c=>c.classList.toggle('active',c.dataset.school===key));
+  if(abSchoolChart){abSchoolChart.destroy();abSchoolChart=null;}
+  abRenderSchoolDetail(key);
+}
+
+function abRenderSchoolDetail(key){
+  const s=AB_SCHOOLS.find(x=>x.key===key);
+  const d=AB_DATA[key];
+  const sc={red:'ab-spill-red',amber:'ab-spill-amber',green:'ab-spill-green'}[s.status];
+  const colors=AB_CHART_COLORS;
+  const maxT=d.types.data[0]||1;
+  const maxH=s.hotspots[0][2]||1;
+  const maxI=s.interventions[0][1]||1;
+
+  document.getElementById('ab-school-detail').innerHTML=`
+  <div class="section-card" style="margin-top:0;border-radius:0 0 8px 8px;border-top:none;">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px;">
+      <div><div style="font-family:'Lora',serif;font-size:17px;font-weight:700;color:var(--charcoal);">${s.name}</div>
+        <div style="font-size:11.5px;color:var(--text-faint);margin-top:2px;">${s.type}</div></div>
+      <span class="ab-spill ${sc}">${s.statusLabel}</span>
+    </div>
+    <div class="kpi-row">
+      ${[
+        {lbl:'Total Reports',val:d.kpis.reports,sub:`${d.kpis.anon} anonymous (${Math.round(d.kpis.anon/d.kpis.reports*100)}%)`},
+        {lbl:'Confirmed Cases',val:d.kpis.confirmed,sub:`${Math.round(d.kpis.confirmed/d.kpis.reports*100)}% confirmation rate`},
+        {lbl:'Open Cases',val:d.kpis.open,sub:`${d.kpis.resolved} resolved this period`},
+        {lbl:'Avg Resolution',val:d.kpis.avgDays+' days',sub:'Target: <5.0 days'}
+      ].map(k=>`<div class="ab-stat"><div class="ab-stat-label">${k.lbl}</div><div class="ab-stat-value">${k.val}</div><div class="ab-stat-change neg">${k.sub}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="two-col">
+    <div class="section-card">
+      <div class="section-card-title">Monthly Reporting Trend</div>
+      <div style="position:relative;height:190px;"><canvas id="ab-school-chart"></canvas></div>
+    </div>
+    <div class="section-card">
+      <div class="section-card-title">Incident Type Breakdown</div>
+      ${d.types.labels.map((lbl,i)=>`<div class="ab-comp-row">
+        <div class="ab-comp-label">${lbl}</div>
+        <div class="ab-comp-bar-wrap"><div class="ab-comp-bar" style="width:${(d.types.data[i]/maxT*100).toFixed(0)}%;background:${colors[i]};"></div></div>
+        <div class="ab-comp-pct" style="color:${colors[i]};">${d.types.data[i]}</div>
+      </div>`).join('')}
+    </div>
+  </div>
+  <div class="two-col">
+    <div class="section-card">
+      <div class="section-card-title">Hotspots at ${s.name.split(' ')[0]}</div>
+      <div class="ab-hspot-grid">
+        ${s.hotspots.map(([icon,name,n])=>`<div class="ab-hspot">
+          <div class="ab-hspot-icon">${icon}</div>
+          <div style="flex:1;min-width:0;"><div class="ab-hspot-name">${name}</div>
+            <div class="ab-hspot-bar"><div class="ab-hspot-fill" style="width:${(n/maxH*100).toFixed(0)}%;"></div></div></div>
+          <div class="ab-hspot-count">${n}</div>
+        </div>`).join('')}
+      </div>
+    </div>
+    <div class="section-card">
+      <div class="section-card-title">Interventions Delivered</div>
+      ${s.interventions.map(([lbl,n],i)=>`<div class="ab-comp-row">
+        <div class="ab-comp-label" style="font-size:11.5px;">${lbl}</div>
+        <div class="ab-comp-bar-wrap"><div class="ab-comp-bar" style="width:${(n/maxI*100).toFixed(0)}%;background:${colors[i%colors.length]};"></div></div>
+        <div class="ab-comp-pct" style="color:${colors[i%colors.length]};">${n}</div>
+      </div>`).join('')}
+    </div>
+  </div>
+  <div class="section-card">
+    <div class="section-card-title">Key Insights</div>
+    ${s.insights.map(ins=>`<div class="ab-insight ${ins.type}"><div class="ab-insight-ttl">${ins.title}</div><div class="ab-insight-body">${ins.body}</div></div>`).join('')}
+  </div>`;
+
+  setTimeout(()=>{
+    const ctx=document.getElementById('ab-school-chart');
+    if(!ctx)return;
+    abSchoolChart=new Chart(ctx,{type:'line',data:{labels:['Aug','Sep','Oct','Nov','Dec','Jan'],datasets:[{label:'Reports',data:d.monthly,borderColor:'#176E82',backgroundColor:'rgba(23,110,130,.1)',fill:true,tension:.3,pointRadius:4,pointBackgroundColor:'#ea730b'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:AB_TT},scales:{x:{grid:{display:false},ticks:{font:{size:11},color:'var(--text-faint)'}},y:{min:0,grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{size:11},color:'var(--text-faint)'}}}}});
+  },50);
 }
 
 // ═══════════════════════════════════════════════════════════
@@ -5661,52 +6245,39 @@ const AB_DATA={
        monthly:[38,52,61,58,44,67],
        types:{labels:['Verbal (26%)','Cyberbullying (22%)','Social Exclusion (18%)','Physical (16%)','Harassment (12%)','Threats (6%)'],data:[89,76,63,54,42,23]},
        changes:[{v:'+11.2%',neg:true},{v:'+6.1%',neg:true},{v:'+11.2%',neg:true},{v:'-22.6%',neg:false},{v:'+18.0%',neg:false},{v:'-12.7%',neg:false}]},
-  mms:{kpis:{reports:52,confirmed:31,anon:36,open:4,resolved:27,avgDays:5.1},
-       monthly:[5,8,12,12,8,7],
-       types:{labels:['Verbal (27%)','Physical (21%)','Cyberbullying (19%)','Social Exclusion (15%)','Harassment (13%)','Threats (4%)'],data:[14,11,10,8,7,2]},
-       changes:[{v:'+8.3%',neg:true},{v:'+5.2%',neg:true},{v:'+9.1%',neg:true},{v:'-33.3%',neg:false},{v:'+22.2%',neg:false},{v:'-8.1%',neg:false}]},
-  rms:{kpis:{reports:67,confirmed:42,anon:48,open:9,resolved:33,avgDays:6.3},
-       monthly:[9,13,15,11,10,9],
-       types:{labels:['Verbal (25%)','Cyberbullying (22%)','Social Exclusion (18%)','Physical (16%)','Harassment (12%)','Threats (7%)'],data:[17,15,12,11,8,5]},
-       changes:[{v:'+13.6%',neg:true},{v:'+7.7%',neg:true},{v:'+14.3%',neg:true},{v:'-18.2%',neg:false},{v:'+15.1%',neg:false},{v:'-11.3%',neg:false}]},
   chs:{kpis:{reports:91,confirmed:54,anon:65,open:15,resolved:39,avgDays:8.2},
        monthly:[15,19,23,22,17,28],
        types:{labels:['Verbal (28%)','Cyberbullying (23%)','Social Exclusion (20%)','Physical (17%)','Harassment (9%)','Threats (4%)'],data:[25,21,18,15,8,4]},
        changes:[{v:'+12.3%',neg:true},{v:'+5.9%',neg:true},{v:'+10.2%',neg:true},{v:'-16.7%',neg:false},{v:'+10.9%',neg:false},{v:'+14.3%',neg:true}]},
+  rms:{kpis:{reports:67,confirmed:42,anon:48,open:9,resolved:33,avgDays:6.3},
+       monthly:[9,13,15,11,10,9],
+       types:{labels:['Verbal (25%)','Cyberbullying (22%)','Social Exclusion (18%)','Physical (16%)','Harassment (12%)','Threats (7%)'],data:[17,15,12,11,8,5]},
+       changes:[{v:'+13.6%',neg:true},{v:'+7.7%',neg:true},{v:'+14.3%',neg:true},{v:'-18.2%',neg:false},{v:'+15.1%',neg:false},{v:'-11.3%',neg:false}]},
+  mms:{kpis:{reports:52,confirmed:31,anon:36,open:4,resolved:27,avgDays:5.1},
+       monthly:[5,8,12,12,8,7],
+       types:{labels:['Verbal (27%)','Physical (21%)','Cyberbullying (19%)','Social Exclusion (15%)','Harassment (13%)','Threats (4%)'],data:[14,11,10,8,7,2]},
+       changes:[{v:'+8.3%',neg:true},{v:'+5.2%',neg:true},{v:'+9.1%',neg:true},{v:'-33.3%',neg:false},{v:'+22.2%',neg:false},{v:'-8.1%',neg:false}]},
   phs:{kpis:{reports:44,confirmed:28,anon:31,open:3,resolved:26,avgDays:4.8},
        monthly:[8,11,12,13,9,4],
        types:{labels:['Verbal (30%)','Cyberbullying (23%)','Social Exclusion (16%)','Physical (16%)','Harassment (9%)','Threats (5%)'],data:[13,10,7,7,4,2]},
-       changes:[{v:'+4.8%',neg:true},{v:'+3.7%',neg:true},{v:'+6.9%',neg:true},{v:'-40.0%',neg:false},{v:'+23.8%',neg:false},{v:'-14.3%',neg:false}]}
+       changes:[{v:'+4.8%',neg:true},{v:'+3.7%',neg:true},{v:'+6.9%',neg:true},{v:'-40.0%',neg:false},{v:'+23.8%',neg:false},{v:'-14.3%',neg:false}]},
+  bse:{kpis:{reports:38,confirmed:18,anon:24,open:5,resolved:13,avgDays:5.8},
+       monthly:[3,6,9,8,6,6],
+       types:{labels:['Social Excl. (32%)','Verbal (29%)','Physical (18%)','Harassment (11%)','Cyberbullying (7%)','Threats (3%)'],data:[12,11,7,4,3,1]},
+       changes:[{v:'+5.6%',neg:true},{v:'+2.9%',neg:true},{v:'+4.4%',neg:true},{v:'-16.7%',neg:false},{v:'+18.2%',neg:false},{v:'-6.9%',neg:false}]},
+  sla:{kpis:{reports:28,confirmed:11,anon:16,open:4,resolved:7,avgDays:7.1},
+       monthly:[2,4,6,5,4,7],
+       types:{labels:['Social Excl. (25%)','Verbal (21%)','Harassment (18%)','Cyberbullying (14%)','Physical (11%)','Threats (7%)'],data:[7,6,5,4,3,2]},
+       changes:[{v:'+16.7%',neg:true},{v:'+10.0%',neg:true},{v:'+14.3%',neg:true},{v:'+33.3%',neg:true},{v:'+27.3%',neg:false},{v:'+22.1%',neg:true}]},
+  ewe:{kpis:{reports:27,confirmed:9,anon:18,open:1,resolved:8,avgDays:3.9},
+       monthly:[4,5,7,8,3,6],
+       types:{labels:['Social Excl. (33%)','Verbal (26%)','Physical (22%)','Harassment (11%)','Cyberbullying (4%)','Threats (0%)'],data:[9,7,6,3,1,0]},
+       changes:[{v:'+8.0%',neg:true},{v:'+0.0%',neg:false},{v:'+12.5%',neg:true},{v:'-50.0%',neg:false},{v:'+14.3%',neg:false},{v:'-16.7%',neg:false}]}
 };
 
-function abRenderKPIs(key){
-  const d=AB_DATA[key];
-  const labels=['Total Reports','Confirmed Cases','Anonymous Reports','Open Investigations','Cases Resolved','Avg Resolution (days)'];
-  const vals=[d.kpis.reports,d.kpis.confirmed,d.kpis.anon,d.kpis.open,d.kpis.resolved,d.kpis.avgDays];
-  const el=document.getElementById('ab-kpi-row');
-  if(!el)return;
-  el.innerHTML=labels.map((lbl,i)=>`
-    <div class="ab-stat">
-      <div class="ab-stat-label">${lbl}</div>
-      <div class="ab-stat-value">${vals[i]}</div>
-      <div class="ab-stat-change ${d.changes[i].neg?'neg':'imp'}">${d.changes[i].neg?'▲':'▼'} ${d.changes[i].v} vs prior period</div>
-    </div>`).join('');
-}
-
-function abFilter(key){
-  ['all','mms','rms','chs','phs'].forEach(k=>
-    document.getElementById('ab-f-'+k)?.classList.toggle('active',k===key));
-  abRenderKPIs(key);
-  const d=AB_DATA[key];
-  if(abMonthlyChart){abMonthlyChart.data.datasets[0].data=d.monthly;abMonthlyChart.update();}
-  if(abTypeChart){abTypeChart.data.labels=d.types.labels;abTypeChart.data.datasets[0].data=d.types.data;abTypeChart.update();}
-  const schoolMap={mms:'Maplewood',rms:'Riverside',chs:'Crestview',phs:'Pinecrest'};
-  document.querySelectorAll('.ab-table tbody tr').forEach(tr=>{
-    const match=key!=='all'&&tr.cells[0]?.textContent.includes(schoolMap[key]);
-    tr.style.background=match?'rgba(23,110,130,0.08)':'';
-    tr.style.fontWeight=match?'600':'';
-  });
-}
+// Legacy stubs — no longer used by new tab UI
+function abRenderKPIs(key){}
+function abFilter(key){}
 </script>
 
 <!-- ═══════════════════════════════════════════════════════════
