@@ -49,7 +49,9 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
   width:var(--sidebar-w);background:var(--charcoal);
   display:flex;flex-direction:column;flex-shrink:0;
   height:100vh;overflow-y:auto;position:fixed;left:0;top:0;z-index:100;
+  scrollbar-width:none;-ms-overflow-style:none;
 }
+.sidebar::-webkit-scrollbar{display:none;}
 .sb-brand{
   padding:20px 18px 16px;
   border-bottom:1px solid rgba(255,255,255,.08);
