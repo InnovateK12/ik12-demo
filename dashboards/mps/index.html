@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milwaukee Public Schools — District Intelligence Preview 2025–26</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1" integrity="sha384-jb8JQMbMoBUzgWatfe6COACi2ljcDdZQ2OxczGA3bGNeWe+6DChMTBJemed7ZnvJ" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Baloo+2:wght@600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#003D7A;
+  --navy-deep:#00265A;
+  --blue:#0066CC;
+  --blue-light:#4FA3D8;
+  --blue-pale:#EAF3FA;
+  --gold:#F2CF3D;
+  --gold-deep:#D9A916;
+  --paper:#FBF9F2;
+  --card:#FFFFFF;
+  --ink:#152238;
+  --ink-soft:#5A6478;
+  --line:#E4E0D2;
+  --green:#2E7D5B;
+  --red:#C0472E;
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Manrope',sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+}
+a{color:inherit;text-decoration:none;}
+::selection{background:var(--gold);color:var(--navy-deep);}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 13px;border-radius:99px;}
+.badge-preview{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.35);}
+.badge-gold{background:var(--gold);color:var(--navy-deep);}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);}
+.font-display{font-family:'Baloo 2',sans-serif;}
+
+/* ---------- reveal on scroll ---------- */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.3,1), transform .7s cubic-bezier(.2,.7,.3,1);}
+.reveal.in{opacity:1;transform:translateY(0);}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:4px solid var(--gold);box-shadow:0 1px 0 rgba(0,0,0,.05);}
+.nav-inner{max-width:1240px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:64px;}
+.nav-logo{height:100%;display:flex;align-items:center;gap:10px;}
+.nav-logo img{height:44px;width:auto;max-width:220px;object-fit:contain;}
+@media (max-width:640px){.nav-inner{min-height:52px;padding:10px 20px;} .nav-logo img{height:32px;}}
+.nav-links{display:flex;gap:22px;font-size:13.5px;font-weight:700;color:var(--ink-soft);}
+.nav-links a{padding:6px 2px;border-bottom:2px solid transparent;transition:.2s;}
+.nav-links a:hover{color:var(--blue);border-color:var(--gold);}
+@media (max-width:920px){.nav-links{display:none;}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:radial-gradient(120% 140% at 20% -10%, #0078E8 0%, var(--blue) 42%, var(--navy) 78%, var(--navy-deep) 100%);color:#fff;overflow:hidden;padding:64px 28px 84px;}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 85% 18%, rgba(242,207,61,.16), transparent 45%), radial-gradient(circle at 10% 92%, rgba(79,163,216,.18), transparent 50%);pointer-events:none;}
+.hero-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;position:relative;z-index:2;}
+@media (max-width:980px){.hero-inner{grid-template-columns:1fr;}}
+.hero-badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px;}
+.hero h1{font-size:clamp(2.1rem,4.3vw,3.35rem);line-height:1.06;font-weight:800;letter-spacing:-.01em;margin-bottom:16px;}
+.hero h1 em{font-style:normal;color:var(--gold);}
+.hero p.lede{font-size:17px;color:rgba(255,255,255,.82);max-width:52ch;line-height:1.6;margin-bottom:28px;}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;font-weight:700;font-size:14.5px;transition:.2s;cursor:pointer;border:none;}
+.btn-gold{background:var(--gold);color:var(--navy-deep);}
+.btn-gold:hover{background:#fff;transform:translateY(-1px);}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08);}
+
+/* pinwheel signature */
+.pinwheel-wrap{display:flex;align-items:center;justify-content:center;position:relative;}
+.pinwheel{width:min(380px,90%);aspect-ratio:1;position:relative;}
+.pinwheel svg{width:100%;height:100%;overflow:visible;}
+.pin-group{transform-origin:200px 200px;animation:spin 90s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.pin-blade{transition:filter .25s;}
+.pinwheel-center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;pointer-events:none;}
+.pinwheel-center .num{font-family:'Baloo 2',sans-serif;font-size:15px;font-weight:800;color:var(--navy-deep);}
+.pin-label{position:absolute;font-size:11.5px;font-weight:800;color:#fff;background:rgba(10,46,82,.55);backdrop-filter:blur(3px);padding:5px 10px;border-radius:99px;letter-spacing:.02em;white-space:nowrap;border:1px solid rgba(255,255,255,.25);}
+
+/* hero stat strip */
+.stat-strip{max-width:1240px;margin:-46px auto 0;padding:0 28px;position:relative;z-index:3;}
+.stat-grid{display:grid;grid-template-columns:repeat(5,1fr);background:var(--card);border-radius:var(--radius);box-shadow:0 22px 50px -20px rgba(10,46,82,.35);overflow:hidden;border:1px solid var(--line);}
+@media (max-width:980px){.stat-grid{grid-template-columns:repeat(2,1fr);}}
+.stat{padding:24px 20px;border-right:1px solid var(--line);}
+.stat:last-child{border-right:none;}
+.stat .val{font-size:1.9rem;font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums;}
+.stat .val span.unit{font-size:1rem;color:var(--blue);}
+.stat .lbl{font-size:12px;color:var(--ink-soft);margin-top:4px;font-weight:600;}
+.stat .trend{font-size:11.5px;font-weight:800;margin-top:6px;display:inline-block;padding:2px 8px;border-radius:99px;}
+.trend-up{background:#E4F3EC;color:var(--green);}
+.trend-down{background:#FBEAE6;color:var(--red);}
+
+/* ---------- section shell ---------- */
+section.block{max-width:1240px;margin:0 auto;padding:88px 28px;}
+.block-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:36px;flex-wrap:wrap;}
+.block-head h2{font-size:clamp(1.7rem,2.6vw,2.35rem);font-weight:800;letter-spacing:-.01em;color:var(--navy-deep);margin-top:8px;}
+.block-head p{color:var(--ink-soft);max-width:56ch;margin-top:10px;font-size:15px;line-height:1.6;}
+.divider{height:1px;background:linear-gradient(90deg,var(--gold),transparent);width:64px;margin:0 0 10px;}
+
+/* card grid */
+.grid{display:grid;gap:20px;}
+.grid-4{grid-template-columns:repeat(4,1fr);}
+.grid-3{grid-template-columns:repeat(3,1fr);}
+.grid-2{grid-template-columns:repeat(2,1fr);}
+@media (max-width:980px){.grid-4,.grid-3{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:640px){.grid-4,.grid-3,.grid-2{grid-template-columns:1fr;}}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;transition:transform .25s, box-shadow .25s;}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 32px -18px rgba(10,46,82,.28);}
+.kpi-card .k-label{font-size:12px;font-weight:700;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.04em;}
+.kpi-card .k-val{font-size:2rem;font-weight:800;color:var(--navy);margin:8px 0 4px;font-variant-numeric:tabular-nums;}
+.kpi-card .k-sub{font-size:12.5px;color:var(--ink-soft);}
+.bar-track{height:6px;background:var(--blue-pale);border-radius:99px;overflow:hidden;margin-top:12px;}
+.bar-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--blue),var(--blue-light));width:0%;transition:width 1.4s cubic-bezier(.2,.7,.3,1);}
+
+/* chart panels */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;}
+.panel-title{font-weight:800;font-size:15px;color:var(--navy-deep);margin-bottom:2px;}
+.panel-sub{font-size:12.5px;color:var(--ink-soft);margin-bottom:16px;}
+.chart-box{position:relative;height:280px;}
+
+/* ---------- monthly campaign rail ---------- */
+.month-rail{display:flex;gap:16px;overflow-x:auto;padding:10px 4px 22px;scroll-snap-type:x mandatory;}
+.month-rail::-webkit-scrollbar{height:8px;}
+.month-rail::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px;}
+.month-card{scroll-snap-align:start;min-width:210px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;flex:0 0 auto;position:relative;overflow:hidden;transition:.25s;}
+.month-card:hover{border-color:var(--gold);transform:translateY(-3px);}
+.month-card .m-tag{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--blue);}
+.month-card .m-title{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:16px;color:var(--navy-deep);margin:6px 0 8px;line-height:1.2;}
+.month-card .m-meta{font-size:12px;color:var(--ink-soft);display:flex;justify-content:space-between;border-top:1px dashed var(--line);padding-top:10px;margin-top:10px;}
+.month-card .m-days{font-weight:800;color:var(--navy);}
+.month-card::after{content:"";position:absolute;top:-30px;right:-30px;width:70px;height:70px;border-radius:50%;background:var(--gold);opacity:.14;}
+
+/* ---------- tier pyramid ---------- */
+.pyramid-wrap{display:flex;flex-direction:column-reverse;gap:8px;max-width:640px;margin:0 auto;}
+.tier-bar{border-radius:12px;padding:16px 22px;color:#fff;font-weight:700;display:flex;justify-content:space-between;align-items:center;transform:scaleX(0);transform-origin:center;transition:transform .8s cubic-bezier(.2,.7,.3,1);}
+.tier-bar.in{transform:scaleX(1);}
+.tier-1{background:linear-gradient(90deg,var(--blue),#0a7ec4);width:100%;}
+.tier-2{background:linear-gradient(90deg,#b3541f,#d97a34);width:74%;margin:0 auto;}
+.tier-3{background:linear-gradient(90deg,var(--gold-deep),#f2b53d);width:46%;margin:0 auto;color:var(--navy-deep);}
+.tier-bar .t-name{font-size:14px;}
+.tier-bar .t-detail{font-size:11.5px;font-weight:600;opacity:.85;}
+
+/* ---------- continuum wheel ---------- */
+.wheel-wrap{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;}
+@media (max-width:860px){.wheel-wrap{grid-template-columns:1fr;}}
+.continuum-list{display:flex;flex-direction:column;gap:10px;}
+.cstep{display:flex;gap:14px;align-items:flex-start;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);}
+.cstep .dot{width:10px;height:10px;border-radius:50%;margin-top:5px;flex:0 0 auto;}
+.cstep b{display:block;font-size:13.5px;color:var(--navy-deep);}
+.cstep span{font-size:12.5px;color:var(--ink-soft);}
+
+/* ---------- five components ---------- */
+.comp-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+@media (max-width:980px){.comp-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.comp-grid{grid-template-columns:1fr;}}
+.comp-card{background:var(--navy);color:#fff;border-radius:16px;padding:18px 16px;position:relative;overflow:hidden;min-height:168px;}
+.comp-card .c-icon{width:34px;height:34px;border-radius:9px;background:var(--gold);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--navy-deep);font-size:15px;margin-bottom:12px;}
+.comp-card h4{font-size:13.5px;font-weight:800;margin-bottom:6px;line-height:1.25;}
+.comp-card p{font-size:11.5px;color:rgba(255,255,255,.72);line-height:1.5;}
+.comp-card .ring{position:absolute;bottom:-30px;right:-30px;width:80px;height:80px;border:14px solid rgba(255,255,255,.06);border-radius:50%;}
+
+/* ---------- three levers ---------- */
+.lever-triangle{position:relative;max-width:520px;margin:0 auto;padding:36px 0 8px;}
+.lever-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;}
+.lever-card{background:var(--card);border:2px solid var(--blue-pale);border-radius:14px;padding:16px 18px;text-align:center;transition:.2s;}
+.lever-card:hover{border-color:var(--blue);}
+.lever-card b{display:block;color:var(--navy-deep);font-size:13.5px;margin-bottom:4px;}
+.lever-card span{font-size:11.5px;color:var(--ink-soft);}
+.engage-bar{background:var(--gold);color:var(--navy-deep);text-align:center;font-weight:800;font-size:13px;padding:12px;border-radius:12px;letter-spacing:.03em;}
+.tri-base{background:var(--navy);color:#fff;text-align:center;font-weight:800;font-size:15px;padding:16px;border-radius:14px;margin-top:14px;font-family:'Baloo 2',sans-serif;}
+
+/* ---------- funnel ---------- */
+.funnel{display:flex;flex-direction:column;gap:6px;max-width:560px;margin:0 auto;}
+.f-step{padding:14px 20px;border-radius:10px;color:#fff;font-weight:700;font-size:13.5px;display:flex;justify-content:space-between;transition:transform .3s;}
+.f-step:hover{transform:translateX(6px);}
+
+/* ---------- t-chart ---------- */
+.tchart{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+@media (max-width:760px){.tchart{grid-template-columns:1fr;}}
+.tcol{border-radius:16px;padding:22px;}
+.tcol.classroom{background:var(--blue-pale);border:1px solid #cfe3f2;}
+.tcol.office{background:#FBEAE6;border:1px solid #f2cfc4;}
+.tcol h4{font-size:13px;text-transform:uppercase;letter-spacing:.04em;font-weight:800;margin-bottom:12px;}
+.tcol.classroom h4{color:var(--blue);}
+.tcol.office h4{color:var(--red);}
+.tcol ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.tcol li{font-size:12.5px;color:var(--ink);background:rgba(255,255,255,.6);padding:7px 10px;border-radius:8px;}
+
+/* ---------- checklist ---------- */
+.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;}
+@media (max-width:700px){.check-grid{grid-template-columns:1fr;}}
+.check-item{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--ink);padding:8px 0;border-bottom:1px dashed var(--line);}
+.check-item .cb{width:20px;height:20px;border-radius:6px;background:var(--green);color:#fff;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;}
+
+/* ---------- footer ---------- */
+footer{background:var(--navy-deep);color:rgba(255,255,255,.75);padding:48px 28px 28px;margin-top:40px;}
+.footer-inner{max-width:1240px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center;border-top:1px solid rgba(255,255,255,.12);padding-top:24px;}
+.footer-top{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px;padding-bottom:28px;}
+@media (max-width:800px){.footer-top{grid-template-columns:1fr;}}
+.footer-top h5{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--gold);margin-bottom:12px;}
+.footer-top p, .footer-top a{font-size:13px;color:rgba(255,255,255,.65);line-height:1.9;display:block;}
+.footer-credit{font-size:12.5px;color:rgba(255,255,255,.5);}
+.footer-credit b{color:var(--gold);}
+
+/* misc */
+.marker{width:9px;height:9px;border-radius:50%;display:inline-block;}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--ink-soft);margin-top:10px;}
+.legend span{display:flex;align-items:center;gap:6px;}
+.tag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;background:var(--blue-pale);color:var(--blue);}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDY3MyAyNTIiIHdpZHRoPSI2NzMiIGhlaWdodD0iMjUyIj4KCTxzdHlsZT4KCQkuczAgeyBmaWxsOiAjZjJjZjNkIH0gCgkJLnMxIHsgZmlsbDogIzAwNjNhNCB9IAoJCS5zMiB7IGZpbGw6ICNmZmZmZmYgfSAKCQkuczMgeyBmaWxsOiAjMDAwMDAwIH0gCgk8L3N0eWxlPgoJPHBhdGggY2xhc3M9InMwIiBkPSJtMjUwLjI5IDEyNi4wM2MwIDY4LjY2LTU1LjY2IDEyNC4zMS0xMjQuMzIgMTI0LjMxLTY4LjY2IDAtMTI0LjMxLTU1LjY2LTEyNC4zMS0xMjQuMzEgMC02OC42NSA1NS42Ni0xMjQuMzIgMTI0LjMyLTEyNC4zMiA2OC42NiAwIDEyNC4zMiA1NS42NiAxMjQuMzEgMTI0LjMyeiIvPgoJPHBhdGggY2xhc3M9InMxIiBkPSJtMjMxLjEgMTI2LjAzYzIuMzEgNTkuMzItNDYuOTUgMTA1LjE4LTEwNS4xMiAxMDUuMTItNTguMDUtMC4wNi0xMDUuMTItNDcuMDYtMTA1LjEyLTEwNS4xMiAwLTU4LjA2IDQ3LjA2LTEwNS4xMiAxMDUuMTItMTA1LjEyIDU4LjA2IDAgMTAyLjg2IDQ3LjExIDEwNS4xMiAxMDUuMTJ6Ii8+Cgk8cGF0aCBjbGFzcz0iczEiIGQ9Im0xMjUuNDQgMjUxLjM4Yy02OS4xMiAwLTEyNS4zNS01Ni4yMy0xMjUuMzUtMTI1LjM1IDAtNjkuMTIgNTYuMjMtMTI1LjM1IDEyNS4zNS0xMjUuMzUgNjkuMTIgMCAxMjUuMzUgNTYuMjMgMTI1LjM1IDEyNS4zNSAwIDY5LjEyLTU2LjIzIDEyNS4zNS0xMjUuMzUgMTI1LjM1em0wLTI0OC42M2MtNjcuOTggMC0xMjMuMjggNTUuMy0xMjMuMjggMTIzLjI4IDAgNjcuOTggNTUuMyAxMjMuMjggMTIzLjI4IDEyMy4yOCA2Ny45OCAwIDEyMy4yOC01NS4zIDEyMy4yOC0xMjMuMjggMC02Ny45OC01NS4zMS0xMjMuMjgtMTIzLjI4LTEyMy4yOHoiLz4KCTxwYXRoIGNsYXNzPSJzMiIgZD0ibTg1LjcxIDkyLjIyYy00LjAzIDExLjc1LTguMTQgMjMuNDItMTIuMTIgMzcuMjctNC4xNC0xMy44NC04LjM0LTI1LjUyLTEyLjU1LTM3LjI3aC0yNy45N3Y2OC40NWgxNi4yM3YtNDcuOTJoMC4yYzUuMzggMTcuOSAxMC45NSAzMi45NiAxNi41MyA0Ny45MmgxMy4wMWM1LjQ4LTE0Ljk2IDEwLjk1LTMwLjAyIDE2LjIzLTQ3LjkyaDAuMTl2NDcuOTJoMjAuNjN2LTY4LjQ1eiIvPgoJPHBhdGggY2xhc3M9InMyIiBkPSJtMTQ3LjI1IDkyLjIyaC0yNy40OXY2OC40NWgxOS43NnYtMjQuMzlsNi45NC0wLjE1YzE3LjkgMCAyOC4yNi0xMi42MSAyOC4yNi0yNC4xNSAwLTEzLjMtMTAuNDYtMTkuNzUtMjcuNDgtMTkuNzV6bS0wLjc2IDMxLjc3aC02Ljk2di0xOC45Nmg1LjU3YzQuODkgMCA5Ljg4IDEuOTYgOS44OCA4LjEyIDAgNy41My01LjAxIDEwLjg1LTguNDkgMTAuODR6Ii8+Cgk8cGF0aCBjbGFzcz0iczIiIGQ9Im0yMTUuMjQgMTA2LjRjLTIuNzQtMS42Ni02LjI2LTIuNTQtMTAuMDctMi41NC00LjAxIDAtNi4wNiAxLjk2LTYuMDYgNC4yMSAwIDMuODEgNS43NyA2Ljk0IDEyLjQyIDEzLjEgOC44IDguMjEgMTAuOTUgMTMuNCAxMC45NSAyMC41MyAwIDYuMDYtNC45OSAyMC4xNS0yNS41MiAyMC4xNS04LjAyIDAtMTYuMDQtMS44Ni0yMS41MS02LjI2bDYuMjYtMTEuMzRjMi45MyAyLjI1IDYuODUgNC43OSAxMS43NCA0Ljc5IDQuMTEgMCA4LjYtMi4wNSA4LjYtNy4xNCAwLTUuNDgtNi42NS05LjQ5LTEyLjAzLTE0LjE4LTcuMTQtNi4yNi0xMS4zNC05Ljg4LTExLjM0LTE4LjI5IDAtMTAuOTUgMTEuMDUtMTguMzkgMjMuOTYtMTguMzkgOC43IDAgMTUuNTUgMy4xMyAxNy45IDQuNmwtNS4yOCAxMC43NnoiLz4KCTxwYXRoIGNsYXNzPSJzMyIgZD0ibTM1My4zMiAxMjcuOTNoLTEzLjk2di0zMi40M2gtMC4xM2MtMy41NyAxMi4xMS03LjI4IDIyLjMtMTAuOTggMzIuNDNoLTguOGMtMy43Ny0xMC4xMi03LjU0LTIwLjMyLTExLjE4LTMyLjQzaC0wLjEzdjMyLjQzaC0xMC45OXYtNDYuMzJoMTguOTNjMy4xOCA4Ljg3IDYuMzUgMTcuNjcgOS40NiAyOC41MmgwLjEzYzIuOTgtMTAuODUgNi4wOS0xOS42NSA5LjEzLTI4LjUyaDE4LjUzYzAgMCAwIDQ2LjMyLTAuMDEgNDYuMzJ6Ii8+Cgk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsYXNzPSJzMyIgZD0ibTM1OS42MSA4MS42aDEzLjk2djQ2LjMyaC0xMy45NnoiLz4KCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xhc3M9InMzIiBkPSJtMzc5Ljg2IDgxLjZoMTMuOTZ2MzcuNjZoMTYuOTR2OC42N2gtMzAuOXYtNDYuMzN6Ii8+Cgk8cGF0aCBjbGFzcz0iczMiIGQ9Im00MjAuMTggODAuOTRjMi4xMiAxMC4zOSA0LjI0IDIwLjcxIDYuMjkgMzMuMDloMC4xM2MzLjM3LTEyLjExIDYuODItMjIuMyAxMC4yNi0zMi40M2gxMS41OGMzLjU3IDEwLjEyIDcuMjEgMjAuMzIgMTAuNzIgMzIuNDNoMC4xM2MxLjkyLTEyLjM3IDMuODQtMjIuNyA1LjgyLTMzLjA5bDEyLjI0IDEuMzItMTEuMDUgNDUuNjZoLTE1LjU1Yy0zLjA0LTguNi02LjE2LTE3LjIxLTkuMTMtMjcuNzloLTAuMTNjLTIuNzEgMTAuNTktNS40OSAxOS4xOS04LjI3IDI3Ljc5aC0xNS42MmwtMTEuNTgtNDUuNjZ6Ii8+Cgk8cGF0aCBjbGFzcz0iczMiIGQ9Im01MDAuOTkgODEuNmwxNy42IDQ2LjMyaC0xNC44MmwtMy42NC0xMS4wNWgtMTQuMzZsLTQuNDMgMTEuMDVoLTEwLjkybDE4Ljg2LTQ2LjMyem0tMy4xMSAyNy45M2MtMS41Mi01LjQ5LTIuODUtOS45My00LjUtMTYuNTRoLTAuMTNjLTEuNzkgNi42Mi0zLjM4IDExLjA1LTUuMSAxNi41NHoiLz4KCTxwYXRoIGNsYXNzPSJzMyIgZD0ibTUzMi43NSA4MS42djI0LjIyYzAgOC4zNCAxLjI2IDEzLjI0IDcuMTUgMTMuMjQgNC42MyAwIDcuMjgtNC42MyA3LjI4LTEzLjQzdi0yNC4wMmgxMi4wNHYyNy45OWMwIDEzLjgzLTkuNCAxOS4xMi0xOS45OSAxOS4xMi0xMS44NSAwLTIwLjQ1LTQuOTYtMjAuNDUtMTguNzl2LTI4LjMyaDEzLjk2eiIvPgoJPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGFzcz0iczMiIGQ9Im01NzguNDggMTAwLjczaDAuMTRsMTEuNTEtMTkuNzkgMTIuMTEgMi40NS0xMS45MSAxOC40NiAxNi4yOCAyNC4yMy0xNC40OSAyLjUxLTEzLjUtMjMuMTZoLTAuMTR2MjIuNWgtMTMuOTZ2LTQ2LjMzaDEzLjk2djE5LjEzeiIvPgoJPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGFzcz0iczMiIGQ9Im02MzguOSA5MC4yN2gtMTQuMTZ2OS4xNGgxMy44M3Y4LjY3aC0xMy44M3YxMS4xOGgxNC4wMXY4LjY3aC0yNy45N3YtNDYuMzNoMjguMTJ2OC42N3oiLz4KCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xhc3M9InMzIiBkPSJtNjcyLjI1IDkwLjI3aC0xNC4xNnY5LjE0aDEzLjgzdjguNjdoLTEzLjgzdjExLjE4aDE0LjAxdjguNjdoLTI3Ljk3di00Ni4zM2gyOC4xMnY4LjY3eiIvPgoJPHBhdGggY2xhc3M9InMzIiBkPSJtMzA0LjI5IDE3OS42M2gtN3YtMzQuNzVoMTAuOTJjNy44NCAwIDEyLjY2IDMuMjggMTIuNjYgMTAuMDMgMCA1Ljg2LTUuMDYgMTEuNjItMTMuNCAxMS42MmwtMy4xOC0wLjA1di00LjM4bDMuMDgtMC4wNGMzLjMyLTAuMiA2LjUtMi4yMyA2LjUtNi45IDAtMy41Ny0yLjMzLTUuNjEtNi40NS01LjYxaC0zLjEzeiIvPgoJPHBhdGggY2xhc3M9InMzIiBkPSJtMzMwLjQ0IDE0NC44OHYxOS45NWMwIDYuOCAxLjk4IDEwLjUyIDcuNTQgMTAuNTIgNS41NiAwIDcuNDUtNC41MiA3LjQ1LTEwLjEzdi0yMC4zNWg2LjI1djIxLjU5YzAgOC43OS01LjY2IDEzLjc1LTEzLjkgMTMuNzUtOS40MyAwLTE0LjM1LTQuNjItMTQuMzUtMTQuMXYtMjEuMjVoN3oiLz4KCTxwYXRoIGNsYXNzPSJzMyIgZD0ibTM1NS4zMSAxNzkuNjN2LTM0Ljc1aDEyLjU2YzUuODYgMCA5Ljk4IDIuNjggOS45OCA3LjQgMCA1LjU2LTQuNTIgNy44NC02Ljk1IDguNDl2MC4xYzQuMzIgMC4yIDkuMTMgMy4xOCA5LjEzIDguNDkgMCA2LjAxLTUuMDEgMTAuMjctMTMuMiAxMC4yN2gtMTEuNTF6bTctMjAuMjVoMi4xOGM0LjAyIDAgNi43NS0yLjU4IDYuNzUtNS44MSAwLTMuMjMtMi4yOC00LjQyLTUuMzEtNC40MmgtMy42MmMwIDAgMCAxMC4yMiAwIDEwLjIzem0wIDE1Ljk4aDMuNTdjMy44NyAwIDYuOC0yLjA0IDYuOC01LjkxIDAtNC4wNy0zLjAzLTUuODEtNi44NS01LjgxaC0zLjUyYzAgMCAwIDExLjcxIDAgMTEuNzJ6Ii8+Cgk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsYXNzPSJzMyIgZD0ibTM4MS45OCAxNDQuODhoN3YzMC4wOGgxMy44djQuNjdoLTIwLjh2LTM0Ljc1eiIvPgoJPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGFzcz0iczMiIGQ9Im00MDUuMTkgMTQ0Ljg4aDd2MzQuNzVoLTd6Ii8+Cgk8cGF0aCBjbGFzcz0iczMiIGQ9Im00NDIuNDcgMTUxLjE5Yy0xLjY5LTAuODktNC41Mi0xLjk0LTcuMi0xLjk0LTcuMTUgMC0xMi4zMSA1LjAxLTEyLjMxIDEyLjkxIDAgNy45IDUuNzEgMTMuMSAxMi41MSAxMy4xIDIuNjggMCA1LjE2LTAuNzQgNy0xLjc0bDEuOTQgNC4zMmMtMi4xMyAxLjI0LTUuODYgMi4zOC05LjIzIDIuMzgtMTIuMDYgMC0xOS42Ni03Ljk0LTE5LjY2LTE4LjE3IDAtOS40OCA3LjU0LTE3Ljc3IDE5Ljc2LTE3Ljc3IDMuNjIgMCA3IDEuMjkgOS4zOCAyLjY4bC0yLjE4IDQuMjJ6Ii8+Cgk8cGF0aCBjbGFzcz0iczMiIGQ9Im00ODEuNTMgMTUwLjk0Yy0xLjU0LTEuMDQtMy41Ny0xLjk5LTUuNjEtMS45OS0yLjkzIDAtNC41MiAxLjY0LTQuNTIgMy42NyAwIDIuMjkgMi40MyA0LjAyIDYuNSA3LjI1IDQuNjcgMy43MiA3LjE1IDYuNjUgNy4xNSAxMC45MiAwIDQuMjctNC4xNyA5LjQzLTEyLjAxIDkuNDMtMy42MiAwLTcuNjQtMS4wOS0xMC4yMi0zLjQ3bDIuNTMtMy45N2MxLjg0IDEuMzQgMy45NyAyLjc4IDcuMSAyLjc4IDIuODggMCA1LjQxLTEuNTQgNS40MS00LjgxIDAtMy44Mi00LjY3LTYuMzUtNy40NS04LjU0LTMuMzctMi43My02LjItNC44Ny02LjItOS40OCAwLTQuNjEgNC43Mi04LjQ0IDExLjAyLTguNDQgMy45NyAwIDcuMTUgMS40NCA4Ljc5IDMuMDMgMCAwLTIuNDggMy42Mi0yLjQ5IDMuNjJ6Ii8+Cgk8cGF0aCBjbGFzcz0iczMiIGQ9Im01MTMuODkgMTUxLjE5Yy0xLjY5LTAuODktNC41Mi0xLjk0LTcuMi0xLjk0LTcuMTUgMC0xMi4zMSA1LjAxLTEyLjMxIDEyLjkxIDAgNy45IDUuNzEgMTMuMSAxMi41MSAxMy4xIDIuNjggMCA1LjE2LTAuNzQgNy0xLjc0bDEuOTQgNC4zMmMtMi4xMyAxLjI0LTUuODYgMi4zOC05LjIzIDIuMzgtMTIuMDYgMC0xOS42Ni03Ljk0LTE5LjY2LTE4LjE3IDAtOS40OCA3LjU0LTE3Ljc3IDE5Ljc2LTE3Ljc3IDMuNjIgMCA3IDEuMjkgOS4zOCAyLjY4bC0yLjE4IDQuMjJ6Ii8+Cgk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsYXNzPSJzMyIgZD0ibTU0OC44MyAxNzkuNjNoLTd2LTE2LjczaC0xNC41NHYxNi43M2gtN3YtMzQuNzVoN3YxMy4zNWgxNC41NHYtMTMuMjVoN3YzNC42NXoiLz4KCTxwYXRoIGNsYXNzPSJzMyIgZD0ibTU1MS41NiAxNjEuNzZjMC05LjczIDcuMzUtMTcuNDcgMTcuMzItMTcuNDcgOS45NyAwIDE3LjMyIDcuNzQgMTcuMzIgMTcuNDcgMCAxMC4zNy02LjY1IDE4LjQ2LTE3LjMyIDE4LjQ2LTEwLjY3IDAtMTcuMzItOC4wOS0xNy4zMi0xOC40NnptMjcuMiAwYzAtNi40LTIuOTMtMTIuNTEtOS44OC0xMi41MS02Ljk1IDAtOS44OCA2LjExLTkuODggMTIuNTEgMCA2LjQgMi41OCAxMy41IDkuODggMTMuNSA3LjMgMCA5Ljg4LTYuODUgOS44OC0xMy41eiIvPgoJPHBhdGggY2xhc3M9InMzIiBkPSJtNTg4LjgzIDE2MS43NmMwLTkuNzMgNy4zNS0xNy40NyAxNy4zMi0xNy40NyA5Ljk3IDAgMTcuMzIgNy43NCAxNy4zMiAxNy40NyAwIDEwLjM3LTYuNjUgMTguNDYtMTcuMzIgMTguNDYtMTAuNjcgMC0xNy4zMi04LjA5LTE3LjMyLTE4LjQ2em0yNy4yIDBjMC02LjQtMi45My0xMi41MS05Ljg4LTEyLjUxLTYuOTUgMC05Ljg4IDYuMTEtOS44OCAxMi41MSAwIDYuNCAyLjU4IDEzLjUgOS44OCAxMy41IDcuMyAwIDkuODgtNi44NSA5Ljg4LTEzLjV6Ii8+Cgk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsYXNzPSJzMyIgZD0ibTYyNi4yIDE0NC44OGg3djMwLjA4aDEzLjh2NC42N2gtMjAuOHYtMzQuNzV6Ii8+Cgk8cGF0aCBjbGFzcz0iczMiIGQ9Im02NjguNTkgMTUwLjk0Yy0xLjU0LTEuMDQtMy41Ny0xLjk5LTUuNjEtMS45OS0yLjkzIDAtNC41MiAxLjY0LTQuNTIgMy42NyAwIDIuMjkgMi40MyA0LjAyIDYuNSA3LjI1IDQuNjcgMy43MiA3LjE1IDYuNjUgNy4xNSAxMC45MiAwIDQuMjctNC4xNyA5LjQzLTEyLjAxIDkuNDMtMy42MiAwLTcuNjQtMS4wOS0xMC4yMi0zLjQ3bDIuNTMtMy45N2MxLjg0IDEuMzQgMy45NyAyLjc4IDcuMSAyLjc4IDIuODggMCA1LjQxLTEuNTQgNS40MS00LjgxIDAtMy44Mi00LjY3LTYuMzUtNy40NS04LjU0LTMuMzctMi43My02LjItNC44Ny02LjItOS40OCAwLTQuNjEgNC43Mi04LjQ0IDExLjAyLTguNDQgMy45NyAwIDcuMTUgMS40NCA4Ljc4IDMuMDN6Ii8+Cjwvc3ZnPg==" alt="Milwaukee Public Schools">
+    </div>
+    <div class="nav-links">
+      <a href="#overview">District Overview</a>
+      <a href="#attendance">Attendance</a>
+      <a href="#climate">Culture &amp; Climate</a>
+      <a href="#instruction">Ambitious Instruction</a>
+      <a href="#equity">Equity</a>
+    </div>
+    <span class="badge badge-gold" style="color:var(--navy);background:var(--blue-pale);">Preview build</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badges">
+        <span class="badge badge-preview">District Intelligence Preview</span>
+        <span class="badge badge-preview">2025–26 School Year</span>
+      </div>
+      <h1>Every Day Counts —<br>seeing attendance, climate,<br>and instruction as <em>one system.</em></h1>
+      <p class="lede">A single connected view of Milwaukee Public Schools' Attendance Toolkit, Culture &amp; Climate / Alternatives to Suspension Toolkit, and Ambitious Instruction framework — built to show how belonging, presence, behavior support, and rigorous teaching reinforce one another.</p>
+      <div class="hero-cta">
+        <button class="btn btn-gold" onclick="document.getElementById('overview').scrollIntoView({behavior:'smooth'})">Explore the district view →</button>
+        <button class="btn btn-ghost" onclick="document.getElementById('attendance').scrollIntoView({behavior:'smooth'})">See Every Day Counts</button>
+      </div>
+    </div>
+    <div class="pinwheel-wrap">
+      <div class="pinwheel">
+        <svg viewBox="0 0 400 400">
+          <g class="pin-group" id="pinGroup">
+            <!-- blade: Communication -->
+            <path class="pin-blade" d="M200,200 L200,40 A160,160 0 0,1 338.6,120 Z" fill="#0063A4" opacity="0.92"/>
+            <!-- blade: Data Accuracy -->
+            <path class="pin-blade" d="M200,200 L338.6,120 A160,160 0 0,1 338.6,280 Z" fill="#2E7D5B" opacity="0.92"/>
+            <!-- blade: School Climate & Interventions -->
+            <path class="pin-blade" d="M200,200 L338.6,280 A160,160 0 0,1 61.4,280 Z" fill="#F2CF3D" opacity="0.95"/>
+            <path class="pin-blade" d="M200,200 L61.4,280 A160,160 0 0,1 61.4,120 Z" fill="#D9A916" opacity="0.9"/>
+            <path class="pin-blade" d="M200,200 L61.4,120 A160,160 0 0,1 200,40 Z" fill="#4FA3D8" opacity="0.9"/>
+          </g>
+          <circle cx="200" cy="200" r="46" fill="#0A2E52" stroke="#F2CF3D" stroke-width="4"/>
+        </svg>
+        <div class="pinwheel-center">
+          <span class="num" style="color:#fff;">MPS</span>
+        </div>
+        <div class="pin-label" style="top:2%;left:50%;transform:translateX(-50%);">Communication</div>
+        <div class="pin-label" style="top:44%;right:-6%;">Data Accuracy</div>
+        <div class="pin-label" style="bottom:6%;left:50%;transform:translateX(-50%);">School Climate &amp; Interventions</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="stat-strip">
+  <div class="stat-grid">
+    <div class="stat"><div class="val" data-count="21">0</div><div class="lbl">Attendance days targeted, Sept &amp; Oct</div></div>
+    <div class="stat"><div class="val" data-count="95"><span></span></div><div class="lbl">Attendance goal for on-track progression</div><div class="trend trend-up">Research-backed target</div></div>
+    <div class="stat"><div class="val" data-count="5">0</div><div class="lbl">School climate components, Tier 1</div></div>
+    <div class="stat"><div class="val" data-count="3">0</div><div class="lbl">PBIS tiers of support, all students</div></div>
+    <div class="stat"><div class="val" data-count="14">0</div><div class="lbl">Administrator alternatives to suspension</div></div>
+  </div>
+</div>
+
+<!-- ================= DISTRICT OVERVIEW ================= -->
+<section class="block" id="overview">
+  <div class="block-head reveal">
+    <div>
+      <div class="eyebrow">01 · District Overview</div>
+      <h2>One scorecard for presence, behavior, and instruction</h2>
+      <p>Illustrative figures shown for preview purposes — the live build connects directly to Infinite Campus, PLP Classroom Behavior documentation, climate survey results, and Ambitious Instruction walkthrough data.</p>
+    </div>
+    <span class="tag">Illustrative data · not live MPS figures</span>
+  </div>
+
+  <div class="grid grid-4 reveal">
+    <div class="card kpi-card">
+      <div class="k-label">Avg. Daily Attendance</div>
+      <div class="k-val">91.4%</div>
+      <div class="k-sub">vs. 95% "on-track" target</div>
+      <div class="bar-track"><div class="bar-fill" data-w="91"></div></div>
+    </div>
+    <div class="card kpi-card">
+      <div class="k-label">Chronic Absenteeism</div>
+      <div class="k-val">27.8%</div>
+      <div class="k-sub">Students missing 10%+ of days</div>
+      <div class="bar-track"><div class="bar-fill" data-w="28" style="background:linear-gradient(90deg,#c0472e,#e08a6c);"></div></div>
+    </div>
+    <div class="card kpi-card">
+      <div class="k-label">Alternatives-to-Suspension Use</div>
+      <div class="k-val">64%</div>
+      <div class="k-sub">Eligible incidents resolved without suspension</div>
+      <div class="bar-track"><div class="bar-fill" data-w="64" style="background:linear-gradient(90deg,#2E7D5B,#5fb98d);"></div></div>
+    </div>
+    <div class="card kpi-card">
+      <div class="k-label">Ambitious Instruction Fidelity</div>
+      <div class="k-val">72%</div>
+      <div class="k-sub">Explicit instruction + formative practice observed</div>
+      <div class="bar-track"><div class="bar-fill" data-w="72" style="background:linear-gradient(90deg,#D9A916,#f2cf3d);"></div></div>
+    </div>
+  </div>
+
+  <div class="grid grid-2 reveal" style="margin-top:22px;">
+    <div class="panel">
+      <div class="panel-title">Attendance trend across "Every Day Counts" months</div>
+      <div class="panel-sub">Illustrative monthly attendance rate, Sept 2025 – June 2026</div>
+      <div class="chart-box"><canvas id="attendanceTrend"></canvas></div>
+    </div>
+    <div class="panel">
+      <div class="panel-title">Referral → Intervention → Discipline funnel</div>
+      <div class="panel-sub">Where the continuum narrows behavior incidents before suspension</div>
+      <div class="funnel" id="funnel">
+        <div class="f-step" style="background:var(--navy);width:100%;"><span>Classroom-managed behaviors logged</span><span>1,840</span></div>
+        <div class="f-step" style="background:#0d4a7c;width:78%;"><span>Referred to Building Intervention Team</span><span>612</span></div>
+        <div class="f-step" style="background:var(--blue);width:56%;"><span>Alternative to suspension applied</span><span>392</span></div>
+        <div class="f-step" style="background:#D9A916;color:var(--navy-deep);width:34%;"><span>CICO / Tier 2 intervention</span><span>238</span></div>
+        <div class="f-step" style="background:var(--red);width:18%;"><span>Suspension issued</span><span>96</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ATTENDANCE ================= -->
+<section class="block" id="attendance" style="background:var(--blue-pale);border-radius:32px;">
+  <div class="block-head reveal">
+    <div>
+      <div class="eyebrow">02 · Every Day Counts</div>
+      <h2>A monthly attendance campaign, made visible all year</h2>
+      <p>Every month pairs a theme, a friendly challenge, and a family communication focus — drawn directly from the Attendance Toolkit's 10-month calendar. Scroll to see the whole year.</p>
+    </div>
+  </div>
+
+  <div class="month-rail reveal" id="monthRail"></div>
+
+  <div class="grid grid-2 reveal" style="margin-top:32px;">
+    <div class="panel">
+      <div class="panel-title">Tier 1 · Early Intervention for Students</div>
+      <div class="panel-sub">Escalation path before a student ever reaches Tier 2</div>
+      <div class="continuum-list">
+        <div class="cstep"><span class="dot" style="background:var(--blue);"></span><div><b>Step 1 — Positive Attendance Phone Call</b><span>Elementary: 2–4 absences/month · MS/HS: 3–5 absences/month. Documented as PLP-Positive Attendance Phone Call.</span></div></div>
+        <div class="cstep"><span class="dot" style="background:var(--gold-deep);"></span><div><b>Step 2 — 2x10 Intervention</b><span>2 minutes/day for 10 consecutive school days with the classroom teacher. Positive call home on day 1 and day 10.</span></div></div>
+        <div class="cstep"><span class="dot" style="background:var(--red);"></span><div><b>Tier 2 — Building Intervention Team referral</b><span>Screened for Check-In/Check-Out; may progress to a Social Academic Instructional Group.</span></div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-title">Attendance data accuracy checklist</div>
+      <div class="panel-sub">What district leaders monitor daily, per the toolkit</div>
+      <div class="check-grid">
+        <div class="check-item"><span class="cb">✓</span>Accurate, timely data entry by classroom teachers</div>
+        <div class="check-item"><span class="cb">✓</span>Full schedules confirmed for every student</div>
+        <div class="check-item"><span class="cb">✓</span>Late/tardy check-in procedures established</div>
+        <div class="check-item"><span class="cb">✓</span>Daily monitoring of classroom &amp; attendance reports</div>
+        <div class="check-item"><span class="cb">✓</span>Substitute teacher attendance-taking systems in place</div>
+        <div class="check-item"><span class="cb">✓</span>Two-day follow-up calls documented under PLP-Attendance</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CULTURE & CLIMATE ================= -->
+<section class="block" id="climate">
+  <div class="block-head reveal">
+    <div>
+      <div class="eyebrow">03 · Culture, Climate &amp; Alternatives to Suspension</div>
+      <h2>Five components of school climate, one continuum of support</h2>
+      <p>Community building comes first — then proactive practices, response to behavior, Building Intervention Team support, and administrator alternatives to suspension.</p>
+    </div>
+  </div>
+
+  <div class="comp-grid reveal">
+    <div class="comp-card"><div class="ring"></div><div class="c-icon">1</div><h4>Relationships &amp; Community</h4><p>Strong sense of welcoming; minds, hearts, bodies, and spirit supported and valued.</p></div>
+    <div class="comp-card"><div class="ring"></div><div class="c-icon">2</div><h4>Expectations &amp; Procedures</h4><p>Predictable routines and shared decision-making between staff, students, and families.</p></div>
+    <div class="comp-card"><div class="ring"></div><div class="c-icon">3</div><h4>Skill Development</h4><p>Cultivating student strengths, wellness, self-regulation, and reflection.</p></div>
+    <div class="comp-card"><div class="ring"></div><div class="c-icon">4</div><h4>Responding to Behavior</h4><p>Redirection and accountability held alongside repair — never one without the other.</p></div>
+    <div class="comp-card"><div class="ring"></div><div class="c-icon">5</div><h4>Systems of Acknowledgement</h4><p>Celebrating individual and group success; promoting joy throughout the building.</p></div>
+  </div>
+
+  <div class="grid grid-2 reveal" style="margin-top:40px;">
+    <div class="panel">
+      <div class="panel-title">PBIS Multi-Level System of Support</div>
+      <div class="panel-sub">Every tier is available to all students, regardless of special education status</div>
+      <div class="pyramid-wrap" id="pyramid">
+        <div class="tier-bar tier-1"><span class="t-name">Tier 1 — Universal</span><span class="t-detail">Relationships · expectations · acknowledgement, for all students</span></div>
+        <div class="tier-bar tier-2"><span class="t-name">Tier 2 — Targeted</span><span class="t-detail">CICO · SAIG · Behavior Assessment/Intervention Plan</span></div>
+        <div class="tier-bar tier-3"><span class="t-name">Tier 3 — Intensive</span><span class="t-detail">RENEW · Educational Wraparound · FBA/BIP</span></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-title">Restorative Practices Continuum</div>
+      <div class="panel-sub">The toolkit's 7 continuum steps, shown as equal segments for illustration — not measured implementation shares</div>
+      <div class="chart-box" style="height:260px;"><canvas id="restorativeDonut"></canvas></div>
+    </div>
+  </div>
+
+  <div class="panel reveal" style="margin-top:22px;">
+    <div class="panel-title">Behavior T-Chart — classroom-managed vs. office-managed</div>
+    <div class="panel-sub">Every school maintains this chart so staff apply consistent standards</div>
+    <div class="tchart">
+      <div class="tcol classroom">
+        <h4>Classroom-managed</h4>
+        <ul>
+          <li>Leaving classroom without permission</li>
+          <li>Arguing / disrespect / profanity</li>
+          <li>Refusing work or orders</li>
+          <li>Off-task behavior, sleeping, running</li>
+          <li>Name-calling / teasing, electronics use</li>
+        </ul>
+      </div>
+      <div class="tcol office">
+        <h4>Office-managed</h4>
+        <ul>
+          <li>Chronic disrespect / disruption</li>
+          <li>Weapons, battery, fighting</li>
+          <li>Bullying, harassment, or assault</li>
+          <li>Gang-related activity</li>
+          <li>Vandalism, false alarms</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AMBITIOUS INSTRUCTION ================= -->
+<section class="block" id="instruction" style="background:var(--navy);color:#fff;border-radius:32px;">
+  <div class="block-head reveal">
+    <div>
+      <div class="eyebrow" style="color:var(--gold);">04 · Ambitious Instruction</div>
+      <h2 style="color:#fff;">Three levers, accelerating learning</h2>
+      <p style="color:rgba(255,255,255,.72);">Explicit Instruction and Formative Practices meet at Engagement — hands-on, minds-on learning for every student, every day.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-2 reveal" style="align-items:center;">
+    <div class="lever-triangle">
+      <div class="lever-row">
+        <div class="lever-card"><b>Explicit Instruction</b><span>Intentional, purposeful teaching that centers student meaning and sense-making, connected to prior learning.</span></div>
+        <div class="lever-card"><b>Formative Practices</b><span>A process to elicit and use evidence of student thinking, building self-directed learners.</span></div>
+      </div>
+      <div class="engage-bar">Engagement — hands-on, minds-on</div>
+      <div class="tri-base">Ambitious Instruction</div>
+    </div>
+    <div>
+      <div class="panel" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);">
+        <div class="panel-title" style="color:#fff;">Academic Standard of Care</div>
+        <div class="panel-sub" style="color:rgba(255,255,255,.6);">10 non-negotiables guiding every classroom</div>
+        <div class="check-grid" style="color:#fff;">
+          <div class="check-item" style="color:#fff;border-color:rgba(255,255,255,.15);"><span class="cb">1</span>Build positive relationships with students &amp; families</div>
+          <div class="check-item" style="color:#fff;border-color:rgba(255,255,255,.15);"><span class="cb">2</span>Know what each student needs, in each content area</div>
+          <div class="check-item" style="color:#fff;border-color:rgba(255,255,255,.15);"><span class="cb">3</span>Conduct formative assessments regularly</div>
+          <div class="check-item" style="color:#fff;border-color:rgba(255,255,255,.15);"><span class="cb">4</span>Differentiate instruction for students</div>
+          <div class="check-item" style="color:#fff;border-color:rgba(255,255,255,.15);"><span class="cb">5</span>Instruct students at or above grade level</div>
+          <div class="check-item" style="color:#fff;border-color:rgba(255,255,255,.15);"><span class="cb">6</span>Utilize scaffolding above &amp; below grade level</div>
+          <div class="check-item" style="color:#fff;border-color:rgba(255,255,255,.15);"><span class="cb">7</span>Design instruction from the content standards</div>
+          <div class="check-item" style="color:#fff;border-color:rgba(255,255,255,.15);"><span class="cb">8</span>Use district adopted/endorsed materials</div>
+          <div class="check-item" style="color:#fff;border-color:rgba(255,255,255,.15);"><span class="cb">9</span>Center learning around student voice &amp; choice</div>
+          <div class="check-item" style="color:#fff;border-color:rgba(255,255,255,.15);"><span class="cb">10</span>Design inquiry-based learning experiences</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EQUITY ================= -->
+<section class="block" id="equity">
+  <div class="block-head reveal">
+    <div>
+      <div class="eyebrow">05 · Equity &amp; Disproportionality</div>
+      <h2>Interrupting bias at every vulnerable decision point</h2>
+      <p>Six best practices — from defining behaviors consistently to re-entry after discipline — anchor how MPS addresses discipline disproportionality.</p>
+    </div>
+  </div>
+  <div class="grid grid-3 reveal">
+    <div class="card"><b style="color:var(--navy-deep);">Define &amp; categorize behaviors</b><p style="font-size:12.5px;color:var(--ink-soft);margin-top:8px;">Shared, explicit definitions across staff, students, and families.</p></div>
+    <div class="card"><b style="color:var(--navy-deep);">Talk about race</b><p style="font-size:12.5px;color:var(--ink-soft);margin-top:8px;">Courageous Conversations protocols create space for brave dialogue.</p></div>
+    <div class="card"><b style="color:var(--navy-deep);">Engage student voice</b><p style="font-size:12.5px;color:var(--ink-soft);margin-top:8px;">Students help create expectations, bulletin boards, and announcements.</p></div>
+    <div class="card"><b style="color:var(--navy-deep);">Interrupt vulnerable decision points</b><p style="font-size:12.5px;color:var(--ink-soft);margin-top:8px;">Stereotype replacement, perspective-taking, mindfulness, stepping away.</p></div>
+    <div class="card"><b style="color:var(--navy-deep);">Re-entry after discipline</b><p style="font-size:12.5px;color:var(--ink-soft);margin-top:8px;">Every student is welcomed back and reconnected to missed learning.</p></div>
+    <div class="card"><b style="color:var(--navy-deep);">Anti-racist universal supports</b><p style="font-size:12.5px;color:var(--ink-soft);margin-top:8px;">Active, conscious efforts to challenge institutional racial power.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <h5>Milwaukee Public Schools — District Intelligence Preview</h5>
+      <p style="max-width:44ch;">Built from the 2025–26 Attendance Toolkit, Culture, Climate &amp; Alternatives to Suspension Toolkit, and Ambitious Instruction overview. Figures shown are illustrative for preview purposes only.</p>
+    </div>
+    <div>
+      <h5>Source Documents</h5>
+      <a href="#">Attendance Toolkit, 2025–26</a>
+      <a href="#">Culture, Climate &amp; Alternatives to Suspension Toolkit</a>
+      <a href="#">Ambitious Instruction Overview</a>
+    </div>
+    <div>
+      <h5>Next Steps</h5>
+      <a href="#">Connect Infinite Campus attendance feed</a>
+      <a href="#">Connect PLP Classroom Behavior data</a>
+      <a href="#">Connect Ambitious Instruction walkthrough tool</a>
+    </div>
+  </div>
+  <div class="footer-inner">
+    <span class="footer-credit">Created by <b>InnovateK12</b></span>
+    <span class="footer-credit">Data last refreshed — preview build, illustrative only</span>
+  </div>
+</footer>
+
+<script>
+// swap in real base64 logo
+document.querySelector('.nav-logo img').src = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDY3MyAyNTIiIHdpZHRoPSI2NzMiIGhlaWdodD0iMjUyIj4KCTxzdHlsZT4KCQkuczAgeyBmaWxsOiAjZjJjZjNkIH0gCgkJLnMxIHsgZmlsbDogIzAwNjNhNCB9IAoJCS5zMiB7IGZpbGw6ICNmZmZmZmYgfSAKCQkuczMgeyBmaWxsOiAjMDAwMDAwIH0gCgk8L3N0eWxlPgoJPHBhdGggY2xhc3M9InMwIiBkPSJtMjUwLjI5IDEyNi4wM2MwIDY4LjY2LTU1LjY2IDEyNC4zMS0xMjQuMzIgMTI0LjMxLTY4LjY2IDAtMTI0LjMxLTU1LjY2LTEyNC4zMS0xMjQuMzEgMC02OC42NSA1NS42Ni0xMjQuMzIgMTI0LjMyLTEyNC4zMiA2OC42NiAwIDEyNC4zMiA1NS42NiAxMjQuMzEgMTI0LjMyeiIvPgoJPHBhdGggY2xhc3M9InMxIiBkPSJtMjMxLjEgMTI2LjAzYzIuMzEgNTkuMzItNDYuOTUgMTA1LjE4LTEwNS4xMiAxMDUuMTItNTguMDUtMC4wNi0xMDUuMTItNDcuMDYtMTA1LjEyLTEwNS4xMiAwLTU4LjA2IDQ3LjA2LTEwNS4xMiAxMDUuMTItMTA1LjEyIDU4LjA2IDAgMTAyLjg2IDQ3LjExIDEwNS4xMiAxMDUuMTJ6Ii8+Cgk8cGF0aCBjbGFzcz0iczEiIGQ9Im0xMjUuNDQgMjUxLjM4Yy02OS4xMiAwLTEyNS4zNS01Ni4yMy0xMjUuMzUtMTI1LjM1IDAtNjkuMTIgNTYuMjMtMTI1LjM1IDEyNS4zNS0xMjUuMzUgNjkuMTIgMCAxMjUuMzUgNTYuMjMgMTI1LjM1IDEyNS4zNSAwIDY5LjEyLTU2LjIzIDEyNS4zNS0xMjUuMzUgMTI1LjM1em0wLTI0OC42M2MtNjcuOTggMC0xMjMuMjggNTUuMy0xMjMuMjggMTIzLjI4IDAgNjcuOTggNTUuMyAxMjMuMjggMTIzLjI4IDEyMy4yOCA2Ny45OCAwIDEyMy4yOC01NS4zIDEyMy4yOC0xMjMuMjggMC02Ny45OC01NS4zMS0xMjMuMjgtMTIzLjI4LTEyMy4yOHoiLz4KCTxwYXRoIGNsYXNzPSJzMiIgZD0ibTg1LjcxIDkyLjIyYy00LjAzIDExLjc1LTguMTQgMjMuNDItMTIuMTIgMzcuMjctNC4xNC0xMy44NC04LjM0LTI1LjUyLTEyLjU1LTM3LjI3aC0yNy45N3Y2OC40NWgxNi4yM3YtNDcuOTJoMC4yYzUuMzggMTcuOSAxMC45NSAzMi45NiAxNi41MyA0Ny45MmgxMy4wMWM1LjQ4LTE0Ljk2IDEwLjk1LTMwLjAyIDE2LjIzLTQ3LjkyaDAuMTl2NDcuOTJoMjAuNjN2LTY4LjQ1eiIvPgoJPHBhdGggY2xhc3M9InMyIiBkPSJtMTQ3LjI1IDkyLjIyaC0yNy40OXY2OC40NWgxOS43NnYtMjQuMzlsNi45NC0wLjE1YzE3LjkgMCAyOC4yNi0xMi42MSAyOC4yNi0yNC4xNSAwLTEzLjMtMTAuNDYtMTkuNzUtMjcuNDgtMTkuNzV6bS0wLjc2IDMxLjc3aC02Ljk2di0xOC45Nmg1LjU3YzQuODkgMCA5Ljg4IDEuOTYgOS44OCA4LjEyIDAgNy41My01LjAxIDEwLjg1LTguNDkgMTAuODR6Ii8+Cgk8cGF0aCBjbGFzcz0iczIiIGQ9Im0yMTUuMjQgMTA2LjRjLTIuNzQtMS42Ni02LjI2LTIuNTQtMTAuMDctMi41NC00LjAxIDAtNi4wNiAxLjk2LTYuMDYgNC4yMSAwIDMuODEgNS43NyA2Ljk0IDEyLjQyIDEzLjEgOC44IDguMjEgMTAuOTUgMTMuNCAxMC45NSAyMC41MyAwIDYuMDYtNC45OSAyMC4xNS0yNS41MiAyMC4xNS04LjAyIDAtMTYuMDQtMS44Ni0yMS41MS02LjI2bDYuMjYtMTEuMzRjMi45MyAyLjI1IDYuODUgNC43OSAxMS43NCA0Ljc5IDQuMTEgMCA4LjYtMi4wNSA4LjYtNy4xNCAwLTUuNDgtNi42NS05LjQ5LTEyLjAzLTE0LjE4LTcuMTQtNi4yNi0xMS4zNC05Ljg4LTExLjM0LTE4LjI5IDAtMTAuOTUgMTEuMDUtMTguMzkgMjMuOTYtMTguMzkgOC43IDAgMTUuNTUgMy4xMyAxNy45IDQuNmwtNS4yOCAxMC43NnoiLz4KCTxwYXRoIGNsYXNzPSJzMyIgZD0ibTM1My4zMiAxMjcuOTNoLTEzLjk2di0zMi40M2gtMC4xM2MtMy41NyAxMi4xMS03LjI4IDIyLjMtMTAuOTggMzIuNDNoLTguOGMtMy43Ny0xMC4xMi03LjU0LTIwLjMyLTExLjE4LTMyLjQzaC0wLjEzdjMyLjQzaC0xMC45OXYtNDYuMzJoMTguOTNjMy4xOCA4Ljg3IDYuMzUgMTcuNjcgOS40NiAyOC41MmgwLjEzYzIuOTgtMTAuODUgNi4wOS0xOS42NSA5LjEzLTI4LjUyaDE4LjUzYzAgMCAwIDQ2LjMyLTAuMDEgNDYuMzJ6Ii8+Cgk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsYXNzPSJzMyIgZD0ibTM1OS42MSA4MS42aDEzLjk2djQ2LjMyaC0xMy45NnoiLz4KCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xhc3M9InMzIiBkPSJtMzc5Ljg2IDgxLjZoMTMuOTZ2MzcuNjZoMTYuOTR2OC42N2gtMzAuOXYtNDYuMzN6Ii8+Cgk8cGF0aCBjbGFzcz0iczMiIGQ9Im00MjAuMTggODAuOTRjMi4xMiAxMC4zOSA0LjI0IDIwLjcxIDYuMjkgMzMuMDloMC4xM2MzLjM3LTEyLjExIDYuODItMjIuMyAxMC4yNi0zMi40M2gxMS41OGMzLjU3IDEwLjEyIDcuMjEgMjAuMzIgMTAuNzIgMzIuNDNoMC4xM2MxLjkyLTEyLjM3IDMuODQtMjIuNyA1LjgyLTMzLjA5bDEyLjI0IDEuMzItMTEuMDUgNDUuNjZoLTE1LjU1Yy0zLjA0LTguNi02LjE2LTE3LjIxLTkuMTMtMjcuNzloLTAuMTNjLTIuNzEgMTAuNTktNS40OSAxOS4xOS04LjI3IDI3Ljc5aC0xNS42MmwtMTEuNTgtNDUuNjZ6Ii8+Cgk8cGF0aCBjbGFzcz0iczMiIGQ9Im01MDAuOTkgODEuNmwxNy42IDQ2LjMyaC0xNC44MmwtMy42NC0xMS4wNWgtMTQuMzZsLTQuNDMgMTEuMDVoLTEwLjkybDE4Ljg2LTQ2LjMyem0tMy4xMSAyNy45M2MtMS41Mi01LjQ5LTIuODUtOS45My00LjUtMTYuNTRoLTAuMTNjLTEuNzkgNi42Mi0zLjM4IDExLjA1LTUuMSAxNi41NHoiLz4KCTxwYXRoIGNsYXNzPSJzMyIgZD0ibTUzMi43NSA4MS42djI0LjIyYzAgOC4zNCAxLjI2IDEzLjI0IDcuMTUgMTMuMjQgNC42MyAwIDcuMjgtNC42MyA3LjI4LTEzLjQzdi0yNC4wMmgxMi4wNHYyNy45OWMwIDEzLjgzLTkuNCAxOS4xMi0xOS45OSAxOS4xMi0xMS44NSAwLTIwLjQ1LTQuOTYtMjAuNDUtMTguNzl2LTI4LjMyaDEzLjk2eiIvPgoJPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGFzcz0iczMiIGQ9Im01NzguNDggMTAwLjczaDAuMTRsMTEuNTEtMTkuNzkgMTIuMTEgMi40NS0xMS45MSAxOC40NiAxNi4yOCAyNC4yMy0xNC40OSAyLjUxLTEzLjUtMjMuMTZoLTAuMTR2MjIuNWgtMTMuOTZ2LTQ2LjMzaDEzLjk2djE5LjEzeiIvPgoJPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGFzcz0iczMiIGQ9Im02MzguOSA5MC4yN2gtMTQuMTZ2OS4xNGgxMy44M3Y4LjY3aC0xMy44M3YxMS4xOGgxNC4wMXY4LjY3aC0yNy45N3YtNDYuMzNoMjguMTJ2OC42N3oiLz4KCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xhc3M9InMzIiBkPSJtNjcyLjI1IDkwLjI3aC0xNC4xNnY5LjE0aDEzLjgzdjguNjdoLTEzLjgzdjExLjE4aDE0LjAxdjguNjdoLTI3Ljk3di00Ni4zM2gyOC4xMnY4LjY3eiIvPgoJPHBhdGggY2xhc3M9InMzIiBkPSJtMzA0LjI5IDE3OS42M2gtN3YtMzQuNzVoMTAuOTJjNy44NCAwIDEyLjY2IDMuMjggMTIuNjYgMTAuMDMgMCA1Ljg2LTUuMDYgMTEuNjItMTMuNCAxMS42MmwtMy4xOC0wLjA1di00LjM4bDMuMDgtMC4wNGMzLjMyLTAuMiA2LjUtMi4yMyA2LjUtNi45IDAtMy41Ny0yLjMzLTUuNjEtNi40NS01LjYxaC0zLjEzeiIvPgoJPHBhdGggY2xhc3M9InMzIiBkPSJtMzMwLjQ0IDE0NC44OHYxOS45NWMwIDYuOCAxLjk4IDEwLjUyIDcuNTQgMTAuNTIgNS41NiAwIDcuNDUtNC41MiA3LjQ1LTEwLjEzdi0yMC4zNWg2LjI1djIxLjU5YzAgOC43OS01LjY2IDEzLjc1LTEzLjkgMTMuNzUtOS40MyAwLTE0LjM1LTQuNjItMTQuMzUtMTQuMXYtMjEuMjVoN3oiLz4KCTxwYXRoIGNsYXNzPSJzMyIgZD0ibTM1NS4zMSAxNzkuNjN2LTM0Ljc1aDEyLjU2YzUuODYgMCA5Ljk4IDIuNjggOS45OCA3LjQgMCA1LjU2LTQuNTIgNy44NC02Ljk1IDguNDl2MC4xYzQuMzIgMC4yIDkuMTMgMy4xOCA5LjEzIDguNDkgMCA2LjAxLTUuMDEgMTAuMjctMTMuMiAxMC4yN2gtMTEuNTF6bTctMjAuMjVoMi4xOGM0LjAyIDAgNi43NS0yLjU4IDYuNzUtNS44MSAwLTMuMjMtMi4yOC00LjQyLTUuMzEtNC40MmgtMy42MmMwIDAgMCAxMC4yMiAwIDEwLjIzem0wIDE1Ljk4aDMuNTdjMy44NyAwIDYuOC0yLjA0IDYuOC01LjkxIDAtNC4wNy0zLjAzLTUuODEtNi44NS01LjgxaC0zLjUyYzAgMCAwIDExLjcxIDAgMTEuNzJ6Ii8+Cgk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsYXNzPSJzMyIgZD0ibTM4MS45OCAxNDQuODhoN3YzMC4wOGgxMy44djQuNjdoLTIwLjh2LTM0Ljc1eiIvPgoJPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGFzcz0iczMiIGQ9Im00MDUuMTkgMTQ0Ljg4aDd2MzQuNzVoLTd6Ii8+Cgk8cGF0aCBjbGFzcz0iczMiIGQ9Im00NDIuNDcgMTUxLjE5Yy0xLjY5LTAuODktNC41Mi0xLjk0LTcuMi0xLjk0LTcuMTUgMC0xMi4zMSA1LjAxLTEyLjMxIDEyLjkxIDAgNy45IDUuNzEgMTMuMSAxMi41MSAxMy4xIDIuNjggMCA1LjE2LTAuNzQgNy0xLjc0bDEuOTQgNC4zMmMtMi4xMyAxLjI0LTUuODYgMi4zOC05LjIzIDIuMzgtMTIuMDYgMC0xOS42Ni03Ljk0LTE5LjY2LTE4LjE3IDAtOS40OCA3LjU0LTE3Ljc3IDE5Ljc2LTE3Ljc3IDMuNjIgMCA3IDEuMjkgOS4zOCAyLjY4bC0yLjE4IDQuMjJ6Ii8+Cgk8cGF0aCBjbGFzcz0iczMiIGQ9Im00ODEuNTMgMTUwLjk0Yy0xLjU0LTEuMDQtMy41Ny0xLjk5LTUuNjEtMS45OS0yLjkzIDAtNC41MiAxLjY0LTQuNTIgMy42NyAwIDIuMjkgMi40MyA0LjAyIDYuNSA3LjI1IDQuNjcgMy43MiA3LjE1IDYuNjUgNy4xNSAxMC45MiAwIDQuMjctNC4xNyA5LjQzLTEyLjAxIDkuNDMtMy42MiAwLTcuNjQtMS4wOS0xMC4yMi0zLjQ3bDIuNTMtMy45N2MxLjg0IDEuMzQgMy45NyAyLjc4IDcuMSAyLjc4IDIuODggMCA1LjQxLTEuNTQgNS40MS00LjgxIDAtMy44Mi00LjY3LTYuMzUtNy40NS04LjU0LTMuMzctMi43My02LjItNC44Ny02LjItOS40OCAwLTQuNjEgNC43Mi04LjQ0IDExLjAyLTguNDQgMy45NyAwIDcuMTUgMS40NCA4Ljc5IDMuMDMgMCAwLTIuNDggMy42Mi0yLjQ5IDMuNjJ6Ii8+Cgk8cGF0aCBjbGFzcz0iczMiIGQ9Im01MTMuODkgMTUxLjE5Yy0xLjY5LTAuODktNC41Mi0xLjk0LTcuMi0xLjk0LTcuMTUgMC0xMi4zMSA1LjAxLTEyLjMxIDEyLjkxIDAgNy45IDUuNzEgMTMuMSAxMi41MSAxMy4xIDIuNjggMCA1LjE2LTAuNzQgNy0xLjc0bDEuOTQgNC4zMmMtMi4xMyAxLjI0LTUuODYgMi4zOC05LjIzIDIuMzgtMTIuMDYgMC0xOS42Ni03Ljk0LTE5LjY2LTE4LjE3IDAtOS40OCA3LjU0LTE3Ljc3IDE5Ljc2LTE3Ljc3IDMuNjIgMCA3IDEuMjkgOS4zOCAyLjY4bC0yLjE4IDQuMjJ6Ii8+Cgk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsYXNzPSJzMyIgZD0ibTU0OC44MyAxNzkuNjNoLTd2LTE2LjczaC0xNC41NHYxNi43M2gtN3YtMzQuNzVoN3YxMy4zNWgxNC41NHYtMTMuMjVoN3YzNC42NXoiLz4KCTxwYXRoIGNsYXNzPSJzMyIgZD0ibTU1MS41NiAxNjEuNzZjMC05LjczIDcuMzUtMTcuNDcgMTcuMzItMTcuNDcgOS45NyAwIDE3LjMyIDcuNzQgMTcuMzIgMTcuNDcgMCAxMC4zNy02LjY1IDE4LjQ2LTE3LjMyIDE4LjQ2LTEwLjY3IDAtMTcuMzItOC4wOS0xNy4zMi0xOC40NnptMjcuMiAwYzAtNi40LTIuOTMtMTIuNTEtOS44OC0xMi41MS02Ljk1IDAtOS44OCA2LjExLTkuODggMTIuNTEgMCA2LjQgMi41OCAxMy41IDkuODggMTMuNSA3LjMgMCA5Ljg4LTYuODUgOS44OC0xMy41eiIvPgoJPHBhdGggY2xhc3M9InMzIiBkPSJtNTg4LjgzIDE2MS43NmMwLTkuNzMgNy4zNS0xNy40NyAxNy4zMi0xNy40NyA5Ljk3IDAgMTcuMzIgNy43NCAxNy4zMiAxNy40NyAwIDEwLjM3LTYuNjUgMTguNDYtMTcuMzIgMTguNDYtMTAuNjcgMC0xNy4zMi04LjA5LTE3LjMyLTE4LjQ2em0yNy4yIDBjMC02LjQtMi45My0xMi41MS05Ljg4LTEyLjUxLTYuOTUgMC05Ljg4IDYuMTEtOS44OCAxMi41MSAwIDYuNCAyLjU4IDEzLjUgOS44OCAxMy41IDcuMyAwIDkuODgtNi44NSA5Ljg4LTEzLjV6Ii8+Cgk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsYXNzPSJzMyIgZD0ibTYyNi4yIDE0NC44OGg3djMwLjA4aDEzLjh2NC42N2gtMjAuOHYtMzQuNzV6Ii8+Cgk8cGF0aCBjbGFzcz0iczMiIGQ9Im02NjguNTkgMTUwLjk0Yy0xLjU0LTEuMDQtMy41Ny0xLjk5LTUuNjEtMS45OS0yLjkzIDAtNC41MiAxLjY0LTQuNTIgMy42NyAwIDIuMjkgMi40MyA0LjAyIDYuNSA3LjI1IDQuNjcgMy43MiA3LjE1IDYuNjUgNy4xNSAxMC45MiAwIDQuMjctNC4xNyA5LjQzLTEyLjAxIDkuNDMtMy42MiAwLTcuNjQtMS4wOS0xMC4yMi0zLjQ3bDIuNTMtMy45N2MxLjg0IDEuMzQgMy45NyAyLjc4IDcuMSAyLjc4IDIuODggMCA1LjQxLTEuNTQgNS40MS00LjgxIDAtMy44Mi00LjY3LTYuMzUtNy40NS04LjU0LTMuMzctMi43My02LjItNC44Ny02LjItOS40OCAwLTQuNjEgNC43Mi04LjQ0IDExLjAyLTguNDQgMy45NyAwIDcuMTUgMS40NCA4Ljc4IDMuMDN6Ii8+Cjwvc3ZnPg==";
+
+// reveal-on-scroll
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:0.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// animated counters
+const counters = document.querySelectorAll('[data-count]');
+const cio = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const el = e.target; const target = parseFloat(el.dataset.count); let cur=0;
+      const step = Math.max(target/40,0.5);
+      const tick = ()=>{ cur = Math.min(cur+step, target); el.textContent = (target%1===0? Math.round(cur): cur.toFixed(1)) + (el.querySelector('span')? '' : (target>=90? '%':'')); if(cur<target) requestAnimationFrame(tick); };
+      tick(); cio.unobserve(el);
+    }
+  });
+},{threshold:0.5});
+counters.forEach(c=>cio.observe(c));
+
+// bar fills
+const bio = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.style.width = e.target.dataset.w+'%'; bio.unobserve(e.target); } });
+},{threshold:0.4});
+document.querySelectorAll('.bar-fill').forEach(b=>bio.observe(b));
+
+// tier bars
+const tio = new IntersectionObserver((entries)=>{
+  entries.forEach((e,i)=>{ if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('in'), i*140); tio.unobserve(e.target); } });
+},{threshold:0.3});
+document.querySelectorAll('.tier-bar').forEach(t=>tio.observe(t));
+
+// month rail data
+const months = [
+ {tag:"September", title:"Expect Great Things!", challenge:"Top attendance for the month", days:21},
+ {tag:"October", title:"World Series of Attendance", challenge:"Top attendance for the month", days:21},
+ {tag:"November", title:"Thankful That You Are Here", challenge:"Largest increase vs. last month", days:14},
+ {tag:"December", title:"Countdown to Winter Break", challenge:"Largest increase vs. last December", days:15},
+ {tag:"January", title:"New Year's Resolution Challenge", challenge:"Highest attendance year to date", days:18},
+ {tag:"February", title:"Share Your Love by Attending", challenge:"Largest increase vs. last February", days:18},
+ {tag:"March", title:"March Madness of Attendance", challenge:"Highest monthly attendance", days:19},
+ {tag:"April", title:"Spring Fever", challenge:"Largest increase from previous month", days:18},
+ {tag:"May", title:"Show Your Appreciation", challenge:"Largest increase vs. last May", days:19},
+ {tag:"June", title:"Finishing Strong", challenge:"Highest attendance for year", days:10},
+];
+const rail = document.getElementById('monthRail');
+rail.innerHTML = months.map(m=>`
+  <div class="month-card">
+    <div class="m-tag">${m.tag} 2025–26</div>
+    <div class="m-title">${m.title}</div>
+    <div style="font-size:12px;color:var(--ink-soft);">${m.challenge}</div>
+    <div class="m-meta"><span>Attendance target</span><span class="m-days">${m.days} days</span></div>
+  </div>
+`).join('');
+
+// attendance trend chart
+new Chart(document.getElementById('attendanceTrend'), {
+  type:'line',
+  data:{
+    labels: months.map(m=>m.tag.slice(0,3)),
+    datasets:[
+      {label:'Illustrative attendance rate', data:[92.6,91.8,90.4,89.7,90.9,91.5,92.3,91.9,92.8,93.4], borderColor:'#0063A4', backgroundColor:'rgba(0,99,164,0.12)', fill:true, tension:.4, pointRadius:3, pointBackgroundColor:'#0063A4'},
+      {label:'95% target', data:[95,95,95,95,95,95,95,95,95,95], borderColor:'#F2CF3D', borderDash:[6,5], pointRadius:0, borderWidth:2}
+    ]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    plugins:{ legend:{position:'bottom', labels:{boxWidth:10, font:{size:11}}} },
+    scales:{ y:{min:85, max:97, ticks:{callback:v=>v+'%'}}, x:{grid:{display:false}} }
+  }
+});
+
+// restorative donut
+new Chart(document.getElementById('restorativeDonut'), {
+  type:'doughnut',
+  data:{
+    labels:['Cultivating a restorative mindset','Fostering a restorative environment','Building community','Centering students in curriculum','Addressing issues','Repairing & healing harm','Reengaging community'],
+    datasets:[{ data:[16,15,16,14,13,13,13], backgroundColor:['#0063A4','#4FA3D8','#2E7D5B','#5fb98d','#D9A916','#F2CF3D','#0A2E52'], borderWidth:2, borderColor:'#fff' }]
+  },
+  options:{ responsive:true, maintainAspectRatio:false, cutout:'58%', plugins:{legend:{position:'right', labels:{boxWidth:9, font:{size:10.5}}}} }
+});
+</script>
+</body>
+</html>
