@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lakewood REA · 2026–2029 Strategic Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1b2c4e;--navy2:#243660;--navy3:#2d4278;
+  --gold:#c8922a;--gold2:#e4b25a;--gold3:#f5d89a;--gold-pale:#fdf8ef;
+  --slate:#f0f2f5;--white:#fff;--border:#dde1e8;
+  --text:#1b2c4e;--text2:#4a5568;--text3:#8896a8;
+  --green:#1e7d4a;--green-bg:#e8f7f0;
+  --yellow:#9b6f0d;--yellow-bg:#fef9ec;
+  --red:#b83030;--red-bg:#fdf0f0;
+  --gray:#64748b;--gray-bg:#f3f4f6;
+}
+body{font-family:'Source Sans 3',sans-serif;background:var(--slate);color:var(--text);font-size:14px;line-height:1.55;min-height:100vh}
+h1,h2,h3,h4{font-family:'Libre Baskerville',serif;font-weight:400}
+
+/* TOP BAR */
+.topbar{background:var(--navy);color:#fff;padding:0 36px;display:flex;align-items:stretch;justify-content:space-between;min-height:64px}
+.topbar-left{display:flex;align-items:center;gap:14px}
+.crest{width:42px;height:42px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Libre Baskerville',serif;font-size:13px;color:var(--navy);font-weight:700;flex-shrink:0}
+.org-name{font-family:'Libre Baskerville',serif;font-size:17px;color:#fff;line-height:1.2}
+.org-sub{font-size:11px;color:rgba(255,255,255,.42);letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
+.topbar-right{display:flex;align-items:center}
+.phase-pill{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:5px 13px;font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.04em}
+
+/* NAV */
+.nav{background:var(--navy2);padding:0 36px;display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,.07);overflow-x:auto}
+.nav-tab{padding:11px 16px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.42);cursor:pointer;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;user-select:none;white-space:nowrap;flex-shrink:0}
+.nav-tab:hover{color:rgba(255,255,255,.78)}
+.nav-tab.active{color:var(--gold2);border-bottom-color:var(--gold)}
+
+/* NOTICE */
+.notice{background:var(--gold-pale);border-bottom:1px solid #e8d9b0;padding:8px 36px;font-size:12px;color:#7a5c14;display:flex;align-items:center;gap:8px}
+.notice-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0}
+
+/* LAYOUT */
+.main{padding:28px 36px 52px;max-width:1340px;margin:0 auto}
+.view{display:none}.view.active{display:block}
+
+/* SECTION HEADER */
+.sh{display:flex;align-items:baseline;gap:10px;margin:0 0 16px}
+.sh h2{font-size:19px;color:var(--navy);white-space:nowrap}
+.sh-line{flex:1;height:1px;background:var(--border)}
+.sh-note{font-size:11px;color:var(--text3);white-space:nowrap}
+.sh-gap{margin-top:30px}
+
+/* STAT ROW */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+.stat{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;position:relative;overflow:hidden}
+.stat::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--gold))}
+.stat-lbl{font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--text3);margin-bottom:6px}
+.stat-val{font-family:'Libre Baskerville',serif;font-size:30px;color:var(--navy);line-height:1}
+.stat-desc{font-size:11px;color:var(--text3);margin-top:4px}
+
+/* TABLE */
+.tbl-wrap{background:var(--white);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:20px}
+table{width:100%;border-collapse:collapse}
+th{background:var(--navy);color:rgba(255,255,255,.62);font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;padding:10px 13px;text-align:left;font-family:'Source Sans 3',sans-serif}
+td{padding:11px 13px;border-bottom:1px solid var(--border);vertical-align:middle;font-size:13px}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#f9fafc}
+.td-name{font-weight:600;color:var(--navy)}
+.td-muted{color:var(--text3);font-size:12px}
+.td-target{color:var(--green);font-weight:600}
+.ptag{display:inline-block;font-size:10px;padding:2px 7px;border-radius:3px;font-weight:600;white-space:nowrap}
+
+/* STATUS CHIPS */
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;padding:3px 9px;border-radius:20px}
+.chip-gray{background:var(--gray-bg);color:var(--gray)}
+.chip-green{background:var(--green-bg);color:var(--green)}
+.chip-yellow{background:var(--yellow-bg);color:var(--yellow)}
+.chip-red{background:var(--red-bg);color:var(--red)}
+.cdot{width:6px;height:6px;border-radius:50%;flex-shrink:0;display:inline-block}
+.cdot-gray{background:var(--gray)}.cdot-green{background:var(--green)}.cdot-yellow{background:var(--gold)}.cdot-red{background:var(--red)}
+
+/* LEGEND */
+.legend{display:flex;gap:20px;flex-wrap:wrap;font-size:12px;color:var(--text2);background:var(--white);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:18px}
+.leg-item{display:flex;align-items:center;gap:6px}
+
+/* NARRATIVE */
+.narrative{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:16px 20px;font-size:13px;color:var(--text2);line-height:1.72;margin-bottom:22px}
+.narrative strong{color:var(--navy)}
+
+/* INFO BOX */
+.infobox{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:16px 20px;margin-bottom:18px}
+.infobox-title{font-weight:600;color:var(--navy);font-size:13px;margin-bottom:10px}
+
+/* DESIGN PRINCIPLES */
+.principles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-bottom:22px}
+.principle-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:13px 15px;display:flex;gap:10px;align-items:flex-start}
+.principle-num{font-family:'Libre Baskerville',serif;font-size:18px;color:var(--gold);min-width:22px;line-height:1}
+.principle-text{font-size:12px;color:var(--text2);line-height:1.55}
+
+/* PRIORITY CARDS */
+.priority-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-bottom:22px}
+.pcard{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;cursor:pointer;transition:box-shadow .2s,transform .15s}
+.pcard:hover{box-shadow:0 4px 18px rgba(27,44,78,.1);transform:translateY(-2px)}
+.pcard-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px}
+.pcard-dot{width:9px;height:9px;border-radius:50%;margin-top:5px;flex-shrink:0}
+.pcard-name{font-size:13px;font-weight:600;color:var(--navy);line-height:1.3;flex:1}
+.kpi-badge{background:var(--slate);border:1px solid var(--border);border-radius:20px;font-size:10px;padding:2px 7px;color:var(--text2);flex-shrink:0}
+.target-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin-bottom:10px}
+.t-cell{text-align:center;padding:5px 3px;border-radius:4px;background:var(--slate);border:1px solid var(--border)}
+.t-year{display:block;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text3);margin-bottom:1px}
+.t-val{font-size:11px;font-weight:600;color:var(--navy)}
+.t-cell.target .t-val{color:var(--green)}
+.pcard-kpis{font-size:11px;color:var(--text3);border-top:1px solid var(--border);padding-top:8px;margin-top:8px}
+
+/* PROGRESS CARDS */
+.pc{background:var(--white);border:1px solid var(--border);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.pc-header{display:flex;align-items:center;gap:12px;padding:13px 18px;cursor:pointer;transition:background .15s;user-select:none}
+.pc-header:hover{background:#f8f9fc}
+.pc-num{font-family:'Libre Baskerville',serif;font-size:17px;color:var(--gold);min-width:26px}
+.pc-name{font-weight:600;color:var(--navy);flex:1}
+.pc-pri{font-size:11px;color:var(--text3);margin-right:6px}
+.pc-chevron{font-size:11px;color:var(--text3);transition:transform .2s;margin-left:auto;flex-shrink:0}
+.pc-chevron.open{transform:rotate(180deg)}
+.pc-body{display:none;padding:0 18px 18px;border-top:1px solid var(--border)}
+.pc-body.open{display:block}
+.pc-def{font-size:12px;color:var(--text2);line-height:1.65;margin:12px 0 14px}
+
+/* WHY IT MATTERS */
+.why-box{background:var(--gold-pale);border:1px solid #e8d9b0;border-radius:7px;padding:10px 13px;margin-bottom:14px;font-size:12px;color:#7a5414;line-height:1.6}
+.why-box strong{color:var(--navy)}
+
+/* YEAR TRACK */
+.year-track{display:grid;grid-template-columns:90px repeat(4,1fr);border:1px solid var(--border);border-radius:7px;overflow:hidden;margin-bottom:14px}
+.yt-head{background:var(--navy);color:rgba(255,255,255,.55);font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:7px 10px;text-align:center}
+.yt-cell{padding:9px 8px;text-align:center;border-left:1px solid var(--border);font-size:12px}
+.yt-lbl{display:block;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text3);margin-bottom:2px}
+.yt-pending{color:var(--text3);font-style:italic}
+.yt-target{color:var(--green);font-weight:600}
+.yt-cell.highlight{background:var(--green-bg)}
+
+/* SURVEY QUESTIONS */
+.survey-section{margin-bottom:14px}
+.survey-label{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text3);margin-bottom:7px}
+.survey-items{display:flex;flex-direction:column;gap:5px}
+.survey-item{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--text2);background:var(--slate);border-radius:5px;padding:7px 10px;line-height:1.45}
+.survey-q-num{font-size:10px;font-weight:600;color:var(--gold);min-width:16px;margin-top:1px}
+
+/* DETAIL GRID */
+.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.detail-item{background:var(--slate);border-radius:6px;padding:9px 11px}
+.detail-lbl{font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text3);margin-bottom:2px}
+.detail-val{font-size:12px;color:var(--navy)}
+.detail-item.span3{grid-column:span 3}
+.detail-item.span2{grid-column:span 2}
+
+/* SURVEY TOOL SECTION */
+.scale-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:10px 0 6px}
+.scale-item{text-align:center;padding:8px 4px;border-radius:6px;border:1px solid var(--border);background:var(--white)}
+.scale-num{font-family:'Libre Baskerville',serif;font-size:18px;color:var(--navy);display:block}
+.scale-lbl{font-size:10px;color:var(--text3);display:block;margin-top:2px}
+.scale-item.favorable{border-color:#1e7d4a;background:var(--green-bg)}
+.scale-item.favorable .scale-num{color:var(--green)}
+.scale-item.favorable .scale-lbl{color:var(--green)}
+
+/* BOARD REPORTING */
+.report-steps{display:flex;flex-direction:column;gap:8px}
+.report-step{display:flex;align-items:flex-start;gap:12px;background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px 15px}
+.step-num{font-family:'Libre Baskerville',serif;font-size:18px;color:var(--gold);min-width:22px;line-height:1.1}
+.step-content-title{font-weight:600;font-size:13px;color:var(--navy);margin-bottom:2px}
+.step-content-desc{font-size:12px;color:var(--text2)}
+
+/* DATABASE FIELDS */
+.fields-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.field-card{background:var(--white);border:1px solid var(--border);border-radius:7px;padding:10px 13px}
+.field-name{font-size:12px;font-weight:600;color:var(--navy);font-family:'Source Code Pro',monospace,sans-serif;margin-bottom:2px}
+.field-type{font-size:10px;color:var(--gold);font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
+.field-example{font-size:11px;color:var(--text3)}
+
+/* TIMELINE */
+.tl-phase{display:flex;gap:16px;margin-bottom:14px}
+.tl-marker{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+.tl-circle{width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Libre Baskerville',serif;font-size:11px;flex-shrink:0}
+.tl-circle.active-phase{background:var(--gold);color:var(--navy)}
+.tl-circle.final{background:var(--green)}
+.tl-line{width:2px;flex:1;background:var(--border);margin:3px 0;min-height:16px}
+.tl-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;flex:1;margin-bottom:4px}
+.tl-phase-tag{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:7px}
+.tl-title{font-weight:600;color:var(--navy);font-size:14px;margin-bottom:8px}
+.tl-tasks{list-style:none;display:flex;flex-direction:column;gap:4px}
+.tl-tasks li{font-size:12px;color:var(--text2);padding-left:14px;position:relative}
+.tl-tasks li::before{content:'→';position:absolute;left:0;color:var(--gold)}
+
+/* CHECKLIST */
+.checklist{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.cl-item{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text2)}
+.cl-box{width:15px;height:15px;border:1.5px solid var(--gold);border-radius:3px;flex-shrink:0}
+
+/* FOOTER */
+footer{background:var(--white);border-top:1px solid var(--border);padding:12px 36px;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--text3)}
+
+@media(max-width:900px){
+  .stat-row{grid-template-columns:repeat(2,1fr)}
+  .main,.topbar,.nav,.notice,footer{padding-left:16px;padding-right:16px}
+  .year-track{grid-template-columns:70px repeat(4,1fr)}
+}
+@media(max-width:600px){
+  .stat-row{grid-template-columns:1fr}
+  .priority-grid{grid-template-columns:1fr}
+  .detail-grid{grid-template-columns:1fr 1fr}
+  .detail-item.span3{grid-column:span 2}
+  .scale-grid{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <div class="crest">REA</div>
+    <div>
+      <div class="org-name">Lakewood Regional Education Agency</div>
+      <div class="org-sub">2026 – 2029 Strategic Dashboard</div>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <div class="phase-pill">📍 Phase 1 of 5 — Dashboard Setup</div>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="nav-tab active" onclick="showView('executive',this)">Executive Summary</div>
+  <div class="nav-tab" onclick="showView('principles',this)">Design Principles</div>
+  <div class="nav-tab" onclick="showView('priorities',this)">By Priority</div>
+  <div class="nav-tab" onclick="showView('allkpis',this)">All 12 KPIs</div>
+  <div class="nav-tab" onclick="showView('progress',this)">KPI Detail Cards</div>
+  <div class="nav-tab" onclick="showView('survey',this)">Survey & Data Tools</div>
+  <div class="nav-tab" onclick="showView('board',this)">Board Reporting</div>
+  <div class="nav-tab" onclick="showView('timeline',this)">Implementation Plan</div>
+</nav>
+
+<div class="notice">
+  <div class="notice-dot"></div>
+  <strong>Baseline Year 2026</strong> — No data collected yet. This dashboard shows the complete goal structure and what tracking will look like once surveys and records are gathered beginning Fall 2026.
+</div>
+
+<main class="main">
+
+<!-- ══════════════════════════════════════
+     VIEW 1 · EXECUTIVE SUMMARY
+══════════════════════════════════════ -->
+<div class="view active" id="view-executive">
+
+  <div class="stat-row">
+    <div class="stat">
+      <div class="stat-lbl">Strategic Priorities</div>
+      <div class="stat-val">5</div>
+      <div class="stat-desc">Organization-wide focus areas</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lbl">Enterprise KPIs</div>
+      <div class="stat-val">12</div>
+      <div class="stat-desc">Indicators across all priorities</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lbl">Plan Horizon</div>
+      <div class="stat-val">2029</div>
+      <div class="stat-desc">3-year strategic target year</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lbl">Current Phase</div>
+      <div class="stat-val" style="font-size:18px;padding-top:6px">Baseline<br>Pending</div>
+      <div class="stat-desc">All 12 KPIs awaiting Fall 2026 data</div>
+    </div>
+  </div>
+
+  <div class="narrative">
+    <strong>About this dashboard.</strong> The Lakewood REA 2026–2029 Strategic Dashboard monitors progress on five core organizational priorities through 12 enterprise KPIs. It tracks both internal workforce health and external partner experience. The first year (2026) establishes baseline data and measurement systems. Starting in 2027, results are tracked against interim benchmarks, with final targets set for 2029. Once data is collected, each indicator will show green, yellow, or red — giving leadership, staff, and partners a clear, honest picture of progress.
+  </div>
+
+  <div class="sh"><h2>Board Spotlight — 5 Key Indicators</h2><div class="sh-line"></div><div class="sh-note">Used for Cabinet & Board reporting</div></div>
+
+  <div class="legend">
+    <div class="leg-item"><span class="cdot cdot-gray" style="width:9px;height:9px"></span> Gray — baseline not yet established</div>
+    <div class="leg-item"><span class="cdot cdot-green" style="width:9px;height:9px"></span> Green — on track or exceeding target</div>
+    <div class="leg-item"><span class="cdot cdot-yellow" style="width:9px;height:9px"></span> Yellow — progressing, needs attention</div>
+    <div class="leg-item"><span class="cdot cdot-red" style="width:9px;height:9px"></span> Red — not progressing, action required</div>
+  </div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>KPI</th><th>Priority Area</th><th>Current Result</th><th>2027 Benchmark</th><th>2029 Target</th><th>Trend</th><th>Status</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="td-name">Employee Retention Rate</td>
+          <td><span class="ptag" style="background:#edf0fb;color:#2d4278">Financial Sustainability</span></td>
+          <td class="td-muted">TBD</td><td>+3% improvement</td><td class="td-target">+8% improvement</td>
+          <td class="td-muted">TBD</td>
+          <td><span class="chip chip-gray"><span class="cdot cdot-gray"></span>Gray</span></td>
+          <td class="td-muted">Baseline to be established</td>
+        </tr>
+        <tr>
+          <td class="td-name">Employee Engagement Index</td>
+          <td><span class="ptag" style="background:#f3eefb;color:#5b2d8b">Thriving Workforce</span></td>
+          <td class="td-muted">TBD</td><td>+10% favorable</td><td class="td-target">+20% favorable</td>
+          <td class="td-muted">TBD</td>
+          <td><span class="chip chip-gray"><span class="cdot cdot-gray"></span>Gray</span></td>
+          <td class="td-muted">Annual survey measure</td>
+        </tr>
+        <tr>
+          <td class="td-name">Trust in Leadership</td>
+          <td><span class="ptag" style="background:#faeae5;color:#8b3513">Leadership & Trust</span></td>
+          <td class="td-muted">TBD</td><td>+10% favorable</td><td class="td-target">+20% favorable</td>
+          <td class="td-muted">TBD</td>
+          <td><span class="chip chip-gray"><span class="cdot cdot-gray"></span>Gray</span></td>
+          <td class="td-muted">Annual survey measure</td>
+        </tr>
+        <tr>
+          <td class="td-name">Internal Communication Satisfaction</td>
+          <td><span class="ptag" style="background:#e5f5f4;color:#1a6b63">Communication</span></td>
+          <td class="td-muted">TBD</td><td>+10% favorable</td><td class="td-target">+20% favorable</td>
+          <td class="td-muted">TBD</td>
+          <td><span class="chip chip-gray"><span class="cdot cdot-gray"></span>Gray</span></td>
+          <td class="td-muted">Annual survey measure</td>
+        </tr>
+        <tr>
+          <td class="td-name">Partner Satisfaction Score</td>
+          <td><span class="ptag" style="background:#e5f5f4;color:#1a6b63">Communication</span></td>
+          <td class="td-muted">TBD</td><td>85% favorable</td><td class="td-target">95% favorable</td>
+          <td class="td-muted">TBD</td>
+          <td><span class="chip chip-gray"><span class="cdot cdot-gray"></span>Gray</span></td>
+          <td class="td-muted">Annual partner survey measure</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="background:var(--gold-pale);border:1px solid #e8d9b0;border-radius:10px;padding:15px 20px;font-size:12px;color:#7a5414;line-height:1.65">
+    <strong style="color:var(--navy)">What happens next?</strong> — Staff and partner surveys launch Fall 2026 to collect baseline data. Once those results are in, every gray indicator above becomes a real number, and this dashboard becomes a live accountability tool for leadership, staff, and the board.
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     VIEW 2 · DESIGN PRINCIPLES
+══════════════════════════════════════ -->
+<div class="view" id="view-principles">
+
+  <div class="sh"><h2>Dashboard Design Principles</h2><div class="sh-line"></div><div class="sh-note">7 guiding principles from the strategic plan</div></div>
+
+  <div class="principles-grid">
+    <div class="principle-card"><div class="principle-num">1</div><div class="principle-text">Use a <strong>small number of high-value indicators</strong> — focus on what matters most.</div></div>
+    <div class="principle-card"><div class="principle-num">2</div><div class="principle-text">Track both <strong>internal workforce health</strong> and <strong>external partner experience</strong>.</div></div>
+    <div class="principle-card"><div class="principle-num">3</div><div class="principle-text">Establish <strong>2026 as the baseline year</strong> — the starting point for all measurements.</div></div>
+    <div class="principle-card"><div class="principle-num">4</div><div class="principle-text">Use <strong>2027 as the early implementation benchmark</strong> — first checkpoint for progress.</div></div>
+    <div class="principle-card"><div class="principle-num">5</div><div class="principle-text">Use <strong>2029 as the strategic target year</strong> — the end-of-plan goal for all KPIs.</div></div>
+    <div class="principle-card"><div class="principle-num">6</div><div class="principle-text"><strong>Review quarterly</strong> where possible; <strong>annually</strong> for all survey-based measures.</div></div>
+    <div class="principle-card"><div class="principle-num">7</div><div class="principle-text">Report results using <strong>simple color status indicators</strong>: green, yellow, red, gray.</div></div>
+  </div>
+
+  <div class="sh sh-gap"><h2>Status Color Definitions</h2><div class="sh-line"></div></div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Status</th><th>Color</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td><span class="chip chip-green"><span class="cdot cdot-green"></span>Green</span></td><td class="td-muted">Green</td><td>On track or meeting / exceeding target</td></tr>
+        <tr><td><span class="chip chip-yellow"><span class="cdot cdot-yellow"></span>Yellow</span></td><td class="td-muted">Yellow</td><td>Progressing but below target or needs attention</td></tr>
+        <tr><td><span class="chip chip-red"><span class="cdot cdot-red"></span>Red</span></td><td class="td-muted">Red</td><td>Not progressing, declining, or requires action</td></tr>
+        <tr><td><span class="chip chip-gray"><span class="cdot cdot-gray"></span>Gray</span></td><td class="td-muted">Gray</td><td>Baseline not yet established or data unavailable</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sh sh-gap"><h2>KPI Card Template Fields</h2><div class="sh-line"></div><div class="sh-note">Structure used in every KPI Detail Card</div></div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Field</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td class="td-name">KPI Name</td><td>Name of the indicator</td></tr>
+        <tr><td class="td-name">Strategic Priority</td><td>Strategic priority alignment</td></tr>
+        <tr><td class="td-name">Why It Matters</td><td>Brief explanation of the importance of this measure</td></tr>
+        <tr><td class="td-name">Definition</td><td>Precise description of what the KPI measures</td></tr>
+        <tr><td class="td-name">Baseline</td><td>2026 starting point</td></tr>
+        <tr><td class="td-name">2027 Benchmark</td><td>First-year progress benchmark</td></tr>
+        <tr><td class="td-name">2029 Target</td><td>End-of-plan target</td></tr>
+        <tr><td class="td-name">Data Source</td><td>Where the data comes from</td></tr>
+        <tr><td class="td-name">Calculation Method</td><td>How the measure is calculated</td></tr>
+        <tr><td class="td-name">Reporting Frequency</td><td>Quarterly, semiannual, or annual</td></tr>
+        <tr><td class="td-name">Owner</td><td>Person or team responsible for data collection and action planning</td></tr>
+        <tr><td class="td-name">Current Status</td><td>Green, yellow, red, or gray</td></tr>
+        <tr><td class="td-name">Survey Questions</td><td>Recommended Likert-scale items used to measure the KPI</td></tr>
+        <tr><td class="td-name">Notes / Action Steps</td><td>Brief summary of next steps</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     VIEW 3 · BY PRIORITY
+══════════════════════════════════════ -->
+<div class="view" id="view-priorities">
+  <div class="sh"><h2>Five Strategic Priorities</h2><div class="sh-line"></div><div class="sh-note">12 KPIs across 5 areas</div></div>
+
+  <div class="priority-grid">
+    <div class="pcard">
+      <div class="pcard-top"><div class="pcard-dot" style="background:#2d4278"></div><div class="pcard-name">Financial Sustainability &amp; Workforce Investment</div><div class="kpi-badge">1 KPI</div></div>
+      <div class="target-row">
+        <div class="t-cell"><span class="t-year">2026</span><span class="t-val">Baseline</span></div>
+        <div class="t-cell"><span class="t-year">2027</span><span class="t-val">+3%</span></div>
+        <div class="t-cell target"><span class="t-year">2029</span><span class="t-val">+8%</span></div>
+      </div>
+      <div class="pcard-kpis">Employee Retention Rate · HR Records · Quarterly/Annual</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-top"><div class="pcard-dot" style="background:#3d7a32"></div><div class="pcard-name">Professional Learning &amp; Organizational Growth</div><div class="kpi-badge">2 KPIs</div></div>
+      <div class="target-row">
+        <div class="t-cell"><span class="t-year">2026</span><span class="t-val">Baseline</span></div>
+        <div class="t-cell"><span class="t-year">2027</span><span class="t-val">90% / 75%</span></div>
+        <div class="t-cell target"><span class="t-year">2029</span><span class="t-val">100%</span></div>
+      </div>
+      <div class="pcard-kpis">PL Participation Rate · Individual Growth Plans</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-top"><div class="pcard-dot" style="background:#8b3513"></div><div class="pcard-name">Leadership, Trust &amp; Organizational Alignment</div><div class="kpi-badge">2 KPIs</div></div>
+      <div class="target-row">
+        <div class="t-cell"><span class="t-year">2026</span><span class="t-val">Baseline</span></div>
+        <div class="t-cell"><span class="t-year">2027</span><span class="t-val">+10%</span></div>
+        <div class="t-cell target"><span class="t-year">2029</span><span class="t-val">+20% / 90%</span></div>
+      </div>
+      <div class="pcard-kpis">Trust in Leadership · Understanding Org. Priorities</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-top"><div class="pcard-dot" style="background:#1a6b63"></div><div class="pcard-name">Communication &amp; Stakeholder Engagement</div><div class="kpi-badge">5 KPIs</div></div>
+      <div class="target-row">
+        <div class="t-cell"><span class="t-year">2026</span><span class="t-val">Baseline</span></div>
+        <div class="t-cell"><span class="t-year">2027</span><span class="t-val">+10–85%</span></div>
+        <div class="t-cell target"><span class="t-year">2029</span><span class="t-val">+20–95%</span></div>
+      </div>
+      <div class="pcard-kpis">Internal Comms · Collaboration · Partner Surveys</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-top"><div class="pcard-dot" style="background:#5b2d8b"></div><div class="pcard-name">Thriving Workforce, Culture &amp; Collaboration</div><div class="kpi-badge">4 KPIs</div></div>
+      <div class="target-row">
+        <div class="t-cell"><span class="t-year">2026</span><span class="t-val">Baseline</span></div>
+        <div class="t-cell"><span class="t-year">2027</span><span class="t-val">+10%</span></div>
+        <div class="t-cell target"><span class="t-year">2029</span><span class="t-val">+20%</span></div>
+      </div>
+      <div class="pcard-kpis">Engagement · Feeling Valued · Work-Life Balance</div>
+    </div>
+  </div>
+
+  <div class="sh sh-gap"><h2>Priority Rollup Table</h2><div class="sh-line"></div><div class="sh-note">For annual strategic plan updates</div></div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Strategic Priority</th><th style="text-align:center">KPI Count</th><th style="text-align:center;color:#34d399">Green</th><th style="text-align:center;color:#fbbf24">Yellow</th><th style="text-align:center;color:#f87171">Red</th><th style="text-align:center">Gray</th><th>Summary Notes</th></tr></thead>
+      <tbody>
+        <tr><td><span class="ptag" style="background:#edf0fb;color:#2d4278">Financial Sustainability & Workforce Investment</span></td><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center;font-weight:600">1</td><td class="td-muted">Baseline pending</td></tr>
+        <tr><td><span class="ptag" style="background:#e8f5e5;color:#3d7a32">Professional Learning & Organizational Growth</span></td><td style="text-align:center">2</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center;font-weight:600">2</td><td class="td-muted">Baseline pending</td></tr>
+        <tr><td><span class="ptag" style="background:#faeae5;color:#8b3513">Leadership, Trust & Organizational Alignment</span></td><td style="text-align:center">2</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center;font-weight:600">2</td><td class="td-muted">Baseline pending</td></tr>
+        <tr><td><span class="ptag" style="background:#e5f5f4;color:#1a6b63">Communication & Stakeholder Engagement</span></td><td style="text-align:center">5</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center;font-weight:600">5</td><td class="td-muted">Baseline pending</td></tr>
+        <tr><td><span class="ptag" style="background:#f3eefb;color:#5b2d8b">Thriving Workforce, Culture & Collaboration</span></td><td style="text-align:center">4</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center;font-weight:600">4</td><td class="td-muted">Baseline pending</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     VIEW 4 · ALL 12 KPIs
+══════════════════════════════════════ -->
+<div class="view" id="view-allkpis">
+  <div class="sh"><h2>All 12 Enterprise KPIs</h2><div class="sh-line"></div><div class="sh-note">Complete indicator reference table</div></div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>#</th><th>KPI Name</th><th>Priority</th><th>2026 Baseline</th><th>2027 Benchmark</th><th>2029 Target</th><th>Data Source</th><th>Review</th><th>Owner</th><th>Status</th></tr></thead>
+      <tbody id="kpi-table-body"></tbody>
+    </table>
+  </div>
+  <div class="legend">
+    <div class="leg-item"><span class="cdot cdot-gray" style="width:9px;height:9px"></span> Gray — baseline not yet established</div>
+    <div class="leg-item"><span class="cdot cdot-green" style="width:9px;height:9px"></span> Green — on track or exceeding</div>
+    <div class="leg-item"><span class="cdot cdot-yellow" style="width:9px;height:9px"></span> Yellow — needs attention</div>
+    <div class="leg-item"><span class="cdot cdot-red" style="width:9px;height:9px"></span> Red — action required</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     VIEW 5 · KPI DETAIL CARDS
+══════════════════════════════════════ -->
+<div class="view" id="view-progress">
+  <div class="sh"><h2>KPI Detail Cards — Full Specifications</h2><div class="sh-line"></div><div class="sh-note">Click any KPI to expand · Includes survey questions</div></div>
+  <p style="font-size:13px;color:var(--text2);margin-bottom:18px;line-height:1.65">Every field from the KPI Card Template is included here — definition, why it matters, calculation method, year-by-year targets, data source, owner, and the recommended survey questions for each measure.</p>
+  <div id="progress-container"></div>
+</div>
+
+<!-- ══════════════════════════════════════
+     VIEW 6 · SURVEY & DATA TOOLS
+══════════════════════════════════════ -->
+<div class="view" id="view-survey">
+
+  <div class="sh"><h2>Data Collection Tools</h2><div class="sh-line"></div><div class="sh-note">How KPI data will be gathered</div></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px">
+
+    <div class="infobox">
+      <div class="infobox-title">Staff Survey Scale</div>
+      <p style="font-size:12px;color:var(--text2);margin-bottom:10px">A consistent 5-point Likert scale is used for all staff survey items. Responses of <strong>4 (Agree) or 5 (Strongly Agree)</strong> are counted as favorable for dashboard reporting.</p>
+      <div class="scale-grid">
+        <div class="scale-item"><span class="scale-num">1</span><span class="scale-lbl">Strongly Disagree</span></div>
+        <div class="scale-item"><span class="scale-num">2</span><span class="scale-lbl">Disagree</span></div>
+        <div class="scale-item"><span class="scale-num">3</span><span class="scale-lbl">Neutral</span></div>
+        <div class="scale-item favorable"><span class="scale-num">4</span><span class="scale-lbl">Agree ✓</span></div>
+        <div class="scale-item favorable"><span class="scale-num">5</span><span class="scale-lbl">Strongly Agree ✓</span></div>
+      </div>
+      <p style="font-size:11px;color:var(--green);margin-top:6px">✓ Responses 4 and 5 = Favorable</p>
+    </div>
+
+    <div class="infobox">
+      <div class="infobox-title">Partner Survey Scale</div>
+      <p style="font-size:12px;color:var(--text2);margin-bottom:10px">The same 5-point Likert scale is used for all external partner survey items. Responses of <strong>4 (Agree) or 5 (Strongly Agree)</strong> are counted as favorable for dashboard reporting.</p>
+      <div class="scale-grid">
+        <div class="scale-item"><span class="scale-num">1</span><span class="scale-lbl">Strongly Disagree</span></div>
+        <div class="scale-item"><span class="scale-num">2</span><span class="scale-lbl">Disagree</span></div>
+        <div class="scale-item"><span class="scale-num">3</span><span class="scale-lbl">Neutral</span></div>
+        <div class="scale-item favorable"><span class="scale-num">4</span><span class="scale-lbl">Agree ✓</span></div>
+        <div class="scale-item favorable"><span class="scale-num">5</span><span class="scale-lbl">Strongly Agree ✓</span></div>
+      </div>
+      <p style="font-size:11px;color:var(--green);margin-top:6px">✓ Responses 4 and 5 = Favorable</p>
+    </div>
+  </div>
+
+  <div class="sh sh-gap"><h2>Recommended Database Field Schema</h2><div class="sh-line"></div><div class="sh-note">For spreadsheet or BI dashboard build</div></div>
+  <div class="fields-grid" id="fields-grid"></div>
+
+  <div class="sh sh-gap"><h2>All Recommended Survey Questions</h2><div class="sh-line"></div><div class="sh-note">By KPI — 8 KPIs have specific survey items</div></div>
+  <div id="all-survey-questions"></div>
+
+</div>
+
+<!-- ══════════════════════════════════════
+     VIEW 7 · BOARD REPORTING
+══════════════════════════════════════ -->
+<div class="view" id="view-board">
+
+  <div class="sh"><h2>Recommended Board Reporting Format</h2><div class="sh-line"></div><div class="sh-note">Structure for each quarterly or annual report</div></div>
+
+  <div class="report-steps">
+    <div class="report-step">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-content-title">One-page executive dashboard</div>
+        <div class="step-content-desc">High-level snapshot of all 12 KPIs with current status indicators (green / yellow / red / gray), current results vs. targets, and trend direction.</div>
+      </div>
+    </div>
+    <div class="report-step">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-content-title">Strategic priority summary</div>
+        <div class="step-content-desc">Status rollup by each of the 5 priority areas — how many KPIs are green, yellow, red, or gray within each priority.</div>
+      </div>
+    </div>
+    <div class="report-step">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-content-title">KPI trend table</div>
+        <div class="step-content-desc">Year-over-year results for all 12 KPIs showing 2026 baseline, 2027 result, 2028 result, 2029 result, 2029 target, and final status.</div>
+      </div>
+    </div>
+    <div class="report-step">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-content-title">Highlights and bright spots</div>
+        <div class="step-content-desc">Celebration of indicators that are meeting or exceeding targets. Recognition of staff and teams driving results.</div>
+      </div>
+    </div>
+    <div class="report-step">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-content-title">Areas requiring attention</div>
+        <div class="step-content-desc">Honest review of KPIs showing yellow or red status. Analysis of root causes and barriers.</div>
+      </div>
+    </div>
+    <div class="report-step">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-content-title">Action steps for the next reporting period</div>
+        <div class="step-content-desc">Specific, time-bound commitments for what leadership will do to address lagging indicators before the next review.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sh sh-gap"><h2>Annual Progress View</h2><div class="sh-line"></div><div class="sh-note">For public-facing progress reporting</div></div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>KPI</th><th>2026 Baseline</th><th>2027 Result</th><th>2028 Result</th><th>2029 Result</th><th>2029 Target</th><th>Final Status</th></tr></thead>
+      <tbody id="progress-view-body"></tbody>
+    </table>
+  </div>
+
+  <div class="sh sh-gap"><h2>Pre-Publication Finalization Checklist</h2><div class="sh-line"></div></div>
+  <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px">
+    <div class="checklist">
+      <div class="cl-item"><div class="cl-box"></div>Final KPI ownership confirmed</div>
+      <div class="cl-item"><div class="cl-box"></div>Final survey items approved</div>
+      <div class="cl-item"><div class="cl-box"></div>Data collection schedule set</div>
+      <div class="cl-item"><div class="cl-box"></div>Dashboard platform selected</div>
+      <div class="cl-item"><div class="cl-box"></div>Baseline reporting date confirmed</div>
+      <div class="cl-item"><div class="cl-box"></div>Public vs. internal views defined</div>
+      <div class="cl-item"><div class="cl-box"></div>Board reporting cadence confirmed</div>
+    </div>
+  </div>
+
+  <div class="sh sh-gap"><h2>Draft Board Dashboard Narrative</h2><div class="sh-line"></div></div>
+  <div class="narrative" style="border-left-color:var(--navy)">
+    The Lakewood REA 2026–2029 Strategic Dashboard is designed to monitor progress on the organization's core strategic priorities. The dashboard includes a focused set of enterprise indicators that measure workforce sustainability, professional learning, leadership trust, organizational communication, cross-department collaboration, and external partner satisfaction.<br><br>
+    The first year of implementation will establish baseline data and clarify measurement systems. Beginning in 2027, the dashboard will be used to monitor progress toward interim benchmarks and long-term 2029 targets. This approach ensures the strategic plan remains active, measurable, and responsive to staff and partner feedback.
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     VIEW 8 · IMPLEMENTATION PLAN
+══════════════════════════════════════ -->
+<div class="view" id="view-timeline">
+  <div class="sh"><h2>Implementation Timeline</h2><div class="sh-line"></div><div class="sh-note">5 phases · Summer 2026 → 2029</div></div>
+
+  <div class="tl-phase">
+    <div class="tl-marker"><div class="tl-circle active-phase">S'26</div><div class="tl-line"></div></div>
+    <div class="tl-card">
+      <div class="tl-phase-tag" style="background:#fef3dc;color:#8b5e0d">Summer 2026 · Current Phase</div>
+      <div class="tl-title">Dashboard Setup</div>
+      <ul class="tl-tasks">
+        <li>Confirm final list of enterprise KPIs with Cabinet</li>
+        <li>Assign KPI owners across departments</li>
+        <li>Build staff and partner survey items aligned to each indicator</li>
+        <li>Identify available HR, professional learning, and operational data sources</li>
+        <li>Establish baseline calculation methods and collection procedures</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tl-phase">
+    <div class="tl-marker"><div class="tl-circle">F'26</div><div class="tl-line"></div></div>
+    <div class="tl-card">
+      <div class="tl-phase-tag" style="background:#edf0fb;color:#2d4278">Fall 2026 · Upcoming</div>
+      <div class="tl-title">Baseline Collection — Year 1 Data</div>
+      <ul class="tl-tasks">
+        <li>Launch staff survey and collect responses (5-point Likert; 4–5 = favorable)</li>
+        <li>Administer partner survey and collect responses</li>
+        <li>Compile HR records and professional learning data</li>
+        <li>Finalize 2026 baseline values for all 12 KPIs</li>
+        <li>Set final numerical targets for 2027 and 2029</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tl-phase">
+    <div class="tl-marker"><div class="tl-circle">'27</div><div class="tl-line"></div></div>
+    <div class="tl-card">
+      <div class="tl-phase-tag" style="background:#e8f5e5;color:#3d7a32">Winter / Spring 2027</div>
+      <div class="tl-title">First Progress Review</div>
+      <ul class="tl-tasks">
+        <li>Review first progress update with Cabinet leadership</li>
+        <li>Identify areas requiring action planning and additional resources</li>
+        <li>Publish simplified Board dashboard with initial results</li>
+        <li>Adjust initiatives and strategies based on early data</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tl-phase">
+    <div class="tl-marker"><div class="tl-circle">'28</div><div class="tl-line"></div></div>
+    <div class="tl-card">
+      <div class="tl-phase-tag" style="background:#faeae5;color:#8b3513">2028 · Midpoint</div>
+      <div class="tl-title">Midpoint Review</div>
+      <ul class="tl-tasks">
+        <li>Compare current results to 2027 benchmarks and 2029 targets</li>
+        <li>Identify priorities on track, lagging, or exceeding expectations</li>
+        <li>Refine initiatives and reallocate resources where needed</li>
+        <li>Share midpoint report with board and stakeholders</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tl-phase">
+    <div class="tl-marker"><div class="tl-circle final">'29</div></div>
+    <div class="tl-card" style="border-left:3px solid var(--green)">
+      <div class="tl-phase-tag" style="background:var(--green-bg);color:var(--green)">2029 · Strategic Target Year</div>
+      <div class="tl-title">Final Evaluation</div>
+      <ul class="tl-tasks">
+        <li>Evaluate final progress against all 12 KPI targets</li>
+        <li>Identify achieved goals and remaining gaps</li>
+        <li>Celebrate wins and recognize staff contributions</li>
+        <li>Use results to inform the next strategic planning cycle</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <span>Lakewood REA · 2026–2029 Strategic Dashboard v2 · All statuses: Gray — awaiting Fall 2026 baseline</span>
+  <span>12 KPIs · 5 Priorities · Board reporting: Quarterly &amp; Annual</span>
+</footer>
+
+<script>
+const KPIS = [
+  {
+    num:'01', name:'Employee Retention Rate',
+    priority:'Financial Sustainability & Workforce Investment',
+    ptag:'Financial Sustainability', pcolor:'#edf0fb', ptc:'#2d4278',
+    baseline:'Establish baseline', b27:'+3% improvement', b29:'+8% improvement',
+    source:'HR records', review:'Quarterly / Annual', owner:'HR / Cabinet',
+    calc:'(Number of employees retained ÷ Number of employees at start of year) × 100',
+    def:'Percentage of employees who remain employed from the beginning to the end of the reporting year.',
+    why:'Employee retention directly affects financial sustainability and organizational continuity. High turnover increases recruiting and training costs, disrupts service delivery to districts, and signals potential workforce health concerns. Tracking retention helps leadership identify and respond to retention risks early.',
+    questions:[]
+  },
+  {
+    num:'02', name:'Employee Engagement Index',
+    priority:'Thriving Workforce, Culture & Collaboration',
+    ptag:'Thriving Workforce', pcolor:'#f3eefb', ptc:'#5b2d8b',
+    baseline:'Establish baseline', b27:'+10% favorable', b29:'+20% favorable',
+    source:'Annual staff survey', review:'Annual', owner:'Cabinet / HR',
+    calc:'Average favorable response rate across selected engagement survey items',
+    def:'Composite score from staff survey items related to engagement, belonging, morale, and commitment.',
+    why:'Employee engagement is a leading indicator of organizational health, retention, and service quality. Engaged employees are more productive, more committed to the mission, and more likely to stay. This index gives leadership a direct measure of how staff feel about their work and the organization.',
+    questions:[
+      'I enjoy working at Lakewood REA.',
+      'I would recommend Lakewood REA as a place to work.',
+      'I feel connected to the mission of the organization.',
+      'I feel supported in my role.',
+      'I feel a sense of belonging at Lakewood REA.'
+    ]
+  },
+  {
+    num:'03', name:'Employees Feeling Valued',
+    priority:'Thriving Workforce, Culture & Collaboration',
+    ptag:'Thriving Workforce', pcolor:'#f3eefb', ptc:'#5b2d8b',
+    baseline:'Establish baseline from staff survey', b27:'+10% favorable', b29:'+20% favorable',
+    source:'Annual staff survey', review:'Annual', owner:'HR / Communications',
+    calc:'Percentage of favorable responses on recognition and value survey items',
+    def:'Percentage of staff who report feeling valued and recognized for their work.',
+    why:'When employees feel valued, they are more engaged, more motivated, and more likely to remain with the organization. Recognition is a low-cost, high-impact driver of morale. Tracking this measure helps leadership understand whether recognition practices are reaching all staff.',
+    questions:[
+      'I feel valued for the work I do.',
+      'My contributions are recognized by my supervisor or team.',
+      'Lakewood REA celebrates staff accomplishments effectively.'
+    ]
+  },
+  {
+    num:'04', name:'Work-Life Balance Index',
+    priority:'Thriving Workforce, Culture & Collaboration',
+    ptag:'Thriving Workforce', pcolor:'#f3eefb', ptc:'#5b2d8b',
+    baseline:'Establish baseline', b27:'+10% favorable', b29:'+20% favorable',
+    source:'Annual staff survey', review:'Annual', owner:'HR / Cabinet',
+    calc:'Average favorable response rate across selected work-life balance survey items',
+    def:'Composite score measuring employee perception of workload sustainability, flexibility, and well-being.',
+    why:'Sustainable workloads and flexibility are critical to long-term staff retention and well-being. Burnout, unsustainable demands, and lack of flexibility are leading causes of turnover. This index helps leadership monitor organizational culture around workload and make adjustments before problems escalate.',
+    questions:[
+      'My workload is manageable.',
+      'I have the flexibility needed to balance work and personal responsibilities.',
+      'My department supports employee well-being.',
+      'I have the resources and time needed to do my work effectively.'
+    ]
+  },
+  {
+    num:'05', name:'Trust in Leadership',
+    priority:'Leadership, Trust & Organizational Alignment',
+    ptag:'Leadership & Trust', pcolor:'#faeae5', ptc:'#8b3513',
+    baseline:'Establish baseline', b27:'+10% favorable', b29:'+20% favorable',
+    source:'Annual staff survey', review:'Annual', owner:'Cabinet',
+    calc:'Percentage of favorable responses on leadership trust survey items',
+    def:'Percentage of employees who report confidence in leadership transparency, support, and decision-making.',
+    why:'Trust in leadership is foundational to organizational effectiveness. When staff trust leadership, they are more likely to support strategic initiatives, communicate openly about problems, and remain committed to the organization. Low trust undermines morale, collaboration, and retention.',
+    questions:[
+      'I trust organizational leadership.',
+      'Leadership communicates decisions clearly.',
+      'Leadership explains the reasons behind major decisions.',
+      'Leadership listens to staff feedback.',
+      'Leadership supports employees in doing their work well.'
+    ]
+  },
+  {
+    num:'06', name:'Understanding Organizational Priorities',
+    priority:'Leadership, Trust & Organizational Alignment',
+    ptag:'Leadership & Trust', pcolor:'#faeae5', ptc:'#8b3513',
+    baseline:'Establish baseline', b27:'75% favorable', b29:'90% favorable',
+    source:'Annual staff survey', review:'Annual', owner:'Cabinet / Department Leads',
+    calc:'Percentage of favorable responses on alignment survey items',
+    def:'Percentage of employees who understand the organization\'s goals and how their work contributes to them.',
+    why:'Strategic alignment requires that every employee understand where the organization is going and how their role contributes. Without clarity on priorities, staff may work at cross-purposes or feel disconnected from the broader mission. This measure tracks whether communication and leadership are making the strategy real for everyone.',
+    questions:[
+      'I understand Lakewood REA\'s strategic priorities.',
+      'I understand how my role supports the mission and goals of the REA.',
+      'I understand how my department contributes to organizational success.'
+    ]
+  },
+  {
+    num:'07', name:'Internal Communication Satisfaction',
+    priority:'Communication & Stakeholder Engagement',
+    ptag:'Communication', pcolor:'#e5f5f4', ptc:'#1a6b63',
+    baseline:'Establish baseline', b27:'+10% favorable', b29:'+20% favorable',
+    source:'Annual staff survey', review:'Annual', owner:'Cabinet / Communications',
+    calc:'Percentage of favorable responses on internal communication survey items',
+    def:'Percentage of employees who rate internal communication as clear, timely, and useful.',
+    why:'Effective internal communication is the connective tissue of any organization. When communication is unclear, untimely, or insufficient, staff make decisions without full information, trust erodes, and alignment breaks down. This measure helps leadership monitor whether communication systems are serving staff needs.',
+    questions:[
+      'Communication from leadership is clear and timely.',
+      'I receive the information I need to do my job effectively.',
+      'Organizational updates include enough context and detail.',
+      'I know where to find important internal information.'
+    ]
+  },
+  {
+    num:'08', name:'Cross-Department Collaboration Index',
+    priority:'Communication & Stakeholder Engagement',
+    ptag:'Communication', pcolor:'#e5f5f4', ptc:'#1a6b63',
+    baseline:'Establish baseline', b27:'+10% favorable', b29:'+20% favorable',
+    source:'Annual staff survey', review:'Annual', owner:'Cabinet / Department Leads',
+    calc:'Average favorable response rate across cross-department collaboration survey items',
+    def:'Composite score measuring collaboration, shared understanding, and coordination across departments.',
+    why:'Siloed departments reduce organizational effectiveness and create redundancy. Strong cross-department collaboration improves problem-solving, service delivery, and staff experience. This measure helps leadership identify structural or cultural barriers to collaboration.',
+    questions:[
+      'Departments collaborate effectively across Lakewood REA.',
+      'I understand the work of other departments.',
+      'I know who to contact in other departments when I need support.',
+      'We have effective systems for sharing information across departments.'
+    ]
+  },
+  {
+    num:'09', name:'Professional Learning Participation Rate',
+    priority:'Professional Learning & Organizational Growth',
+    ptag:'Professional Learning', pcolor:'#e8f5e5', ptc:'#3d7a32',
+    baseline:'Establish baseline', b27:'90% participation', b29:'100% participation',
+    source:'PD records / HR records', review:'Quarterly / Annual', owner:'Professional Learning / HR',
+    calc:'(Number of employees participating in professional learning ÷ Total number of employees) × 100',
+    def:'Percentage of employees who participate in at least one professional learning opportunity annually.',
+    why:'Professional learning is the engine of organizational growth. Organizations that invest in staff development see higher retention, stronger performance, and greater innovation. Tracking participation ensures that learning opportunities are reaching all staff, not just those who seek them out.',
+    questions:[]
+  },
+  {
+    num:'10', name:'Employees with Individual Growth Plans',
+    priority:'Professional Learning & Organizational Growth',
+    ptag:'Professional Learning', pcolor:'#e8f5e5', ptc:'#3d7a32',
+    baseline:'Limited / inconsistent', b27:'75% of employees', b29:'100% of employees',
+    source:'Supervisor records / HR records', review:'Semiannual', owner:'HR / Supervisors',
+    calc:'(Number of employees with documented growth plans ÷ Total number of employees) × 100',
+    def:'Percentage of employees with a documented annual growth or development plan.',
+    why:'Individual growth plans formalize the organization\'s commitment to each employee\'s development. They create accountability for both supervisors and staff, ensure learning is intentional and aligned to organizational goals, and signal that the REA values every person\'s professional future.',
+    questions:[]
+  },
+  {
+    num:'11', name:'Partner Satisfaction Score',
+    priority:'Communication & Stakeholder Engagement',
+    ptag:'Communication', pcolor:'#e5f5f4', ptc:'#1a6b63',
+    baseline:'Establish baseline from partner survey', b27:'85% favorable', b29:'95% favorable',
+    source:'Partner survey', review:'Annual', owner:'Cabinet / Communications',
+    calc:'Percentage of favorable responses on partner satisfaction survey items',
+    def:'Percentage of external partners reporting satisfaction with Lakewood REA services and support.',
+    why:'The REA\'s mission depends on effective partnerships with districts and community organizations. Partner satisfaction reflects whether the REA is delivering on its core purpose. A high score signals that partners find the REA valuable and trustworthy; a low score signals misalignment between services and partner needs.',
+    questions:[
+      'Lakewood REA provides high-quality support and services.',
+      'Lakewood REA understands the needs of districts and partners.',
+      'Lakewood REA is a trusted resource for our organization.',
+      'Overall, I am satisfied with the support provided by Lakewood REA.'
+    ]
+  },
+  {
+    num:'12', name:'Partner Responsiveness / Trust Score',
+    priority:'Communication & Stakeholder Engagement',
+    ptag:'Communication', pcolor:'#e5f5f4', ptc:'#1a6b63',
+    baseline:'Establish baseline from partner survey', b27:'85% favorable', b29:'95% favorable',
+    source:'Partner survey', review:'Annual', owner:'Cabinet / Department Leads',
+    calc:'Percentage of favorable responses on partner trust and responsiveness survey items',
+    def:'Percentage of partners reporting that the REA is responsive, accessible, and trustworthy.',
+    why:'Responsiveness and trust are the foundation of every external relationship. Partners who feel heard and supported are more likely to engage deeply with REA services, recommend the REA to others, and collaborate on shared goals. This measure tracks the relational quality of external partnerships.',
+    questions:[
+      'Lakewood REA responds to questions and needs in a timely manner.',
+      'Lakewood REA communicates clearly with districts and partners.',
+      'I know who to contact at the REA when I need support.',
+      'Lakewood REA follows through on commitments.'
+    ]
+  }
+];
+
+const DB_FIELDS = [
+  {name:'KPI_ID', type:'Text', ex:'KPI-01'},
+  {name:'Strategic_Priority', type:'Text', ex:'Financial Sustainability & Workforce Investment'},
+  {name:'KPI_Name', type:'Text', ex:'Employee Retention Rate'},
+  {name:'Baseline_Year', type:'Number', ex:'2026'},
+  {name:'Baseline_Value', type:'Number / Text', ex:'TBD'},
+  {name:'Current_Year', type:'Number', ex:'2027'},
+  {name:'Current_Value', type:'Number', ex:'TBD'},
+  {name:'Benchmark_2027', type:'Number / Text', ex:'+3% improvement'},
+  {name:'Target_2029', type:'Number / Text', ex:'+8% improvement'},
+  {name:'Data_Source', type:'Text', ex:'HR records'},
+  {name:'Review_Cycle', type:'Text', ex:'Quarterly / Annual'},
+  {name:'Owner', type:'Text', ex:'HR / Cabinet'},
+  {name:'Status', type:'Text', ex:'Gray'},
+  {name:'Trend', type:'Text', ex:'Improving / Stable / Declining / TBD'},
+  {name:'Notes', type:'Long Text', ex:'Baseline to be established'}
+];
+
+// Build KPI table (view 4)
+const tbody = document.getElementById('kpi-table-body');
+KPIS.forEach(k => {
+  tbody.innerHTML += `<tr>
+    <td style="font-weight:700;color:var(--gold);font-size:12px">${k.num}</td>
+    <td class="td-name">${k.name}</td>
+    <td><span class="ptag" style="background:${k.pcolor};color:${k.ptc}">${k.ptag}</span></td>
+    <td class="td-muted">${k.baseline}</td>
+    <td>${k.b27}</td>
+    <td class="td-target">${k.b29}</td>
+    <td class="td-muted">${k.source}</td>
+    <td class="td-muted">${k.review}</td>
+    <td class="td-muted">${k.owner}</td>
+    <td><span class="chip chip-gray"><span class="cdot cdot-gray"></span>Gray</span></td>
+  </tr>`;
+});
+
+// Build KPI detail cards (view 5)
+const container = document.getElementById('progress-container');
+KPIS.forEach((k, i) => {
+  const qHTML = k.questions.length ? `
+    <div class="survey-section">
+      <div class="survey-label">Recommended survey questions (${k.questions.length} items)</div>
+      <div class="survey-items">${k.questions.map((q,qi)=>`<div class="survey-item"><span class="survey-q-num">Q${qi+1}</span>${q}</div>`).join('')}</div>
+    </div>` : `<div class="survey-section"><div class="survey-label">Survey questions</div><p style="font-size:12px;color:var(--text3);font-style:italic">This KPI is measured from HR or administrative records — no survey questions required.</p></div>`;
+
+  const card = document.createElement('div');
+  card.className = 'pc';
+  card.innerHTML = `
+    <div class="pc-header" onclick="togglePC(${i})">
+      <span class="pc-num">${k.num}</span>
+      <span class="pc-name">${k.name}</span>
+      <span class="pc-pri">${k.priority}</span>
+      <span class="chip chip-gray" style="flex-shrink:0"><span class="cdot cdot-gray"></span>Baseline pending</span>
+      <span class="pc-chevron" id="chev-${i}">▼</span>
+    </div>
+    <div class="pc-body" id="pcb-${i}">
+      <p class="pc-def">${k.def}</p>
+      <div class="why-box"><strong>Why it matters:</strong> ${k.why}</div>
+      <div class="year-track">
+        <div class="yt-head" style="background:var(--navy)">Year</div>
+        <div class="yt-head">2026 Baseline</div>
+        <div class="yt-head">2027 Benchmark</div>
+        <div class="yt-head">2028 Result</div>
+        <div class="yt-head">2029 Target</div>
+        <div class="yt-cell" style="background:#f8f9fc"><span class="yt-lbl">Status</span><span class="chip chip-gray" style="font-size:10px"><span class="cdot cdot-gray"></span>Gray</span></div>
+        <div class="yt-cell"><span class="yt-lbl">Baseline</span><span class="yt-pending">Pending</span></div>
+        <div class="yt-cell"><span class="yt-lbl">Benchmark</span><span style="font-weight:600;color:var(--navy2)">${k.b27}</span></div>
+        <div class="yt-cell"><span class="yt-lbl">Result</span><span class="yt-pending">TBD</span></div>
+        <div class="yt-cell highlight"><span class="yt-lbl">Target</span><span class="yt-target">${k.b29}</span></div>
+      </div>
+      ${qHTML}
+      <div class="detail-grid">
+        <div class="detail-item"><div class="detail-lbl">Data source</div><div class="detail-val">${k.source}</div></div>
+        <div class="detail-item"><div class="detail-lbl">Review cycle</div><div class="detail-val">${k.review}</div></div>
+        <div class="detail-item"><div class="detail-lbl">Owner</div><div class="detail-val">${k.owner}</div></div>
+        <div class="detail-item span3"><div class="detail-lbl">Calculation method</div><div class="detail-val">${k.calc}</div></div>
+        <div class="detail-item span3"><div class="detail-lbl">Notes / Action steps</div><div class="detail-val" style="color:var(--text3);font-style:italic">Baseline to be established Fall 2026. Assign owner and confirm data collection method by end of Summer 2026.</div></div>
+      </div>
+    </div>`;
+  container.appendChild(card);
+});
+
+// Build annual progress table (view 7 board)
+const pvBody = document.getElementById('progress-view-body');
+KPIS.forEach(k => {
+  pvBody.innerHTML += `<tr>
+    <td class="td-name">${k.name}</td>
+    <td class="td-muted">${k.baseline}</td>
+    <td class="td-muted">TBD</td>
+    <td class="td-muted">TBD</td>
+    <td class="td-muted">TBD</td>
+    <td class="td-target">${k.b29}</td>
+    <td><span class="chip chip-gray"><span class="cdot cdot-gray"></span>TBD</span></td>
+  </tr>`;
+});
+
+// Build database fields (view 6)
+const fg = document.getElementById('fields-grid');
+DB_FIELDS.forEach(f => {
+  fg.innerHTML += `<div class="field-card">
+    <div class="field-name">${f.name}</div>
+    <div class="field-type">${f.type}</div>
+    <div class="field-example">e.g. ${f.ex}</div>
+  </div>`;
+});
+
+// Build all survey questions (view 6)
+const aqContainer = document.getElementById('all-survey-questions');
+KPIS.filter(k => k.questions.length > 0).forEach(k => {
+  aqContainer.innerHTML += `<div class="pc" style="margin-bottom:10px">
+    <div style="display:flex;align-items:center;gap:10px;padding:12px 18px;background:var(--slate);border-bottom:1px solid var(--border)">
+      <span style="font-size:13px;color:var(--gold);font-family:'Libre Baskerville',serif;min-width:26px">${k.num}</span>
+      <span style="font-weight:600;font-size:13px;color:var(--navy);flex:1">${k.name}</span>
+      <span class="ptag" style="background:${k.pcolor};color:${k.ptc}">${k.ptag}</span>
+    </div>
+    <div style="padding:12px 18px">
+      <div class="survey-items">${k.questions.map((q,qi)=>`<div class="survey-item"><span class="survey-q-num">Q${qi+1}</span>${q}</div>`).join('')}</div>
+    </div>
+  </div>`;
+});
+
+function togglePC(i) {
+  const body = document.getElementById('pcb-' + i);
+  const chev = document.getElementById('chev-' + i);
+  body.classList.toggle('open');
+  chev.classList.toggle('open');
+}
+
+function showView(name, el) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('view-' + name).classList.add('active');
+  el.classList.add('active');
+}
+</script>
+</body>
+</html>
