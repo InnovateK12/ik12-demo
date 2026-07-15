@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mt. Diablo USD · 2026-27 LCAP Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* MDUSD site palette: dark teal bar, white header, charcoal wordmark; seal green/gold/orange as accents */
+  --green-950:#0a2e3c; --green-900:#123f52; --green-800:#1b4c5e; --green-700:#24657c; --green-600:#2e7d99; --green-500:#3f97b5;
+  --seal-green:#2f6b3c;
+  --gold:#d9a521; --gold-light:#eec54f; --sunrise:#e8762c; --sunrise-deep:#c85a15;
+  --earth:#7a4f2a; --cream:#f7f3ea; --cream-2:#efe8d8; --paper:#fdfbf6;
+  --ink:#2b3138; --ink-soft:#5c6670; --charcoal:#3b3b3b; --line:#e3dcc9;
+  --pos:#2e7d4a; --neg:#c0392b;
+  --radius:18px; --shadow:0 2px 6px rgba(18,63,82,.06),0 14px 34px rgba(18,63,82,.10);
+  --shadow-hover:0 6px 14px rgba(18,63,82,.10),0 24px 48px rgba(18,63,82,.16);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,'Segoe UI',sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;overflow-x:hidden}
+::selection{background:var(--gold-light)}
+
+/* ---------- SITE HEADER (matches mdusd.org) ---------- */
+.site-head{position:sticky;top:-12px;z-index:60}
+.topstrip{height:12px;background:var(--green-800)}
+.brandbar{background:#fff;border-bottom:3px solid #b08a5a;box-shadow:0 4px 18px rgba(18,63,82,.08)}
+.brandbar-inner{max-width:1240px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px;margin-right:auto}
+.brand .sealimg{width:58px;height:58px;flex-shrink:0;filter:drop-shadow(0 2px 5px rgba(0,0,0,.18))}
+.wordmark{font-family:'Poppins',sans-serif;line-height:1.14}
+.wordmark .top{display:inline-block;font-size:25px;font-weight:800;letter-spacing:.02em;color:#151515;border-bottom:3px solid #151515;padding-bottom:1px}
+.wordmark .bot{font-size:13.5px;font-weight:500;letter-spacing:.12em;color:#151515;margin-top:3px}
+.brandbar nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.brandbar nav::-webkit-scrollbar{display:none}
+.brandbar nav a{flex-shrink:0;padding:10px 13px 8px;font-size:13.5px;font-weight:600;color:var(--charcoal);text-decoration:none;border-bottom:3px solid transparent;transition:.25s}
+.brandbar nav a:hover{color:var(--green-800)}
+.brandbar nav a.active{color:var(--green-800);border-bottom-color:var(--gold)}
+@media(max-width:900px){.brandbar-inner{padding:8px 16px}.wordmark .top{font-size:19px}.wordmark .bot{font-size:11px}.brand .sealimg{width:46px;height:46px}}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;color:#fff;overflow:hidden;background:linear-gradient(135deg,var(--green-950) 0%,var(--green-900) 40%,var(--green-800) 75%,#25607a 100%)}
+.hero::before{content:"";position:absolute;inset:-40%;background:
+  radial-gradient(circle at 78% 18%, rgba(238,197,79,.32), transparent 34%),
+  radial-gradient(circle at 84% 30%, rgba(232,118,44,.22), transparent 30%),
+  radial-gradient(circle at 12% 88%, rgba(47,107,60,.4), transparent 45%);
+  animation:drift 16s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate3d(-2%,-1%,0) scale(1)}to{transform:translate3d(2%,2%,0) scale(1.06)}}
+.sunrays{position:absolute;top:-210px;right:-140px;width:560px;height:560px;opacity:.5;animation:spin 90s linear infinite;pointer-events:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.mountains{position:absolute;left:0;right:0;bottom:-2px;width:100%;height:170px;pointer-events:none}
+.hero-inner{position:relative;max-width:1240px;margin:0 auto;padding:56px 32px 190px;z-index:2}
+.hero .locale{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);font-weight:700;margin-bottom:18px;opacity:0;animation:rise .9s .1s cubic-bezier(.2,.8,.2,1) forwards}
+.hero .locale span{color:rgba(255,255,255,.66);font-weight:500;letter-spacing:.08em;text-transform:none}
+.hero h1{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(38px,5.4vw,64px);line-height:1.04;max-width:820px;opacity:0;animation:rise 1s .25s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--gold-light),var(--sunrise));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lede{margin-top:20px;max-width:640px;font-size:17px;color:rgba(255,255,255,.82);opacity:0;animation:rise 1s .4s cubic-bezier(.2,.8,.2,1) forwards}
+.hero .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;opacity:0;animation:rise 1s .55s cubic-bezier(.2,.8,.2,1) forwards}
+.badge{font-size:12.5px;font-weight:600;padding:8px 15px;border-radius:100px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.09);backdrop-filter:blur(4px)}
+.badge b{color:var(--gold-light)}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+
+/* ---------- LAYOUT ---------- */
+main{max-width:1240px;margin:0 auto;padding:0 24px 90px}
+section{padding-top:74px;scroll-margin-top:78px}
+.sec-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+.sec-kicker{font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--sunrise-deep)}
+h2{font-family:'Fraunces',serif;font-size:clamp(26px,3vw,36px);font-weight:900;color:var(--green-900)}
+.sec-desc{color:var(--ink-soft);max-width:760px;margin-bottom:30px;font-size:15px}
+
+/* ---------- CARDS ---------- */
+.grid{display:grid;gap:20px}
+.kpi-grid{grid-template-columns:repeat(auto-fit,minmax(215px,1fr));margin-top:-118px;position:relative;z-index:5}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover)}
+.kpi{padding:24px 24px 20px;position:relative;overflow:hidden}
+.kpi::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(180deg,var(--gold),var(--sunrise));border-radius:5px 0 0 5px}
+.kpi .label{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.kpi .value{font-family:'Fraunces',serif;font-size:38px;font-weight:900;color:var(--green-900);margin:6px 0 2px;font-variant-numeric:tabular-nums}
+.kpi .hint{font-size:12.5px;color:var(--ink-soft)}
+.kpi .delta{display:inline-block;margin-top:8px;font-size:12px;font-weight:700;padding:3px 10px;border-radius:100px}
+.delta.up{background:#e3f2e8;color:var(--pos)} .delta.down{background:#fbe7e3;color:var(--neg)}
+
+.chart-card{padding:26px 26px 20px;display:flex;flex-direction:column}
+.chart-card h3{font-family:'Fraunces',serif;font-size:19px;font-weight:700;color:var(--green-900)}
+.chart-card .sub{font-size:13px;color:var(--ink-soft);margin:3px 0 18px}
+.chart-wrap{position:relative;flex:1;min-height:280px}
+.two-col{grid-template-columns:repeat(auto-fit,minmax(430px,1fr))}
+@media(max-width:520px){.two-col{grid-template-columns:1fr}}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- narrative strip ---------- */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:26px 0 8px}
+.strip .item{background:linear-gradient(150deg,var(--green-900),var(--green-800));color:#fff;border-radius:var(--radius);padding:20px 22px;position:relative;overflow:hidden}
+.strip .item::before{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle,rgba(238,197,79,.35),transparent 70%)}
+.strip .big{font-family:'Fraunces',serif;font-size:30px;font-weight:900;color:var(--gold-light)}
+.strip .cap{font-size:12.5px;color:rgba(255,255,255,.78);margin-top:2px}
+
+/* ---------- goals ---------- */
+.goal-grid{grid-template-columns:repeat(auto-fit,minmax(310px,1fr))}
+.goal{padding:26px;position:relative;overflow:hidden}
+.goal .gnum{position:absolute;right:14px;top:2px;font-family:'Fraunces',serif;font-size:92px;font-weight:900;color:var(--cream-2);line-height:1;user-select:none}
+.goal .gtype{position:relative;display:inline-block;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--sunrise-deep);background:#fdeedd;padding:4px 10px;border-radius:100px;margin-bottom:12px}
+.goal h3{position:relative;font-family:'Fraunces',serif;font-size:20px;font-weight:700;color:var(--green-900);margin-bottom:8px;padding-right:52px}
+.goal p{position:relative;font-size:13.5px;color:var(--ink-soft);margin-bottom:16px}
+.goal .gfoot{position:relative;display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
+.goal .amt{font-family:'Fraunces',serif;font-size:26px;font-weight:900;color:var(--green-800)}
+.goal .acts{font-size:12px;color:var(--ink-soft)}
+.goal .bar{position:relative;height:7px;background:var(--cream-2);border-radius:100px;margin-top:14px;overflow:hidden}
+.goal .bar i{position:absolute;inset:0;width:0;border-radius:100px;background:linear-gradient(90deg,var(--green-600),var(--gold));transition:width 1.4s .3s cubic-bezier(.2,.8,.2,1)}
+.in .goal .bar i, .goal.in .bar i{/* filled via JS */}
+
+/* ---------- table ---------- */
+.table-card{padding:26px;overflow:hidden}
+.table-tools{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 18px}
+.table-tools select,.table-tools input{padding:9px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fff;font:inherit;font-size:13.5px;color:var(--ink);outline:none;transition:.2s}
+.table-tools select:focus,.table-tools input:focus{border-color:var(--green-600);box-shadow:0 0 0 3px rgba(46,125,74,.15)}
+.tbl-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:640px}
+thead th{position:sticky;top:0;text-align:left;background:var(--green-900);color:#fff;font-size:11.5px;text-transform:uppercase;letter-spacing:.1em;padding:12px 14px;cursor:pointer;white-space:nowrap;user-select:none}
+thead th:hover{background:var(--green-800)}
+tbody td{padding:11px 14px;border-bottom:1px solid #f0ebdd}
+tbody tr{transition:background .2s}
+tbody tr:hover{background:#f6f1e4}
+tbody tr:last-child td{border-bottom:none}
+td.num{text-align:right;font-variant-numeric:tabular-nums;font-weight:600;color:var(--green-800);white-space:nowrap}
+.chip{font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px}
+.chip.yes{background:#e3f2e8;color:var(--pos)} .chip.no{background:var(--cream-2);color:var(--ink-soft)}
+.gtag{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;font-weight:800;font-size:12px;color:#fff}
+
+/* ---------- equity ---------- */
+.em-grid{grid-template-columns:repeat(auto-fit,minmax(255px,1fr))}
+.em{padding:24px;border-top:5px solid var(--sunrise)}
+.em h4{font-family:'Fraunces',serif;font-size:18px;color:var(--green-900);margin-bottom:4px}
+.em .since{font-size:11.5px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px}
+.em ul{list-style:none}
+.em li{font-size:13px;padding:7px 0 7px 24px;position:relative;border-bottom:1px dashed var(--line);color:var(--ink-soft)}
+.em li:last-child{border-bottom:none}
+.em li::before{content:"";position:absolute;left:2px;top:13px;width:9px;height:9px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--sunrise))}
+.em li b{color:var(--ink)}
+
+footer{border-top:1px solid var(--line);background:var(--paper)}
+.foot-inner{max-width:1240px;margin:0 auto;padding:28px 24px;font-size:12.5px;color:var(--ink-soft);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+@media(max-width:720px){.hero-inner{padding:48px 22px 170px}.kpi .value{font-size:32px}}
+@media print{nav{display:none}.card{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<!-- ================= SITE HEADER (mdusd.org style) ================= -->
+<div class="site-head">
+  <div class="topstrip"></div>
+  <div class="brandbar">
+    <div class="brandbar-inner">
+      <div class="brand">
+        <svg class="sealimg" viewBox="0 0 120 120" aria-label="Mt. Diablo Unified School District seal">
+          <defs>
+            <path id="ringArc" d="M 17.5,86 A 46.5,46.5 0 1 1 102.5,86"/>
+            <clipPath id="innerClip"><circle cx="60" cy="61" r="39.5"/></clipPath>
+          </defs>
+          <!-- black outer ring + tan text band -->
+          <circle cx="60" cy="60" r="58.5" fill="#151515"/>
+          <circle cx="60" cy="60" r="55" fill="#e6d5ac"/>
+          <circle cx="60" cy="61" r="40.5" fill="#151515"/>
+          <circle cx="60" cy="61" r="39.5" fill="#fdfaf1"/>
+          <!-- ring text -->
+          <text font-family="Georgia,'Times New Roman',serif" font-size="9.6" font-weight="bold" fill="#151515" letter-spacing="1.1">
+            <textPath href="#ringArc" startOffset="50%" text-anchor="middle">MT. DIABLO UNIFIED SCHOOL DISTRICT</textPath>
+          </text>
+          <!-- leaves in band, bottom -->
+          <g fill="#2e6b39">
+            <ellipse cx="34" cy="103" rx="3.4" ry="1.7" transform="rotate(30 34 103)"/>
+            <ellipse cx="45" cy="108" rx="3.4" ry="1.7" transform="rotate(15 45 108)"/>
+            <ellipse cx="60" cy="110" rx="3.6" ry="1.8"/>
+            <ellipse cx="75" cy="108" rx="3.4" ry="1.7" transform="rotate(-15 75 108)"/>
+            <ellipse cx="86" cy="103" rx="3.4" ry="1.7" transform="rotate(-30 86 103)"/>
+          </g>
+          <!-- inner scene -->
+          <g clip-path="url(#innerClip)">
+            <!-- orange ray fan -->
+            <g stroke="#e8761b" stroke-width="2.4" stroke-linecap="round">
+              <line x1="60" y1="43" x2="60" y2="26"/>
+              <line x1="53" y1="44" x2="48" y2="28"/><line x1="67" y1="44" x2="72" y2="28"/>
+              <line x1="47" y1="47" x2="37" y2="33"/><line x1="73" y1="47" x2="83" y2="33"/>
+              <line x1="43" y1="52" x2="29" y2="42"/><line x1="77" y1="52" x2="91" y2="42"/>
+            </g>
+            <!-- mountain range: dark back ridge + lighter front -->
+            <path d="M20 68 L34 52 L42 58 L54 42 L66 56 L76 48 L100 68 Z" fill="#26562e"/>
+            <path d="M20 70 L32 62 L44 67 L58 60 L72 66 L84 61 L100 70 L100 74 L20 74 Z" fill="#4d8f57"/>
+            <!-- brown brush band -->
+            <path d="M19 74 Q30 71 40 74 T62 73.5 T82 74.5 T101 74 L101 82 Q88 79 74 82 T48 81 T19 82 Z" fill="#6b4423"/>
+            <path d="M22 78 q10 -2 20 0 M52 77 q12 -2 24 1 M80 78 q9 -1.5 17 0" stroke="#4a2d15" stroke-width="1.3" fill="none"/>
+            <!-- lower green wavy band -->
+            <path d="M19 84 Q35 80 52 84 T101 83.5 L101 102 L19 102 Z" fill="#2e6b39"/>
+            <path d="M24 88 q12 -2.5 24 0 M56 87 q14 -2.5 28 0.5" stroke="#1d4a26" stroke-width="1.4" fill="none"/>
+            <!-- leaf sprigs beside lamp -->
+            <g fill="#2e6b39" stroke="#1d4a26" stroke-width=".5">
+              <ellipse cx="40" cy="93" rx="4" ry="1.9" transform="rotate(-24 40 93)"/>
+              <ellipse cx="46" cy="96" rx="4" ry="1.9" transform="rotate(-8 46 96)"/>
+              <ellipse cx="80" cy="93" rx="4" ry="1.9" transform="rotate(24 80 93)"/>
+              <ellipse cx="74" cy="96" rx="4" ry="1.9" transform="rotate(8 74 96)"/>
+            </g>
+            <!-- lamp of learning (black silhouette, flame at spout) -->
+            <g>
+              <path d="M52 90 q-1 4 8 4.6 q9 -.6 8 -4.6 q-2 -2.6 -8 -2.6 q-6 0 -8 2.6 Z" fill="#151515"/>
+              <path d="M68 89.5 q4 -.5 5.4 -3.2" stroke="#151515" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+              <path d="M52 89.8 l-4.6 -1.4" stroke="#151515" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M47 86.2 q2 2 0 3.6 q-2.2 -1.6 0 -3.6" fill="#e8761b"/>
+              <ellipse cx="60" cy="95.4" rx="7.2" ry="1.4" fill="#151515"/>
+            </g>
+          </g>
+        </svg>
+        <div class="wordmark"><div class="top">MT. DIABLO</div><div class="bot">UNIFIED SCHOOL DISTRICT</div></div>
+      </div>
+      <nav id="nav">
+        <a href="#overview" class="active">Overview</a>
+        <a href="#budget">Budget</a>
+        <a href="#academics">Academics</a>
+        <a href="#outcomes">Outcomes</a>
+        <a href="#goals">Goals &amp; Investments</a>
+        <a href="#equity">Equity Multiplier</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <svg class="sunrays" viewBox="0 0 200 200"><g fill="none" stroke="rgba(238,197,79,.55)" stroke-width="2"><g id="r"><line x1="100" y1="10" x2="100" y2="42"/></g><use href="#r" transform="rotate(30 100 100)"/><use href="#r" transform="rotate(60 100 100)"/><use href="#r" transform="rotate(90 100 100)"/><use href="#r" transform="rotate(120 100 100)"/><use href="#r" transform="rotate(150 100 100)"/><use href="#r" transform="rotate(180 100 100)"/><use href="#r" transform="rotate(210 100 100)"/><use href="#r" transform="rotate(240 100 100)"/><use href="#r" transform="rotate(270 100 100)"/><use href="#r" transform="rotate(300 100 100)"/><use href="#r" transform="rotate(330 100 100)"/><circle cx="100" cy="100" r="52" stroke="rgba(232,118,44,.5)"/></g></svg>
+  <div class="hero-inner">
+    <div class="locale">Local Control &amp; Accountability Plan <span>· Concord, CA · Contra Costa County · Dr. Adam Clark, Superintendent</span></div>
+    <h1>2026–27 LCAP <em>at a Glance</em></h1>
+    <p class="lede">An interactive summary of the Local Control &amp; Accountability Plan — where the money goes, how students are performing, and the five goals guiding investment across the district.</p>
+    <div class="badges">
+      <span class="badge">CDS <b>07 61754</b></span>
+      <span class="badge"><b>54</b> schools &amp; programs</span>
+      <span class="badge"><b>4</b> Equity Multiplier sites</span>
+      <span class="badge">Draft · June 24, 2026</span>
+    </div>
+  </div>
+  <svg class="mountains" viewBox="0 0 1440 170" preserveAspectRatio="none"><path d="M0 170 L0 120 L180 60 L340 130 L520 40 L700 120 L880 70 L1060 140 L1240 80 L1440 130 L1440 170 Z" fill="rgba(247,243,234,.14)"/><path d="M0 170 L0 140 L220 90 L420 150 L640 80 L860 145 L1080 100 L1300 155 L1440 120 L1440 170 Z" fill="rgba(247,243,234,.35)"/><path d="M0 170 L0 155 L260 115 L500 165 L760 120 L1020 165 L1260 130 L1440 158 L1440 170 Z" fill="#f7f3ea"/></svg>
+</header>
+
+<main>
+
+<!-- ================= OVERVIEW ================= -->
+<section id="overview" style="padding-top:0">
+  <div class="grid kpi-grid">
+    <div class="card kpi reveal"><div class="label">Enrollment (2025-26)</div><div class="value" data-count="29371">0</div><div class="hint">TK–12, non-charter</div></div>
+    <div class="card kpi reveal"><div class="label">Free / Reduced Meals</div><div class="value" data-count="52.8" data-dec="1" data-suffix="%">0</div><div class="hint">Socioeconomically disadvantaged</div></div>
+    <div class="card kpi reveal"><div class="label">English Learners</div><div class="value" data-count="20.9" data-dec="1" data-suffix="%">0</div><div class="hint">of enrollment · Foster Youth 0.2%</div></div>
+    <div class="card kpi reveal"><div class="label">Graduation Rate</div><div class="value" data-count="89.9" data-dec="1" data-suffix="%">0</div><div class="delta up">▲ +3.5 pts</div></div>
+    <div class="card kpi reveal"><div class="label">Total LCAP Investment</div><div class="value" data-count="65.4" data-dec="1" data-prefix="$" data-suffix="M">0</div><div class="hint">31 actions · 5 goals</div></div>
+  </div>
+
+  <div class="sec-head" style="margin-top:56px"><span class="sec-kicker">Plan Summary</span><h2>The Year in Context</h2></div>
+  <p class="sec-desc">The 2025 California School Dashboard moved MDUSD to <b>Yellow</b> in both ELA and Math, with gains for nearly every student group. Outcome indicators trended positive district-wide — but gaps for focal scholars and unduplicated students persist.</p>
+  <div class="strip reveal">
+    <div class="item"><div class="big">+7.1</div><div class="cap">ELA distance-from-standard gain (pts) · now Yellow</div></div>
+    <div class="item"><div class="big">+4.4</div><div class="cap">Math distance-from-standard gain (pts) · now Yellow</div></div>
+    <div class="item"><div class="big">+3.2%</div><div class="cap">College &amp; Career Readiness → 44.7% prepared</div></div>
+    <div class="item"><div class="big">−1.4%</div><div class="cap">Suspension rate → 3.1% of students</div></div>
+    <div class="item"><div class="big">18.4%</div><div class="cap">Chronic absenteeism (down from 25.9% in 2022)</div></div>
+  </div>
+</section>
+
+<!-- ================= BUDGET ================= -->
+<section id="budget">
+  <div class="sec-head"><span class="sec-kicker">LCFF Budget Overview for Parents</span><h2>Where the Money Comes From — and Goes</h2></div>
+  <p class="sec-desc">MDUSD projects <b>$532.0M</b> in total revenue for 2026-27 and plans to spend <b>$544.7M</b>. Of that spending, <b>$65.4M</b> is tied directly to LCAP actions and services; the remainder funds base operations (80-85% is employee compensation).</p>
+  <div class="grid two-col">
+    <div class="card chart-card reveal"><h3>Projected Revenue · $532,036,436</h3><div class="sub">General purpose revenue by source, 2026-27</div><div class="chart-wrap"><canvas id="chRevenue"></canvas></div></div>
+    <div class="card chart-card reveal"><h3>LCAP Funding Sources · $65,377,182</h3><div class="sub">How planned LCAP actions are funded</div><div class="chart-wrap"><canvas id="chLcapSrc"></canvas></div></div>
+    <div class="card chart-card reveal"><h3>High-Needs Students: Promise vs. Delivery</h3><div class="sub">Supplemental &amp; concentration funding for foster youth, English learners &amp; low-income students</div><div class="chart-wrap"><canvas id="chHighNeeds"></canvas></div></div>
+    <div class="card chart-card reveal"><h3>Total Planned Spending · $544,730,555</h3><div class="sub">LCAP actions vs. base program, 2026-27</div><div class="chart-wrap"><canvas id="chSpend"></canvas></div></div>
+  </div>
+  <div class="strip reveal" style="margin-top:20px">
+    <div class="item"><div class="big">$38.2M</div><div class="cap">Generated by high-needs enrollment (S&amp;C grants)</div></div>
+    <div class="item"><div class="big">$42.7M</div><div class="cap">Planned spending on increased/improved services</div></div>
+    <div class="item"><div class="big">11.509%</div><div class="cap">Required percentage to increase or improve services</div></div>
+    <div class="item"><div class="big">$40.1M</div><div class="cap">Actually spent on high-needs services in 2025-26 (vs $39.9M budgeted)</div></div>
+  </div>
+</section>
+
+<!-- ================= ACADEMICS ================= -->
+<section id="academics">
+  <div class="sec-head"><span class="sec-kicker">2025 CA School Dashboard</span><h2>Academic Performance by Student Group</h2></div>
+  <p class="sec-desc">Distance from standard on CAASPP, grades 3–11. Zero is the line — bars left of it show how far below standard groups score; the district overall improved in both subjects. English-Only students are <b>above</b> standard in ELA.</p>
+  <div class="grid two-col">
+    <div class="card chart-card reveal"><h3>ELA · Distance from Standard</h3><div class="sub">All Students: −11.2 pts (▲ +7.1) · Performance level: Yellow</div><div class="chart-wrap" style="min-height:360px"><canvas id="chELA"></canvas></div></div>
+    <div class="card chart-card reveal"><h3>Math · Distance from Standard</h3><div class="sub">All Students: −41.1 pts (▲ +4.4) · Performance level: Yellow</div><div class="chart-wrap" style="min-height:360px"><canvas id="chMath"></canvas></div></div>
+  </div>
+  <div class="grid two-col" style="margin-top:20px">
+    <div class="card chart-card reveal"><h3>Year-over-Year Change (pts)</h3><div class="sub">Gains and declines by group — homeless students declined in both subjects</div><div class="chart-wrap" style="min-height:360px"><canvas id="chChange"></canvas></div></div>
+    <div class="card chart-card reveal"><h3>English Learner Progress (ELPI)</h3><div class="sub">43.6% of English learners making progress toward proficiency (−1.4%, maintained). Reclassified ELs outperform many groups — accelerating reclassification is a district priority.</div><div class="chart-wrap"><canvas id="chELPI"></canvas></div></div>
+  </div>
+</section>
+
+<!-- ================= OUTCOMES ================= -->
+<section id="outcomes">
+  <div class="sec-head"><span class="sec-kicker">Engagement &amp; Readiness</span><h2>Student Outcome Indicators</h2></div>
+  <p class="sec-desc">Graduation up 3.5 points with a remarkable <b>+29.2</b> gain for foster youth. Suspensions fell for nearly every group. Chronic absenteeism remains the stubborn indicator — highest for homeless students at 48.4%.</p>
+  <div class="grid two-col">
+    <div class="card chart-card reveal"><h3>Graduation Rate by Group</h3><div class="sub">Class of 2025 · district overall 89.9% (▲ +3.5)</div><div class="chart-wrap" style="min-height:380px"><canvas id="chGrad"></canvas></div></div>
+    <div class="card chart-card reveal"><h3>College &amp; Career Ready</h3><div class="sub">Percent "Prepared" · district overall 44.7% (▲ +3.2)</div><div class="chart-wrap" style="min-height:380px"><canvas id="chCCR"></canvas></div></div>
+    <div class="card chart-card reveal"><h3>Chronic Absenteeism</h3><div class="sub">Percent chronically absent · overall 18.4% (▼ −0.1)</div><div class="chart-wrap" style="min-height:380px"><canvas id="chAbs"></canvas></div></div>
+    <div class="card chart-card reveal"><h3>Suspension Rate</h3><div class="sub">Suspended at least one day · overall 3.1% (▼ −1.4)</div><div class="chart-wrap" style="min-height:380px"><canvas id="chSusp"></canvas></div></div>
+  </div>
+</section>
+
+<!-- ================= GOALS ================= -->
+<section id="goals">
+  <div class="sec-head"><span class="sec-kicker">Goals &amp; Actions</span><h2>Five Goals, $65.4M in Action</h2></div>
+  <p class="sec-desc">Every dollar in the LCAP maps to one of five goals. Goal 1 — equitable, high-quality instruction for all — carries half the total investment.</p>
+  <div class="grid goal-grid" id="goalCards"></div>
+
+  <div class="grid two-col" style="margin-top:20px">
+    <div class="card chart-card reveal"><h3>Investment by Goal</h3><div class="sub">Total planned expenditures per LCAP goal</div><div class="chart-wrap"><canvas id="chGoals"></canvas></div></div>
+    <div class="card chart-card reveal"><h3>Top 10 Actions by Investment</h3><div class="sub">Largest planned expenditures across all goals</div><div class="chart-wrap"><canvas id="chTopActions"></canvas></div></div>
+  </div>
+
+  <div class="card table-card reveal" style="margin-top:20px">
+    <h3 style="font-family:'Fraunces',serif;font-size:19px;color:var(--green-900)">All 31 LCAP Actions</h3>
+    <div class="sub" style="font-size:13px;color:var(--ink-soft)">Click a column header to sort · "Contributing" = counts toward increased/improved services for high-needs students</div>
+    <div class="table-tools">
+      <select id="fGoal" onchange="renderActions()">
+        <option value="all">All goals</option>
+        <option value="1">Goal 1 · Equitable Education</option>
+        <option value="2">Goal 2 · Inclusive Learning Community</option>
+        <option value="3">Goal 3 · Family &amp; Community Engagement</option>
+        <option value="4">Goal 4 · Empowering Focal Scholars</option>
+        <option value="5">Goal 5 · Equity Multiplier</option>
+      </select>
+      <select id="fContrib" onchange="renderActions()">
+        <option value="all">Contributing &amp; non-contributing</option>
+        <option value="Yes">Contributing only</option>
+        <option value="No">Non-contributing only</option>
+      </select>
+      <input id="fSearch" type="search" placeholder="Search actions…" oninput="renderActions()" style="flex:1;min-width:180px">
+    </div>
+    <div class="tbl-wrap"><table id="tblActions"><thead></thead><tbody></tbody></table></div>
+    <div id="tblFoot" style="font-size:12.5px;color:var(--ink-soft);margin-top:12px"></div>
+  </div>
+</section>
+
+<!-- ================= EQUITY ================= -->
+<section id="equity">
+  <div class="sec-head"><span class="sec-kicker">Goal 5 · Focus Goal</span><h2>Equity Multiplier Schools</h2></div>
+  <p class="sec-desc">Four sites receive targeted state Equity Multiplier funding ($577,667 across Goal 5 actions) for schools with high student mobility (&gt;25%) and socioeconomic disadvantage (&gt;70%). By June 2027, each site targets a <b>+3% attendance</b> gain plus site-specific goals.</p>
+  <div class="grid em-grid">
+    <div class="card em reveal"><h4>Crossroads High School</h4><div class="since">Identified 2024 · Continuation</div><ul>
+      <li>Attendance improved <b>48.8% → 64.0%</b></li><li>On-pace graduation <b>52.2% → 50%</b> (2024→26)</li><li>Target: <b>+3%</b> attendance &amp; on-pace grad rate</li></ul></div>
+    <div class="card em reveal"><h4>Olympic High School</h4><div class="since">Identified 2024 · Continuation</div><ul>
+      <li>Graduation rate <b>59%</b> at qualification</li><li>Qualified for Comprehensive Support &amp; Improvement</li><li>Target: <b>+3%</b> attendance &amp; on-pace grad rate</li></ul></div>
+    <div class="card em reveal"><h4>Glenbrook Academy</h4><div class="since">Identified 2025</div><ul>
+      <li>Small-population site — progress tracked with local data</li><li>Target: <b>+3%</b> attendance rate</li><li>Target: <b>+3%</b> on-pace graduation rate</li></ul></div>
+    <div class="card em reveal"><h4>Sunrise Social-Emotional Collaborative</h4><div class="since">Identified 2026</div><ul>
+      <li>Specialized social-emotional program</li><li>Target: <b>+3%</b> attendance rate</li><li>Target: <b>−5%</b> suspension rate</li></ul></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <span><b>Source:</b> DRAFT 2026-27 Local Control &amp; Accountability Plan, Mt. Diablo Unified School District (June 24, 2026) · 2025 California School Dashboard</span>
+    <span>mdusd.org · 925-682-8000</span>
+    <span style="flex-basis:100%;text-align:center;padding-top:10px;border-top:1px dashed var(--line);font-weight:600;color:var(--green-800)">Created by InnovateK12</span>
+  </div>
+</footer>
+
+<script>
+/* ============ DATA (from DRAFT 2026-27 LCAP) ============ */
+const REVENUE = {labels:['LCFF Funds','Other State','Local','Federal'],values:[374296274,118580648,19888105,19271409]};
+const LCAP_SRC = {labels:['LCFF','Other State','Federal','Local'],values:[44214993,11817885,9100441,243863]};
+const HIGH_NEEDS = {labels:['2025-26 Budgeted','2025-26 Actual','2026-27 Generated','2026-27 Planned'],values:[39871470,40107894,38192208,42746728]};
+const SPEND = {labels:['LCAP Actions & Services','Base Program (not in LCAP)'],values:[65377182,479353373]};
+
+const GROUPS_AXIS = ['All Students','English Only','Reclassified EL','Hispanic','Socioecon. Disadv.','African American','Students w/ Disabilities','Foster Youth','Current EL','Homeless'];
+const ELA  = {vals:[-11.2, 14.9, -13.6, -54.6, -53.4, -60.6, -100.9, -120.7, -138.1, -153.1], chg:[7.1,7.6,3.4,7.9,15.4,5,15.5,17.2,3,-16]};
+const MATH = {vals:[-41.1,-11.6, -51.5, -92, -88, -100.9, -135.1, -158.2, -157.9, -179.4], chg:[4.4,4.5,-1.5,5.6,15,7.3,6.4,-2,2.4,-10.5]};
+
+const OUT_GROUPS = ['All Students','Asian','Filipino','Two+ Races','White','African American','Pacific Islander','Hispanic','Socioecon. Disadv.','LTEL','Students w/ Disab.','English Learners','Foster Youth','Homeless'];
+const GRAD = [89.9,95.4,95.4,93.8,91.3,90.3,88.9,88,88.8,82,81.4,81.2,73.7,69.9];
+const CCR  = [44.7,65.3,66.3,56.3,56.8,38.6,37.5,32.1,25.6,10.3,9.4,11.3,11.1,11.9];
+const ABS  = [18.4,11,12,15.4,10.7,37.3,38.8,25.1,26.1,32.2,null,24.8,34.7,48.4];
+const SUSP = [3.1,1.8,1.1,2.6,2.1,10.3,5.2,3.6,4.2,9.1,6.4,4.1,11.1,7.7];
+
+const GOALS = [
+ {n:1,type:'Broad Goal',title:'Equitable Education for All Students',desc:'High-quality instruction in a safe, welcoming environment — growth in English, ELD and mathematics for every student.',amt:32725817,acts:10},
+ {n:2,type:'Broad Goal',title:'Cultivating an Inclusive Learning Community',desc:'Highly qualified, culturally proficient staff creating safe, engaging classrooms with standards-based instruction.',amt:7594801,acts:6},
+ {n:3,type:'Broad Goal',title:'Fostering Family & Community Engagement',desc:'Families informed and empowered as partners in student learning and outcomes.',amt:3942860,acts:5},
+ {n:4,type:'Broad Goal',title:'Empowering Focal Scholars for Success',desc:'Culturally responsive practices and rigorous instruction for African American students, foster youth, homeless students, students with IEPs and multilingual learners.',amt:20536037,acts:6},
+ {n:5,type:'Equity Multiplier Focus Goal',title:'Equity Multiplier School Sites',desc:'Attendance, engagement and graduation gains at Crossroads, Olympic, Glenbrook Academy and Sunrise by June 2027.',amt:577667,acts:4}
+];
+
+const ACTIONS = [
+ [1,'1.1','Standards-based Instruction & Materials',4050133,'Yes'],
+ [1,'1.2','TK-12 Literacy',598461,'Yes'],
+ [1,'1.3','Strategic Targeted Supplemental Support',7500250,'Yes'],
+ [1,'1.4','Social Emotional Learning Initiatives',7211997,'Yes'],
+ [1,'1.5','Health & Wellness',1548714,'Yes'],
+ [1,'1.6','Positive School Climate & Safety',1577941,'Yes'],
+ [1,'1.7','Expansion of Electives',1673140,'No'],
+ [1,'1.8','Specialized Programs of Choice; College & Career',5224982,'Yes'],
+ [1,'1.9','Expanded Learning',2113788,'No'],
+ [1,'1.10','High School Credit Recovery',1226411,'Yes'],
+ [2,'2.1','Training for Standards-based Instruction',5026233,'Yes'],
+ [2,'2.2','Instructional Coaching',1157977,'Yes'],
+ [2,'2.3','Leadership Training',418583,'Yes'],
+ [2,'2.4','Classified Training',86814,'No'],
+ [2,'2.5','Recruitment & Retention of Diverse Staff',207591,'Yes'],
+ [2,'2.6','Teacher Induction and Support',697603,'No'],
+ [3,'3.1','School Connectedness',1055145,'Yes'],
+ [3,'3.2','Family & Community Communication',178965,'No'],
+ [3,'3.3','Translation Support',822241,'Yes'],
+ [3,'3.4','Family Nights & Education',1871509,'Yes'],
+ [3,'3.5','Intentionally Welcoming & Inclusive Schools',15000,'No'],
+ [4,'4.1','Support for African American Students',679665,'No'],
+ [4,'4.2','Supports for Foster Youth & Students Experiencing Homelessness',554783,'Yes'],
+ [4,'4.3','Supports for English Learners',2825032,'Yes'],
+ [4,'4.4','Supports for Long-Term English Learners',2140295,'Yes'],
+ [4,'4.5','Support for Students with IEPs',509257,'No'],
+ [4,'4.6','Supplemental Funding & Accountability for Student Outcomes',13827005,'Yes'],
+ [5,'5.1','Supports for Crossroads High School',51697,'No'],
+ [5,'5.2','Supports for Glenbrook Academy',51697,'No'],
+ [5,'5.3','Supports for Olympic High School',422576,'No'],
+ [5,'5.4','Supports for Sunrise',51697,'No']
+];
+
+/* ============ HELPERS ============ */
+const C = {green:'#1b4c5e',green2:'#2f6b3c',green3:'#57a06f',gold:'#d9a521',goldL:'#eec54f',sun:'#e8762c',earth:'#7a4f2a',cream:'#efe8d8',neg:'#c0392b'};
+const GOAL_COLORS = [C.green,C.green2,C.gold,C.sun,C.earth];
+const $ = s=>document.querySelector(s);
+const fmt$ = v=>v>=1e6?'$'+(v/1e6).toFixed(v>=1e7?1:2)+'M':v>=1e3?'$'+(v/1e3).toFixed(0)+'K':'$'+v;
+const fmtFull$ = v=>'$'+v.toLocaleString();
+Chart.defaults.font.family = "'Inter',sans-serif";
+Chart.defaults.color = '#5b665f';
+Chart.defaults.plugins.tooltip.backgroundColor = 'rgba(10,46,60,.94)';
+Chart.defaults.plugins.tooltip.padding = 12;
+Chart.defaults.plugins.tooltip.cornerRadius = 10;
+Chart.defaults.plugins.tooltip.titleFont = {weight:'700'};
+
+const EASE = {duration:1600,easing:'easeOutQuart'};
+
+/* ============ COUNT-UP KPIs ============ */
+function countUp(el){
+  const target=parseFloat(el.dataset.count), dec=+(el.dataset.dec||0), pre=el.dataset.prefix||'', suf=el.dataset.suffix||'';
+  const t0=performance.now(), dur=1800;
+  (function tick(t){
+    const p=Math.min((t-t0)/dur,1), e=1-Math.pow(1-p,4);
+    const v=target*e;
+    el.textContent=pre+(dec?v.toFixed(dec):Math.round(v).toLocaleString())+suf;
+    if(p<1)requestAnimationFrame(tick);
+  })(t0);
+}
+
+/* ============ REVEAL ON SCROLL ============ */
+const pendingCharts = {};
+const io = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    e.target.classList.add('in');
+    e.target.querySelectorAll('[data-count]').forEach(countUp);
+    e.target.querySelectorAll('canvas').forEach(cv=>{
+      if(pendingCharts[cv.id]){pendingCharts[cv.id]();delete pendingCharts[cv.id];}
+    });
+    e.target.querySelectorAll('.bar i').forEach(b=>{b.style.width=b.dataset.w;});
+    io.unobserve(e.target);
+  });
+},{threshold:.18});
+
+/* ============ CHART BUILDERS (lazy — fire when revealed) ============ */
+function defer(id,fn){pendingCharts[id]=fn;}
+
+defer('chRevenue',()=>new Chart($('#chRevenue'),{type:'doughnut',
+ data:{labels:REVENUE.labels,datasets:[{data:REVENUE.values,backgroundColor:[C.green,C.gold,C.sun,C.earth],borderColor:'#fdfbf6',borderWidth:4,hoverOffset:14}]},
+ options:{maintainAspectRatio:false,cutout:'62%',animation:{...EASE,animateRotate:true},
+  plugins:{legend:{position:'right',labels:{usePointStyle:true,padding:16,font:{size:12.5}}},
+   tooltip:{callbacks:{label:c=>` ${c.label}: ${fmtFull$(c.parsed)} (${(c.parsed/532036436*100).toFixed(1)}%)`}}}}}));
+
+defer('chLcapSrc',()=>new Chart($('#chLcapSrc'),{type:'doughnut',
+ data:{labels:LCAP_SRC.labels,datasets:[{data:LCAP_SRC.values,backgroundColor:[C.green2,C.goldL,C.sun,C.earth],borderColor:'#fdfbf6',borderWidth:4,hoverOffset:14}]},
+ options:{maintainAspectRatio:false,cutout:'62%',animation:{...EASE,animateRotate:true},
+  plugins:{legend:{position:'right',labels:{usePointStyle:true,padding:16,font:{size:12.5}}},
+   tooltip:{callbacks:{label:c=>` ${c.label}: ${fmtFull$(c.parsed)}`}}}}}));
+
+defer('chHighNeeds',()=>new Chart($('#chHighNeeds'),{type:'bar',
+ data:{labels:HIGH_NEEDS.labels,datasets:[{data:HIGH_NEEDS.values,backgroundColor:[C.cream,C.green2,C.gold,C.sun].map((c,i)=>[ '#cfc6ad',C.green2,C.gold,C.sun][i]),borderRadius:10,maxBarThickness:74}]},
+ options:{maintainAspectRatio:false,animation:{...EASE,delay:ctx=>ctx.dataIndex*160},
+  plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+fmtFull$(c.parsed.y)}}},
+  scales:{y:{beginAtZero:true,ticks:{callback:v=>fmt$(v)},grid:{color:'#eee7d6'}},x:{grid:{display:false}}}}}));
+
+defer('chSpend',()=>new Chart($('#chSpend'),{type:'bar',
+ data:{labels:['2026-27 Planned Spending'],datasets:[
+  {label:'LCAP Actions & Services',data:[65377182],backgroundColor:C.sun,borderRadius:{topLeft:10,bottomLeft:10},barThickness:74},
+  {label:'Base Program (not in LCAP)',data:[479353373],backgroundColor:C.green,borderRadius:{topRight:10,bottomRight:10},barThickness:74}]},
+ options:{maintainAspectRatio:false,indexAxis:'y',animation:EASE,
+  plugins:{legend:{position:'bottom',labels:{usePointStyle:true,padding:16}},
+   tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${fmtFull$(c.parsed.x)} (${(c.parsed.x/544730555*100).toFixed(1)}%)`}}},
+  scales:{x:{stacked:true,ticks:{callback:v=>fmt$(v)},grid:{color:'#eee7d6'}},y:{stacked:true,grid:{display:false}}}}}));
+
+function dfsChart(id,d){
+ defer(id,()=>new Chart($('#'+id),{type:'bar',
+  data:{labels:GROUPS_AXIS,datasets:[{data:d.vals,backgroundColor:d.vals.map(v=>v>=0?C.green2:v>-60?C.gold:v>-120?C.sun:C.neg),borderRadius:7,maxBarThickness:22}]},
+  options:{maintainAspectRatio:false,indexAxis:'y',animation:{...EASE,delay:ctx=>ctx.dataIndex*90},
+   plugins:{legend:{display:false},tooltip:{callbacks:{
+    label:c=>{const i=c.dataIndex,ch=d.chg[i];return ` ${c.parsed.x>0?'+':''}${c.parsed.x} pts from standard · YoY ${ch>0?'▲ +':'▼ '}${ch} pts`}}}},
+   scales:{x:{grid:{color:ctx=>ctx.tick.value===0?'#1c2420':'#eee7d6',lineWidth:ctx=>ctx.tick.value===0?2:1},ticks:{callback:v=>v+' pts'}},
+    y:{grid:{display:false},ticks:{font:{size:11.5}}}}}}));
+}
+dfsChart('chELA',ELA); dfsChart('chMath',MATH);
+
+defer('chChange',()=>new Chart($('#chChange'),{type:'bar',
+ data:{labels:GROUPS_AXIS,datasets:[
+  {label:'ELA change',data:ELA.chg,backgroundColor:C.green2,borderRadius:5,maxBarThickness:14},
+  {label:'Math change',data:MATH.chg,backgroundColor:C.gold,borderRadius:5,maxBarThickness:14}]},
+ options:{maintainAspectRatio:false,indexAxis:'y',animation:{...EASE,delay:ctx=>ctx.dataIndex*70},
+  plugins:{legend:{position:'bottom',labels:{usePointStyle:true,padding:14}},
+   tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${c.parsed.x>0?'+':''}${c.parsed.x} pts`}}},
+  scales:{x:{grid:{color:ctx=>ctx.tick.value===0?'#1c2420':'#eee7d6',lineWidth:ctx=>ctx.tick.value===0?2:1}},
+   y:{grid:{display:false},ticks:{font:{size:11.5}}}}}}));
+
+defer('chELPI',()=>new Chart($('#chELPI'),{type:'doughnut',
+ data:{labels:['Making progress','Not yet'],datasets:[{data:[43.6,56.4],backgroundColor:[C.green2,'#e9e2d0'],borderColor:'#fdfbf6',borderWidth:4,cutout:'72%'}]},
+ options:{maintainAspectRatio:false,rotation:-90,circumference:180,animation:{...EASE,animateRotate:true},
+  plugins:{legend:{position:'bottom',labels:{usePointStyle:true,padding:16}},
+   tooltip:{callbacks:{label:c=>` ${c.label}: ${c.parsed}%`}}}},
+ plugins:[{id:'ctr',afterDraw(ch){const{ctx,chartArea:a}=ch;ctx.save();
+  ctx.textAlign='center';ctx.font="900 44px 'Fraunces',serif";ctx.fillStyle='#123f52';
+  ctx.fillText('43.6%',(a.left+a.right)/2,a.bottom-26);
+  ctx.font="600 12px 'Inter',sans-serif";ctx.fillStyle='#5b665f';
+  ctx.fillText('of ELs making progress',(a.left+a.right)/2,a.bottom-8);ctx.restore();}}]}));
+
+function outcomeChart(id,data,color,suffix='%'){
+ const pairs=OUT_GROUPS.map((g,i)=>({g,v:data[i]})).filter(p=>p.v!=null).sort((a,b)=>b.v-a.v);
+ defer(id,()=>new Chart($('#'+id),{type:'bar',
+  data:{labels:pairs.map(p=>p.g),datasets:[{data:pairs.map(p=>p.v),
+   backgroundColor:pairs.map(p=>p.g==='All Students'?C.sun:color),borderRadius:7,maxBarThickness:18}]},
+  options:{maintainAspectRatio:false,indexAxis:'y',animation:{...EASE,delay:ctx=>ctx.dataIndex*60},
+   plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.x}${suffix}`}}},
+   scales:{x:{beginAtZero:true,grid:{color:'#eee7d6'},ticks:{callback:v=>v+suffix}},
+    y:{grid:{display:false},ticks:{font:{size:11.5}}}}}}));
+}
+outcomeChart('chGrad',GRAD,C.green2);
+outcomeChart('chCCR',CCR,C.gold);
+outcomeChart('chAbs',ABS,C.earth);
+outcomeChart('chSusp',SUSP,C.neg);
+
+defer('chGoals',()=>new Chart($('#chGoals'),{type:'doughnut',
+ data:{labels:GOALS.map(g=>'Goal '+g.n+' · '+(g.n===5?'Equity Multiplier':g.title.split(' for ')[0].split(' & ')[0])),
+  datasets:[{data:GOALS.map(g=>g.amt),backgroundColor:GOAL_COLORS,borderColor:'#fdfbf6',borderWidth:4,hoverOffset:14}]},
+ options:{maintainAspectRatio:false,cutout:'58%',animation:{...EASE,animateRotate:true},
+  plugins:{legend:{position:'right',labels:{usePointStyle:true,padding:14,font:{size:12}}},
+   tooltip:{callbacks:{label:c=>` ${fmtFull$(c.parsed)} (${(c.parsed/65377182*100).toFixed(1)}%)`}}}}}));
+
+defer('chTopActions',()=>{
+ const top=[...ACTIONS].sort((a,b)=>b[3]-a[3]).slice(0,10);
+ new Chart($('#chTopActions'),{type:'bar',
+  data:{labels:top.map(a=>a[1]+' '+(a[2].length>30?a[2].slice(0,29)+'…':a[2])),
+   datasets:[{data:top.map(a=>a[3]),backgroundColor:top.map(a=>GOAL_COLORS[a[0]-1]),borderRadius:7,maxBarThickness:18}]},
+  options:{maintainAspectRatio:false,indexAxis:'y',animation:{...EASE,delay:ctx=>ctx.dataIndex*70},
+   plugins:{legend:{display:false},tooltip:{callbacks:{title:i=>top[i[0].dataIndex][2],label:c=>' '+fmtFull$(c.parsed.x)}}},
+   scales:{x:{ticks:{callback:v=>fmt$(v)},grid:{color:'#eee7d6'}},y:{grid:{display:false},ticks:{font:{size:11}}}}}});
+});
+
+/* ============ GOAL CARDS ============ */
+const maxAmt=Math.max(...GOALS.map(g=>g.amt));
+$('#goalCards').innerHTML=GOALS.map(g=>`
+ <div class="card goal reveal">
+  <div class="gnum">${g.n}</div>
+  <span class="gtype">${g.type}</span>
+  <h3>${g.title}</h3><p>${g.desc}</p>
+  <div class="gfoot"><span class="amt">${fmt$(g.amt)}</span><span class="acts">${g.acts} actions · ${(g.amt/65377182*100).toFixed(1)}% of LCAP</span></div>
+  <div class="bar"><i data-w="${Math.max(g.amt/maxAmt*100,2)}%"></i></div>
+ </div>`).join('');
+
+/* ============ ACTIONS TABLE ============ */
+let sortCol=3,sortDir=-1;
+const COLS=[{k:0,l:'Goal'},{k:1,l:'#'},{k:2,l:'Action'},{k:3,l:'Total Funds'},{k:4,l:'Contributing'}];
+function renderActions(){
+ const goal=$('#fGoal').value,contrib=$('#fContrib').value,q=$('#fSearch').value.toLowerCase();
+ let rows=ACTIONS.filter(a=>(goal==='all'||a[0]==goal)&&(contrib==='all'||a[4]===contrib)&&(!q||a[2].toLowerCase().includes(q)||a[1].includes(q)));
+ rows.sort((a,b)=>{const x=a[sortCol],y=b[sortCol];return(x<y?-1:x>y?1:0)*sortDir;});
+ $('#tblActions thead').innerHTML='<tr>'+COLS.map(c=>`<th onclick="setSort(${c.k})">${c.l}${sortCol===c.k?(sortDir>0?' ▲':' ▼'):''}</th>`).join('')+'</tr>';
+ $('#tblActions tbody').innerHTML=rows.map(a=>`<tr>
+   <td><span class="gtag" style="background:${GOAL_COLORS[a[0]-1]}">${a[0]}</span></td>
+   <td style="font-weight:700;color:var(--green-800)">${a[1]}</td>
+   <td>${a[2]}</td>
+   <td class="num">${fmtFull$(a[3])}</td>
+   <td><span class="chip ${a[4]==='Yes'?'yes':'no'}">${a[4]==='Yes'?'✓ Contributing':'—'}</span></td></tr>`).join('');
+ const sum=rows.reduce((s,a)=>s+a[3],0);
+ $('#tblFoot').textContent=`${rows.length} action${rows.length!==1?'s':''} shown · combined total ${fmtFull$(sum)}`;
+}
+function setSort(c){sortDir=sortCol===c?-sortDir:(c===3?-1:1);sortCol=c;renderActions();}
+renderActions();
+
+/* ============ NAV SPY + INIT ============ */
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const secs=[...document.querySelectorAll('section')];
+const links=[...document.querySelectorAll('nav a')];
+const spy=new IntersectionObserver(es=>{
+ es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+e.target.id));}});
+},{rootMargin:'-30% 0px -60% 0px'});
+secs.forEach(s=>spy.observe(s));
+</script>
+</body>
+</html>
