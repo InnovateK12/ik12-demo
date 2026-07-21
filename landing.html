@@ -58,8 +58,12 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
   padding:16px 40px;background:var(--charcoal);
   border-bottom:1px solid rgba(255,255,255,.08);
 }
-.ik12-logo{display:flex;align-items:center;}
-.ik12-logo-img{display:block;height:36px;width:auto;}
+.ik12-logo{display:flex;align-items:center;font-weight:700;font-size:19px;letter-spacing:-.01em;}
+.ik12-logo .inn{color:#fff;}
+.ik12-logo .atom-mark{margin:0 2px;flex-shrink:0;}
+.ik12-logo .vate{color:#fff;}
+.ik12-logo .pipe{color:rgba(255,255,255,.25);margin:0 10px;font-weight:300;}
+.ik12-logo .k12{color:var(--orange);}
 .nav-right{display:flex;align-items:center;gap:22px;}
 .nav-link{color:rgba(255,255,255,.55);text-decoration:none;font-size:12.5px;font-weight:600;letter-spacing:.02em;}
 .nav-link:hover{color:#fff;}
@@ -270,7 +274,16 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
 
 <div class="nav">
   <div class="ik12-logo">
-    <img class="ik12-logo-img" src="/assets/innovatek12-logo-white.png" alt="InnovateK12">
+    <span class="inn">INN</span>
+    <svg class="atom-mark" width="20" height="20" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <ellipse cx="14" cy="14" rx="12.3" ry="3.9" stroke="#219EBB" stroke-width="2.2"/>
+      <ellipse cx="14" cy="14" rx="12.3" ry="3.9" stroke="#219EBB" stroke-width="2.2" transform="rotate(60 14 14)"/>
+      <ellipse cx="14" cy="14" rx="12.3" ry="3.9" stroke="#219EBB" stroke-width="2.2" transform="rotate(120 14 14)"/>
+      <circle cx="14" cy="14" r="2.6" fill="#ea730b"/>
+    </svg>
+    <span class="vate">VATE</span>
+    <span class="pipe">|</span>
+    <span class="k12">K12</span>
   </div>
   <div class="nav-right">
     <a class="nav-link" href="#services">Services</a>
