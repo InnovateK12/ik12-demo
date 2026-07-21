@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InnovateK12 District Hub · School Improvement Through Better Data</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --deep-teal:   #176E82;
+  --charcoal:    #092c34;
+  --sydney-teal: #219EBB;
+  --orange:      #ea730b;
+  --white:       #ffffff;
+  --bg:          #f4f6f8;
+  --border:      #dde3e7;
+  --text-body:   #2c3e45;
+  --text-mid:    #5a6f76;
+  --text-faint:  #8fa3ab;
+
+  /* Type scale — base 16px, ratio 1.25 */
+  --fs-h1:      61px;
+  --fs-h2:      49px;
+  --fs-h3:      39px;
+  --fs-h4:      31px;
+  --fs-body-lg: 25px;
+  --fs-body-md: 20px;
+  --fs-body-sm: 16px;
+  --fs-cap-md:  13px;
+  --fs-cap-sm:  10px;
+
+  /* Sequential data palette (teal → cyan), 9-step */
+  --seq-1: #2b5c6e; --seq-2: #36687a; --seq-3: #498290; --seq-4: #5896a2;
+  --seq-5: #67aab4; --seq-6: #77bec6; --seq-7: #86d2d8; --seq-8: #96e6ea; --seq-9: #a7ffff;
+
+  /* Diverging data palette (teal → cream → orange), 9-step */
+  --div-1: #2b5c6e; --div-2: #498290; --div-3: #67aab4; --div-4: #87d4d9;
+  --div-5: #ffffe0; --div-6: #ffdba3; --div-7: #ffb86b; --div-8: #ff9b3d; --div-9: #ea730b;
+
+  /* Alert / semantic status palette */
+  --alert-red:    #da1e28;
+  --alert-orange: #ff832b;
+  --alert-yellow: #f1c21b;
+  --alert-green:  #198038;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color:var(--text-body);}
+
+/* ── Top nav ── */
+.nav{
+  position:sticky;top:0;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 40px;background:var(--charcoal);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.ik12-logo{display:flex;align-items:center;font-weight:700;font-size:19px;letter-spacing:-.01em;}
+.ik12-logo .inn{color:#fff;}
+.ik12-logo .atom-mark{margin:0 2px;flex-shrink:0;}
+.ik12-logo .vate{color:#fff;}
+.ik12-logo .pipe{color:rgba(255,255,255,.25);margin:0 10px;font-weight:300;}
+.ik12-logo .k12{color:var(--orange);}
+.nav-right{display:flex;align-items:center;gap:22px;}
+.nav-link{color:rgba(255,255,255,.55);text-decoration:none;font-size:12.5px;font-weight:600;letter-spacing:.02em;}
+.nav-link:hover{color:#fff;}
+.btn-signin{
+  display:inline-block;padding:10px 22px;border-radius:7px;
+  background:var(--deep-teal);color:#fff;text-decoration:none;
+  font-size:13px;font-weight:700;letter-spacing:.03em;
+  box-shadow:0 4px 14px rgba(23,110,130,.35);
+  transition:background .15s,transform .1s;
+}
+.btn-signin:hover{background:#145f70;}
+.btn-signin:active{transform:scale(.97);}
+
+/* ── Hero ── */
+.hero{
+  background:linear-gradient(135deg, var(--charcoal) 0%, #0e3d49 100%);
+  color:#fff;padding:64px 40px 56px;text-align:center;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;width:560px;height:560px;border-radius:50%;
+  background:radial-gradient(circle, rgba(33,158,187,.25) 0%, transparent 70%);
+  top:-200px;left:-120px;pointer-events:none;
+}
+.hero-inner{position:relative;z-index:1;max-width:1020px;margin:0 auto;}
+.hero-eyebrow,.hero h1,.hero p,.hero-divider{margin-left:auto;margin-right:auto;}
+.hero h1,.hero p{max-width:680px;}
+.hero-eyebrow{
+  font-family:'Lora',serif;font-size:var(--fs-cap-md);font-weight:600;
+  color:rgba(255,255,255,.5);letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px;
+}
+.hero h1{
+  font-family:'Lora',serif;font-size:clamp(32px, 5.5vw, var(--fs-h1));font-weight:700;line-height:1.2;letter-spacing:-.01em;margin-bottom:18px;
+}
+.hero p{font-size:var(--fs-body-sm);color:rgba(255,255,255,.65);line-height:1.7;max-width:580px;margin:0 auto 32px;}
+.hero-divider{width:46px;height:3px;margin:0 auto 32px;border-radius:2px;background:linear-gradient(90deg, var(--orange), var(--sydney-teal));}
+.hero-ctas{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:40px;}
+.btn-hero{
+  display:inline-block;padding:14px 30px;border-radius:8px;
+  background:var(--orange);color:#fff;text-decoration:none;
+  font-size:14px;font-weight:700;letter-spacing:.03em;
+  box-shadow:0 6px 20px rgba(234,115,11,.35);
+  transition:background .15s,transform .1s;
+}
+.btn-hero:hover{background:#d4660a;}
+.btn-hero:active{transform:scale(.97);}
+.btn-hero-ghost{
+  display:inline-block;padding:14px 26px;border-radius:8px;
+  border:1.5px solid rgba(255,255,255,.25);color:rgba(255,255,255,.85);text-decoration:none;
+  font-size:14px;font-weight:700;letter-spacing:.03em;
+}
+.btn-hero-ghost:hover{border-color:rgba(255,255,255,.5);}
+
+/* ── KPI strip — lives inside the hero, on the dark band ── */
+.kpi-strip-wrap{position:relative;z-index:1;max-width:1020px;margin:0 auto;}
+.kpi-strip{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+  border-radius:12px;backdrop-filter:blur(6px);
+  display:grid;grid-template-columns:repeat(5,1fr);
+}
+.kpi-tile{padding:18px 14px;text-align:center;border-right:1px solid rgba(255,255,255,.12);}
+.kpi-tile:last-child{border-right:none;}
+.kpi-val{font-family:'Lora',serif;font-size:clamp(17px, 2vw, var(--fs-h4));font-weight:700;color:#fff;}
+.kpi-val.orange{color:var(--orange);}
+.kpi-lbl{font-size:var(--fs-cap-sm);color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.04em;margin-top:5px;line-height:1.4;}
+
+/* ── Dashboard preview graphic (browser mockup) ── */
+.preview-section{max-width:1100px;margin:90px auto 0;padding:0 32px;text-align:center;}
+.preview-eyebrow{
+  font-family:'Lora',serif;font-size:12.5px;font-weight:600;color:var(--sydney-teal);
+  letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px;
+}
+.preview-section h2{font-family:'Lora',serif;font-size:clamp(24px,3vw,var(--fs-h3));font-weight:700;color:var(--charcoal);margin-bottom:10px;}
+.preview-section > p{font-size:var(--fs-body-sm);color:var(--text-mid);max-width:560px;margin:0 auto 32px;line-height:1.6;}
+
+.browser-frame{
+  background:#fff;border-radius:12px;border:1px solid var(--border);
+  box-shadow:0 24px 60px rgba(9,44,52,.14);overflow:hidden;text-align:left;
+}
+.browser-bar{
+  background:#e9edef;padding:10px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);
+}
+.browser-dot{width:9px;height:9px;border-radius:50%;background:#c9d2d6;}
+.browser-url{
+  flex:1;margin-left:8px;background:#fff;border-radius:5px;padding:4px 10px;
+  font-size:var(--fs-cap-sm);color:var(--text-faint);border:1px solid var(--border);
+}
+.live-badge{
+  display:flex;align-items:center;gap:5px;font-size:var(--fs-cap-sm);font-weight:700;
+  color:var(--alert-green);text-transform:uppercase;letter-spacing:.04em;flex-shrink:0;
+}
+.live-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--alert-green);box-shadow:0 0 0 3px rgba(25,128,56,.15);}
+.browser-body{display:flex;min-height:300px;}
+.mock-sidebar{width:140px;background:var(--charcoal);flex-shrink:0;padding:14px 12px;}
+.mock-logo{display:flex;align-items:center;gap:4px;color:#fff;font-size:11px;font-weight:700;margin-bottom:18px;}
+.mock-logo .dot{width:7px;height:7px;border-radius:50%;background:var(--sydney-teal);}
+.mock-nav-item{
+  font-size:9.5px;color:rgba(255,255,255,.45);padding:7px 8px;border-radius:4px;margin-bottom:3px;
+}
+.mock-nav-item.active{background:rgba(23,110,130,.3);color:#fff;border-left:2px solid var(--orange);}
+.mock-main{flex:1;padding:18px 22px;background:var(--bg);}
+.mock-title{font-family:'Lora',serif;font-size:14px;font-weight:700;color:var(--charcoal);margin-bottom:14px;}
+.mock-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;}
+.mock-kpi{background:#fff;border:1px solid var(--border);border-radius:6px;padding:10px;position:relative;overflow:hidden;}
+.mock-kpi::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--deep-teal);}
+.mock-kpi.o::after{background:var(--orange);}
+.mock-kpi-val{font-size:14px;font-weight:700;color:var(--charcoal);}
+.mock-kpi-lbl{font-size:8px;color:var(--text-faint);text-transform:uppercase;margin-top:2px;}
+.mock-chart-row{display:grid;grid-template-columns:1.3fr 1fr;gap:12px;}
+.mock-card{background:#fff;border:1px solid var(--border);border-radius:6px;padding:12px;}
+.mock-card-label{font-size:9px;font-weight:700;color:var(--text-mid);text-transform:uppercase;letter-spacing:.03em;margin-bottom:10px;}
+.mock-linechart{display:flex;align-items:flex-end;gap:5px;height:64px;}
+.mock-linechart span{flex:1;border-radius:2px 2px 0 0;}
+.mock-linechart span:nth-child(1){background:var(--seq-1);}
+.mock-linechart span:nth-child(2){background:var(--seq-2);}
+.mock-linechart span:nth-child(3){background:var(--seq-3);}
+.mock-linechart span:nth-child(4){background:var(--seq-4);}
+.mock-linechart span:nth-child(5){background:var(--seq-5);}
+.mock-linechart span:nth-child(6){background:var(--seq-6);}
+.mock-linechart span:nth-child(7){background:var(--seq-7);}
+.mock-linechart span:nth-child(8){background:var(--seq-8);}
+.mock-donut{
+  width:64px;height:64px;border-radius:50%;margin:6px auto 0;
+  background:conic-gradient(var(--div-1) 0% 35%, var(--div-3) 35% 58%, var(--div-5) 58% 76%, var(--div-9) 76% 100%);
+  position:relative;
+}
+.mock-donut::after{content:'';position:absolute;inset:13px;border-radius:50%;background:#fff;}
+
+/* ── Services (real Eko Services) ── */
+.services{max-width:1180px;margin:88px auto 0;padding:0 32px;}
+.section-head{text-align:center;margin-bottom:36px;}
+.section-head h2{font-family:'Lora',serif;font-size:clamp(24px,3vw,var(--fs-h3));font-weight:700;color:var(--charcoal);margin-bottom:10px;}
+.section-head p{font-size:var(--fs-body-sm);color:var(--text-mid);max-width:620px;margin:0 auto;line-height:1.7;}
+.service-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:22px;}
+.service-card{
+  background:#fff;border:1px solid var(--border);border-radius:10px;
+  padding:22px 18px;display:flex;flex-direction:column;gap:10px;
+}
+.service-icon{
+  width:34px;height:34px;border-radius:8px;background:var(--t1-light,#e3f2f6);
+  display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--deep-teal);
+}
+.service-title{font-family:'Lora',serif;font-size:var(--fs-body-sm);font-weight:700;color:var(--charcoal);}
+.service-desc{font-size:var(--fs-cap-md);color:var(--text-mid);line-height:1.65;}
+
+/* ── Stats strip ── */
+.stats-section{max-width:1180px;margin:80px auto 0;padding:0 32px;}
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;}
+.stat-card{
+  background:#fff;border:1px solid var(--border);border-radius:10px;
+  padding:22px 14px;text-align:center;
+}
+.stat-val{font-family:'Lora',serif;font-size:clamp(20px,2.4vw,var(--fs-h4));font-weight:700;color:var(--deep-teal);}
+.stat-val.orange{color:var(--orange);}
+.stat-lbl{font-size:var(--fs-cap-md);color:var(--text-mid);margin-top:6px;line-height:1.4;}
+
+/* ── Trusted-by strip ── */
+.trusted{max-width:1180px;margin:72px auto 0;padding:0 32px;text-align:center;}
+.trusted-lbl{font-size:var(--fs-cap-md);font-weight:700;color:var(--text-faint);text-transform:uppercase;letter-spacing:.08em;margin-bottom:18px;}
+.trusted-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;}
+.trusted-chip{
+  background:#fff;border:1px solid var(--border);border-radius:20px;
+  padding:8px 16px;font-size:var(--fs-cap-md);color:var(--text-mid);font-weight:600;
+}
+
+/* ── Final CTA ── */
+.final-cta{
+  max-width:1180px;margin:80px auto 0;padding:48px 32px;text-align:center;
+  background:linear-gradient(135deg, var(--deep-teal) 0%, var(--charcoal) 100%);
+  border-radius:14px;color:#fff;
+}
+.final-cta h2{font-family:'Lora',serif;font-size:clamp(22px,3vw,var(--fs-h3));font-weight:700;margin-bottom:10px;}
+.final-cta p{font-size:var(--fs-body-sm);color:rgba(255,255,255,.7);margin-bottom:24px;}
+
+/* ── Footer ── */
+.footer{
+  margin-top:56px;padding:28px 40px;text-align:center;
+  background:var(--charcoal);color:rgba(255,255,255,.45);
+}
+.footer-tag{font-family:'Lora',serif;font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;}
+.footer p{font-size:10.5px;letter-spacing:.04em;}
+.footer strong{color:var(--orange);}
+
+@media(max-width:1080px){
+  .service-grid{grid-template-columns:repeat(3,1fr);}
+}
+@media(max-width:900px){
+  .kpi-strip{grid-template-columns:repeat(2,1fr);}
+  .kpi-tile:nth-child(2n){border-right:none;}
+  .service-grid{grid-template-columns:repeat(2,1fr);}
+  .stats-grid{grid-template-columns:repeat(3,1fr);}
+  .mock-kpis{grid-template-columns:repeat(2,1fr);}
+  .mock-chart-row{grid-template-columns:1fr;}
+}
+@media(max-width:620px){
+  .nav{padding:14px 20px;}
+  .nav-right{gap:12px;}
+  .nav-link{display:none;}
+  .hero{padding:48px 20px 0;}
+  .hero h1{font-size:26px;}
+  .hero-ctas{flex-direction:column;}
+  .kpi-strip-wrap{margin-top:-30px;}
+  .stats-grid{grid-template-columns:repeat(2,1fr);}
+  .mock-sidebar{display:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="ik12-logo">
+    <span class="inn">INN</span>
+    <svg class="atom-mark" width="20" height="20" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <ellipse cx="14" cy="14" rx="12.3" ry="3.9" stroke="#219EBB" stroke-width="2.2"/>
+      <ellipse cx="14" cy="14" rx="12.3" ry="3.9" stroke="#219EBB" stroke-width="2.2" transform="rotate(60 14 14)"/>
+      <ellipse cx="14" cy="14" rx="12.3" ry="3.9" stroke="#219EBB" stroke-width="2.2" transform="rotate(120 14 14)"/>
+      <circle cx="14" cy="14" r="2.6" fill="#ea730b"/>
+    </svg>
+    <span class="vate">VATE</span>
+    <span class="pipe">|</span>
+    <span class="k12">K12</span>
+  </div>
+  <div class="nav-right">
+    <a class="nav-link" href="#services">Services</a>
+    <a class="nav-link" href="#impact">Impact</a>
+    <a class="btn-signin" href="/login">Sign In</a>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">School Improvement Through Better Data</div>
+    <h1>One District. Every Insight.<br>Stronger Outcomes.</h1>
+    <div class="hero-divider"></div>
+    <p>InnovateK12 is a data and strategic-planning partner for school districts and education service agencies. We unify academic, operational, financial, and wellness data into a single District Hub, replacing lagging, siloed reporting with short-cycle, AI-driven analytics — moving districts from hindsight to foresight.</p>
+    <div class="hero-ctas">
+      <a class="btn-hero" href="/login">Sign In to Your District Hub →</a>
+      <a class="btn-hero-ghost" href="#services">Explore What We Deliver</a>
+    </div>
+    <div class="kpi-strip-wrap">
+      <div class="kpi-strip">
+        <div class="kpi-tile"><div class="kpi-val">5,710</div><div class="kpi-lbl">Assessment Records Tracked</div></div>
+        <div class="kpi-tile"><div class="kpi-val orange">36%</div><div class="kpi-lbl">Avg. Tier 1 Rate (EOY)</div></div>
+        <div class="kpi-tile"><div class="kpi-val">$118.9M</div><div class="kpi-lbl">10-Year Facilities Budget</div></div>
+        <div class="kpi-tile"><div class="kpi-val">96.3%</div><div class="kpi-lbl">Staff Would Recommend as Employer</div></div>
+        <div class="kpi-tile"><div class="kpi-val orange">357</div><div class="kpi-lbl">Interventions Delivered</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="preview-section">
+  <div class="preview-eyebrow">Interactive Dashboard Preview</div>
+  <h2>See how your district data comes to life</h2>
+  <p>Real-time visualization, AI-powered insights, and one secure hub for academic, facilities, survey, and strategic-plan data — built for superintendents, boards, and district teams.</p>
+
+  <div class="browser-frame">
+    <div class="browser-bar">
+      <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+      <div class="browser-url">districthub.innovatek12.org/dashboard</div>
+      <div class="live-badge"><span class="dot"></span> Live Data</div>
+    </div>
+    <div class="browser-body">
+      <div class="mock-sidebar">
+        <div class="mock-logo"><span class="dot"></span> District Hub</div>
+        <div class="mock-nav-item active">Dashboard Home</div>
+        <div class="mock-nav-item">Academic Progress</div>
+        <div class="mock-nav-item">10-Year Capital Plan</div>
+        <div class="mock-nav-item">Survey Insights</div>
+        <div class="mock-nav-item">Anti-Bullying</div>
+        <div class="mock-nav-item">AI Insights</div>
+      </div>
+      <div class="mock-main">
+        <div class="mock-title">Demo District · Dashboard Home</div>
+        <div class="mock-kpis">
+          <div class="mock-kpi"><div class="mock-kpi-val">5,710</div><div class="mock-kpi-lbl">Records</div></div>
+          <div class="mock-kpi o"><div class="mock-kpi-val">36%</div><div class="mock-kpi-lbl">Tier 1 Rate</div></div>
+          <div class="mock-kpi"><div class="mock-kpi-val">$118.9M</div><div class="mock-kpi-lbl">Facilities</div></div>
+          <div class="mock-kpi o"><div class="mock-kpi-val">2026</div><div class="mock-kpi-lbl">Peak Spend</div></div>
+        </div>
+        <div class="mock-chart-row">
+          <div class="mock-card">
+            <div class="mock-card-label">Monthly Reporting Volume</div>
+            <div class="mock-linechart">
+              <span style="height:35%;"></span><span style="height:55%;"></span><span style="height:45%;"></span>
+              <span style="height:70%;"></span><span style="height:50%;"></span><span style="height:85%;"></span>
+              <span style="height:65%;"></span><span style="height:95%;"></span>
+            </div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card-label">Funding Mix</div>
+            <div class="mock-donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="services" id="services">
+  <div class="section-head">
+    <h2>What We Deliver — Eko Services</h2>
+    <p>InnovateK12 leverages and optimizes the science of human interaction and innovation to deliver more dynamic, effective solutions for school districts — customized, short-cycle, synthesized analytics at scale, organized under five core services.</p>
+  </div>
+  <div class="service-grid">
+    <div class="service-card">
+      <div class="service-icon">◈</div>
+      <div class="service-title">Data Dashboards &amp; Analytics</div>
+      <div class="service-desc">Predictive and forecasting analytics, data integrity improvements, elimination of data silos, and shorter-cycle reporting than traditional lagging indicators.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">◷</div>
+      <div class="service-title">Strategic Planning</div>
+      <div class="service-desc">Board orientation, survey analytics, and efficient processes built around continuous improvement — typically a 4–6 month engagement from pre-planning through execution.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">◫</div>
+      <div class="service-title">Progress Monitoring</div>
+      <div class="service-desc">KPI and metrics development and measurement, with dual internal and external dashboards so every stakeholder sees the right view of progress.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">✦</div>
+      <div class="service-title">Stakeholder Voice</div>
+      <div class="service-desc">Large-scale strategic engagement and qualitative data collection from internal and external stakeholders, synthesized into cogent, actionable reporting.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">⌬</div>
+      <div class="service-title">AI Insights</div>
+      <div class="service-desc">Ask natural-language questions about your district's data — enrollment, proficiency, attendance, or spend — and get instant, accurate answers sourced directly from your District Hub.</div>
+    </div>
+  </div>
+</div>
+
+<div class="stats-section" id="impact">
+  <div class="section-head">
+    <h2>Real Results. Measurable Impact.</h2>
+    <p>Stronger systems, better experiences, and exceptional outcomes for the districts and agencies we work with.</p>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card"><div class="stat-val">96.3%</div><div class="stat-lbl">Staff would recommend their district as an employer</div></div>
+    <div class="stat-card"><div class="stat-val">86.1%</div><div class="stat-lbl">Partners rate communication as effective</div></div>
+    <div class="stat-card"><div class="stat-val orange">+20 pts</div><div class="stat-lbl">Targeted increase in leadership trust by 2029</div></div>
+    <div class="stat-card"><div class="stat-val">357</div><div class="stat-lbl">Interventions delivered to support students</div></div>
+    <div class="stat-card"><div class="stat-val orange">$177.8M</div><div class="stat-lbl">Invested in facilities and long-term planning</div></div>
+  </div>
+</div>
+
+<div class="trusted">
+  <div class="trusted-lbl">Trusted by districts &amp; education service agencies nationwide</div>
+  <div class="trusted-chips">
+    <span class="trusted-chip">Florida School Boards Association</span>
+    <span class="trusted-chip">Illinois School Districts</span>
+    <span class="trusted-chip">Georgia</span>
+    <span class="trusted-chip">Florida</span>
+    <span class="trusted-chip">Maryland</span>
+    <span class="trusted-chip">Massachusetts</span>
+    <span class="trusted-chip">Ohio</span>
+  </div>
+</div>
+
+<div class="final-cta">
+  <h2>Ready to see your district's data differently?</h2>
+  <p>Sign in to explore your District Hub — academic progress, facilities planning, survey insights, and AI-powered answers, all in one place.</p>
+  <a class="btn-hero" href="/login">Sign In to Your District Hub →</a>
+</div>
+
+<div class="footer">
+  <div class="footer-tag">One District. Infinite Possibilities.</div>
+  <p><strong>Confidential</strong> · Authorized preview only · © 2025 InnovateK12 · All rights reserved</p>
+</div>
+
+</body>
+</html>
