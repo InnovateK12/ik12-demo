@@ -1,5 +1,6 @@
 {
   "routes": [
+    { "src": "/dashboards/(.+)", "dest": "/dashboards/$1/index.html" },
     { "src": "/login",      "dest": "/login.html"   },
     { "src": "/dashboard",  "dest": "/api/gate"     },
     { "src": "/index.html", "dest": "/api/gate"     },
