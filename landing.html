@@ -114,9 +114,9 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
 
 /* ── Hero atom background ── */
 .hero-atom-bg{
-  position:absolute;top:-30px;right:-70px;
-  width:360px;height:360px;
-  opacity:.09;pointer-events:none;z-index:0;
+  position:absolute;top:-80px;right:-120px;
+  width:540px;height:540px;
+  opacity:.10;pointer-events:none;z-index:0;
 }
 .hero-atom-svg{width:100%;height:100%;}
 .hero-atom-orbit{transform-box:fill-box;transform-origin:center;}
@@ -204,22 +204,9 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
 }
 .mock-donut::after{content:'';position:absolute;inset:13px;border-radius:50%;background:#fff;}
 
-/* ── Services (real Eko Services) ── */
-.services{max-width:1180px;margin:88px auto 0;padding:0 32px;}
 .section-head{text-align:center;margin-bottom:36px;}
 .section-head h2{font-family:'Lora',serif;font-size:clamp(24px,3vw,var(--fs-h3));font-weight:700;color:var(--charcoal);margin-bottom:10px;}
 .section-head p{font-size:var(--fs-body-sm);color:var(--text-mid);max-width:620px;margin:0 auto;line-height:1.7;}
-.service-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:22px;}
-.service-card{
-  background:#fff;border:1px solid var(--border);border-radius:10px;
-  padding:22px 18px;display:flex;flex-direction:column;gap:10px;
-}
-.service-icon{
-  width:34px;height:34px;border-radius:8px;background:var(--t1-light,#e3f2f6);
-  display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--deep-teal);
-}
-.service-title{font-family:'Lora',serif;font-size:var(--fs-body-sm);font-weight:700;color:var(--charcoal);}
-.service-desc{font-size:var(--fs-cap-md);color:var(--text-mid);line-height:1.65;}
 
 /* ── Stats strip ── */
 .stats-section{max-width:1180px;margin:80px auto 0;padding:0 32px;}
@@ -259,14 +246,10 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
 .footer p{font-size:10.5px;letter-spacing:.04em;}
 .footer strong{color:var(--orange);}
 
-@media(max-width:1080px){
-  .service-grid{grid-template-columns:repeat(3,1fr);}
-}
 @media(max-width:900px){
   .kpi-strip{grid-template-columns:repeat(2,1fr);}
   .kpi-tile:nth-child(2n){border-right:none;}
-  .service-grid{grid-template-columns:repeat(2,1fr);}
-  .stats-grid{grid-template-columns:repeat(3,1fr);}
+.stats-grid{grid-template-columns:repeat(3,1fr);}
   .mock-kpis{grid-template-columns:repeat(2,1fr);}
   .mock-chart-row{grid-template-columns:1fr;}
 }
@@ -290,7 +273,6 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
     <img class="ik12-logo-img" src="/assets/innovatek12-logo-main.png" alt="InnovateK12">
   </div>
   <div class="nav-right">
-    <a class="nav-link" href="#services">Services</a>
     <a class="nav-link" href="#impact">Impact</a>
     <a class="btn-signin" href="/login">Sign In</a>
   </div>
@@ -318,7 +300,6 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
     <p>InnovateK12 is a data and strategic-planning partner for school districts and education service agencies. We unify academic, operational, financial, and wellness data into a single District Hub, replacing lagging, siloed reporting with short-cycle, AI-driven analytics — moving districts from hindsight to foresight.</p>
     <div class="hero-ctas">
       <a class="btn-hero" href="/login">Sign In to Your District Hub →</a>
-      <a class="btn-hero-ghost" href="#services">Explore What We Deliver</a>
     </div>
     <div class="kpi-strip-wrap">
       <div class="kpi-strip">
@@ -380,39 +361,6 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
   </div>
 </div>
 
-<div class="services" id="services">
-  <div class="section-head">
-    <h2>What We Deliver — Eko Services</h2>
-    <p>InnovateK12 leverages and optimizes the science of human interaction and innovation to deliver more dynamic, effective solutions for school districts — customized, short-cycle, synthesized analytics at scale, organized under five core services.</p>
-  </div>
-  <div class="service-grid">
-    <div class="service-card">
-      <div class="service-icon">◈</div>
-      <div class="service-title">Data Dashboards &amp; Analytics</div>
-      <div class="service-desc">Predictive and forecasting analytics, data integrity improvements, elimination of data silos, and shorter-cycle reporting than traditional lagging indicators.</div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">◷</div>
-      <div class="service-title">Strategic Planning</div>
-      <div class="service-desc">Board orientation, survey analytics, and efficient processes built around continuous improvement — typically a 4–6 month engagement from pre-planning through execution.</div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">◫</div>
-      <div class="service-title">Progress Monitoring</div>
-      <div class="service-desc">KPI and metrics development and measurement, with dual internal and external dashboards so every stakeholder sees the right view of progress.</div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">✦</div>
-      <div class="service-title">Stakeholder Voice</div>
-      <div class="service-desc">Large-scale strategic engagement and qualitative data collection from internal and external stakeholders, synthesized into cogent, actionable reporting.</div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">⌬</div>
-      <div class="service-title">AI Insights</div>
-      <div class="service-desc">Ask natural-language questions about your district's data — enrollment, proficiency, attendance, or spend — and get instant, accurate answers sourced directly from your District Hub.</div>
-    </div>
-  </div>
-</div>
 
 <div class="stats-section" id="impact">
   <div class="section-head">
