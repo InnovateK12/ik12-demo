@@ -112,6 +112,23 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
 }
 .btn-hero-ghost:hover{border-color:rgba(255,255,255,.5);}
 
+/* ── Hero atom background ── */
+.hero-atom-bg{
+  position:absolute;top:-30px;right:-70px;
+  width:360px;height:360px;
+  opacity:.09;pointer-events:none;z-index:0;
+}
+.hero-atom-svg{width:100%;height:100%;}
+.hero-atom-orbit{transform-box:fill-box;transform-origin:center;}
+
+@media (prefers-reduced-motion: no-preference){
+  .hero-atom-orbit-1{animation:atom-cw  20s linear infinite;}
+  .hero-atom-orbit-2{animation:atom-ccw 28s linear infinite;}
+  .hero-atom-orbit-3{animation:atom-cw  36s linear infinite;}
+}
+@keyframes atom-cw  {to{transform:rotate( 360deg);}}
+@keyframes atom-ccw {to{transform:rotate(-360deg);}}
+
 /* ── KPI strip — lives inside the hero, on the dark band ── */
 .kpi-strip-wrap{position:relative;z-index:1;max-width:1020px;margin:0 auto;}
 .kpi-strip{
@@ -280,6 +297,20 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
 </div>
 
 <div class="hero">
+  <div class="hero-atom-bg" aria-hidden="true">
+    <svg class="hero-atom-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g class="hero-atom-orbit hero-atom-orbit-1">
+        <ellipse cx="100" cy="100" rx="92" ry="29" stroke="#219EBB" stroke-width="3.5"/>
+      </g>
+      <g class="hero-atom-orbit hero-atom-orbit-2">
+        <ellipse cx="100" cy="100" rx="92" ry="29" stroke="#219EBB" stroke-width="3.5" transform="rotate(60 100 100)"/>
+      </g>
+      <g class="hero-atom-orbit hero-atom-orbit-3">
+        <ellipse cx="100" cy="100" rx="92" ry="29" stroke="#219EBB" stroke-width="3.5" transform="rotate(120 100 100)"/>
+      </g>
+      <circle cx="100" cy="100" r="17" fill="#219EBB"/>
+    </svg>
+  </div>
   <div class="hero-inner">
     <div class="hero-eyebrow">School Improvement Through Better Data</div>
     <h1>One District. Every Insight.<br>Stronger Outcomes.</h1>
