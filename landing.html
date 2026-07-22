@@ -112,6 +112,33 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
 }
 .btn-hero-ghost:hover{border-color:rgba(255,255,255,.5);}
 
+/* ── Hero orbit rings ── */
+.hero-orbits{position:absolute;inset:0;pointer-events:none;z-index:0;}
+.hero-orbit{
+  position:absolute;border-radius:50%;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+}
+.hero-orbit::after{
+  content:'';position:absolute;
+  width:7px;height:7px;border-radius:50%;
+  top:-3.5px;left:calc(50% - 3.5px);
+}
+.hero-orbit-a{width:520px;height:520px;border:1px solid rgba(33,158,187,.28);}
+.hero-orbit-b{width:740px;height:740px;border:1px solid rgba(234,115,11,.18);}
+.hero-orbit-c{width:340px;height:340px;border:1px solid rgba(33,158,187,.18);}
+.hero-orbit-a::after{background:var(--sydney-teal);box-shadow:0 0 10px 3px rgba(33,158,187,.7);}
+.hero-orbit-b::after{background:var(--orange);box-shadow:0 0 10px 3px rgba(234,115,11,.65);}
+.hero-orbit-c::after{background:var(--sydney-teal);box-shadow:0 0 7px 2px rgba(33,158,187,.5);}
+
+@media (prefers-reduced-motion: no-preference){
+  .hero-orbit-a{animation:hero-orb-cw  34s linear infinite;}
+  .hero-orbit-b{animation:hero-orb-ccw 47s linear infinite;}
+  .hero-orbit-c{animation:hero-orb-cw  22s linear infinite;}
+}
+@keyframes hero-orb-cw  {from{transform:translate(-50%,-50%) rotate(0deg);}to{transform:translate(-50%,-50%) rotate(360deg);}}
+@keyframes hero-orb-ccw {from{transform:translate(-50%,-50%) rotate(0deg);}to{transform:translate(-50%,-50%) rotate(-360deg);}}
+
 /* ── KPI strip — lives inside the hero, on the dark band ── */
 .kpi-strip-wrap{position:relative;z-index:1;max-width:1020px;margin:0 auto;}
 .kpi-strip{
@@ -187,7 +214,7 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
 }
 .mock-donut::after{content:'';position:absolute;inset:13px;border-radius:50%;background:#fff;}
 
-/* ── Services (real Eko Services) ── */
+/* ── Services ── */
 .services{max-width:1180px;margin:88px auto 0;padding:0 32px;}
 .section-head{text-align:center;margin-bottom:36px;}
 .section-head h2{font-family:'Lora',serif;font-size:clamp(24px,3vw,var(--fs-h3));font-weight:700;color:var(--charcoal);margin-bottom:10px;}
@@ -249,7 +276,7 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
   .kpi-strip{grid-template-columns:repeat(2,1fr);}
   .kpi-tile:nth-child(2n){border-right:none;}
   .service-grid{grid-template-columns:repeat(2,1fr);}
-  .stats-grid{grid-template-columns:repeat(3,1fr);}
+.stats-grid{grid-template-columns:repeat(3,1fr);}
   .mock-kpis{grid-template-columns:repeat(2,1fr);}
   .mock-chart-row{grid-template-columns:1fr;}
 }
@@ -280,6 +307,11 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
 </div>
 
 <div class="hero">
+  <div class="hero-orbits" aria-hidden="true">
+    <div class="hero-orbit hero-orbit-a"></div>
+    <div class="hero-orbit hero-orbit-b"></div>
+    <div class="hero-orbit hero-orbit-c"></div>
+  </div>
   <div class="hero-inner">
     <div class="hero-eyebrow">School Improvement Through Better Data</div>
     <h1>One District. Every Insight.<br>Stronger Outcomes.</h1>
@@ -349,9 +381,10 @@ body{font-family:'Open Sans',-apple-system,sans-serif;background:var(--bg);color
   </div>
 </div>
 
+
 <div class="services" id="services">
   <div class="section-head">
-    <h2>What We Deliver — Eko Services</h2>
+    <h2>What We Deliver</h2>
     <p>InnovateK12 leverages and optimizes the science of human interaction and innovation to deliver more dynamic, effective solutions for school districts — customized, short-cycle, synthesized analytics at scale, organized under five core services.</p>
   </div>
   <div class="service-grid">
