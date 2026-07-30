@@ -1,9 +1,15 @@
 {
+  "headers": [
+    {
+      "source": "/(.*)\\.html$",
+      "headers": [{ "key": "Content-Type", "value": "text/html; charset=utf-8" }]
+    }
+  ],
   "routes": [
-    { "src": "/dashboards/(.+)", "dest": "/dashboards/$1/index.html" },
-    { "src": "/login",      "dest": "/login.html"   },
+    { "src": "/dashboards/(.+)", "dest": "/dashboards/$1/index.html", "headers": { "Content-Type": "text/html; charset=utf-8" } },
+    { "src": "/login",      "dest": "/login.html",   "headers": { "Content-Type": "text/html; charset=utf-8" } },
     { "src": "/dashboard",  "dest": "/api/gate"     },
     { "src": "/index.html", "dest": "/api/gate"     },
-    { "src": "/",           "dest": "/landing.html" }
+    { "src": "/",           "dest": "/landing.html", "headers": { "Content-Type": "text/html; charset=utf-8" } }
   ]
 }
