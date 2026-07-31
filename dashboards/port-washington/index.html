@@ -238,6 +238,7 @@
     <button data-target="enrollment">Enrollment</button>
     <button data-target="assessments">Assessments</button>
     <button data-target="graduation">Graduation</button>
+    <button data-target="strategic">Strategic Planning</button>
   </div>
 </nav>
 
@@ -341,7 +342,7 @@
     <div class="stat-tile reveal">
       <div class="t-label">Female / male</div>
       <div class="t-value">48% / 52%</div>
-      <div class="t-delta">consistent across all 4 years</div>
+      <div class="t-delta">47-49% female across all 4 years</div>
     </div>
     <div class="stat-tile reveal">
       <div class="t-label">Economically disadvantaged</div>
@@ -406,6 +407,47 @@
     </div>
   </div>
   <p class="footnote">Source: NYSED High School Graduation Rate database (GRAD_RATE_AND_OUTCOMES_2022), district-level, subgroup "All Students," membership "2018 Total Cohort &ndash; 4 Year Outcome."</p>
+</section>
+
+<div class="divider">
+  <span class="rule"></span>
+  <svg class="compass" viewBox="0 0 24 24" fill="none" stroke="#b8894f" stroke-width="1.4"><circle cx="12" cy="12" r="9.4"/><path d="M12 4.4 14 12 12 19.6 10 12Z"/><circle cx="12" cy="12" r="1.1" fill="#b8894f" stroke="none"/></svg>
+  <span class="rule r"></span>
+</div>
+
+<section id="strategic">
+  <div class="section-head reveal"><span class="mark">04</span><h2>Strategic planning</h2></div>
+  <p class="section-sub">Sample quarterly tracking across all four goal areas of a multi-year strategic plan, illustrating how this kind of tracking can sit alongside enrollment and assessment data in one place. Illustrative sample metrics, shown here to demonstrate the capability.</p>
+
+  <div class="grid-2">
+    <div class="card reveal">
+      <div style="font-size:12px; font-weight:600; color:var(--brass-deep); text-transform:uppercase; letter-spacing:.4px; margin-bottom:8px;">Goal area 1 &mdash; Student &amp; Family Wellness Partnerships</div>
+      <div class="legend"><span><span class="dot" style="background:#23497e;"></span>Year 1</span><span><span class="dot" style="background:#b8894f;"></span>Year 2</span></div>
+      <div class="chart-wrap"><canvas id="wellnessChart" role="img" aria-label="Bar chart of students served through wellness partnership programs by quarter. Year 1: 2993, 3949, 6525, 6724. Year 2: 5135, 3280, 5585, 2314.">Students served, Year 1 quarters: 2993, 3949, 6525, 6724. Year 2 quarters: 5135, 3280, 5585, 2314.</canvas></div>
+      <p class="footnote">Students served per quarter fell from a Year-1 peak of 6,724 to 2,314 by the last quarter of Year 2. But a separate survey measure &mdash; students reporting a sense of belonging &mdash; moved from roughly flat in Year 1 (-1%) to positive by Year 2 (+16% mid-year), though the most recent reading was mixed across sub-groups (+19% in one, -23% in another). Participation shrank late in Year 2 even as sentiment among those still engaged trended more positive.</p>
+    </div>
+    <div class="card reveal">
+      <div style="font-size:12px; font-weight:600; color:var(--brass-deep); text-transform:uppercase; letter-spacing:.4px; margin-bottom:8px;">Goal area 2 &mdash; Communications &amp; Engagement</div>
+      <div class="legend"><span><span class="dot" style="background:#23497e;"></span>Social posts</span><span><span class="dot" style="background:#b8894f;"></span>New followers</span></div>
+      <div class="chart-wrap"><canvas id="commsChart" role="img" aria-label="Bar chart of external communications reach by Year 2 quarter, since the external communications plan launched that year. Social posts: 139, 134, 216, 127. New followers: 212, 204, 332, 241.">External reach, Year 2 quarters: social posts 139, 134, 216, 127. New followers 212, 204, 332, 241. Year 1 has no data since the external plan launched in Year 2.</canvas></div>
+      <p class="footnote">External reach grew steadily through Year 2 (up to 332 new followers in a single quarter). But internal sentiment moved the other way over the same year: employees who feel connected to the organization's mission fell from 81.7% to 71.1%, and those who feel their own work is represented in communications fell from 79.8% to 72%. Reach outward grew while connection inward slipped.</p>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-top:22px;">
+    <div class="card reveal">
+      <div style="font-size:12px; font-weight:600; color:var(--brass-deep); text-transform:uppercase; letter-spacing:.4px; margin-bottom:8px;">Goal area 3 &mdash; Workforce Development &amp; Retention</div>
+      <div class="legend"><span><span class="dot" style="background:#b8894f;"></span>1-year retention rate</span></div>
+      <div class="chart-wrap"><canvas id="retentionChart" role="img" aria-label="Line chart of new-employee one-year retention rate by quarter. Year 1 Q4: 75.3%. Year 2 quarters: 59%, 43%, 48%, 66%.">New-employee 1-year retention rate: Year 1 Q4 75.3%. Year 2 quarters: 59%, 43%, 48%, 66%.</canvas></div>
+      <p class="footnote">One-year retention fell from 75.3% to a 43-66% range in Year 2. That doesn't appear to trace back to onboarding quality itself &mdash; satisfaction with onboarding was actually more stable in Year 2 (92-94%) than in Year 1, when it dipped to 87-88% mid-year. What did change: the applicant pool. Applicants fell from a Year-1 high of 288 in one quarter to just 65 in the matching quarter a year later &mdash; a narrower pipeline is a more likely thread to pull on than the onboarding experience.</p>
+    </div>
+    <div class="card reveal">
+      <div style="font-size:12px; font-weight:600; color:var(--brass-deep); text-transform:uppercase; letter-spacing:.4px; margin-bottom:8px;">Goal area 4 &mdash; Organizational Growth &amp; Innovation</div>
+      <div class="legend"><span><span class="dot" style="background:#23497e;"></span>% of planned capital projects completed</span></div>
+      <div class="chart-wrap"><canvas id="capitalChart" role="img" aria-label="Line chart of the percentage of planned capital projects completed across Year 2 quarters: 0%, 11%, 11%, 61%. No Year 1 data was reported for this measure.">Capital project completion rate, Year 2 quarters: 0%, 11%, 11%, 61%.</canvas></div>
+      <p class="footnote">Execution accelerated sharply late in the year, from 11% to 61% completion in the final quarter. Over that same year, however, dollars invested in R&amp;D were reported as $0 in every quarter, despite 6-18 employees being engaged in the innovation process each quarter &mdash; effort was invested where dollars weren't.</p>
+    </div>
+  </div>
 </section>
 
 <footer>
@@ -536,6 +578,98 @@
         }
       }
     });
+
+    new Chart(document.getElementById('wellnessChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Q1','Q2','Q3','Q4'],
+        datasets: [
+          { label: 'Year 1', data: [2993,3949,6525,6724], backgroundColor: '#23497e', borderRadius: 4 },
+          { label: 'Year 2', data: [5135,3280,5585,2314], backgroundColor: '#b8894f', borderRadius: 4 }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: true, grid: { color: '#e9edf3' }, ticks: { callback: v => v.toLocaleString() } },
+          x: { grid: { display: false } }
+        }
+      }
+    });
+
+    new Chart(document.getElementById('retentionChart'), {
+      type: 'line',
+      data: {
+        labels: ['Y1 Q4','Y2 Q1','Y2 Q2','Y2 Q3','Y2 Q4'],
+        datasets: [{
+          data: [75.3,59,43,48,66],
+          borderColor: '#b8894f',
+          backgroundColor: 'rgba(184,137,79,0.08)',
+          borderWidth: 2.4,
+          fill: true,
+          tension: 0.3,
+          pointRadius: 4,
+          pointBackgroundColor: '#b8894f',
+          pointBorderColor: '#fff',
+          pointBorderWidth: 1.5
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: false, grid: { color: '#e9edf3' }, ticks: { callback: v => v + '%' } },
+          x: { grid: { display: false } }
+        }
+      }
+    });
+
+    new Chart(document.getElementById('commsChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Y2 Q1','Y2 Q2','Y2 Q3','Y2 Q4'],
+        datasets: [
+          { label: 'Social posts', data: [139,134,216,127], backgroundColor: '#23497e', borderRadius: 4 },
+          { label: 'New followers', data: [212,204,332,241], backgroundColor: '#b8894f', borderRadius: 4 }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: true, grid: { color: '#e9edf3' }, ticks: { callback: v => v.toLocaleString() } },
+          x: { grid: { display: false } }
+        }
+      }
+    });
+
+    new Chart(document.getElementById('capitalChart'), {
+      type: 'line',
+      data: {
+        labels: ['Y2 Q1','Y2 Q2','Y2 Q3','Y2 Q4'],
+        datasets: [{
+          data: [0,11,11,61],
+          borderColor: '#23497e',
+          backgroundColor: 'rgba(35,73,126,0.08)',
+          borderWidth: 2.4,
+          fill: true,
+          tension: 0.3,
+          pointRadius: 4,
+          pointBackgroundColor: '#23497e',
+          pointBorderColor: '#fff',
+          pointBorderWidth: 1.5
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: true, grid: { color: '#e9edf3' }, ticks: { callback: v => v + '%' } },
+          x: { grid: { display: false } }
+        }
+      }
+    });
   } catch (err) {
     console.error('Chart rendering failed, dashboard text/data remains intact:', err);
     document.querySelectorAll('.chart-wrap canvas').forEach(c => {
@@ -615,7 +749,7 @@
       document.getElementById(btn.dataset.target).scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
-  const sections = ['overview','enrollment','assessments','graduation'].map(id => document.getElementById(id));
+  const sections = ['overview','enrollment','assessments','graduation','strategic'].map(id => document.getElementById(id));
   const navIO = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if(entry.isIntersecting){
